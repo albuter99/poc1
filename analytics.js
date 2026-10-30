@@ -23,8 +23,8 @@ const py=await window.loadPyodide({indexURL:"https://cdn.jsdelivr.net/pyodide/v0
 const response=await fetch("./scripts/build_stats.py",{cache:"no-store"});if(!response.ok)throw Error("Script Python indisponible");
 pythonSource=await response.text();instance=py;return py
 })();return pythonLoader}
-async function pythonStats(records){const py=await pythonRuntime();py.globals.set("poc_records_json",JSON.stringify(records));py.globals.set("poc_source",pythonSource);
-const code=["import json","module_globals={'__name__':'poc1_stats','__file__':'/home/pyodide/scripts/build_stats.py'}","exec(poc_source,module_globals)","json.dumps(module_globals['compute'](json.loads(poc_records_json)),ensure_ascii=False)"].join("\n");
+async function pythonStats(records){const py=await pythonRuntime();py.globals.set("poc_records_json",JSON.stringify(records));py.globals.set("poc_source",pythonSource);const response=await fetch("./data/graph-relations.json",{cache:"no-store"});py.globals.set("poc_metadata_json",response.ok?await response.text():"{}");
+const code=["import json","module_globals={'__name__':'poc1_stats','__file__':'/home/pyodide/scripts/build_stats.py'}","module_globals[\'poc_metadata_json\']=poc_metadata_json","exec(poc_source,module_globals)","json.dumps(module_globals['compute'](json.loads(poc_records_json)),ensure_ascii=False)"].join("\n");
 const result=await py.runPythonAsync(code);
 return JSON.parse(result)}
 function show(host,data,records,mode){if(!host.isConnected)return;const local=records.filter(x=>x.local_only||String(x.id).startsWith("LOCAL-")).length;const note=mode==="local"?'<span class="analytics-source">Calcul Python dans le navigateur · '+records.length+' chaînes, dont '+local+' locales. Données de démonstration.</span>':'<span class="analytics-local-note">Calcul Python local en cours pour '+records.length+' chaînes…</span>';
