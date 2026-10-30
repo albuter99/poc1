@@ -1,0 +1,2222 @@
+{
+  "_note": "Relations strictement fictives pour la démonstration. Aucune donnée institutionnelle.",
+  "types": [
+    "Indicateurs de la fiche de préexamen",
+    "Descripteurs de la fiche de préexamen",
+    "Indicateurs de l'analyse de premier contrôle",
+    "Descripteurs de l'analyse de premier contrôle",
+    "Indicateurs de la demande d'admission du pourvoi",
+    "Mots-clés de la DDP",
+    "Objet de la DDP",
+    "Mots-clés de l'acte introductif de l'instance (AII)",
+    "Objet de l'acte introductif de l'instance (AII)",
+    "Mots-clés de la requête en pourvoi",
+    "Objet de la requête en pourvoi",
+    "Indicateurs des Conclusions de l’AG",
+    "Indicateurs de l'arrêt/ordonnance",
+    "Indicateurs de l'avis",
+    "Chaine de mots-clés du sommaire/résumé"
+  ],
+  "relations": {
+    "REF-0001": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0001",
+          "title": "Document fictif 0001",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0008"
+        }
+      ]
+    },
+    "REF-0002": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0002",
+          "title": "Document fictif 0002",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0009"
+        }
+      ]
+    },
+    "REF-0003": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0003",
+          "title": "Document fictif 0003",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0010"
+        }
+      ]
+    },
+    "REF-0004": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0004",
+          "title": "Document fictif 0004",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0011"
+        }
+      ]
+    },
+    "REF-0005": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0005",
+          "title": "Document fictif 0005",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0012"
+        }
+      ]
+    },
+    "REF-0006": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0006",
+          "title": "Document fictif 0006",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0013"
+        }
+      ]
+    },
+    "REF-0007": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0007",
+          "title": "Document fictif 0007",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0014"
+        }
+      ]
+    },
+    "REF-0008": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0008",
+          "title": "Document fictif 0008",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0015"
+        }
+      ]
+    },
+    "REF-0009": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0009",
+          "title": "Document fictif 0009",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0016"
+        }
+      ]
+    },
+    "REF-0010": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Marque de l’Union européenne",
+      "cote": "Plan E · Décisions",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0010",
+          "title": "Document fictif 0010",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0017"
+        }
+      ]
+    },
+    "REF-0011": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0011",
+          "title": "Document fictif 0011",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0018"
+        }
+      ]
+    },
+    "REF-0012": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0012",
+          "title": "Document fictif 0012",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0019"
+        }
+      ]
+    },
+    "REF-0013": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0013",
+          "title": "Document fictif 0013",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0020"
+        }
+      ]
+    },
+    "REF-0014": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0014",
+          "title": "Document fictif 0014",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0021"
+        }
+      ]
+    },
+    "REF-0015": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0015",
+          "title": "Document fictif 0015",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0022"
+        }
+      ]
+    },
+    "REF-0016": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0016",
+          "title": "Document fictif 0016",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0023"
+        }
+      ]
+    },
+    "REF-0017": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0017",
+          "title": "Document fictif 0017",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0024"
+        }
+      ]
+    },
+    "REF-0018": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0018",
+          "title": "Document fictif 0018",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0025"
+        }
+      ]
+    },
+    "REF-0019": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan D · Recours",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0019",
+          "title": "Document fictif 0019",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0026"
+        }
+      ]
+    },
+    "REF-0020": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Droit institutionnel",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0020",
+          "title": "Document fictif 0020",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0027"
+        }
+      ]
+    },
+    "REF-0021": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Fonction publique",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0021",
+          "title": "Document fictif 0021",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0028"
+        }
+      ]
+    },
+    "REF-0022": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Fonction publique",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0022",
+          "title": "Document fictif 0022",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0029"
+        }
+      ]
+    },
+    "REF-0023": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Fonction publique",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0023",
+          "title": "Document fictif 0023",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0030"
+        }
+      ]
+    },
+    "REF-0024": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Fonction publique",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0024",
+          "title": "Document fictif 0024",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0031"
+        }
+      ]
+    },
+    "REF-0025": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Fonction publique",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0025",
+          "title": "Document fictif 0025",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0032"
+        }
+      ]
+    },
+    "REF-0026": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Fonction publique",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0026",
+          "title": "Document fictif 0026",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0033"
+        }
+      ]
+    },
+    "REF-0027": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Fonction publique",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0027",
+          "title": "Document fictif 0027",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0034"
+        }
+      ]
+    },
+    "REF-0028": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Fonction publique",
+      "cote": "Plan C · Analyse",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0028",
+          "title": "Document fictif 0028",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0035"
+        }
+      ]
+    },
+    "REF-0029": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Fonction publique",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0029",
+          "title": "Document fictif 0029",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0036"
+        }
+      ]
+    },
+    "REF-0030": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Fonction publique",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0030",
+          "title": "Document fictif 0030",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0037"
+        }
+      ]
+    },
+    "REF-0031": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Protection des données",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0031",
+          "title": "Document fictif 0031",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0038"
+        }
+      ]
+    },
+    "REF-0032": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Protection des données",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0032",
+          "title": "Document fictif 0032",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0039"
+        }
+      ]
+    },
+    "REF-0033": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Protection des données",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0033",
+          "title": "Document fictif 0033",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0040"
+        }
+      ]
+    },
+    "REF-0034": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Protection des données",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0034",
+          "title": "Document fictif 0034",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0041"
+        }
+      ]
+    },
+    "REF-0035": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Protection des données",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0035",
+          "title": "Document fictif 0035",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0042"
+        }
+      ]
+    },
+    "REF-0036": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Protection des données",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0036",
+          "title": "Document fictif 0036",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0043"
+        }
+      ]
+    },
+    "REF-0037": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Protection des données",
+      "cote": "Plan B · Procédure",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0037",
+          "title": "Document fictif 0037",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0044"
+        }
+      ]
+    },
+    "REF-0038": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Protection des données",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0038",
+          "title": "Document fictif 0038",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0045"
+        }
+      ]
+    },
+    "REF-0039": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Protection des données",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0039",
+          "title": "Document fictif 0039",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0046"
+        }
+      ]
+    },
+    "REF-0040": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Protection des données",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0040",
+          "title": "Document fictif 0040",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0047"
+        }
+      ]
+    },
+    "REF-0041": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Concurrence",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0041",
+          "title": "Document fictif 0041",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0048"
+        }
+      ]
+    },
+    "REF-0042": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Concurrence",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0042",
+          "title": "Document fictif 0042",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0049"
+        }
+      ]
+    },
+    "REF-0043": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Concurrence",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0043",
+          "title": "Document fictif 0043",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0050"
+        }
+      ]
+    },
+    "REF-0044": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Concurrence",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0044",
+          "title": "Document fictif 0044",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0051"
+        }
+      ]
+    },
+    "REF-0045": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Concurrence",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0045",
+          "title": "Document fictif 0045",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0052"
+        }
+      ]
+    },
+    "REF-0046": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Concurrence",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0046",
+          "title": "Document fictif 0046",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0053"
+        }
+      ]
+    },
+    "REF-0047": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Concurrence",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0047",
+          "title": "Document fictif 0047",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0054"
+        }
+      ]
+    },
+    "REF-0048": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Concurrence",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0048",
+          "title": "Document fictif 0048",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0055"
+        }
+      ]
+    },
+    "REF-0049": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Concurrence",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0049",
+          "title": "Document fictif 0049",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0056"
+        }
+      ]
+    },
+    "REF-0050": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Concurrence",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0050",
+          "title": "Document fictif 0050",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0057"
+        }
+      ]
+    },
+    "REF-0051": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Marché intérieur",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0051",
+          "title": "Document fictif 0051",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0058"
+        }
+      ]
+    },
+    "REF-0052": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Marché intérieur",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0052",
+          "title": "Document fictif 0052",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0059"
+        }
+      ]
+    },
+    "REF-0053": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Marché intérieur",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0053",
+          "title": "Document fictif 0053",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0060"
+        }
+      ]
+    },
+    "REF-0054": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Marché intérieur",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0054",
+          "title": "Document fictif 0054",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0061"
+        }
+      ]
+    },
+    "REF-0055": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Marché intérieur",
+      "cote": "Plan E · Décisions",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0055",
+          "title": "Document fictif 0055",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0062"
+        }
+      ]
+    },
+    "REF-0056": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Marché intérieur",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0056",
+          "title": "Document fictif 0056",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0063"
+        }
+      ]
+    },
+    "REF-0057": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Marché intérieur",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0057",
+          "title": "Document fictif 0057",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0064"
+        }
+      ]
+    },
+    "REF-0058": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Marché intérieur",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0058",
+          "title": "Document fictif 0058",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0065"
+        }
+      ]
+    },
+    "REF-0059": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Marché intérieur",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0059",
+          "title": "Document fictif 0059",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0066"
+        }
+      ]
+    },
+    "REF-0060": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Marché intérieur",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0060",
+          "title": "Document fictif 0060",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0067"
+        }
+      ]
+    },
+    "REF-0061": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0061",
+          "title": "Document fictif 0061",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0068"
+        }
+      ]
+    },
+    "REF-0062": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0062",
+          "title": "Document fictif 0062",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0069"
+        }
+      ]
+    },
+    "REF-0063": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0063",
+          "title": "Document fictif 0063",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0070"
+        }
+      ]
+    },
+    "REF-0064": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan D · Recours",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0064",
+          "title": "Document fictif 0064",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0071"
+        }
+      ]
+    },
+    "REF-0065": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0065",
+          "title": "Document fictif 0065",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0072"
+        }
+      ]
+    },
+    "REF-0066": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0066",
+          "title": "Document fictif 0066",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0073"
+        }
+      ]
+    },
+    "REF-0067": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0067",
+          "title": "Document fictif 0067",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0074"
+        }
+      ]
+    },
+    "REF-0068": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0068",
+          "title": "Document fictif 0068",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0075"
+        }
+      ]
+    },
+    "REF-0069": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0069",
+          "title": "Document fictif 0069",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0076"
+        }
+      ]
+    },
+    "REF-0070": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Propriété intellectuelle",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0070",
+          "title": "Document fictif 0070",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0077"
+        }
+      ]
+    },
+    "REF-0071": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Aides d’État",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0071",
+          "title": "Document fictif 0071",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0078"
+        }
+      ]
+    },
+    "REF-0072": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Aides d’État",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0072",
+          "title": "Document fictif 0072",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0079"
+        }
+      ]
+    },
+    "REF-0073": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Aides d’État",
+      "cote": "Plan C · Analyse",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0073",
+          "title": "Document fictif 0073",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0080"
+        }
+      ]
+    },
+    "REF-0074": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Aides d’État",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0074",
+          "title": "Document fictif 0074",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0081"
+        }
+      ]
+    },
+    "REF-0075": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Aides d’État",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0075",
+          "title": "Document fictif 0075",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0082"
+        }
+      ]
+    },
+    "REF-0076": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Aides d’État",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0076",
+          "title": "Document fictif 0076",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0083"
+        }
+      ]
+    },
+    "REF-0077": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Aides d’État",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0077",
+          "title": "Document fictif 0077",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0084"
+        }
+      ]
+    },
+    "REF-0078": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Aides d’État",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0078",
+          "title": "Document fictif 0078",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0085"
+        }
+      ]
+    },
+    "REF-0079": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Aides d’État",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0079",
+          "title": "Document fictif 0079",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0086"
+        }
+      ]
+    },
+    "REF-0080": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Aides d’État",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0080",
+          "title": "Document fictif 0080",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0087"
+        }
+      ]
+    },
+    "REF-0081": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Politique commerciale",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0081",
+          "title": "Document fictif 0081",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0088"
+        }
+      ]
+    },
+    "REF-0082": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Politique commerciale",
+      "cote": "Plan B · Procédure",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0082",
+          "title": "Document fictif 0082",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0089"
+        }
+      ]
+    },
+    "REF-0083": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Politique commerciale",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0083",
+          "title": "Document fictif 0083",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0090"
+        }
+      ]
+    },
+    "REF-0084": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Politique commerciale",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0084",
+          "title": "Document fictif 0084",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0091"
+        }
+      ]
+    },
+    "REF-0085": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Politique commerciale",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0085",
+          "title": "Document fictif 0085",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0092"
+        }
+      ]
+    },
+    "REF-0086": {
+      "type_indexation": "Objet de la requête en pourvoi",
+      "archetype": "Contentieux direct",
+      "matiere": "Politique commerciale",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0086",
+          "title": "Document fictif 0086",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0093"
+        }
+      ]
+    },
+    "REF-0087": {
+      "type_indexation": "Indicateurs des Conclusions de l’AG",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Politique commerciale",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0087",
+          "title": "Document fictif 0087",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0094"
+        }
+      ]
+    },
+    "REF-0088": {
+      "type_indexation": "Indicateurs de l'arrêt/ordonnance",
+      "archetype": "Pourvoi",
+      "matiere": "Politique commerciale",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0088",
+          "title": "Document fictif 0088",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0095"
+        }
+      ]
+    },
+    "REF-0089": {
+      "type_indexation": "Indicateurs de l'avis",
+      "archetype": "Avis",
+      "matiere": "Politique commerciale",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0089",
+          "title": "Document fictif 0089",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0096"
+        }
+      ]
+    },
+    "REF-0090": {
+      "type_indexation": "Chaine de mots-clés du sommaire/résumé",
+      "archetype": "Procédure administrative",
+      "matiere": "Politique commerciale",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0090",
+          "title": "Document fictif 0090",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0097"
+        }
+      ]
+    },
+    "REF-0091": {
+      "type_indexation": "Indicateurs de la fiche de préexamen",
+      "archetype": "Contentieux direct",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0091",
+          "title": "Document fictif 0091",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0098"
+        }
+      ]
+    },
+    "REF-0092": {
+      "type_indexation": "Descripteurs de la fiche de préexamen",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0092",
+          "title": "Document fictif 0092",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0099"
+        }
+      ]
+    },
+    "REF-0093": {
+      "type_indexation": "Indicateurs de l'analyse de premier contrôle",
+      "archetype": "Pourvoi",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0093",
+          "title": "Document fictif 0093",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0100"
+        }
+      ]
+    },
+    "REF-0094": {
+      "type_indexation": "Descripteurs de l'analyse de premier contrôle",
+      "archetype": "Avis",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0094",
+          "title": "Document fictif 0094",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0001"
+        }
+      ]
+    },
+    "REF-0095": {
+      "type_indexation": "Indicateurs de la demande d'admission du pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan E · Décisions",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0095",
+          "title": "Document fictif 0095",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0002"
+        }
+      ]
+    },
+    "REF-0096": {
+      "type_indexation": "Mots-clés de la DDP",
+      "archetype": "Contentieux direct",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan A · Principes généraux",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0096",
+          "title": "Document fictif 0096",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0003"
+        }
+      ]
+    },
+    "REF-0097": {
+      "type_indexation": "Objet de la DDP",
+      "archetype": "Renvoi préjudiciel",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan B · Procédure",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0097",
+          "title": "Document fictif 0097",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0004"
+        }
+      ]
+    },
+    "REF-0098": {
+      "type_indexation": "Mots-clés de l'acte introductif de l'instance (AII)",
+      "archetype": "Pourvoi",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan C · Analyse",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0098",
+          "title": "Document fictif 0098",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0005"
+        }
+      ]
+    },
+    "REF-0099": {
+      "type_indexation": "Objet de l'acte introductif de l'instance (AII)",
+      "archetype": "Avis",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan D · Recours",
+      "etat": "Active",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0099",
+          "title": "Document fictif 0099",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0006"
+        }
+      ]
+    },
+    "REF-0100": {
+      "type_indexation": "Mots-clés de la requête en pourvoi",
+      "archetype": "Procédure administrative",
+      "matiere": "Procédure juridictionnelle",
+      "cote": "Plan E · Décisions",
+      "etat": "Brouillon",
+      "commentaire": "Branche fictive de démonstration",
+      "documents": [
+        {
+          "id": "DOC-0100",
+          "title": "Document fictif 0100",
+          "kind": "Document associé",
+          "status": "Simulation"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Référence liée",
+          "target": "REF-0007"
+        }
+      ]
+    }
+  }
+}
