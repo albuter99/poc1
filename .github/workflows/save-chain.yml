@@ -57,7 +57,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           NEW_ID: ${{ steps.append.outputs.new_id }}
         run: |
-          gh issue comment "$ISSUE_NUMBER" --body "✅ Chaîne **$NEW_ID** enregistrée dans `data/chains.json`. Analyses Python recalculées et site publié. Actualisez Poc1 pour consulter les données."
+          gh issue comment "$ISSUE_NUMBER" --body "Chaîne $NEW_ID enregistrée dans data/chains.json. Analyses Python recalculées et site publié. Actualisez Poc1 pour consulter les données."
           gh issue close "$ISSUE_NUMBER" --reason completed
       - name: Explain failure
         if: failure()
