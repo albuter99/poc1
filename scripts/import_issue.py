@@ -18,11 +18,11 @@ MARKER = "POC1_CHAIN_REQUEST_V1"
 PATTERN = re.compile(r"\bPOC1_CHAIN_REQUEST_V1\s*\x60\x60\x60json\s*(\{[\s\S]*?\})\s*\x60\x60\x60", re.I)
 MAX_TERMS = 20
 
-def clean_term(term):
+def clean_term(term, max_len=150):
     if not isinstance(term, str):
         raise ValueError("Les termes doivent être des chaînes de caractères")
     term = term.strip()
-    if not 1 <= len(term) <= 150 or any(ord(c) < 32 for c in term):
+    if not 1 <= len(term) <= max_len or any(ord(c) < 32 for c in term):
         raise ValueError("Terme invalide ou trop long")
     return term
 
@@ -51,7 +51,7 @@ def validate_date(s):
     return s
 
 def build_record(data, req):
-    base = clean_term(req.get("base_chain"))
+    base = clean_term(req.get("base_chain"), max_len=1800)
     selected = req.get("selected_terms")
     if not isinstance(selected, list) or not 1 <= len(selected) <= MAX_TERMS:
         raise ValueError("Choisissez entre 1 et 20 termes")
