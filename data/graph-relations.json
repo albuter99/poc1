@@ -238,7 +238,9 @@
           "id": "DOC-0014",
           "title": "Document fictif 0014",
           "kind": "Document associé",
-          "status": "Simulation"
+          "status": "Fichier PDF fictif disponible",
+          "file_url": "documents/REF-0014-document-fictif.pdf",
+          "format": "application/pdf"
         }
       ]
     },
