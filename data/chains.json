@@ -1497,5 +1497,21 @@
     "created_at": "2026-10-19T09:00:00.000Z",
     "status": "Brouillon",
     "validity_end_date": "1900-01-01"
+  },
+  {
+    "id": "REF-0101",
+    "root": "Aides d’État",
+    "base_chain": "Aides d’État - Dispositions de procédure - Erreur manifeste",
+    "selected_terms": [
+      "Marge de l’appréciation de l’Office",
+      "Notion",
+      "Compétence de l'Office",
+      "Procédure d’opposition"
+    ],
+    "full_chain_label": "Aides d’État - Dispositions de procédure - Erreur manifeste - Marge de l’appréciation de l’Office - Notion - Compétence de l'Office - Procédure d’opposition",
+    "validity_start_date": "2026-10-30",
+    "validity_end_date": "1900-01-01",
+    "created_at": "2026-10-30T13:45:50Z",
+    "status": "Active"
   }
 ]
