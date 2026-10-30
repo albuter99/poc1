@@ -45,8 +45,9 @@ def compute(chains):
     maillons = Counter((a, b) for path in all_paths for a, b in zip(path, path[1:]))
     chain_names = Counter(" - ".join(path) for path in all_paths if path)
     lengths = Counter(len(path) for path in all_paths)
-    domains = Counter((c.get("root") or (path[0] if path else "Non renseigné"))
-                      for c, path in zip(chains, all_paths))
+    metadata = json.loads(GRAPH.read_text(encoding="utf-8")) if GRAPH.exists() else {"relations": {}}
+    relations = metadata.get("relations", {})
+    index_types = Counter(c.get("type_indexation") or relations.get(c.get("id"), {}).get("type_indexation") or "Non renseigné" for c in chains)
     dates = Counter()
     for c in chains:
         raw = str(c.get("created_at") or "")
@@ -69,16 +70,10 @@ def compute(chains):
     minimum = min(lengths) if lengths else 0
     distinct = len(chain_names)
     output = [
-        block("keywords_total", "Mots-clés distincts", len(keywords), "Termes uniques exacts",
+        block("keywords_total", "Termes distincts", len(keywords), "Termes uniques exacts",
               ordered(keywords, 10), note="Les termes sont comparés à l'identique, accents compris. Les termes de niveau 1 sont inclus."),
-        block("keywords_frequency", "Fréquence des mots-clés", sum(keywords.values()), "Occurrences totales",
+        block("keywords_frequency", "Fréquence des termes", sum(keywords.values()), "Occurrences totales",
               ordered(keywords, 30), note="Nombre de chaînes contenant chaque mot-clé, compté une fois par position."),
-        block("maillons_total", "Maillons distincts", len(maillons), "Paires consécutives uniques",
-              ordered(Counter({f"{a} → {b}": n for (a,b),n in maillons.items()}), 12),
-              note="Définition provisoire : un maillon distinct est ici une paire ordonnée de termes consécutifs. Ce n'est pas un identifiant de maillon métier."),
-        block("maillons_frequency", "Fréquence des maillons", sum(maillons.values()), "Liens ordonnés totaux",
-              ordered(Counter({f"{a} → {b}": n for (a,b),n in maillons.items()}), 30),
-              note="Fréquence des paires de termes adjacents, calculée à partir des chaînes."),
         block("chains_distinct", "Chaînes distinctes", distinct, "Libellés complets uniques",
               ordered(chain_names, 12), note="Une chaîne est distincte si sa séquence complète ordonnée diffère."),
         block("chains_frequency", "Fréquence des chaînes", len(chains), "Enregistrements totaux",
@@ -89,11 +84,8 @@ def compute(chains):
         block("length_language", "Longueur par langue (LNG)", None, "Langues des chaînes non renseignées",
               kind="unavailable", status="pending",
               note="La langue de l'interface ne constitue pas une langue de chaîne. Un champ LNG par chaîne est nécessaire."),
-        block("depth_max", "Profondeur maximale", maximum, "Niveaux hiérarchiques",
-              [{"label":f"{n} niveaux","value":lengths[n]} for n in sorted(lengths, reverse=True)],
-              note="Pour cette maquette, un niveau correspond à un terme dans la chaîne."),
-        block("legal_domains", "Répartition par domaine juridique", len(domains), "Domaines présents",
-              ordered(domains, 30), note="Classification calculée depuis root (premier niveau)."),
+        block("indexation_types", "Répartition par type d’indexation", len(index_types), "Types d’indexation",
+              ordered(index_types, 30), note="Répartition calculée à partir des types d’indexation enregistrés dans les chaînes et les métadonnées de démonstration.", source="data/chains.json et data/graph-relations.json"),
         block("orphan_maillons", "Proportion de maillons orphelins", None, "Référentiel des maillons absent",
               kind="unavailable", status="pending",
               note="Impossible de déterminer des maillons orphelins sans un catalogue de maillons indépendant des chaînes."),
@@ -105,9 +97,7 @@ def compute(chains):
         block("synonyms", "Synonymes / variantes", None, "Aucun catalogue de synonymes",
               kind="unavailable", status="pending",
               note="Ne pas déduire des synonymes de chaînes similaires : une table de correspondances explicite est nécessaire."),
-        block("length_distribution", "Répartition des chaînes par longueur", len(lengths), "Longueurs observées",
-              [{"label":f"{n} termes","value":lengths[n]} for n in sorted(lengths, reverse=True)],
-              note="Chaque barre indique le nombre de chaînes de cette longueur.")
+
     ]
     return {
         "schema_version": 1, "origin": "python", "source": "data/chains.json",
