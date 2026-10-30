@@ -2,3 +2,21 @@
 .graph-edge.derived{stroke:#8a6cc5;stroke-width:2.4;stroke-dasharray:8 5}.graph-edge.derived:hover{stroke:#d58b24;stroke-width:4}.graph-edge.derived:focus-visible{stroke:#d58b24;stroke-width:4;outline:none}.graph-node:has(circle[fill="#3b9dba"]){cursor:pointer}.graph-detail .datum div{white-space:pre-wrap}.graph-edge.chain{stroke:#2879d2}.graph-legend{max-width:calc(100% - 24px)}
 
 .graph-discover,.graph-explore-action{background:#315fa7;color:#fff;border:1px solid #315fa7;border-radius:9px;padding:10px 13px;font-weight:700;cursor:pointer}.graph-discover:hover,.graph-explore-action:hover{background:#21467d}.graph-explore-action{display:block;width:100%;margin:17px 0 7px;text-align:center}.graph-discover{white-space:nowrap}.graph-toolbar{row-gap:9px}@media(max-width:600px){.graph-discover{width:100%}}
+
+.graph-dialog{position:relative}
+.graph-document-popup{position:absolute;inset:0;z-index:50;background:rgba(18,35,59,.6);display:flex;align-items:center;justify-content:center;padding:18px}
+.graph-document-card{background:#fff;box-shadow:0 22px 60px #0b1e3f4d;border-radius:14px;width:min(650px,100%);max-height:88%;overflow:auto;padding:24px;color:#263851}
+.graph-document-head{display:flex;align-items:start;justify-content:space-between;gap:15px;border-bottom:1px solid #e1e7f0;padding-bottom:13px;margin-bottom:15px}
+.graph-document-head small{color:#a15b3a;font-size:11px;letter-spacing:.7px;font-weight:700}
+.graph-document-head h3{font-size:19px;margin:6px 0 0}
+.graph-document-head button{background:#edf1f7;border:0;border-radius:7px;font-size:25px;width:34px;height:34px;cursor:pointer;color:#293d5d}
+.graph-document-card dl{margin:0}
+.graph-document-card dt{font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:750;color:#76869c;margin:15px 0 4px}
+.graph-document-card dd{margin:0;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+.graph-document-actions{display:flex;flex-wrap:wrap;gap:10px;margin:23px 0 12px}
+.graph-document-actions button{font-size:13px;min-height:40px}
+.graph-document-card>p{font-size:12px;color:#846640}
+.graph-node:has(circle){transition:opacity .12s}
+.graph-edge.derived.forte{stroke:#7555bc;stroke-width:3}
+.graph-edge.derived.moyenne{stroke:#9e8bc4;stroke-width:1.7;stroke-dasharray:5 6}
+@media(max-width:650px){.graph-document-card{padding:17px}.graph-document-actions{flex-direction:column}.graph-document-actions button{width:100%}}
