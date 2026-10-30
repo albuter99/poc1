@@ -10,7 +10,8 @@
     "full_chain_label": "Marque de l’Union européenne - Dispositions de procédure - Marge de l’appréciation de l’Office - Droits de la défense",
     "validity_start_date": "2023-01-01",
     "created_at": "2026-01-01T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0002",
@@ -24,7 +25,8 @@
     "full_chain_label": "Marque de l’Union européenne - Dispositions de procédure - Procédure d’opposition - Contrôle de légalité - Réexamen",
     "validity_start_date": "2024-02-02",
     "created_at": "2026-02-02T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0003",
@@ -39,7 +41,8 @@
     "full_chain_label": "Marque de l’Union européenne - Conditions de recevabilité - Motivation juridique - Opposabilité - Motivation des décisions - Appréciation des preuves",
     "validity_start_date": "2025-03-03",
     "created_at": "2026-03-03T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0004",
@@ -52,7 +55,8 @@
     "full_chain_label": "Marque de l’Union européenne - Conditions de recevabilité - Erreur manifeste - Recours en annulation",
     "validity_start_date": "2026-04-04",
     "created_at": "2026-04-04T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0005",
@@ -66,7 +70,8 @@
     "full_chain_label": "Marque de l’Union européenne - Principes fondamentaux - Déchéance - Notification - Intérêt à agir",
     "validity_start_date": "2023-05-05",
     "created_at": "2026-05-05T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0006",
@@ -81,7 +86,8 @@
     "full_chain_label": "Marque de l’Union européenne - Principes fondamentaux - Conditions - Charge de la preuve - Irrecevabilité - Proportionnalité",
     "validity_start_date": "2024-06-06",
     "created_at": "2026-06-06T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0007",
@@ -94,7 +100,8 @@
     "full_chain_label": "Marque de l’Union européenne - Décisions administratives - Procédure de nullité - Compétence de l'Office",
     "validity_start_date": "2025-07-07",
     "created_at": "2026-07-07T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0008",
@@ -108,7 +115,8 @@
     "full_chain_label": "Marque de l’Union européenne - Décisions administratives - Protection juridictionnelle - Protection des données - Objectif",
     "validity_start_date": "2026-08-08",
     "created_at": "2026-08-08T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0009",
@@ -123,7 +131,8 @@
     "full_chain_label": "Marque de l’Union européenne - Voies de recours - Droits antérieurs - Proportionnalité - Charge de la preuve - Erreur manifeste",
     "validity_start_date": "2023-09-09",
     "created_at": "2026-09-09T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0010",
@@ -136,7 +145,8 @@
     "full_chain_label": "Marque de l’Union européenne - Voies de recours - Réexamen - Notion",
     "validity_start_date": "2024-10-10",
     "created_at": "2026-10-10T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0011",
@@ -150,7 +160,8 @@
     "full_chain_label": "Droit institutionnel - Dispositions de procédure - Conditions - Droits de la défense - Irrecevabilité",
     "validity_start_date": "2025-11-11",
     "created_at": "2026-01-11T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0012",
@@ -165,7 +176,8 @@
     "full_chain_label": "Droit institutionnel - Dispositions de procédure - Délai de recours - Erreur manifeste - Règles de procédure - Recevabilité",
     "validity_start_date": "2026-12-12",
     "created_at": "2026-02-12T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0013",
@@ -178,7 +190,8 @@
     "full_chain_label": "Droit institutionnel - Conditions de recevabilité - Appréciation des preuves - Usage sérieux",
     "validity_start_date": "2023-01-13",
     "created_at": "2026-03-13T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0014",
@@ -192,7 +205,8 @@
     "full_chain_label": "Droit institutionnel - Conditions de recevabilité - Caractère distinctif - Conditions - Droits de la défense",
     "validity_start_date": "2024-02-14",
     "created_at": "2026-04-14T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0015",
@@ -207,7 +221,8 @@
     "full_chain_label": "Droit institutionnel - Principes fondamentaux - Règles de procédure - Procédure de nullité - Compétence de l'Office - Réexamen",
     "validity_start_date": "2025-03-15",
     "created_at": "2026-05-15T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0016",
@@ -220,7 +235,8 @@
     "full_chain_label": "Droit institutionnel - Principes fondamentaux - Motivation des décisions - Appréciation des preuves",
     "validity_start_date": "2026-04-16",
     "created_at": "2026-06-16T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0017",
@@ -234,7 +250,8 @@
     "full_chain_label": "Droit institutionnel - Décisions administratives - Charge de la preuve - Irrecevabilité - Proportionnalité",
     "validity_start_date": "2023-05-17",
     "created_at": "2026-07-17T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0018",
@@ -249,7 +266,8 @@
     "full_chain_label": "Droit institutionnel - Décisions administratives - Appréciation des preuves - Usage sérieux - Marge de l’appréciation de l’Office - Examen d'office",
     "validity_start_date": "2024-06-18",
     "created_at": "2026-08-18T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0019",
@@ -262,7 +280,8 @@
     "full_chain_label": "Droit institutionnel - Voies de recours - Risque de confusion - Marge de l’appréciation de l’Office",
     "validity_start_date": "2025-07-19",
     "created_at": "2026-09-19T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0020",
@@ -276,7 +295,8 @@
     "full_chain_label": "Droit institutionnel - Voies de recours - Publication - Objectif - Motivation juridique",
     "validity_start_date": "2026-08-20",
     "created_at": "2026-10-20T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0021",
@@ -291,7 +311,8 @@
     "full_chain_label": "Fonction publique - Dispositions de procédure - Portée - Protection juridictionnelle - Opposabilité - Objectif",
     "validity_start_date": "2023-09-21",
     "created_at": "2026-01-21T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0022",
@@ -304,7 +325,8 @@
     "full_chain_label": "Fonction publique - Dispositions de procédure - Droits de la défense - Droits antérieurs",
     "validity_start_date": "2024-10-22",
     "created_at": "2026-02-22T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0023",
@@ -318,7 +340,8 @@
     "full_chain_label": "Fonction publique - Conditions de recevabilité - Contrôle de légalité - Réexamen - Notion",
     "validity_start_date": "2025-11-23",
     "created_at": "2026-03-23T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0024",
@@ -333,7 +356,8 @@
     "full_chain_label": "Fonction publique - Conditions de recevabilité - Opposabilité - Motivation des décisions - Appréciation des preuves - Risque de confusion",
     "validity_start_date": "2026-12-24",
     "created_at": "2026-04-24T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0025",
@@ -346,7 +370,8 @@
     "full_chain_label": "Fonction publique - Principes fondamentaux - Publication - Objectif",
     "validity_start_date": "2023-01-25",
     "created_at": "2026-05-25T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0026",
@@ -360,7 +385,8 @@
     "full_chain_label": "Fonction publique - Principes fondamentaux - Notification - Intérêt à agir - Publication",
     "validity_start_date": "2024-02-26",
     "created_at": "2026-06-26T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0027",
@@ -375,7 +401,8 @@
     "full_chain_label": "Fonction publique - Décisions administratives - Procédure d’opposition - Contrôle de légalité - Déchéance - Portée",
     "validity_start_date": "2025-03-27",
     "created_at": "2026-07-27T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0028",
@@ -388,7 +415,8 @@
     "full_chain_label": "Fonction publique - Décisions administratives - Compétence de l'Office - Délai de prescription",
     "validity_start_date": "2026-04-01",
     "created_at": "2026-08-01T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0029",
@@ -402,7 +430,8 @@
     "full_chain_label": "Fonction publique - Voies de recours - Protection des données - Objectif - Motivation juridique",
     "validity_start_date": "2023-05-02",
     "created_at": "2026-09-02T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0030",
@@ -417,7 +446,8 @@
     "full_chain_label": "Fonction publique - Voies de recours - Proportionnalité - Charge de la preuve - Erreur manifeste - Recours en annulation",
     "validity_start_date": "2024-06-03",
     "created_at": "2026-10-03T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0031",
@@ -430,7 +460,8 @@
     "full_chain_label": "Protection des données - Dispositions de procédure - Notion - Principes généraux",
     "validity_start_date": "2025-07-04",
     "created_at": "2026-01-04T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0032",
@@ -444,7 +475,8 @@
     "full_chain_label": "Protection des données - Dispositions de procédure - Procédure d’opposition - Contrôle de légalité - Réexamen",
     "validity_start_date": "2026-08-05",
     "created_at": "2026-02-05T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0033",
@@ -459,7 +491,8 @@
     "full_chain_label": "Protection des données - Conditions de recevabilité - Erreur manifeste - Règles de procédure - Recevabilité - Compétence de l'Office",
     "validity_start_date": "2023-09-06",
     "created_at": "2026-03-06T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0034",
@@ -472,7 +505,8 @@
     "full_chain_label": "Protection des données - Conditions de recevabilité - Erreur manifeste - Recours en annulation",
     "validity_start_date": "2024-10-07",
     "created_at": "2026-04-07T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0035",
@@ -486,7 +520,8 @@
     "full_chain_label": "Protection des données - Principes fondamentaux - Conditions - Droits de la défense - Droits antérieurs",
     "validity_start_date": "2025-11-08",
     "created_at": "2026-05-08T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0036",
@@ -501,7 +536,8 @@
     "full_chain_label": "Protection des données - Principes fondamentaux - Procédure de nullité - Compétence de l'Office - Réexamen - Procédure d’opposition",
     "validity_start_date": "2026-12-09",
     "created_at": "2026-06-09T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0037",
@@ -514,7 +550,8 @@
     "full_chain_label": "Protection des données - Décisions administratives - Appréciation des preuves - Usage sérieux",
     "validity_start_date": "2023-01-10",
     "created_at": "2026-07-10T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0038",
@@ -528,7 +565,8 @@
     "full_chain_label": "Protection des données - Décisions administratives - Irrecevabilité - Proportionnalité - Délai de recours",
     "validity_start_date": "2024-02-11",
     "created_at": "2026-08-11T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0039",
@@ -543,7 +581,8 @@
     "full_chain_label": "Protection des données - Voies de recours - Erreur manifeste - Recours en annulation - Procédure de nullité - Compétence de l'Office",
     "validity_start_date": "2025-03-12",
     "created_at": "2026-09-12T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0040",
@@ -556,7 +595,8 @@
     "full_chain_label": "Protection des données - Voies de recours - Marge de l’appréciation de l’Office - Examen d'office",
     "validity_start_date": "2026-04-13",
     "created_at": "2026-10-13T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0041",
@@ -570,7 +610,8 @@
     "full_chain_label": "Concurrence - Dispositions de procédure - Conditions - Charge de la preuve - Irrecevabilité",
     "validity_start_date": "2023-05-14",
     "created_at": "2026-01-14T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0042",
@@ -585,7 +626,8 @@
     "full_chain_label": "Concurrence - Dispositions de procédure - Protection juridictionnelle - Opposabilité - Objectif - Appréciation des preuves",
     "validity_start_date": "2024-06-15",
     "created_at": "2026-02-15T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0043",
@@ -598,7 +640,8 @@
     "full_chain_label": "Concurrence - Conditions de recevabilité - Droits antérieurs - Sécurité juridique",
     "validity_start_date": "2025-07-16",
     "created_at": "2026-03-16T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0044",
@@ -612,7 +655,8 @@
     "full_chain_label": "Concurrence - Conditions de recevabilité - Réexamen - Notion - Principes généraux",
     "validity_start_date": "2026-08-17",
     "created_at": "2026-04-17T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0045",
@@ -627,7 +671,8 @@
     "full_chain_label": "Concurrence - Principes fondamentaux - Motivation des décisions - Appréciation des preuves - Risque de confusion - Mesures d'instruction",
     "validity_start_date": "2023-09-18",
     "created_at": "2026-05-18T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0046",
@@ -640,7 +685,8 @@
     "full_chain_label": "Concurrence - Principes fondamentaux - Conditions - Droits de la défense",
     "validity_start_date": "2024-10-19",
     "created_at": "2026-06-19T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0047",
@@ -654,7 +700,8 @@
     "full_chain_label": "Concurrence - Décisions administratives - Intérêt à agir - Publication - Portée",
     "validity_start_date": "2025-11-20",
     "created_at": "2026-07-20T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0048",
@@ -669,7 +716,8 @@
     "full_chain_label": "Concurrence - Décisions administratives - Appréciation des preuves - Usage sérieux - Marge de l’appréciation de l’Office - Examen d'office",
     "validity_start_date": "2026-12-21",
     "created_at": "2026-08-21T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0049",
@@ -682,7 +730,8 @@
     "full_chain_label": "Concurrence - Voies de recours - Délai de prescription - Procédure d’opposition",
     "validity_start_date": "2023-01-22",
     "created_at": "2026-09-22T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0050",
@@ -696,7 +745,8 @@
     "full_chain_label": "Concurrence - Voies de recours - Objectif - Motivation juridique - Opposabilité",
     "validity_start_date": "2024-02-23",
     "created_at": "2026-10-23T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0051",
@@ -711,7 +761,8 @@
     "full_chain_label": "Marché intérieur - Dispositions de procédure - Charge de la preuve - Erreur manifeste - Recours en annulation - Recevabilité",
     "validity_start_date": "2025-03-24",
     "created_at": "2026-01-24T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0052",
@@ -724,7 +775,8 @@
     "full_chain_label": "Marché intérieur - Dispositions de procédure - Principes généraux - Déchéance",
     "validity_start_date": "2026-04-25",
     "created_at": "2026-02-25T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0053",
@@ -738,7 +790,8 @@
     "full_chain_label": "Marché intérieur - Conditions de recevabilité - Appréciation des preuves - Usage sérieux - Marge de l’appréciation de l’Office",
     "validity_start_date": "2023-05-26",
     "created_at": "2026-03-26T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0054",
@@ -753,7 +806,8 @@
     "full_chain_label": "Marché intérieur - Conditions de recevabilité - Règles de procédure - Recevabilité - Compétence de l'Office - Délai de prescription",
     "validity_start_date": "2024-06-27",
     "created_at": "2026-04-27T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0055",
@@ -766,7 +820,8 @@
     "full_chain_label": "Marché intérieur - Principes fondamentaux - Publication - Objectif",
     "validity_start_date": "2025-07-01",
     "created_at": "2026-05-01T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0056",
@@ -780,7 +835,8 @@
     "full_chain_label": "Marché intérieur - Principes fondamentaux - Droits de la défense - Droits antérieurs - Sécurité juridique",
     "validity_start_date": "2026-08-02",
     "created_at": "2026-06-02T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0057",
@@ -795,7 +851,8 @@
     "full_chain_label": "Marché intérieur - Décisions administratives - Compétence de l'Office - Réexamen - Procédure d’opposition - Principes généraux",
     "validity_start_date": "2023-09-03",
     "created_at": "2026-07-03T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0058",
@@ -808,7 +865,8 @@
     "full_chain_label": "Marché intérieur - Décisions administratives - Usage sérieux - Mesures d'instruction",
     "validity_start_date": "2024-10-04",
     "created_at": "2026-08-04T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0059",
@@ -822,7 +880,8 @@
     "full_chain_label": "Marché intérieur - Voies de recours - Proportionnalité - Délai de recours - Erreur manifeste",
     "validity_start_date": "2025-11-05",
     "created_at": "2026-09-05T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0060",
@@ -837,7 +896,8 @@
     "full_chain_label": "Marché intérieur - Voies de recours - Publication - Objectif - Motivation juridique - Opposabilité",
     "validity_start_date": "2026-12-06",
     "created_at": "2026-10-06T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0061",
@@ -850,7 +910,8 @@
     "full_chain_label": "Propriété intellectuelle - Dispositions de procédure - Examen d'office - Caractère distinctif",
     "validity_start_date": "2023-01-07",
     "created_at": "2026-01-07T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0062",
@@ -864,7 +925,8 @@
     "full_chain_label": "Propriété intellectuelle - Dispositions de procédure - Procédure d’opposition - Contrôle de légalité - Déchéance",
     "validity_start_date": "2024-02-08",
     "created_at": "2026-02-08T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0063",
@@ -879,7 +941,8 @@
     "full_chain_label": "Propriété intellectuelle - Conditions de recevabilité - Opposabilité - Objectif - Appréciation des preuves - Usage sérieux",
     "validity_start_date": "2025-03-09",
     "created_at": "2026-03-09T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0064",
@@ -892,7 +955,8 @@
     "full_chain_label": "Propriété intellectuelle - Conditions de recevabilité - Sécurité juridique - Charge de la preuve",
     "validity_start_date": "2026-04-10",
     "created_at": "2026-04-10T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0065",
@@ -906,7 +970,8 @@
     "full_chain_label": "Propriété intellectuelle - Principes fondamentaux - Notion - Principes généraux - Déchéance",
     "validity_start_date": "2023-05-11",
     "created_at": "2026-05-11T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0066",
@@ -921,7 +986,8 @@
     "full_chain_label": "Propriété intellectuelle - Principes fondamentaux - Appréciation des preuves - Risque de confusion - Mesures d'instruction - Examen d'office",
     "validity_start_date": "2024-06-12",
     "created_at": "2026-06-12T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0067",
@@ -934,7 +1000,8 @@
     "full_chain_label": "Propriété intellectuelle - Décisions administratives - Procédure d’opposition - Contrôle de légalité",
     "validity_start_date": "2025-07-13",
     "created_at": "2026-07-13T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0068",
@@ -948,7 +1015,8 @@
     "full_chain_label": "Propriété intellectuelle - Décisions administratives - Publication - Portée - Protection juridictionnelle",
     "validity_start_date": "2026-08-14",
     "created_at": "2026-08-14T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0069",
@@ -963,7 +1031,8 @@
     "full_chain_label": "Propriété intellectuelle - Voies de recours - Erreur manifeste - Recours en annulation - Procédure de nullité - Compétence de l'Office",
     "validity_start_date": "2023-09-15",
     "created_at": "2026-09-15T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0070",
@@ -976,7 +1045,8 @@
     "full_chain_label": "Propriété intellectuelle - Voies de recours - Procédure d’opposition - Contrôle de légalité",
     "validity_start_date": "2024-10-16",
     "created_at": "2026-10-16T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0071",
@@ -990,7 +1060,8 @@
     "full_chain_label": "Aides d’État - Dispositions de procédure - Motivation juridique - Opposabilité - Motivation des décisions",
     "validity_start_date": "2025-11-17",
     "created_at": "2026-01-17T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0072",
@@ -1005,7 +1076,8 @@
     "full_chain_label": "Aides d’État - Dispositions de procédure - Erreur manifeste - Recours en annulation - Recevabilité - Mesures provisoires",
     "validity_start_date": "2026-12-18",
     "created_at": "2026-02-18T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0073",
@@ -1018,7 +1090,8 @@
     "full_chain_label": "Aides d’État - Conditions de recevabilité - Déchéance - Notification",
     "validity_start_date": "2023-01-19",
     "created_at": "2026-03-19T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0074",
@@ -1032,7 +1105,8 @@
     "full_chain_label": "Aides d’État - Conditions de recevabilité - Erreur manifeste - Recours en annulation - Procédure de nullité",
     "validity_start_date": "2024-02-20",
     "created_at": "2026-04-20T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0075",
@@ -1047,7 +1121,8 @@
     "full_chain_label": "Aides d’État - Principes fondamentaux - Recevabilité - Compétence de l'Office - Délai de prescription - Procédure d’opposition",
     "validity_start_date": "2025-03-21",
     "created_at": "2026-05-21T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0076",
@@ -1060,7 +1135,8 @@
     "full_chain_label": "Aides d’État - Principes fondamentaux - Conditions - Charge de la preuve",
     "validity_start_date": "2026-04-22",
     "created_at": "2026-06-22T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0077",
@@ -1074,7 +1150,8 @@
     "full_chain_label": "Aides d’État - Décisions administratives - Droits antérieurs - Sécurité juridique - Charge de la preuve",
     "validity_start_date": "2023-05-23",
     "created_at": "2026-07-23T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0078",
@@ -1089,7 +1166,8 @@
     "full_chain_label": "Aides d’État - Décisions administratives - Réexamen - Procédure d’opposition - Principes généraux - Déchéance",
     "validity_start_date": "2024-06-24",
     "created_at": "2026-08-24T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0079",
@@ -1102,7 +1180,8 @@
     "full_chain_label": "Aides d’État - Voies de recours - Mesures d'instruction - Décision définitive",
     "validity_start_date": "2025-07-25",
     "created_at": "2026-09-25T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0080",
@@ -1116,7 +1195,8 @@
     "full_chain_label": "Aides d’État - Voies de recours - Délai de recours - Erreur manifeste - Recours en annulation",
     "validity_start_date": "2026-08-26",
     "created_at": "2026-10-26T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0081",
@@ -1131,7 +1211,8 @@
     "full_chain_label": "Politique commerciale - Dispositions de procédure - Conditions - Droits de la défense - Irrecevabilité - Proportionnalité",
     "validity_start_date": "2023-09-27",
     "created_at": "2026-01-27T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0082",
@@ -1144,7 +1225,8 @@
     "full_chain_label": "Politique commerciale - Dispositions de procédure - Caractère distinctif - Conditions",
     "validity_start_date": "2024-10-01",
     "created_at": "2026-02-01T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0083",
@@ -1158,7 +1240,8 @@
     "full_chain_label": "Politique commerciale - Conditions de recevabilité - Appréciation des preuves - Usage sérieux - Marge de l’appréciation de l’Office",
     "validity_start_date": "2025-11-02",
     "created_at": "2026-03-02T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0084",
@@ -1173,7 +1256,8 @@
     "full_chain_label": "Politique commerciale - Conditions de recevabilité - Objectif - Appréciation des preuves - Usage sérieux - Mesures d'instruction",
     "validity_start_date": "2026-12-03",
     "created_at": "2026-04-03T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0085",
@@ -1186,7 +1270,8 @@
     "full_chain_label": "Politique commerciale - Principes fondamentaux - Charge de la preuve - Irrecevabilité",
     "validity_start_date": "2023-01-04",
     "created_at": "2026-05-04T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0086",
@@ -1200,7 +1285,8 @@
     "full_chain_label": "Politique commerciale - Principes fondamentaux - Principes généraux - Déchéance - Notification",
     "validity_start_date": "2024-02-05",
     "created_at": "2026-06-05T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0087",
@@ -1215,7 +1301,8 @@
     "full_chain_label": "Politique commerciale - Décisions administratives - Risque de confusion - Mesures d'instruction - Examen d'office - Caractère distinctif",
     "validity_start_date": "2025-03-06",
     "created_at": "2026-07-06T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0088",
@@ -1228,7 +1315,8 @@
     "full_chain_label": "Politique commerciale - Décisions administratives - Appréciation des preuves - Usage sérieux",
     "validity_start_date": "2026-04-07",
     "created_at": "2026-08-07T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0089",
@@ -1242,7 +1330,8 @@
     "full_chain_label": "Politique commerciale - Voies de recours - Portée - Protection juridictionnelle - Protection des données",
     "validity_start_date": "2023-05-08",
     "created_at": "2026-09-08T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0090",
@@ -1257,7 +1346,8 @@
     "full_chain_label": "Politique commerciale - Voies de recours - Publication - Objectif - Motivation juridique - Opposabilité",
     "validity_start_date": "2024-06-09",
     "created_at": "2026-10-09T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0091",
@@ -1270,7 +1360,8 @@
     "full_chain_label": "Procédure juridictionnelle - Dispositions de procédure - Contrôle de légalité - Réexamen",
     "validity_start_date": "2025-07-10",
     "created_at": "2026-01-10T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0092",
@@ -1284,7 +1375,8 @@
     "full_chain_label": "Procédure juridictionnelle - Dispositions de procédure - Opposabilité - Motivation des décisions - Appréciation des preuves",
     "validity_start_date": "2026-08-11",
     "created_at": "2026-02-11T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0093",
@@ -1299,7 +1391,8 @@
     "full_chain_label": "Procédure juridictionnelle - Conditions de recevabilité - Recours en annulation - Recevabilité - Mesures provisoires - Règles de procédure",
     "validity_start_date": "2023-09-12",
     "created_at": "2026-03-12T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0094",
@@ -1312,7 +1405,8 @@
     "full_chain_label": "Procédure juridictionnelle - Conditions de recevabilité - Notification - Intérêt à agir",
     "validity_start_date": "2024-10-13",
     "created_at": "2026-04-13T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0095",
@@ -1326,7 +1420,8 @@
     "full_chain_label": "Procédure juridictionnelle - Principes fondamentaux - Publication - Objectif - Motivation juridique",
     "validity_start_date": "2025-11-14",
     "created_at": "2026-05-14T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0096",
@@ -1341,7 +1436,8 @@
     "full_chain_label": "Procédure juridictionnelle - Principes fondamentaux - Compétence de l'Office - Délai de prescription - Procédure d’opposition - Contrôle de légalité",
     "validity_start_date": "2026-12-15",
     "created_at": "2026-06-15T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0097",
@@ -1354,7 +1450,8 @@
     "full_chain_label": "Procédure juridictionnelle - Décisions administratives - Procédure d’opposition - Contrôle de légalité",
     "validity_start_date": "2023-01-16",
     "created_at": "2026-07-16T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0098",
@@ -1368,7 +1465,8 @@
     "full_chain_label": "Procédure juridictionnelle - Décisions administratives - Sécurité juridique - Charge de la preuve - Irrecevabilité",
     "validity_start_date": "2024-02-17",
     "created_at": "2026-08-17T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0099",
@@ -1383,7 +1481,8 @@
     "full_chain_label": "Procédure juridictionnelle - Voies de recours - Procédure d’opposition - Principes généraux - Déchéance - Notification",
     "validity_start_date": "2025-03-18",
     "created_at": "2026-09-18T09:00:00.000Z",
-    "status": "Active"
+    "status": "Active",
+    "validity_end_date": "1900-01-01"
   },
   {
     "id": "REF-0100",
@@ -1396,6 +1495,7 @@
     "full_chain_label": "Procédure juridictionnelle - Voies de recours - Décision définitive - Risque de confusion",
     "validity_start_date": "2026-04-19",
     "created_at": "2026-10-19T09:00:00.000Z",
-    "status": "Brouillon"
+    "status": "Brouillon",
+    "validity_end_date": "1900-01-01"
   }
 ]
