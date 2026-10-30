@@ -1,5 +1,5 @@
 {
-  "_note": "Relations strictement fictives pour la démonstration. Aucune donnée institutionnelle.",
+  "_note": "Métadonnées de démonstration entièrement fictives. Les liens entre branches sont calculés depuis les termes et métadonnées réellement présents dans le jeu de démonstration. Aucune liaison arbitraire.",
   "types": [
     "Indicateurs de la fiche de préexamen",
     "Descripteurs de la fiche de préexamen",
@@ -32,12 +32,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0008"
-        }
       ]
     },
     "REF-0002": {
@@ -53,12 +47,6 @@
           "title": "Document fictif 0002",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0009"
         }
       ]
     },
@@ -76,12 +64,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0010"
-        }
       ]
     },
     "REF-0004": {
@@ -97,12 +79,6 @@
           "title": "Document fictif 0004",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0011"
         }
       ]
     },
@@ -120,12 +96,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0012"
-        }
       ]
     },
     "REF-0006": {
@@ -141,12 +111,6 @@
           "title": "Document fictif 0006",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0013"
         }
       ]
     },
@@ -164,12 +128,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0014"
-        }
       ]
     },
     "REF-0008": {
@@ -185,12 +143,6 @@
           "title": "Document fictif 0008",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0015"
         }
       ]
     },
@@ -208,12 +160,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0016"
-        }
       ]
     },
     "REF-0010": {
@@ -229,12 +175,6 @@
           "title": "Document fictif 0010",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0017"
         }
       ]
     },
@@ -252,12 +192,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0018"
-        }
       ]
     },
     "REF-0012": {
@@ -273,12 +207,6 @@
           "title": "Document fictif 0012",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0019"
         }
       ]
     },
@@ -296,12 +224,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0020"
-        }
       ]
     },
     "REF-0014": {
@@ -317,12 +239,6 @@
           "title": "Document fictif 0014",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0021"
         }
       ]
     },
@@ -340,12 +256,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0022"
-        }
       ]
     },
     "REF-0016": {
@@ -361,12 +271,6 @@
           "title": "Document fictif 0016",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0023"
         }
       ]
     },
@@ -384,12 +288,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0024"
-        }
       ]
     },
     "REF-0018": {
@@ -405,12 +303,6 @@
           "title": "Document fictif 0018",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0025"
         }
       ]
     },
@@ -428,12 +320,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0026"
-        }
       ]
     },
     "REF-0020": {
@@ -449,12 +335,6 @@
           "title": "Document fictif 0020",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0027"
         }
       ]
     },
@@ -472,12 +352,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0028"
-        }
       ]
     },
     "REF-0022": {
@@ -493,12 +367,6 @@
           "title": "Document fictif 0022",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0029"
         }
       ]
     },
@@ -516,12 +384,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0030"
-        }
       ]
     },
     "REF-0024": {
@@ -537,12 +399,6 @@
           "title": "Document fictif 0024",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0031"
         }
       ]
     },
@@ -560,12 +416,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0032"
-        }
       ]
     },
     "REF-0026": {
@@ -581,12 +431,6 @@
           "title": "Document fictif 0026",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0033"
         }
       ]
     },
@@ -604,12 +448,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0034"
-        }
       ]
     },
     "REF-0028": {
@@ -625,12 +463,6 @@
           "title": "Document fictif 0028",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0035"
         }
       ]
     },
@@ -648,12 +480,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0036"
-        }
       ]
     },
     "REF-0030": {
@@ -669,12 +495,6 @@
           "title": "Document fictif 0030",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0037"
         }
       ]
     },
@@ -692,12 +512,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0038"
-        }
       ]
     },
     "REF-0032": {
@@ -713,12 +527,6 @@
           "title": "Document fictif 0032",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0039"
         }
       ]
     },
@@ -736,12 +544,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0040"
-        }
       ]
     },
     "REF-0034": {
@@ -757,12 +559,6 @@
           "title": "Document fictif 0034",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0041"
         }
       ]
     },
@@ -780,12 +576,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0042"
-        }
       ]
     },
     "REF-0036": {
@@ -801,12 +591,6 @@
           "title": "Document fictif 0036",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0043"
         }
       ]
     },
@@ -824,12 +608,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0044"
-        }
       ]
     },
     "REF-0038": {
@@ -845,12 +623,6 @@
           "title": "Document fictif 0038",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0045"
         }
       ]
     },
@@ -868,12 +640,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0046"
-        }
       ]
     },
     "REF-0040": {
@@ -889,12 +655,6 @@
           "title": "Document fictif 0040",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0047"
         }
       ]
     },
@@ -912,12 +672,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0048"
-        }
       ]
     },
     "REF-0042": {
@@ -933,12 +687,6 @@
           "title": "Document fictif 0042",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0049"
         }
       ]
     },
@@ -956,12 +704,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0050"
-        }
       ]
     },
     "REF-0044": {
@@ -977,12 +719,6 @@
           "title": "Document fictif 0044",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0051"
         }
       ]
     },
@@ -1000,12 +736,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0052"
-        }
       ]
     },
     "REF-0046": {
@@ -1021,12 +751,6 @@
           "title": "Document fictif 0046",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0053"
         }
       ]
     },
@@ -1044,12 +768,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0054"
-        }
       ]
     },
     "REF-0048": {
@@ -1065,12 +783,6 @@
           "title": "Document fictif 0048",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0055"
         }
       ]
     },
@@ -1088,12 +800,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0056"
-        }
       ]
     },
     "REF-0050": {
@@ -1109,12 +815,6 @@
           "title": "Document fictif 0050",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0057"
         }
       ]
     },
@@ -1132,12 +832,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0058"
-        }
       ]
     },
     "REF-0052": {
@@ -1153,12 +847,6 @@
           "title": "Document fictif 0052",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0059"
         }
       ]
     },
@@ -1176,12 +864,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0060"
-        }
       ]
     },
     "REF-0054": {
@@ -1197,12 +879,6 @@
           "title": "Document fictif 0054",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0061"
         }
       ]
     },
@@ -1220,12 +896,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0062"
-        }
       ]
     },
     "REF-0056": {
@@ -1241,12 +911,6 @@
           "title": "Document fictif 0056",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0063"
         }
       ]
     },
@@ -1264,12 +928,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0064"
-        }
       ]
     },
     "REF-0058": {
@@ -1285,12 +943,6 @@
           "title": "Document fictif 0058",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0065"
         }
       ]
     },
@@ -1308,12 +960,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0066"
-        }
       ]
     },
     "REF-0060": {
@@ -1329,12 +975,6 @@
           "title": "Document fictif 0060",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0067"
         }
       ]
     },
@@ -1352,12 +992,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0068"
-        }
       ]
     },
     "REF-0062": {
@@ -1373,12 +1007,6 @@
           "title": "Document fictif 0062",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0069"
         }
       ]
     },
@@ -1396,12 +1024,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0070"
-        }
       ]
     },
     "REF-0064": {
@@ -1417,12 +1039,6 @@
           "title": "Document fictif 0064",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0071"
         }
       ]
     },
@@ -1440,12 +1056,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0072"
-        }
       ]
     },
     "REF-0066": {
@@ -1461,12 +1071,6 @@
           "title": "Document fictif 0066",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0073"
         }
       ]
     },
@@ -1484,12 +1088,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0074"
-        }
       ]
     },
     "REF-0068": {
@@ -1505,12 +1103,6 @@
           "title": "Document fictif 0068",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0075"
         }
       ]
     },
@@ -1528,12 +1120,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0076"
-        }
       ]
     },
     "REF-0070": {
@@ -1549,12 +1135,6 @@
           "title": "Document fictif 0070",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0077"
         }
       ]
     },
@@ -1572,12 +1152,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0078"
-        }
       ]
     },
     "REF-0072": {
@@ -1593,12 +1167,6 @@
           "title": "Document fictif 0072",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0079"
         }
       ]
     },
@@ -1616,12 +1184,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0080"
-        }
       ]
     },
     "REF-0074": {
@@ -1637,12 +1199,6 @@
           "title": "Document fictif 0074",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0081"
         }
       ]
     },
@@ -1660,12 +1216,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0082"
-        }
       ]
     },
     "REF-0076": {
@@ -1681,12 +1231,6 @@
           "title": "Document fictif 0076",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0083"
         }
       ]
     },
@@ -1704,12 +1248,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0084"
-        }
       ]
     },
     "REF-0078": {
@@ -1725,12 +1263,6 @@
           "title": "Document fictif 0078",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0085"
         }
       ]
     },
@@ -1748,12 +1280,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0086"
-        }
       ]
     },
     "REF-0080": {
@@ -1769,12 +1295,6 @@
           "title": "Document fictif 0080",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0087"
         }
       ]
     },
@@ -1792,12 +1312,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0088"
-        }
       ]
     },
     "REF-0082": {
@@ -1813,12 +1327,6 @@
           "title": "Document fictif 0082",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0089"
         }
       ]
     },
@@ -1836,12 +1344,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0090"
-        }
       ]
     },
     "REF-0084": {
@@ -1857,12 +1359,6 @@
           "title": "Document fictif 0084",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0091"
         }
       ]
     },
@@ -1880,12 +1376,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0092"
-        }
       ]
     },
     "REF-0086": {
@@ -1901,12 +1391,6 @@
           "title": "Document fictif 0086",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0093"
         }
       ]
     },
@@ -1924,12 +1408,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0094"
-        }
       ]
     },
     "REF-0088": {
@@ -1945,12 +1423,6 @@
           "title": "Document fictif 0088",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0095"
         }
       ]
     },
@@ -1968,12 +1440,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0096"
-        }
       ]
     },
     "REF-0090": {
@@ -1989,12 +1455,6 @@
           "title": "Document fictif 0090",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0097"
         }
       ]
     },
@@ -2012,12 +1472,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0098"
-        }
       ]
     },
     "REF-0092": {
@@ -2033,12 +1487,6 @@
           "title": "Document fictif 0092",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0099"
         }
       ]
     },
@@ -2056,12 +1504,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0100"
-        }
       ]
     },
     "REF-0094": {
@@ -2077,12 +1519,6 @@
           "title": "Document fictif 0094",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0001"
         }
       ]
     },
@@ -2100,12 +1536,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0002"
-        }
       ]
     },
     "REF-0096": {
@@ -2121,12 +1551,6 @@
           "title": "Document fictif 0096",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0003"
         }
       ]
     },
@@ -2144,12 +1568,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0004"
-        }
       ]
     },
     "REF-0098": {
@@ -2165,12 +1583,6 @@
           "title": "Document fictif 0098",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0005"
         }
       ]
     },
@@ -2188,12 +1600,6 @@
           "kind": "Document associé",
           "status": "Simulation"
         }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0006"
-        }
       ]
     },
     "REF-0100": {
@@ -2209,12 +1615,6 @@
           "title": "Document fictif 0100",
           "kind": "Document associé",
           "status": "Simulation"
-        }
-      ],
-      "links": [
-        {
-          "kind": "Référence liée",
-          "target": "REF-0007"
         }
       ]
     }
