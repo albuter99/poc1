@@ -53,7 +53,7 @@ class ImportTest(unittest.TestCase):
             mod.build_record(SAMPLE, req)
 
     def test_long_base_allowed(self):
-        extended = "Droit institutionnel - " + "Sous-niveau " * 20
+        extended = "Droit institutionnel - " + " - ".join(["Sous-niveau"] * 20)
         sample = [dict(SAMPLE[0], full_chain_label=extended + " - Portée")]
         req = dict(REQUEST, base_chain=extended)
         self.assertEqual(mod.build_record(sample, req)["base_chain"], extended)
