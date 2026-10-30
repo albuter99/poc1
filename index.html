@@ -45,7 +45,7 @@ function next(){state.error="";if(state.step===2&&!state.base){state.error="Veui
 function commit(){
  const full=state.base+" - "+state.terms.join(" - ");
  if(state.records.some(x=>x.full_chain_label===full)){state.error="Cette chaîne existe déjà.";state.step=4;render();return}
- const next=Math.max(0,...state.records.map(x=>Number((String(x.id).match(/^REF-(\\d+)$/)||[])[1])||0));
+ const next=Math.max(0,...state.records.map(x=>Number((String(x.id).match(/^REF-(\d+)$/)||[])[1])||0));
  const item={id:"REF-"+String(next+1).padStart(4,"0"),root:state.base.split(" - ")[0],base_chain:state.base,selected_terms:[...state.terms],full_chain_label:full,validity_start_date:state.date,validity_end_date:state.endDate||"1900-01-01",created_at:new Date().toISOString(),status:"Active",local_only:true};
  state.records.push(item);
  if(!save()){state.records.pop();state.error="Enregistrement local impossible : stockage du navigateur indisponible.";state.step=4;render();return}
