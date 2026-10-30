@@ -6,12 +6,10 @@ the resulting static data/stats.json. Local browser drafts are NOT part of it.
 """
 from __future__ import annotations
 
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 import json
-import re
-import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data" / "chains.json"
@@ -40,12 +38,9 @@ def block(key, title, value, subtitle, rows=None, kind="bars", note=None,
 def compute(chains):
     all_paths = [entries(c) for c in chains]
     keywords = Counter(t for path in all_paths for t in path)
-    # Maillons used here = consecutive parent -> child pairs, rather than
-    # branch membership records. We do not have separate IDs for maillons.
-    maillons = Counter((a, b) for path in all_paths for a, b in zip(path, path[1:]))
     chain_names = Counter(" - ".join(path) for path in all_paths if path)
     lengths = Counter(len(path) for path in all_paths)
-    metadata = json.loads(GRAPH.read_text(encoding="utf-8")) if GRAPH.exists() else {"relations": {}}
+    metadata = json.loads(poc_metadata_json) if "poc_metadata_json" in globals() else (json.loads(GRAPH.read_text(encoding="utf-8")) if GRAPH.exists() else {"relations": {}})
     relations = metadata.get("relations", {})
     index_types = Counter(c.get("type_indexation") or relations.get(c.get("id"), {}).get("type_indexation") or "Non renseigné" for c in chains)
     dates = Counter()
