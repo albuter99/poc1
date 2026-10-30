@@ -24,7 +24,8 @@ const response=await fetch("./scripts/build_stats.py",{cache:"no-store"});if(!re
 pythonSource=await response.text();instance=py;return py
 })();return pythonLoader}
 async function pythonStats(records){const py=await pythonRuntime();py.globals.set("poc_records_json",JSON.stringify(records));py.globals.set("poc_source",pythonSource);
-const result=await py.runPythonAsync("import json\\nmodule_globals={'__name__':'poc1_stats','__file__':'/home/pyodide/scripts/build_stats.py'}\\nexec(poc_source,module_globals)\\njson.dumps(module_globals['compute'](json.loads(poc_records_json)),ensure_ascii=False)".replaceAll("\\\\n","\\n"));
+const code=["import json","module_globals={'__name__':'poc1_stats','__file__':'/home/pyodide/scripts/build_stats.py'}","exec(poc_source,module_globals)","json.dumps(module_globals['compute'](json.loads(poc_records_json)),ensure_ascii=False)"].join("\n");
+const result=await py.runPythonAsync(code);
 return JSON.parse(result)}
 function show(host,data,records,mode){if(!host.isConnected)return;const local=records.filter(x=>x.local_only||String(x.id).startsWith("LOCAL-")).length;const note=mode==="local"?'<span class="analytics-source">Calcul Python dans le navigateur · '+records.length+' chaînes, dont '+local+' locales. Données de démonstration.</span>':'<span class="analytics-local-note">Calcul Python local en cours pour '+records.length+' chaînes…</span>';
 host.innerHTML='<div class="analytics-section-head"><div><h2>Statistiques et analyses</h2><p>Vue compacte · cliquez sur une statistique pour l’agrandir</p></div><div class="analytics-section-source">'+note+'</div></div><div class="analytics-grid">'+data.metrics.map(tile).join("")+'</div>';host.querySelectorAll("[data-metric]").forEach(btn=>btn.onclick=()=>{const metric=data.metrics.find(x=>x.key===btn.dataset.metric);if(metric)openMetric(metric,btn)})}
