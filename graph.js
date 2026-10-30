@@ -5,7 +5,7 @@ const NS="http://www.w3.org/2000/svg",palette={chain:"#326cc3",term:"#47a66a",ty
 let meta=null,records=[],active=null,graph=null,selected=null,zoom=1,pan={x:0,y:0},drag=null,previousFocus=null,expanded=new Set(),focusedDocument=null;
 function safe(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function label(s,n=23){const a=String(s||"");return a.length>n?a.slice(0,n-1)+"…":a}
-function data(c){const i=records.findIndex(x=>x.id===c.id);const entries=meta?.relations||{};return entries[c.id]||{type_indexation:meta?.types?.[Math.max(0,i)%15]||"Non défini",archetype:"Non défini",matiere:c.root||"Non défini",cote:"Non défini",etat:c.status||"Active",commentaire:"Données fictives",documents:[],links:[]}}
+function data(c){const i=records.findIndex(x=>x.id===c.id);const entries=meta?.relations||{};return entries[c.id]||{type_indexation:c.type_indexation||meta?.types?.[Math.max(0,i)%15]||"Non défini",archetype:"Non défini",matiere:c.root||"Non défini",cote:"Non défini",etat:c.status||"Active",commentaire:"Données fictives",documents:[],links:[]}}
 function build(c){
 const m=data(c),pieces=c.full_chain_label.split(" - "),nodes=[],edges=[];
 const add=(id,name,type,fields,x,y)=>{nodes.push({id,name,type,fields,x,y});return id};
