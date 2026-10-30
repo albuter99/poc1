@@ -25,6 +25,8 @@ jobs:
         with:
           ref: main
           persist-credentials: true
+      - name: Test Python chain importer
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
       - name: Validate issue and append chain
         id: append
         env:
