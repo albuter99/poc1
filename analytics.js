@@ -31,7 +31,7 @@ function show(host,data,records,mode){if(!host.isConnected)return;const local=re
 host.innerHTML='<div class="analytics-section-head"><div><h2>Statistiques et analyses</h2><p>Vue compacte · cliquez sur une statistique pour l’agrandir</p></div><div class="analytics-section-source">'+note+'</div></div><div class="analytics-grid">'+data.metrics.map(tile).join("")+'</div>';host.querySelectorAll("[data-metric]").forEach(btn=>btn.onclick=()=>{const metric=data.metrics.find(x=>x.key===btn.dataset.metric);if(metric)openMetric(metric,btn)})}
 async function render(records){const host=document.getElementById("analytics-host");if(!host)return;try{
 const initial=await get();if(!host.isConnected)return;
-const isLocal=records.length!==initial.record_count||records.some(x=>x.local_only||String(x.id).startsWith("LOCAL-"));
+const isLocal=records.length!==initial.record_count||records.some(x=>x.local_only||x.local_modified||String(x.id).startsWith("LOCAL-"));
 if(!isLocal){show(host,initial,records,"local");return}
 show(host,initial,records,"pending");
 try{const fresh=await pythonStats(records);if(host.isConnected)show(host,fresh,records,"local")}
