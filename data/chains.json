@@ -10,8 +10,12 @@
     "full_chain_label": "Marque de l’Union européenne - Dispositions de procédure - Marge de l’appréciation de l’Office - Droits de la défense",
     "validity_start_date": "2023-01-01",
     "created_at": "2026-01-01T09:00:00.000Z",
-    "status": "Brouillon",
-    "validity_end_date": "1900-01-01"
+    "status": "VA",
+    "validity_end_date": "1900-01-01",
+    "types_indexation": [
+      "Indicateurs de la fiche de préexamen",
+      "Descripteurs de la fiche de préexamen"
+    ]
   },
   {
     "id": "REF-0002",
@@ -205,8 +209,12 @@
     "full_chain_label": "Droit institutionnel - Conditions de recevabilité - Caractère distinctif - Conditions - Droits de la défense",
     "validity_start_date": "2024-02-14",
     "created_at": "2026-04-14T09:00:00.000Z",
-    "status": "Active",
-    "validity_end_date": "1900-01-01"
+    "status": "EC",
+    "validity_end_date": "1900-01-01",
+    "types_indexation": [
+      "Indicateurs de la demande d'admission du pourvoi",
+      "Indicateurs de l'arrêt/ordonnance"
+    ]
   },
   {
     "id": "REF-0015",
@@ -385,8 +393,12 @@
     "full_chain_label": "Fonction publique - Principes fondamentaux - Notification - Intérêt à agir - Publication",
     "validity_start_date": "2024-02-26",
     "created_at": "2026-06-26T09:00:00.000Z",
-    "status": "Active",
-    "validity_end_date": "1900-01-01"
+    "status": "EC",
+    "validity_end_date": "1900-01-01",
+    "types_indexation": [
+      "Indicateurs de l'analyse de premier contrôle",
+      "Descripteurs de l'analyse de premier contrôle"
+    ]
   },
   {
     "id": "REF-0027",
@@ -730,8 +742,12 @@
     "full_chain_label": "Concurrence - Voies de recours - Délai de prescription - Procédure d’opposition",
     "validity_start_date": "2023-01-22",
     "created_at": "2026-09-22T09:00:00.000Z",
-    "status": "Active",
-    "validity_end_date": "1900-01-01"
+    "status": "VA",
+    "validity_end_date": "1900-01-01",
+    "types_indexation": [
+      "Mots-clés de la requête en pourvoi",
+      "Mots-clés de la DDP"
+    ]
   },
   {
     "id": "REF-0050",
