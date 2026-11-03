@@ -1,29 +1,31 @@
-# poc1
-Process Mock-up
+# Poc1 · MDM - Gestion de chaînes de référence
 
-## Statistiques du dashboard (Python)
+Prototype de démonstration avec données fictives, publié par GitHub Pages.
 
-Les indicateurs sont calculés **exclusivement par Python** dans `scripts/build_stats.py` et produits sous forme de `data/stats.json` à chaque déploiement GitHub Pages. Le navigateur ne calcule pas ces indicateurs : il affiche seulement les résultats pré-calculés dans des vignettes compactes et des fenêtres détaillées.
+## Fonctionnalités
 
-Pour recalculer en local :
+- Création en quatre étapes, en sélectionnant directement un niveau de l'arborescence, puis les termes, les dates et zéro ou plusieurs types d'indexation.
+- Recherche par terme ou référence, filtres multisélection des types d'indexation et états `HI - Historique`, `VA - Validé`, `EC - En cours`.
+- Répertoire triable en ordre croissant ou décroissant depuis les en-têtes des colonnes.
+- Crayon par chaîne pour modifier les types d'indexation, les dates de validité et l'état. `Date dernière modification` est générée automatiquement lors de chaque modification. La `Date de défaut` reste vide lorsqu'elle n'est pas définie.
+- Exploration arborescente et graphe des relations.
+- Tableau de bord avec sept statistiques calculées uniquement en Python : termes distincts, nombre total de termes (occurrences), chaînes distinctes, longueur minimale et maximale des chaînes, longueur par langue (en attente de données LNG), répartition par type d'indexation et nombre de chaînes créées ce mois-ci. Une chaîne ayant plusieurs types contribue à chacun d'eux.
+
+## Statistiques Python
+
+Le script `scripts/build_stats.py` produit `data/stats.json` lors du déploiement GitHub Pages. Après la création ou modification d'une chaîne locale, Pyodide exécute le **même** code Python dans le navigateur pour recalculer les indicateurs sans serveur supplémentaire. Le chargement initial de Pyodide requiert une connexion Internet.
+
+Pour produire les statistiques localement :
 
 ```bash
 python3 scripts/build_stats.py
 python3 -m http.server 8000
 ```
 
-Le script est autonome, sans dépendances externes, et ne modifie pas `chains.json`.
+Les dates `created_at` de la base de démonstration sont fictives. `Nouvelles entrées ce mois` compte les chaînes dont la date de création est dans le mois actuel, en UTC, sans pourcentage. Les langues LNG ne sont pas renseignées par chaîne et l'indicateur correspondant reste indisponible.
 
-**Définitions :** un mot-clé distinct correspond à un libellé exact, accents compris. Un *maillon distinct* est provisoirement une paire ordonnée de termes voisins. Les chaînes distinctes sont les séquences complètes uniques. La longueur est le nombre de termes de la chaîne et le domaine est dérivé du premier niveau.
+## Sauvegarde et limites
 
-**Limites :** la répartition par langue (LNG), les maillons orphelins et les synonymes/variantes sont signalés « À compléter », car le modèle de données ne contient pas les référentiels nécessaires. Ne pas interpréter ces absences comme des zéros. Les dates de création sont fictives. Les chaînes enregistrées dans le `localStorage` du navigateur ne sont **pas** incluses dans les indicateurs Python tant qu'elles ne sont pas ajoutées dans le JSON du dépôt et redéployées.
+Le bouton `Sauvegarder` ainsi que l'édition au crayon enregistrent automatiquement les changements dans `localStorage`, sur le navigateur actif. Les changements sont restaurés au rechargement du site, y compris pour les chaînes initiales du JSON. Ils ne sont **ni synchronisés** entre ordinateurs, ni écrits dans GitHub ou dans l'instance institutionnelle MDM.
 
-
-
-## Mode démonstration : sauvegarde immédiate et analyses Python
-
-Le bouton **Sauvegarder** enregistre directement la nouvelle chaîne dans le stockage local du navigateur, sans GitHub Issues ni étape de validation. Les nouvelles chaînes sont accessibles immédiatement dans le répertoire, l'arborescence et le graphe.
-
-Le tableau de bord utilise le même algorithme de statistiques Python dans deux contextes : GitHub Actions génère `data/stats.json` à partir des données publiques versionnées ; pour les nouvelles chaînes locales, Pyodide exécute directement `scripts/build_stats.py` dans le navigateur et recalcule les indicateurs. Pyodide est chargé depuis un CDN lors du premier calcul local, ce qui nécessite une connexion internet et peut prendre un moment. Aucun programme n'est à installer.
-
-**Limite importante pour la présentation :** les chaînes ajoutées localement restent sur ce navigateur et ne se synchronisent pas entre utilisateurs ni appareils. Ce mode est adapté à une démonstration individuelle, mais une application multi-utilisateur avec des données partagées nécessitera un service de persistance sécurisé (backend + authentification). Les données réelles et confidentielles ne doivent pas être enregistrées dans ce prototype public.
+Cette architecture sert aux démonstrations. Une application partagée en production nécessiterait un backend authentifié, une persistence centrale, des contrôles d'accès et un audit. N'utilisez pas de données personnelles ou institutionnelles confidentielles dans ce prototype.
