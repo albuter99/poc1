@@ -7,7 +7,7 @@ the resulting static data/stats.json. Local browser drafts are NOT part of it.
 from __future__ import annotations
 
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 import json
 
@@ -42,7 +42,17 @@ def compute(chains):
     lengths = Counter(len(path) for path in all_paths)
     metadata = json.loads(poc_metadata_json) if "poc_metadata_json" in globals() else (json.loads(GRAPH.read_text(encoding="utf-8")) if GRAPH.exists() else {"relations": {}})
     relations = metadata.get("relations", {})
-    index_types = Counter(c.get("type_indexation") or relations.get(c.get("id"), {}).get("type_indexation") or "Non renseigné" for c in chains)
+    index_types = Counter()
+    for chain in chains:
+        value = chain.get("types_indexation", chain.get("type_indexation"))
+        if value is None:
+            value = relations.get(chain.get("id"), {}).get("type_indexation")
+        kinds = value if isinstance(value, list) else ([value] if value else [])
+        for kind in set(str(kind).strip() for kind in kinds if str(kind).strip()):
+            index_types[kind] += 1
+    missing = sum(1 for chain in chains if not (chain.get("types_indexation", chain.get("type_indexation")) or relations.get(chain.get("id"), {}).get("type_indexation")))
+    if missing:
+        index_types["Sans type d’indexation"] += missing
     dates = Counter()
     for c in chains:
         raw = str(c.get("created_at") or "")
@@ -52,28 +62,19 @@ def compute(chains):
         except (ValueError, TypeError):
             pass
     monthly = [{"label": mon, "value": count} for mon, count in sorted(dates.items())]
-    last = sorted(dates)[-1] if dates else None
-    prev = None
-    if last:
-        yy, mm = map(int, last.split("-"))
-        prev = f"{yy-1}-12" if mm == 1 else f"{yy}-{mm-1:02d}"
-    current_count = dates[last] if last else None
-    prior_count = dates.get(prev, 0) if prev else None
-    rate = ((current_count - prior_count) / prior_count * 100
-            if current_count is not None and prior_count else None)
+    current_month = datetime.now(timezone.utc).strftime("%Y-%m")
+    current_count = dates.get(current_month, 0)
     maximum = max(lengths) if lengths else 0
     minimum = min(lengths) if lengths else 0
     distinct = len(chain_names)
     output = [
         block("keywords_total", "Termes distincts", len(keywords), "Termes uniques exacts",
               ordered(keywords, 10), note="Les termes sont comparés à l'identique, accents compris. Les termes de niveau 1 sont inclus."),
-        block("keywords_frequency", "Fréquence des termes", sum(keywords.values()), "Occurrences totales",
-              ordered(keywords, 30), note="Nombre de chaînes contenant chaque mot-clé, compté une fois par position."),
+        block("keywords_frequency", "Nombre total de termes", sum(keywords.values()), "Occurrences de termes dans les chaînes",
+              ordered(keywords, 30), note="Compte chaque occurrence d’un terme dans les chaînes, y compris les répétitions entre chaînes."),
         block("chains_distinct", "Chaînes distinctes", distinct, "Libellés complets uniques",
               ordered(chain_names, 12), note="Une chaîne est distincte si sa séquence complète ordonnée diffère."),
-        block("chains_frequency", "Fréquence des chaînes", len(chains), "Enregistrements totaux",
-              ordered(chain_names, 30), note="Compte les répétitions exactes d'une même séquence complète."),
-        block("length_range", "Longueur min. / max.", f"{minimum} / {maximum}", "Nombre de termes par chaîne",
+        block("length_range", "Longueur min. / max. des chaînes", f"{minimum} / {maximum}", "Nombre de termes par chaîne",
               [{"label": f"{n} termes", "value": lengths[n]} for n in sorted(lengths, reverse=True)],
               note="La profondeur est le nombre de termes qui composent la chaîne, y compris le niveau racine."),
         block("length_language", "Longueur par langue (LNG)", None, "Langues des chaînes non renseignées",
@@ -81,23 +82,14 @@ def compute(chains):
               note="La langue de l'interface ne constitue pas une langue de chaîne. Un champ LNG par chaîne est nécessaire."),
         block("indexation_types", "Répartition par type d’indexation", len(index_types), "Types d’indexation",
               ordered(index_types, 30), note="Répartition calculée à partir des types d’indexation enregistrés dans les chaînes et les métadonnées de démonstration.", source="data/chains.json et data/graph-relations.json"),
-        block("orphan_maillons", "Proportion de maillons orphelins", None, "Référentiel des maillons absent",
-              kind="unavailable", status="pending",
-              note="Impossible de déterminer des maillons orphelins sans un catalogue de maillons indépendant des chaînes."),
-        block("monthly_new", "Nouvelles entrées par mois", rate, "Variation du dernier mois (en %)" if rate is not None else "Taux non calculable",
-              monthly, kind="timeline",
-              note=("Les dates created_at sont fictives. Variation calculée entre " + str(last) + " et " + str(prev) +
-                    " lorsque le mois précédent contient au moins une entrée. Sinon taux indéfini."),
-              unit="%" if rate is not None else None),
-        block("synonyms", "Synonymes / variantes", None, "Aucun catalogue de synonymes",
-              kind="unavailable", status="pending",
-              note="Ne pas déduire des synonymes de chaînes similaires : une table de correspondances explicite est nécessaire."),
+        block("monthly_new", "Nouvelles entrées ce mois", current_count, "Chaînes créées en " + current_month,
+              monthly, kind="timeline", note="Nombre de chaînes créées durant le mois calendaire courant (UTC), calculé à partir de created_at. Les dates du jeu initial sont fictives."),
 
     ]
     return {
         "schema_version": 1, "origin": "python", "source": "data/chains.json",
         "record_count": len(chains), "metrics": output,
-        "warning": "Statistiques calculées en Python uniquement sur le JSON versionné. Les créations locales du navigateur ne sont pas incluses.",
+        "warning": "Statistiques Python calculées à partir des chaînes fournies.",
         "generated_from": "scripts/build_stats.py",
     }
 
