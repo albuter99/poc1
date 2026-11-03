@@ -20,7 +20,7 @@ const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"exis
 const el=document.getElementById("app");
 let treePaths=[];
 function typesOf(rec){const raw=Object.prototype.hasOwnProperty.call(rec,"types_indexation")?rec.types_indexation:(Object.prototype.hasOwnProperty.call(rec,"type_indexation")?rec.type_indexation:state.indexationLookup[rec.id]);return [...new Set((Array.isArray(raw)?raw:(raw?[raw]:[])).filter(x=>typeof x==="string"&&x.trim()))]}
-function typeOf(rec){return typesOf(rec).join(", ")||"Non renseigné"}
+function typeOf(rec){return typesOf(rec).join(", ")}
 function typeOptions(selected){const chosen=Array.isArray(selected)?selected:[];return '<details class="index-multiselect"><summary>Type d’indexation'+(chosen.length?" ("+chosen.length+")":" : tous")+'</summary><div class="index-options">'+state.indexationTypes.map(t=>'<label><input type="checkbox" value="'+esc(t)+'" '+(chosen.includes(t)?"checked":"")+'><span>'+esc(t)+'</span></label>').join("")+'</div></details>'}
 function filteredByIndexation(arr,types){return !types?.length?arr:arr.filter(c=>typesOf(c).some(t=>types.includes(t)))}
 function bindIndexFilters(container,callback){const box=document.getElementById(container);if(box)box.querySelectorAll('input[type="checkbox"]').forEach(el=>el.onchange=()=>{const selected=[...box.querySelectorAll('input:checked')].map(x=>x.value);const wasOpen=box.querySelector("details")?.open;callback(selected);if(wasOpen){const node=document.getElementById(container)?.querySelector("details");if(node)node.open=true}})}
