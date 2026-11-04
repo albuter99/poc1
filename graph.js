@@ -5,12 +5,13 @@ const NS="http://www.w3.org/2000/svg",palette={chain:"#326cc3",term:"#47a66a",ty
 let meta=null,records=[],active=null,graph=null,selected=null,zoom=1,pan={x:0,y:0},drag=null,previousFocus=null,expanded=new Set(),focusedDocument=null;
 function safe(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function label(s,n=23){const a=String(s||"");return a.length>n?a.slice(0,n-1)+"…":a}
+function formatDate(value){const date=String(value||"").slice(0,10);return /^\d{4}-\d{2}-\d{2}$/.test(date)?date.slice(8,10)+"/"+date.slice(5,7)+"/"+date.slice(0,4):date}
 function data(c){const i=records.findIndex(x=>x.id===c.id);const entries=meta?.relations||{};const stored=entries[c.id]||{type_indexation:meta?.types?.[Math.max(0,i)%15]||"Non défini",archetype:"Non défini",matiere:c.root||"Non défini",cote:"Non défini",etat:c.status||"EC",commentaire:"Données fictives",documents:[],links:[]};const raw=Object.prototype.hasOwnProperty.call(c,"types_indexation")?c.types_indexation:(Object.prototype.hasOwnProperty.call(c,"type_indexation")?c.type_indexation:stored.type_indexation);const indexation=(Array.isArray(raw)?raw:(raw?[raw]:[])).join(", ")||"Non renseigné";return {...stored,type_indexation:indexation,etat:c.status||"EC"}}
 
 function build(c){
 const m=data(c),pieces=c.full_chain_label.split(" - "),nodes=[],edges=[];
 const add=(id,name,type,fields,x,y)=>{nodes.push({id,name,type,fields,x,y});return id};
-add("chain",c.id+" · "+label(c.full_chain_label,42),"chain",{"Identifiant":c.id,"Chaîne complète":c.full_chain_label,"Date de début":c.validity_start_date||"","Date de fin":c.validity_end_date||"1900-01-01","État":c.status||"Active"},0,0);
+add("chain",c.id+" · "+label(c.full_chain_label,42),"chain",{"Identifiant":c.id,"Chaîne complète":c.full_chain_label,"Date de début":formatDate(c.validity_start_date||"1900-01-01"),"Date de fin":formatDate(c.validity_end_date==="1900-01-01"?"3000-12-31":c.validity_end_date||"3000-12-31"),"État":c.status||"EC"},0,0);
 let last="chain";
 pieces.forEach((term,i)=>{const id="term-"+i;add(id,term,"term",{"Terme":term,"Ordre dans la branche":i+1,"Identifiant du terme":"Simulation · "+(i+1)},160+i*145,50+(i%2)*80);edges.push({source:last,target:id,label:i===0?"Maillons":"ordre "+(i+1),type:"chain"});last=id});
 const extras=[["type",m.type_indexation,"Type d’indexation",0,-230],["matiere",m.matiere,"Matière",-240,-150],["archetype",m.archetype,"Archétype procédural",-240,135],["cote",m.cote,"Cote du plan de classement",0,240]];
