@@ -2,7 +2,7 @@
 """Generate deterministic Poc1 dashboard analytics from reference-chain JSON.
 
 All analytic aggregation is performed in Python. GitHub Pages only renders
-the resulting static data/stats.json. Local browser drafts are NOT part of it.
+the resulting static data/stats.json. Local browser edits are recalculated using the same Python code via Pyodide.
 """
 from __future__ import annotations
 
@@ -69,7 +69,7 @@ def compute(chains):
     distinct = len(chain_names)
     output = [
         block("keywords_total", "Termes distincts", len(keywords), "Termes uniques exacts",
-              ordered(keywords, 10), note="Les termes sont comparés à l'identique, accents compris. Les termes de niveau 1 sont inclus."),
+              ordered(keywords, 10), note="Chaque terme correspond à un élément de la chaîne séparé par « - ». Les répétitions d’un même libellé sont regroupées pour compter les termes distincts ; les accents, variantes orthographiques et niveaux de hiérarchie ne sont pas fusionnés. Le premier niveau est inclus."),
         block("keywords_frequency", "Nombre total de termes", sum(keywords.values()), "Occurrences de termes dans les chaînes",
               ordered(keywords, 30), note="Compte chaque occurrence d’un terme dans les chaînes, y compris les répétitions entre chaînes."),
         block("chains_distinct", "Chaînes distinctes", distinct, "Libellés complets uniques",
@@ -82,8 +82,8 @@ def compute(chains):
               note="La langue de l'interface ne constitue pas une langue de chaîne. Un champ LNG par chaîne est nécessaire."),
         block("indexation_types", "Répartition par type d’indexation", len(index_types), "Types d’indexation",
               ordered(index_types, 30), note="Répartition calculée à partir des types d’indexation enregistrés dans les chaînes et les métadonnées de démonstration.", source="data/chains.json et data/graph-relations.json"),
-        block("monthly_new", "Nouvelles entrées ce mois", current_count, "Chaînes créées en " + current_month,
-              monthly, kind="timeline", note="Nombre de chaînes créées durant le mois calendaire courant (UTC), calculé à partir de created_at. Les dates du jeu initial sont fictives."),
+        block("monthly_new", "Nouvelles entrées par mois", current_count, "Créations en " + current_month + " · détail mensuel",
+              monthly, kind="timeline", note="Regroupement des chaînes par mois de création (UTC) à partir du champ created_at. La valeur principale correspond au mois courant et le détail montre chaque mois disponible, sans pourcentage. Les dates du jeu initial sont fictives."),
 
     ]
     return {
