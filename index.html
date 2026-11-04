@@ -56,23 +56,24 @@
 /* Identically structured term columns */
 .term-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}.term-panel{display:flex;flex-direction:column;min-width:0}.term-panel h3{margin:0 0 7px;min-height:22px}.term-panel .term-help{min-height:42px;margin:0 0 8px;line-height:1.45;font-size:12px;color:#697b93}.term-panel>input{width:100%;min-height:40px;margin:0 0 10px}.term-panel .term-box{flex:1;min-height:290px;max-height:360px}.term-panel .term-row{min-width:0}.term-panel .term-row span{overflow-wrap:anywhere}@media(max-width:700px){.term-cols{grid-template-columns:1fr}.term-panel .term-help{min-height:0}}
 
-/* Navigation: branches expand; terminal nodes select. Intermediate exact chains have explicit actions. */
-.tree-branch>summary{display:flex;align-items:center;gap:8px;list-style:none;padding:8px 9px;min-height:36px;font-size:13px;color:#203d61;cursor:pointer}
-.tree-branch>summary::-webkit-details-marker{display:none}
-.tree-branch>summary::marker{content:""}
-.tree-branch .tree-chevron{font-size:18px;font-weight:750;width:16px;line-height:1;flex:0 0 16px;transform:rotate(0deg);transition:transform .15s}
-.tree-branch[open]>summary .tree-chevron{transform:rotate(90deg)}
-.tree-branch-label{flex:0 1 auto;min-width:0;overflow-wrap:anywhere;font-weight:550}
-.tree-branch>summary .tree-count{margin-left:auto}
-.tree-choose{border:1px solid #c4d5eb;border-radius:6px;background:#fff;color:#24518a;font-size:11px;font-weight:650;padding:5px 9px;white-space:nowrap;cursor:pointer}
-.tree-choose:hover,.tree-terminal:hover{background:#e5efff}
-.tree-leaf{padding:4px 8px 4px 34px;min-height:35px}
-.tree-terminal{cursor:pointer;font-weight:550;text-align:left;white-space:normal;overflow-wrap:anywhere}
-.tree-selected>summary,.tree-selected.tree-leaf{background:#deecff;border-radius:7px;box-shadow:inset 3px 0 #447fc3}
-.tree-selected>summary .tree-choose,.tree-selected .tree-terminal{color:#1351a0;font-weight:750}
-.tree-wrapper .tree-children{margin-left:20px;padding-left:12px}
-@media(max-width:580px){.tree-branch>summary{flex-wrap:wrap}.tree-choose{margin-left:24px}.tree-leaf{padding-left:10px}}
-
+/* Classic arborescence appearance, now with explicit terminal selection. */
+.tree-branch{margin:3px 0}
+.tree-branch>summary{display:list-item;list-style:disclosure-closed inside;padding:5px 8px;min-height:0;border-radius:6px;color:#52719d;cursor:pointer;font-size:13px}
+.tree-branch[open]>summary{list-style-type:disclosure-open}
+.tree-branch>summary::-webkit-details-marker{display:inline}
+.tree-branch>summary:hover{background:#edf3fc}
+.tree-name{display:inline-flex;align-items:center;gap:8px;max-width:calc(100% - 42px);vertical-align:middle}
+.tree-children,.tree-wrapper .tree-children{border-left:1px solid #dbe5f2;margin-left:14px;padding-left:17px}
+.tree-leaf{display:flex;align-items:center;gap:8px;padding:5px 8px;margin-left:3px;min-height:0}
+.tree-pick{border:none;background:transparent;color:#263d61;font-size:13px;text-align:left;padding:4px 6px;border-radius:6px;line-height:1.35;cursor:pointer;font-weight:normal;white-space:normal;overflow-wrap:anywhere}
+.tree-pick:hover,.tree-pick:focus-visible{background:#e0ecfd;color:#154c91}
+.tree-pick.picked,.tree-choose.picked{background:#cfe1ff;color:#12417b;font-weight:750}
+.tree-count{display:inline-block;background:#ebf1f9;border-radius:12px;padding:2px 7px;color:#67809f;font-size:11px;flex-shrink:0}
+.tree-choose{display:inline-block;margin-left:9px;border:1px solid #cadbf0;background:#f8fbff;color:#355b8b;padding:3px 7px;font-size:10px;border-radius:6px;cursor:pointer}
+.tree-choose:hover{background:#e0ecfd}
+.tree-selected>summary,.tree-selected.tree-leaf{background:#e4efff;border-radius:6px}
+.tree-selected .tree-pick,.tree-selected .tree-choose{color:#12417b;font-weight:750}
+@media(max-width:420px){.tree-children,.tree-wrapper .tree-children{margin-left:7px;padding-left:9px}.tree-choose{margin-left:4px}}
 /* Integrated manual French dates and aligned calendar buttons */
 .french-date-input{display:flex;align-items:stretch;gap:0;height:40px;width:100%;border:1px solid #c9d6e8;border-radius:8px;background:#fff;overflow:hidden;transition:border-color .12s,box-shadow .12s}
 .french-date-input:focus-within{border-color:#3679c6;box-shadow:0 0 0 3px #3276c71b}
@@ -120,22 +121,21 @@ function bindIndexFilters(container,callback){const box=typeof container==="stri
 function normalizeStatus(status){const map={Active:"VA",Actif:"VA",Validé:"VA",Brouillon:"EC",Inactif:"HI",Archivé:"HI",Historique:"HI","En cours":"EC"};return map[status]||status||"EC"}
 const STATUSES={HI:"Historique",VA:"Validé",EC:"En cours"};
 function typeChecklist(selected,id){return '<div class="index-checklist" id="'+id+'">'+state.indexationTypes.map(t=>'<label><input type="checkbox" value="'+esc(t)+'" '+(selected.includes(t)?"checked":"")+'><span>'+esc(t)+'</span></label>').join("")+'</div>'}
-function buildTree(records){const root={name:"",path:"",children:new Map(),count:0,terminalIds:[]};for(const rec of records){const full=rec.full_chain_label||rec.base_chain||"";let current=root;for(const piece of full.split(" - ").filter(Boolean)){if(!current.children.has(piece)){const path=current.path?current.path+" - "+piece:piece;current.children.set(piece,{name:piece,path,children:new Map(),count:0,terminalIds:[]})}current=current.children.get(piece);current.count++}if(current!==root)current.terminalIds.push(rec.id)}return root}
-function treeMarkup(records,mode){treePaths=[];const tree=buildTree(records);function draw(node){const i=treePaths.push({path:node.path,terminalIds:node.terminalIds,hasChildren:node.children.size>0})-1;const names=esc(node.name),count='<small class="tree-count">'+node.count+'</small>';const exact=node.terminalIds.length>0;const pathLabel=esc(node.path);
-if(!node.children.size)return '<div class="tree-leaf" data-path-index="'+i+'"><button type="button" class="tree-pick tree-terminal" data-tree-index="'+i+'" aria-label="Sélectionner la chaîne : '+pathLabel+'">'+names+'</button>'+count+'</div>';
-const choose=exact?'<button type="button" class="tree-choose" data-tree-index="'+i+'" title="Cette chaîne existe exactement à ce niveau">Choisir cette chaîne</button>':'';
-return '<details class="tree-branch" data-path-index="'+i+'"><summary><span class="tree-chevron" aria-hidden="true">›</span><span class="tree-branch-label">'+names+'</span>'+count+choose+'</summary><div class="tree-children">'+[...node.children.values()].sort((a,b)=>a.name.localeCompare(b.name,"fr")).map(draw).join("")+'</div></details>'}
+function buildTree(records){const root={name:"",path:"",children:new Map(),count:0,terminalIds:[]};for(const rec of records){const label=rec.full_chain_label||rec.base_chain||"";let current=root;for(const term of label.split(" - ").filter(Boolean)){if(!current.children.has(term)){const path=current.path?current.path+" - "+term:term;current.children.set(term,{name:term,path,children:new Map(),count:0,terminalIds:[]})}current=current.children.get(term);current.count++}if(current!==root)current.terminalIds.push(rec.id)}return root}
+function treeMarkup(records,mode){treePaths=[];const tree=buildTree(records);function draw(node){const idx=treePaths.push({path:node.path,terminalIds:node.terminalIds,hasChildren:node.children.size>0})-1;const label=esc(node.name),count='<small class="tree-count">'+node.count+'</small>';const exact=node.terminalIds.length>0;
+const pick='<button type="button" class="tree-pick" data-tree-index="'+idx+'" title="'+(node.children.size?"Développer ce niveau":"Sélectionner cette chaîne")+'">'+label+'</button>';
+if(!node.children.size)return '<div class="tree-leaf" data-path-index="'+idx+'">'+pick+count+'</div>';
+const choose=exact?'<button type="button" class="tree-choose" data-tree-index="'+idx+'" title="Sélectionner la chaîne qui se termine ici">Choisir cette chaîne</button>':'';
+return '<details class="tree-branch" data-path-index="'+idx+'"><summary><span class="tree-name">'+pick+count+'</span>'+choose+'</summary><div class="tree-children">'+[...node.children.values()].sort((a,b)=>a.name.localeCompare(b.name,"fr")).map(draw).join("")+'</div></details>'}
 return '<div class="tree-wrapper">'+[...tree.children.values()].sort((a,b)=>a.name.localeCompare(b.name,"fr")).map(draw).join("")+'</div>'}
 function statusOptions(current){return '<option value="all">Tous les statuts</option>'+Object.entries(STATUSES).map(([key,name])=>'<option value="'+key+'" '+(current===key?"selected":"")+'>'+key+' - '+name+'</option>').join("")}
 function filterControls(mode,location){const wizardMode=mode==="wizard";const search=wizardMode?state.wizardTreeSearch:state.search;const type=wizardMode?state.wizardIndexFilter:state.indexFilter;const status=wizardMode?state.wizardStatus:state.status;return '<div class="toolbar unified-filters" id="filters-'+location+'"><input type="search" class="shared-search" aria-label="Rechercher des chaînes" placeholder="Rechercher une chaîne, un terme, un identifiant…" value="'+esc(search)+'"><div class="shared-index">'+typeOptions(type)+'</div><select class="shared-status" aria-label="Filtrer par statut">'+statusOptions(status)+'</select></div>'}
 function treeFilters(mode){return filterControls(mode,"tree")}
 function matchingRecords(mode){const isWizard=mode==="wizard",query=(isWizard?state.wizardTreeSearch:state.search).trim().toLocaleLowerCase("fr"),types=isWizard?state.wizardIndexFilter:state.indexFilter,status=isWizard?state.wizardStatus:state.status;return state.records.filter(c=>(!query||[c.full_chain_label,c.id,c.base_chain].join(" ").toLocaleLowerCase("fr").includes(query))&&(status==="all"||normalizeStatus(c.status)===status)&&(!types.length||types.some(t=>typesOf(c).includes(t))))}
 function bindSharedFilters(mode,location){const root=document.getElementById("filters-"+location);if(!root)return;const field=root.querySelector(".shared-search");field.oninput=()=>{const value=field.value,pos=field.selectionStart;if(mode==="wizard"){state.wizardTreeSearch=value;wizard()}else{state.search=value;dashboard()}const next=document.querySelector("#filters-"+location+" .shared-search");next?.focus();next?.setSelectionRange(pos,pos)};root.querySelector(".shared-status").onchange=e=>{if(mode==="wizard"){state.wizardStatus=e.target.value;wizard()}else{state.status=e.target.value;dashboard()}};bindIndexFilters(root.querySelector(".shared-index"),selected=>{if(mode==="wizard"){state.wizardIndexFilter=selected;wizard()}else{state.indexFilter=selected;dashboard()}})}
-function chooseTreeChain(node,mode,button){if(!node?.terminalIds?.length)return;const id=node.terminalIds[0];if(mode==="wizard"){state.base=node.path;state.terms=[];state.error="";document.querySelectorAll(".tree-terminal,.tree-choose").forEach(b=>b.classList.toggle("picked",b===button));const selected=document.getElementById("tree-selection");if(selected)selected.textContent=node.path;document.querySelector(".error")?.remove()}else{state.selectedChainId=id;markSelection();const row=[...document.querySelectorAll("[data-chain-id]")].find(e=>e.dataset.chainId===id);row?.scrollIntoView({behavior:"smooth",block:"nearest"})}}
-function markSelection(){document.querySelectorAll("[data-chain-id]").forEach(row=>row.classList.toggle("chain-highlight",row.dataset.chainId===state.selectedChainId));const rec=state.records.find(c=>c.id===state.selectedChainId);document.querySelectorAll(".tree-leaf,.tree-branch").forEach(el=>{const node=treePaths[Number(el.dataset.pathIndex)];const selected=rec&&node?.terminalIds.includes(rec.id);el.classList.toggle("tree-selected",!!selected);if(selected){let parent=el.parentElement?.closest(".tree-branch");while(parent){parent.open=true;parent=parent.parentElement?.closest(".tree-branch")}}})}
-function bindTree(mode){document.querySelectorAll(".tree-terminal,.tree-choose").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();const node=treePaths[Number(button.dataset.treeIndex)];chooseTreeChain(node,mode,button)});
-
-bindSharedFilters(mode,"tree");if(mode==="dashboard")markSelection()}
+function chooseTreeChain(node,mode,button){if(!node?.terminalIds.length)return;const id=node.terminalIds[0];if(mode==="wizard"){state.base=node.path;state.terms=[];state.error="";document.querySelectorAll(".tree-pick,.tree-choose").forEach(b=>b.classList.toggle("picked",b===button));const label=document.getElementById("tree-selection");if(label)label.textContent=node.path;document.querySelector(".error")?.remove()}else{state.selectedChainId=id;markSelection();const row=[...document.querySelectorAll("[data-chain-id]")].find(el=>el.dataset.chainId===id);if(row){const scroll=document.getElementById("directory-scroll");if(scroll){scroll.scrollTop=row.offsetTop-scroll.offsetTop-scroll.clientHeight/3}else row.scrollIntoView({block:"nearest"})}}}
+function markSelection(){document.querySelectorAll("[data-chain-id]").forEach(row=>row.classList.toggle("chain-highlight",row.dataset.chainId===state.selectedChainId));const rec=state.records.find(c=>c.id===state.selectedChainId);document.querySelectorAll(".tree-leaf,.tree-branch").forEach(el=>{const node=treePaths[Number(el.dataset.pathIndex)],selected=!!rec&&!!node?.terminalIds.includes(rec.id);el.classList.toggle("tree-selected",selected);if(selected){let parent=el.parentElement?.closest(".tree-branch");while(parent){parent.open=true;parent=parent.parentElement?.closest(".tree-branch")}}})}
+function bindTree(mode){document.querySelectorAll(".tree-pick").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();const node=treePaths[Number(button.dataset.treeIndex)];if(!node)return;if(node.hasChildren){const branch=button.closest(".tree-branch");if(branch)branch.open=!branch.open}else chooseTreeChain(node,mode,button)});document.querySelectorAll(".tree-choose").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();chooseTreeChain(treePaths[Number(button.dataset.treeIndex)],mode,button)});bindSharedFilters(mode,"tree");if(mode==="dashboard")markSelection()}
 function esc(x){return String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function fmtDate(x){if(!x)return "Non renseignée";const [y,m,d]=x.split("-");return d+"/"+m+"/"+y}
 function parseFrenchDate(value){const str=String(value||"").trim(),match=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec(str);if(!match)return null;const [,d,m,y]=match,year=Number(y),month=Number(m),day=Number(d);if(year<1||month<1||month>12||day<1)return null;const days=[31,year%4===0&&(year%100!==0||year%400===0)?29:28,31,30,31,30,31,31,30,31,30,31];if(day>days[month-1])return null;return y+"-"+m+"-"+d}
