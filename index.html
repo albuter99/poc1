@@ -55,6 +55,23 @@
 .french-date-input{display:flex;align-items:stretch;min-width:0;gap:5px}.french-date-input>input{flex:1;min-width:0;width:100%;font-variant-numeric:tabular-nums}.calendar-trigger{position:relative;display:grid;place-items:center;flex:0 0 40px;border:1px solid #cdd6e3;border-radius:7px;background:#f3f7fb;color:#2e609d;font-size:21px;cursor:pointer;overflow:hidden}.calendar-trigger .date-native{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;color-scheme:light}.french-date-input input:invalid{border-color:#c35050}
 /* Identically structured term columns */
 .term-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}.term-panel{display:flex;flex-direction:column;min-width:0}.term-panel h3{margin:0 0 7px;min-height:22px}.term-panel .term-help{min-height:42px;margin:0 0 8px;line-height:1.45;font-size:12px;color:#697b93}.term-panel>input{width:100%;min-height:40px;margin:0 0 10px}.term-panel .term-box{flex:1;min-height:290px;max-height:360px}.term-panel .term-row{min-width:0}.term-panel .term-row span{overflow-wrap:anywhere}@media(max-width:700px){.term-cols{grid-template-columns:1fr}.term-panel .term-help{min-height:0}}
+
+/* Navigation: branches expand; terminal nodes select. Intermediate exact chains have explicit actions. */
+.tree-branch>summary{display:flex;align-items:center;gap:8px;list-style:none;padding:8px 9px;min-height:36px;font-size:13px;color:#203d61;cursor:pointer}
+.tree-branch>summary::-webkit-details-marker{display:none}
+.tree-branch>summary::marker{content:""}
+.tree-branch .tree-chevron{font-size:18px;font-weight:750;width:16px;line-height:1;flex:0 0 16px;transform:rotate(0deg);transition:transform .15s}
+.tree-branch[open]>summary .tree-chevron{transform:rotate(90deg)}
+.tree-branch-label{flex:0 1 auto;min-width:0;overflow-wrap:anywhere;font-weight:550}
+.tree-branch>summary .tree-count{margin-left:auto}
+.tree-choose{border:1px solid #c4d5eb;border-radius:6px;background:#fff;color:#24518a;font-size:11px;font-weight:650;padding:5px 9px;white-space:nowrap;cursor:pointer}
+.tree-choose:hover,.tree-terminal:hover{background:#e5efff}
+.tree-leaf{padding:4px 8px 4px 34px;min-height:35px}
+.tree-terminal{cursor:pointer;font-weight:550;text-align:left;white-space:normal;overflow-wrap:anywhere}
+.tree-selected>summary,.tree-selected.tree-leaf{background:#deecff;border-radius:7px;box-shadow:inset 3px 0 #447fc3}
+.tree-selected>summary .tree-choose,.tree-selected .tree-terminal{color:#1351a0;font-weight:750}
+.tree-wrapper .tree-children{margin-left:20px;padding-left:12px}
+@media(max-width:580px){.tree-branch>summary{flex-wrap:wrap}.tree-choose{margin-left:24px}.tree-leaf{padding-left:10px}}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
@@ -90,7 +107,7 @@ function bindSharedFilters(mode,location){const root=document.getElementById("fi
 function chooseTreeChain(node,mode,button){if(!node?.terminalIds?.length)return;const id=node.terminalIds[0];if(mode==="wizard"){state.base=node.path;state.terms=[];state.error="";document.querySelectorAll(".tree-terminal,.tree-choose").forEach(b=>b.classList.toggle("picked",b===button));const selected=document.getElementById("tree-selection");if(selected)selected.textContent=node.path;document.querySelector(".error")?.remove()}else{state.selectedChainId=id;markSelection();const row=[...document.querySelectorAll("[data-chain-id]")].find(e=>e.dataset.chainId===id);row?.scrollIntoView({behavior:"smooth",block:"nearest"})}}
 function markSelection(){document.querySelectorAll("[data-chain-id]").forEach(row=>row.classList.toggle("chain-highlight",row.dataset.chainId===state.selectedChainId));const rec=state.records.find(c=>c.id===state.selectedChainId);document.querySelectorAll(".tree-leaf,.tree-branch").forEach(el=>{const node=treePaths[Number(el.dataset.pathIndex)];const selected=rec&&node?.terminalIds.includes(rec.id);el.classList.toggle("tree-selected",!!selected);if(selected){let parent=el.parentElement?.closest(".tree-branch");while(parent){parent.open=true;parent=parent.parentElement?.closest(".tree-branch")}}})}
 function bindTree(mode){document.querySelectorAll(".tree-terminal,.tree-choose").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();const node=treePaths[Number(button.dataset.treeIndex)];chooseTreeChain(node,mode,button)});
-document.querySelectorAll(".tree-branch>summary").forEach(summary=>summary.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target===summary)e.preventDefault()}));
+
 bindSharedFilters(mode,"tree");if(mode==="dashboard")markSelection()}
 function esc(x){return String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function fmtDate(x){if(!x)return "Non renseignée";const [y,m,d]=x.split("-");return d+"/"+m+"/"+y}
@@ -138,7 +155,7 @@ if(window.ResizeObserver){new ResizeObserver(sync).observe(directory)}
 }
 document.getElementById("explore-graph").onclick=()=>window.PocGraph?.open(state.records);
 document.getElementById("add").onclick=()=>{state.view="wizard";state.step=2;state.base="";state.terms=[];state.date="1900-01-01";state.endDate="3000-12-31";state.typesIndexation=[];state.wizardIndexFilter=[];state.wizardTreeSearch="";state.wizardStatus="VA";state.error="";render()};
-bindSharedFilters("dashboard","directory");document.querySelectorAll(".selectable-chain").forEach(row=>{const select=()=>{state.selectedChainId=row.dataset.chainId;markSelection();const rec=state.records.find(x=>x.id===state.selectedChainId);const node=[...document.querySelectorAll(".tree-pick")].find(b=>treePaths[Number(b.dataset.treeIndex)]===rec?.full_chain_label);node?.scrollIntoView({behavior:"smooth",block:"nearest"})};row.onclick=e=>{if(!e.target.closest("button"))select()};row.onkeydown=e=>{if(e.key==="Enter")select()}});markSelection();
+bindSharedFilters("dashboard","directory");document.querySelectorAll(".selectable-chain").forEach(row=>{const select=()=>{state.selectedChainId=row.dataset.chainId;markSelection();const rec=state.records.find(x=>x.id===state.selectedChainId);const node=[...document.querySelectorAll(".tree-leaf,.tree-branch")].find(el=>treePaths[Number(el.dataset.pathIndex)]?.terminalIds.includes(rec?.id));node?.scrollIntoView({behavior:"smooth",block:"nearest"})};row.onclick=e=>{if(!e.target.closest("button"))select()};row.onkeydown=e=>{if(e.key==="Enter")select()}});markSelection();
 document.getElementById("export").onclick=exportCSV;
 document.querySelectorAll("[data-graph-id]").forEach(b=>b.onclick=()=>window.PocGraph?.open(state.records,b.dataset.graphId));
 document.querySelectorAll("[data-edit-id]").forEach(b=>b.onclick=()=>openEditor(b.dataset.editId));
