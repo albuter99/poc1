@@ -7,9 +7,9 @@ Prototype de démonstration avec données fictives, publié par GitHub Pages.
 - Création en quatre étapes, en sélectionnant directement un niveau de l'arborescence, puis les termes, les dates et zéro ou plusieurs types d'indexation.
 - Recherche par terme ou référence, filtres multisélection des types d'indexation et états `HI - Historique`, `VA - Validé`, `EC - En cours`.
 - Répertoire triable en ordre croissant ou décroissant depuis les en-têtes des colonnes.
-- Crayon par chaîne pour modifier les types d'indexation, les dates de validité et l'état. `Date dernière modification` est générée automatiquement lors de chaque modification. La `Date de défaut` reste vide lorsqu'elle n'est pas définie.
+- Crayon par chaîne pour modifier les types d'indexation, les dates de validité et l'état. `Date dernière modification` est générée automatiquement lors de chaque modification.
 - Exploration arborescente et graphe des relations.
-- Tableau de bord avec sept statistiques calculées uniquement en Python : termes distincts, nombre total de termes (occurrences), chaînes distinctes, longueur minimale et maximale des chaînes, longueur par langue (en attente de données LNG), répartition par type d'indexation et nombre de chaînes créées ce mois-ci. Une chaîne ayant plusieurs types contribue à chacun d'eux.
+- Tableau de bord avec huit statistiques calculées en Python : nombre de termes différents, nombre total de maillons, nombre de chaînes différentes, distribution des chaînes par nombre de maillons, longueurs minimale et maximale, distribution par type d’indexation et nombre de chaînes créées par mois. La statistique par langue (LNG) n’est pas affichée. Une chaîne ayant plusieurs types est comptée pour chacun.
 
 ## Statistiques Python
 
@@ -22,7 +22,7 @@ python3 scripts/build_stats.py
 python3 -m http.server 8000
 ```
 
-Les dates `created_at` de la base de démonstration sont fictives. `Nouvelles entrées ce mois` compte les chaînes dont la date de création est dans le mois actuel, en UTC, sans pourcentage. Les langues LNG ne sont pas renseignées par chaîne et l'indicateur correspondant reste indisponible.
+Les dates `created_at` de la base de démonstration sont fictives. `Nombre de chaînes créées par mois` montre le nombre créé pendant le mois en cours (UTC) et permet de consulter la répartition mensuelle, sans pourcentage. La distribution par nombre de maillons utilise la profondeur des chaînes, y compris leur niveau racine.
 
 ## Sauvegarde et limites
 
