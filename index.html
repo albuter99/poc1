@@ -101,9 +101,14 @@
 .directory-scroll .tag{font-size:10px;white-space:nowrap}
 @media(min-width:1300px){.directory-scroll table{min-width:1000px}}
 
-/* One-click recursive expansion of any tree branch; native chevron expands only one level. */
-.tree-expand-all{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;margin:0 6px 0 5px;padding:0;border:1px solid #c7d8ee;border-radius:6px;background:#f3f7fd;color:#285a9c;font-size:17px;font-weight:650;line-height:1;vertical-align:middle;cursor:pointer}
-.tree-expand-all:hover,.tree-expand-all:focus-visible{background:#dceafe;border-color:#8aaedc;outline:none}
+/* Subtle tree controls: low contrast at rest, clear feedback on interaction. */
+.tree-branch>summary{color:#8a9ab0}
+.tree-branch>summary::marker{font-size:9px;color:#9aa9bd}
+.tree-branch>summary::-webkit-details-marker{font-size:9px;color:#9aa9bd}
+.tree-expand-all{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin:0 5px 0 4px;padding:0;border:1px solid transparent;border-radius:5px;background:transparent;color:#a1adc0;font-size:14px;font-weight:400;line-height:1;vertical-align:middle;cursor:pointer;transition:color .15s,background .15s,border-color .15s}
+.tree-expand-all:hover,.tree-expand-all:focus-visible{background:#edf3fb;color:#416991;border-color:#dce5f1;outline:none}
+.tree-branch>summary:hover::marker{color:#6281a7}
+.tree-branch>summary:hover::-webkit-details-marker{color:#6281a7}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css?v=20261105-1511"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
