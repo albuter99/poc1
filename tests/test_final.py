@@ -35,6 +35,32 @@ class FinalChecks(unittest.TestCase):
         self.assertEqual(len({r["source_chain_id"] for r in self.entries}), p["distinct_source_chain_ids"])
         self.assertEqual(len({r["original_text"] for r in self.entries if r["original_text"]}), p["distinct_texts"])
 
+    def test_segmented_maillons_are_complete_and_clean(self):
+        """All source indexations have stable ordered terms, with no delimiters left."""
+        delimiter = re.compile(r"(?:\\s+[-\\u2010-\\u2015\\u2212\\ufe58\\ufe63\\uff0d\\u0336]|[-\\u2010-\\u2015\\u2212\\ufe58\\ufe63\\uff0d\\u0336]\\s+)")
+        total = 0
+        unique = set()
+        for entry in self.entries:
+            with self.subTest(source_chain_id=entry.get("source_chain_id")):
+                parts = entry.get("maillons_fr")
+                self.assertIsInstance(parts, list)
+                self.assertTrue(parts)
+                self.assertTrue(all(isinstance(p, str) and p and p == p.strip() for p in parts))
+                self.assertFalse(any(delimiter.search(p) for p in parts),
+                                 f"Separator retained in {entry.get('source_chain_id')}")
+                total += len(parts)
+                unique.update(parts)
+        self.assertEqual(total, 43900)
+        self.assertEqual(len(unique), 16470)
+
+    def test_unicode_dash_example_and_legal_identifier(self):
+        by_id = {r["source_chain_id"]: r for r in self.entries}
+        expected = ["Gaz à effet de serre", "Quotas de mise sur le marché des hydrofluorocarbones"]
+        self.assertEqual(by_id["MCL-GRF-922"]["maillons_fr"][:2], expected)
+        self.assertEqual(by_id["MCL-GRF-923"]["maillons_fr"][:2], expected)
+        self.assertTrue(any("T‑688/21" in part for r in self.entries
+                            for part in r["maillons_fr"]))
+
     def test_document_links_and_uniqueness(self):
         documents = [str(r["source_document_id"]) for r in self.documents]
         self.assertEqual(len(documents), len(set(documents)))
