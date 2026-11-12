@@ -56,7 +56,7 @@ def main():
     if bundle["schema_version"] != "poc1-es-structured-v1" or bundle["language_code"] != "es":
         raise RuntimeError("Unexpected target translations schema")
     labels = bundle["translations"]
-    baseline = read(PROGRESS) if PROGRESS.exists() else None
+    baseline = read(PROGRESS) if PROGRESS.exists() and PROGRESS.stat().st_size > 0 else None
     if baseline:
         if baseline["target_new"] != args.target:
             raise RuntimeError("Conflicting prior translation target")
