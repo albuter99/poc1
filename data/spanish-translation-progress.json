@@ -12073,6 +12073,10 @@
     {
       "added_new": 2500,
       "translated_active_terms": 2817
+    },
+    {
+      "added_new": 2750,
+      "translated_active_terms": 3067
     }
   ],
   "rejected_labels": [
@@ -12082,11 +12086,16 @@
     "Cotisations",
     "Covid-19",
     "Dumping",
+    "ECHA",
+    "Erfolgsort",
+    "Excipient",
+    "Forum necessitatis",
+    "Handlungsort",
     "Nemo iudex in causa sua",
     "TFUE"
   ],
-  "completed_new": 2500,
-  "translated_active_terms": 2817,
+  "completed_new": 2750,
+  "translated_active_terms": 3067,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:35:47.335957+00:00"
+  "updated_at_utc": "2026-11-12T15:36:34.039478+00:00"
 }
