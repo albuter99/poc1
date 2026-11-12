@@ -35,8 +35,7 @@ pause
 exit /b 1
 
 :start_server
-echo Abriendo el POC en el navegador...
-start "" "http://127.0.0.1:8765/relations.html"
+echo Iniciando servidor local y abriendo navegador...
 echo.
 echo El servidor se mantendra activo mientras esta ventana este abierta.
 echo Para cerrarlo, usa DETENER_POC.bat.
