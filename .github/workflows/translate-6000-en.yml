@@ -1,0 +1,53 @@
+name: English corpus machine translation 6000 drafts
+on:
+  push:
+    branches:
+      - prototype-excel-multilingue-es-en
+    paths:
+      - '.github/workflows/translate-6000-en.yml'
+      - 'scripts/translate_6000_en.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: poc1-en-6000-translations
+  cancel-in-progress: false
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout experimental branch
+        uses: actions/checkout@v4
+        with:
+          ref: prototype-excel-multilingue-es-en
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install direct French-English translation runtime
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install 'transformers==4.44.2' sentencepiece sacremoses torch
+      - name: Set Git checkpoint identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Translate 6000 structured terms into English drafts
+        env:
+          HF_HUB_DISABLE_TELEMETRY: '1'
+          TOKENIZERS_PARALLELISM: 'false'
+        run: python scripts/translate_6000_en.py --target 6000 --checkpoint 250 --push
+      - name: Validate checkpoint count
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path("data/english-translation-progress.json").read_text(encoding="utf-8"))
+          assert p["completed_new"]==6000
+          assert len(p["checkpoint_history"])>=24
+          print("6000 English machine proposals created; legal review required")
+          PY
