@@ -12037,14 +12037,20 @@
     {
       "added_new": 250,
       "translated_active_terms": 567
+    },
+    {
+      "added_new": 500,
+      "translated_active_terms": 817
     }
   ],
   "rejected_labels": [
     "COVID-19",
-    "Dumping"
+    "Cotisations",
+    "Dumping",
+    "Nemo iudex in causa sua"
   ],
-  "completed_new": 250,
-  "translated_active_terms": 567,
+  "completed_new": 500,
+  "translated_active_terms": 817,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:28:10.939410+00:00"
+  "updated_at_utc": "2026-11-12T15:28:41.377470+00:00"
 }
