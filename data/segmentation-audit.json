@@ -1,23 +1,21 @@
 {
   "schema_version": "mot-cles-segmentation-audit-v1",
   "source": "data/excel-manifest.json",
-  "scope": "Experimental corpus only; source original_text preserved unmodified",
-  "method": "Les chaînes structurées utilisent les maillons_fr comme source de vérité et le séparateur canonique ' - '. Les entrées Objet sont des textes libres non segmentés, même lorsqu'elles contiennent des tirets.",
+  "scope": "Structured indexations only; free-text Objet entries removed from experimental corpus",
+  "method": "Cadenas estructuradas, separador canonico ' - ' y maillons_fr validados. No se traduce en esta fase.",
   "metrics": {
-    "source_indexation_entries": 5839,
+    "source_indexation_entries": 4203,
     "structured_indexations": 4203,
-    "free_text_indexations": 1636,
-    "distinct_original_indexation_texts": 5003,
-    "ordered_maillon_occurrences": 34757,
+    "free_text_indexations": 0,
+    "removed_free_text_indexations": 1636,
+    "distinct_original_indexation_texts": 3485,
+    "ordered_maillon_occurrences": 33121,
     "structured_maillon_occurrences": 33121,
-    "free_text_maillon_occurrences": 1636,
-    "corrected_free_text_segmentations": 992,
-    "normalized_structured_texts": 162,
+    "distinct_structured_terms": 12341,
+    "normalized_structured_texts_prior_to_removal": 162,
     "structured_maillons_with_recognized_dash_delimiters": 0,
     "structured_maillons_with_internal_line_breaks": 0,
-    "free_text_entries_with_spaced_dash_preserved": 986,
-    "free_text_maillons_with_internal_line_breaks": 61,
-    "metadata_sections_extracted": 589,
+    "duplicate_source_chain_ids": 0,
     "validation_errors": 0
   },
   "fields": {
@@ -26,29 +24,10 @@
     "maillons_fr": "Ordered candidate term labels after segmentation, not validated MDM terms",
     "activite_produit_vises_fr": "Optional descriptive activity/product field extracted from distinct source section"
   },
-  "examples": [
-    {
-      "source_chain_id": "MCL-GRF-922",
-      "original_separator": "− (U+2212)",
-      "first_two_maillons": [
-        "Gaz à effet de serre",
-        "Quotas de mise sur le marché des hydrofluorocarbones"
-      ]
-    },
-    {
-      "source_chain_id": "MCL-GRF-923",
-      "original_separator": "− (U+2212)",
-      "first_two_maillons": [
-        "Gaz à effet de serre",
-        "Quotas de mise sur le marché des hydrofluorocarbones"
-      ]
-    }
-  ],
   "review_items": [
-    "Les 986 descriptions libres Objet contenant des tirets espacés sont conservées comme un seul maillon : les scinder casserait des références et noms d'affaires.",
-    "Les 61 retours à la ligne internes restants sont dans les textes libres Objet, non dans les maillons structurés.",
-    "Les textes source original_text peuvent inclure la section Activité ou produit visés, extraite de indexation_text_fr.",
-    "La segmentation est une proposition exploratoire et non une validation des termes et chaînes de référence MDM."
+    "No quedan entradas de tipo Objet en los archivos de indexaciones.",
+    "La validacion de separadores cubre variantes Unicode y espacios a ambos lados; los guiones internos sin espacios pueden formar parte de terminos compuestos.",
+    "La segmentacion tecnica no certifica la validez linguistica o de negocio de terminos MDM."
   ],
   "audit_date": "2026-11-12"
 }
