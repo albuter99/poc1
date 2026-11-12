@@ -1,24 +1,14 @@
-# GitHub Pages : choisir la branche à publier
+# MOT-CLES: original y vista experimental publicadas simultáneamente
 
-Le dépôt propose **deux modes alternatifs** pour un seul site `https://albuter99.github.io/poc1/`. La configuration Pages est globale au dépôt.
+GitHub Pages debe estar configurado con **Source: GitHub Actions**.
 
-### Publier le POC expérimental (sans Actions)
+- Web original (código y datos de `main`): https://albuter99.github.io/poc1/
+- Web experimental (datos multilingües y estructura relacional): https://albuter99.github.io/poc1/experimental/
+- Modelo de datos experimental: https://albuter99.github.io/poc1/experimental/relations.html
 
-1. Ouvrir **Settings > Pages** du dépôt GitHub.
-2. Dans **Build and deployment > Source**, choisir **Deploy from a branch**.
-3. Dans **Branch**, choisir `prototype-excel-multilingue-es-en`, puis **/ (root)**, et cliquer **Save**.
-4. Une fois GitHub Pages mis à jour, accéder à `https://albuter99.github.io/poc1/relations.html` pour le modèle de données ou à l'accueil pour le POC.
+`.github/workflows/pages.yml` en `main` genera las estadísticas originales, incorpora una copia estática de esta rama en `/experimental/` y publica ambas vistas juntas, sin mezclarlas. Cada cambio en esta rama dispara `refresh-experimental-preview.yml`, que solicita un nuevo despliegue del workflow principal.
 
-Les fichiers nécessaires sont déjà dans cette branche, y compris `data/stats.json`, `.nojekyll` et les fragments du corpus Excel. Aucun workflow de déploiement n'est requis dans cette branche.
-
-### Revenir au POC principal (avec Actions)
-
-1. Ouvrir **Settings > Pages**.
-2. Remplacer **Deploy from a branch** par **GitHub Actions**.
-3. Ouvrir **Actions > Deploy GitHub Pages** et lancer **Run workflow**, branche **main**, si un déploiement n'est pas déclenché automatiquement.
-4. Le fichier `.github/workflows/pages.yml` de `main` génère les statistiques puis publie le POC original.
-
-Attention : les deux modes ne publient **pas simultanément** deux URL différentes. Changer de source remplace le site accessible à l'adresse Pages du dépôt, mais ne modifie ni ne fusionne les branches. Le contenu principal reste dans `main`.
+La fuente de Pages es única para el repositorio. **No seleccionar Deploy from a branch**, pues reemplazaría el despliegue combinado. El despliegue requiere que GitHub Pages siga habilitado en modo GitHub Actions; revisar en Settings > Pages y Actions si la URL experimental no aparece.
 
 ---
 
