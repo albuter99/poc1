@@ -19,6 +19,7 @@ const schema={
 };
 function save(){try{localStorage.setItem(STORAGE,JSON.stringify(translations))}catch(e){console.warn(e)}}
 function typeId(value){return "IDX-"+String(value??"").replace(/[^A-Za-z0-9]/g,"").slice(0,18).toUpperCase()}
+function stableCandidateId(value,prefix){let a=2166136261,b=2671060477;for(let i=0;i<value.length;i++){const n=value.charCodeAt(i);a=Math.imul(a^n,16777619);b=Math.imul(b^n,2246822519)}return prefix+(a>>>0).toString(16).padStart(8,"0")+(b>>>0).toString(16).padStart(8,"0")}
 function build(data){if(data.schema_version!=="import-preview-v1"||!Array.isArray(data.indexation_entries)||!Array.isArray(data.documents))throw Error("Le JSON n'a pas la structure attendue");
 source=data;
 const documents=data.documents.map(d=>({...d,document_id:String(d.source_document_id)}));
@@ -26,12 +27,12 @@ const indexations=data.indexation_entries.map(x=>({...x,source_chain_id:String(x
 const count=new Map();for(const x of indexations){const k=x.original_text||"";count.set(k,(count.get(k)||0)+1)}
 const types=[...new Set(indexations.map(x=>x.type_indexation).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"fr")).map((x,i)=>({index_type_id:"IDX-"+String(i+1).padStart(2,"0"),code:x,active:true,label:x}));
 const typeTranslations=[];for(const t of types){for(const l of ["fr","es","en"]){const key="types:"+t.code, label=l==="fr"?t.label:translations[key]?.[l];if(label)typeTranslations.push({index_type_id:t.index_type_id,language_code:l,label,translation_status:l==="fr"?"source":"draft"})}}
-const candidates=[...count.entries()].filter(([text])=>text).map(([text,n,i],idx)=>({candidate_id:"TEXT-"+String(idx+1).padStart(5,"0"),count:n,text})).sort((a,b)=>b.count-a.count||a.text.localeCompare(b.text,"fr"));
+const candidates=[...count.entries()].filter(([text])=>text).map(([text,n,i],idx)=>({candidate_id:stableCandidateId(text,"TEXT-"),count:n,text})).sort((a,b)=>b.count-a.count||a.text.localeCompare(b.text,"fr"));
 const candidateByText=new Map(candidates.map(c=>[c.text,c.candidate_id]));
 indexations.forEach(x=>{x.candidate_id=candidateByText.get(x.original_text)||null});
 const vocabulary=new Map(),candidateTerms=[];
 for(const c of candidates){const structured=c.text.includes(" - ")&&!/[\\r\\n]/.test(c.text);c.candidate_kind=structured?"STRUCTURED_CANDIDATE":"FREE_TEXT_CANDIDATE";const parts=structured?c.text.split(" - ").map(t=>t.trim()).filter(Boolean):[c.text];c.maillons_count=parts.length;
-parts.forEach((label,index)=>{if(!vocabulary.has(label))vocabulary.set(label,{candidate_term_id:"CTERM-"+String(vocabulary.size+1).padStart(6,"0"),label_fr:label,occurrences:0,term_kind:"PROVISIONAL"});const term=vocabulary.get(label);term.occurrences++;candidateTerms.push({candidate_id:c.candidate_id,position:index+1,candidate_term_id:term.candidate_term_id})})}
+parts.forEach((label,index)=>{if(!vocabulary.has(label))vocabulary.set(label,{candidate_term_id:stableCandidateId(label,"CTERM-"),label_fr:label,occurrences:0,term_kind:"PROVISIONAL"});const term=vocabulary.get(label);term.occurrences++;candidateTerms.push({candidate_id:c.candidate_id,position:index+1,candidate_term_id:term.candidate_term_id})})}
 const candidateVocabulary=[...vocabulary.values()];
 model={documents,indexations,references:data.reference_chains||[],chain_terms:data.chain_terms||[],terms:data.terms||[],term_translations:data.term_translations||[],chain_types:data.chain_index_types||[],types,type_translations:typeTranslations,document_translations:data.document_translations||[],candidates,candidate_terms:candidateTerms,candidate_vocabulary:candidateVocabulary};
 for(const type of Object.keys(names))if(!Array.isArray(model[type]))model[type]=[];
