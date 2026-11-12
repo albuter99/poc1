@@ -3,9 +3,9 @@
   "status": "ALL_PROPOSED_NOT_VALIDATED",
   "stats": {
     "total_terms": 13286,
-    "proposed_es": 274,
+    "proposed_es": 379,
     "proposed_en": 174,
-    "missing_es": 13012,
+    "missing_es": 12907,
     "missing_en": 13112
   },
   "translations": [
@@ -2695,6 +2695,636 @@
       "term_id": "TERM-05bd0a8e706fd1de",
       "language_code": "es",
       "label": "Libertad de acceso a la información",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-76edf5941708c3fc",
+      "language_code": "es",
+      "label": "Autoridad competente que dispone de información sobre la posible incidencia del proyecto en una especie o un hábitat",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8aa31e44a59deda4",
+      "language_code": "es",
+      "label": "¿Inclusión a efectos del cálculo del plazo para recurrir la autorización de excepción? (Cuestión 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-782e970c55c66538",
+      "language_code": "es",
+      "label": "Normativa nacional que impone distancias mínimas entre los establecimientos de juego y los centros educativos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-58a45852d9b5197a",
+      "language_code": "es",
+      "label": "Práctica administrativa que utiliza el «precio mínimo aceptable» para determinar el valor en aduana",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9a01622f80c57e87",
+      "language_code": "es",
+      "label": "¿Alcance de la prohibición de utilizar valores mínimos establecida en el artículo 31 del citado Reglamento? (Cuestión 4)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-79ffbd7ab71d2b62",
+      "language_code": "es",
+      "label": "¿Ámbito de aplicación limitado a efectos del reembolso de los gastos en el sentido del artículo 7? (Cuestión 1a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-753296a96fd00f29",
+      "language_code": "es",
+      "label": "En caso de respuesta negativa: ¿principio del país de origen para las prestaciones de telemedicina? (Cuestión 1b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6bfc04521e279d7e",
+      "language_code": "es",
+      "label": "Prestador de asistencia sanitaria establecido en el Estado de residencia del paciente que proporciona la otra parte del tratamiento",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-54d187f622d9fb26",
+      "language_code": "es",
+      "label": "¿Obligación de respetar las normas profesionales, legales o administrativas de otro Estado miembro? (Cuestión 3a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-452f36d25c242f42",
+      "language_code": "es",
+      "label": "Obligación del juez nacional de dar pleno efecto a la interpretación del Derecho de la Unión adoptada por el Tribunal de Justicia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0cd3c5dfcbfffd53",
+      "language_code": "es",
+      "label": "Directiva 2003/4/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7890f176e5ccff1e",
+      "language_code": "es",
+      "label": "Derecho de acceso a la información medioambiental en poder de las autoridades públicas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-12b165359edac57d",
+      "language_code": "es",
+      "label": "Concepto de «solicitud» en el sentido del artículo 6, apartado 1, de dicha Directiva",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc2b6915bc709835",
+      "language_code": "es",
+      "label": "¿Solicitud válida conforme a dicha Directiva y a la norma de transposición al Derecho interno? (Cuestión 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7936ae9b2326301b",
+      "language_code": "es",
+      "label": "Facultades de inspección de las autoridades nacionales de competencia en materia de prácticas colusorias",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-30abefdf1f6a91c3",
+      "language_code": "es",
+      "label": "Acceso a los mensajes electrónicos de carácter privado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8e081171f9689ab9",
+      "language_code": "es",
+      "label": "Respeto de la confidencialidad de la correspondencia y de las comunicaciones privadas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3b47cb6f529a9387",
+      "language_code": "es",
+      "label": "Correspondencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b7beabf756220f0b",
+      "language_code": "es",
+      "label": "Comunicaciones profesionales enviadas por correo electrónico",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ace3545c852d1760",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestiones 1 y 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2e1dc7ce2e935236",
+      "language_code": "es",
+      "label": "Incautación de dichos correos electrónicos previa autorización del Ministerio Fiscal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7309b114397a387c",
+      "language_code": "es",
+      "label": "¿Admisibilidad a la luz del artículo 7 de la Carta? (Cuestión 3)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-57d08027e9f13adf",
+      "language_code": "es",
+      "label": "Acuerdos entre empresas, prácticas concertadas y decisiones de asociaciones de empresas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b11f8f65b954f895",
+      "language_code": "es",
+      "label": "Decisiones de asociaciones de empresas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6589a9768dbf0a5a",
+      "language_code": "es",
+      "label": "Norma deportiva en el sentido de la sentencia Meca-Medina",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-04bd3e55a2f0b231",
+      "language_code": "es",
+      "label": "Acuerdo de no contratación de trabajadores celebrado durante la pandemia de COVID-19",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f45fb9b58da399f1",
+      "language_code": "es",
+      "label": "Restricción de la competencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5d158cd23db6a4a2",
+      "language_code": "es",
+      "label": "Restricciones por objeto o por efecto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8f82711156bd971d",
+      "language_code": "es",
+      "label": "Restricciones por objeto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8e6b4447c23f9eff",
+      "language_code": "es",
+      "label": "Prohibición de las restricciones por objeto con independencia de sus efectos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3ea39cf2f39f2e6a",
+      "language_code": "es",
+      "label": "Acuerdo proporcionado y adecuado a la luz del artículo 165 TFUE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-34c67d6b9e3ca6f3",
+      "language_code": "es",
+      "label": "¿Admisibilidad a la luz del artículo 101, apartado 1, TFUE? (Cuestión 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-af3a670e0a822d46",
+      "language_code": "es",
+      "label": "Derecho de la Unión Europea",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-23dc7e86d131593e",
+      "language_code": "es",
+      "label": "Derechos conferidos a los particulares",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b9d9ce3a6f0ae196",
+      "language_code": "es",
+      "label": "Infracción cometida por un Estado miembro",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e20cf1795339d98d",
+      "language_code": "es",
+      "label": "Obligación de reparar los daños causados a los particulares",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0b6fa28249149b1e",
+      "language_code": "es",
+      "label": "Norma jurídica que tiene por objeto conferir derechos a los particulares",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-23d4688983166975",
+      "language_code": "es",
+      "label": "Artículo 20, apartado 1, del Reglamento (CE) n.º 1782/2003",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e9a0551803685930",
+      "language_code": "es",
+      "label": "Regímenes de ayuda directa",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-28f196730314afab",
+      "language_code": "es",
+      "label": "Normas comunes",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8be5afe9e8543785",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 796/2004",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e09ca7f3e5049eb7",
+      "language_code": "es",
+      "label": "Régimen de pago único por superficie",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ba098f49e233a325",
+      "language_code": "es",
+      "label": "Reducciones y exclusiones aplicables en caso de declaraciones excesivas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3e0332bd1dc5e769",
+      "language_code": "es",
+      "label": "Artículo 68",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-51aa345b00ff5b3b",
+      "language_code": "es",
+      "label": "Presentación de datos fácticos correctos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8a65f1e7b650168b",
+      "language_code": "es",
+      "label": "Identificación correcta de la parcela explotada y de sus límites",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-86d35799f7654159",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7527c3186c8bb618",
+      "language_code": "es",
+      "label": "Lucha contra la morosidad en las operaciones comerciales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eb35d247384900ff",
+      "language_code": "es",
+      "label": "Directiva 2011/7/UE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-586df5725745ba36",
+      "language_code": "es",
+      "label": "Artículo 2, punto 3",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-aea9729c1f50174c",
+      "language_code": "es",
+      "label": "Concepto de «empresa»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b4ba28070a0a9687",
+      "language_code": "es",
+      "label": "Persona física que ha recurrido a los servicios de un abogado para constituir una sociedad mercantil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-134cee5ea8d5c8b2",
+      "language_code": "es",
+      "label": "Persona que es administrador y uno de los dos fundadores y socios de la futura sociedad mercantil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-649db8514d11a81d",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 1a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-566df24c4b6e2548",
+      "language_code": "es",
+      "label": "Artículo 2, punto 1",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5843c37aac01f306",
+      "language_code": "es",
+      "label": "Concepto de «operación comercial»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ed13b754dbf6fef0",
+      "language_code": "es",
+      "label": "Contrato de prestación de servicios jurídicos para constituir una sociedad mercantil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6c9b8652e5e3686e",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 1b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b25ac4eab771ff32",
+      "language_code": "es",
+      "label": "Dibujos y modelos comunitarios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5f1d3e8d86afed45",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 6/2002",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d7bf51e5cbc7f9dd",
+      "language_code": "es",
+      "label": "Artículo 8, apartado 3",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c3fbb6ea1ff05566",
+      "language_code": "es",
+      "label": "Artículo 10",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1f99a76019607120",
+      "language_code": "es",
+      "label": "Alcance de la protección",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0161f95f0c1ac403",
+      "language_code": "es",
+      "label": "Dibujo o modelo que no produce en el usuario informado una impresión general diferente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0cc40adb1135948f",
+      "language_code": "es",
+      "label": "Concepto de «usuario informado»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-708f794548d53df1",
+      "language_code": "es",
+      "label": "Régimen fiscal común aplicable a las sociedades matrices y filiales de Estados miembros diferentes",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f640217b28dbf3db",
+      "language_code": "es",
+      "label": "Directiva 2011/96/UE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-29818c1ad35332aa",
+      "language_code": "es",
+      "label": "Exención de los dividendos distribuidos por una filial no residente a una sociedad matriz residente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f1406f1c2a67c8ec",
+      "language_code": "es",
+      "label": "Regla general de exención de la retención en origen",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f5a6e202f421b2de",
+      "language_code": "es",
+      "label": "Excepción a dicha regla en caso de abuso o fraude",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-790c3466173f52ae",
+      "language_code": "es",
+      "label": "En caso de respuesta afirmativa: calificación de la filial como montaje no auténtico",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4801086b77d90a4f",
+      "language_code": "es",
+      "label": "¿Consideración exclusiva de las circunstancias existentes en el momento de distribución de los dividendos? (Cuestión 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2b76c9c46ade6830",
+      "language_code": "es",
+      "label": "Ayudas concedidas por los Estados",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-aad5cedc0e786a8c",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 3)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-44ff3666d52636ba",
+      "language_code": "es",
+      "label": "Medidas de aproximación de las legislaciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b358eebab541efda",
+      "language_code": "es",
+      "label": "Normas comunes para el mercado interior de la electricidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bbdce8212c5275e1",
+      "language_code": "es",
+      "label": "Reglamento (UE) 2019/943",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-df2282459ddc22b1",
+      "language_code": "es",
+      "label": "Directiva (UE) 2019/944",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bca6e1a3b7eb1683",
+      "language_code": "es",
+      "label": "Reglamento (UE) 2022/1854",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d9be4baba0dc0f37",
+      "language_code": "es",
+      "label": "Principios relativos al funcionamiento de los mercados de la electricidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ca4b8fc9a763535d",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestión 4a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-15495cea6107db22",
+      "language_code": "es",
+      "label": "¿Respeto del principio de proporcionalidad? (Cuestión 4b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4324b1e9f55091bd",
+      "language_code": "es",
+      "label": "¿Respeto del carácter no discriminatorio? (Cuestión 4c)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-15139d107af2be28",
+      "language_code": "es",
+      "label": "Restricciones cuantitativas a la exportación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ad79a2804f41b364",
+      "language_code": "es",
+      "label": "Medidas de efecto equivalente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1bc0735350334953",
+      "language_code": "es",
+      "label": "Normativa nacional que impone el pago de una contribución vinculada a la actividad de negociación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91e059a9cc050b15",
+      "language_code": "es",
+      "label": "Fórmula de cálculo de dicha contribución más onerosa para las exportaciones que para los intercambios internos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1bed58a0a8ffbf08",
+      "language_code": "es",
+      "label": "¿Admisibilidad a la luz de los artículos 28, 30 y 35 TFUE? (Cuestión 5a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d548cc4ef8a538be",
+      "language_code": "es",
+      "label": "Contribución prevista únicamente para las ventas de energía destinadas a la exportación y no para las importaciones de energía",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bbe605bbe55a04d3",
+      "language_code": "es",
+      "label": "¿Admisibilidad a la luz de los artículos 28, 30 y 35 TFUE? (Cuestión 5b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f1516a14658e7fac",
+      "language_code": "es",
+      "label": "Trabajadores migrantes",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d2c53a5c30c25c64",
+      "language_code": "es",
+      "label": "Normativa de la Unión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ea6c9b8bb9b837a3",
+      "language_code": "es",
+      "label": "Coordinación de los sistemas de seguridad social",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5af51bc0662761b0",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 883/2004",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-640ee5e87f5e89ac",
+      "language_code": "es",
+      "label": "Ámbito de aplicación material",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-04dd54e2acc5bc32",
+      "language_code": "es",
+      "label": "Prestaciones de seguridad social",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0c7faebbad1159b7",
+      "language_code": "es",
+      "label": "En caso de respuesta negativa a la cuestión 1: libre circulación de personas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6011fbce81100c5e",
+      "language_code": "es",
+      "label": "Reglamento (UE) n.º 492/2011",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e5bc2c3bbcfa2e6b",
+      "language_code": "es",
+      "label": "Artículo 7, apartado 2",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3814235e62c81396",
+      "language_code": "es",
+      "label": "Requisito de residencia habitual en el territorio nacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4071089086019a98",
+      "language_code": "es",
+      "label": "Normativa nacional que impone el pago de un impuesto exclusivamente a determinados productores de electricidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cb7c8227405d7a73",
+      "language_code": "es",
+      "label": "¿Admisibilidad a la luz de los artículos 49, 56 y 63 TFUE y del artículo 17 de la Carta? (Cuestión 3)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3e9f9d6c99a127b4",
+      "language_code": "es",
+      "label": "Prevención y reparación de los daños medioambientales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-29b43ac75007f1f3",
+      "language_code": "es",
+      "label": "Principio de quien contamina paga",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8b8a96f709b02c4f",
+      "language_code": "es",
+      "label": "Artículo 191, apartado 2, TFUE",
       "translation_status": "PROPOSED"
     }
   ]
