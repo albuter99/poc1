@@ -1,14 +1,13 @@
 {
   "schema_version": "excel-branch-manifest-v1",
   "profile": {
-    "indexation_entries": 5839,
-    "distinct_source_chain_ids": 5839,
+    "indexation_entries": 4203,
+    "distinct_source_chain_ids": 4203,
     "documents": 2780,
-    "distinct_texts": 5003,
+    "distinct_texts": 3485,
     "types": {
       "Descripteur du préexamen": 835,
       "Indicateur du préexamen": 592,
-      "Objet": 1636,
       "Mots-clés (Greffe)": 1634,
       "Indicateurs Décision": 1142
     }
