@@ -12097,11 +12097,16 @@
     {
       "added_new": 4000,
       "translated_active_terms": 4317
+    },
+    {
+      "added_new": 4250,
+      "translated_active_terms": 4567
     }
   ],
   "rejected_labels": [
     ")]",
     "ACRYL",
+    "Agencia Europea para la Seguridad y la Salud en el Trabajo (EU-OSHA)",
     "Brexit",
     "COVID-19",
     "Cotisations",
@@ -12120,8 +12125,8 @@
     "SA.39078-2019/C (ex 2014/N)",
     "TFUE"
   ],
-  "completed_new": 4000,
-  "translated_active_terms": 4317,
+  "completed_new": 4250,
+  "translated_active_terms": 4567,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:40:11.889507+00:00"
+  "updated_at_utc": "2026-11-12T15:41:12.519087+00:00"
 }
