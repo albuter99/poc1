@@ -11,12 +11,12 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: poc1-en-6000-translations
+  group: poc1-shared-translations
   cancel-in-progress: false
 jobs:
   translate:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 355
     steps:
       - name: Checkout experimental branch
         uses: actions/checkout@v4
