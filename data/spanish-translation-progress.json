@@ -12041,6 +12041,10 @@
     {
       "added_new": 500,
       "translated_active_terms": 817
+    },
+    {
+      "added_new": 750,
+      "translated_active_terms": 1067
     }
   ],
   "rejected_labels": [
@@ -12049,8 +12053,8 @@
     "Dumping",
     "Nemo iudex in causa sua"
   ],
-  "completed_new": 500,
-  "translated_active_terms": 817,
+  "completed_new": 750,
+  "translated_active_terms": 1067,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:28:41.377470+00:00"
+  "updated_at_utc": "2026-11-12T15:31:12.593644+00:00"
 }
