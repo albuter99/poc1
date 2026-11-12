@@ -2,16 +2,23 @@
   "schema_version": "mot-cles-segmentation-audit-v1",
   "source": "data/excel-manifest.json",
   "scope": "Experimental corpus only; source original_text preserved unmodified",
-  "method": "Ordered maillons_fr uses Unicode dash/minus when whitespace occurs on at least one side; embedded identifiers such as T‑688/21 are preserved.",
+  "method": "Les chaînes structurées utilisent les maillons_fr comme source de vérité et le séparateur canonique ' - '. Les entrées Objet sont des textes libres non segmentés, même lorsqu'elles contiennent des tirets.",
   "metrics": {
     "source_indexation_entries": 5839,
+    "structured_indexations": 4203,
+    "free_text_indexations": 1636,
     "distinct_original_indexation_texts": 5003,
-    "distinct_normalized_candidate_chains": 4983,
-    "ordered_maillon_occurrences": 42408,
-    "distinct_candidate_term_labels": 15280,
+    "ordered_maillon_occurrences": 34757,
+    "structured_maillon_occurrences": 33121,
+    "free_text_maillon_occurrences": 1636,
+    "corrected_free_text_segmentations": 992,
+    "normalized_structured_texts": 162,
+    "structured_maillons_with_recognized_dash_delimiters": 0,
+    "structured_maillons_with_internal_line_breaks": 0,
+    "free_text_entries_with_spaced_dash_preserved": 986,
+    "free_text_maillons_with_internal_line_breaks": 61,
     "metadata_sections_extracted": 589,
-    "maillons_with_recognized_dash_delimiters": 0,
-    "remaining_maillons_with_internal_line_breaks": 61
+    "validation_errors": 0
   },
   "fields": {
     "original_text": "Unmodified French source text",
@@ -38,9 +45,10 @@
     }
   ],
   "review_items": [
-    "61 candidate terms retain internal newline characters. These may be legitimate prose, line wrapping or additional source notes; do not split solely on line breaks.",
-    "Some free-text Objet entries consist of long passages. They remain a single candidate term when no explicit separator is present.",
-    "Canonical candidate chains are deduplicated across indexation entries while preserving source indexation IDs and document links.",
-    "Segmentation is mechanical and provisional. Terminology and business approval are separate processes."
-  ]
+    "Les 986 descriptions libres Objet contenant des tirets espacés sont conservées comme un seul maillon : les scinder casserait des références et noms d'affaires.",
+    "Les 61 retours à la ligne internes restants sont dans les textes libres Objet, non dans les maillons structurés.",
+    "Les textes source original_text peuvent inclure la section Activité ou produit visés, extraite de indexation_text_fr.",
+    "La segmentation est une proposition exploratoire et non une validation des termes et chaînes de référence MDM."
+  ],
+  "audit_date": "2026-11-12"
 }
