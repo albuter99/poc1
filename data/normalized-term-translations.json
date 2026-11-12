@@ -3,9 +3,9 @@
   "status": "ALL_PROPOSED_NOT_VALIDATED",
   "stats": {
     "total_terms": 13286,
-    "proposed_es": 379,
+    "proposed_es": 434,
     "proposed_en": 174,
-    "missing_es": 12907,
+    "missing_es": 12852,
     "missing_en": 13112
   },
   "translations": [
@@ -3325,6 +3325,336 @@
       "term_id": "TERM-8b8a96f709b02c4f",
       "language_code": "es",
       "label": "Artículo 191, apartado 2, TFUE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-112ee350fe8bf4d8",
+      "language_code": "es",
+      "label": "Medida nacional que puede considerarse una medida nacional equivalente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9fcd55a0dd360888",
+      "language_code": "es",
+      "label": "Naturaleza de la medida nacional a la luz de los artículos 30 y 110 TFUE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-22b49714255d317c",
+      "language_code": "es",
+      "label": "Ayuda de Estado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-70c81a7b7ef744eb",
+      "language_code": "es",
+      "label": "Competencia judicial internacional - Litispendencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-39baeb0681470b06",
+      "language_code": "es",
+      "label": "Medidas provisionales y cautelares",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-14ee78b836d8f2a4",
+      "language_code": "es",
+      "label": "Resolución provisional sobre la pensión alimenticia de hijos menores",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5782f22cea8571d8",
+      "language_code": "es",
+      "label": "Operaciones con información privilegiada y abuso de mercado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-175ddc1b73aac2df",
+      "language_code": "es",
+      "label": "Información privilegiada de carácter concreto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-baf2adbea9cc479e",
+      "language_code": "es",
+      "label": "Medidas destinadas a evitar la presencia accidental de organismos modificados genéticamente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2645b99a596d31a2",
+      "language_code": "es",
+      "label": "Directiva 2001/18/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-adc8a0a660d3a8f6",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 1829/2003",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-332add75cafe7c1d",
+      "language_code": "es",
+      "label": "Decisión de Ejecución (UE) 2016/321",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ece783ee759bba36",
+      "language_code": "es",
+      "label": "Prohibición de cultivar maíz modificado genéticamente en el territorio nacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1e45cb4e791e4eba",
+      "language_code": "es",
+      "label": "Denominación social",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-390638d30a983ff3",
+      "language_code": "es",
+      "label": "Normativa nacional que establece tarifas mínimas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-25bebe8672b84eb2",
+      "language_code": "es",
+      "label": "Servicio de entrega de libros a domicilio",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d5500e5508275831",
+      "language_code": "es",
+      "label": "Diversidad cultural",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0ad5b19f04b60113",
+      "language_code": "es",
+      "label": "Objetivos de dicha Directiva",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91ff002e8e03556a",
+      "language_code": "es",
+      "label": "Alcance del control de compatibilidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-31d8892d812f1b91",
+      "language_code": "es",
+      "label": "Derecho primario de la Unión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ba1131b1014019d1",
+      "language_code": "es",
+      "label": "Normas comunes para el mercado interior del gas natural",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4a38c202067093a2",
+      "language_code": "es",
+      "label": "Reglamento 2017/460",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dc898921074c0a85",
+      "language_code": "es",
+      "label": "Métodos de cálculo de los precios que deben abonarse",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d2afa76107eb75f9",
+      "language_code": "es",
+      "label": "Artículo 35, apartado 1",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-84818efd99e075e9",
+      "language_code": "es",
+      "label": "Contratos que prevén la indexación de la tarifa oficial teniendo en cuenta otros elementos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-664d886952d13789",
+      "language_code": "es",
+      "label": "Principios de seguridad jurídica y de confianza legítima",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-da5f04a7e7b502f3",
+      "language_code": "es",
+      "label": "Seguro de responsabilidad civil de vehículos automóviles",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-12e0be77a8bf2257",
+      "language_code": "es",
+      "label": "Régimen de indemnización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-776f63c73b02048b",
+      "language_code": "es",
+      "label": "Directiva 2009/103/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6f76016b392f511b",
+      "language_code": "es",
+      "label": "Accidente de tráfico en el que interviene un vehículo robado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-737f7f47fd32255b",
+      "language_code": "es",
+      "label": "Carga de la prueba respecto del conocimiento del origen ilícito por robo del vehículo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9a53b02690fe62a6",
+      "language_code": "es",
+      "label": "Organismo encargado de la indemnización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cd263286d92eda4",
+      "language_code": "es",
+      "label": "Tratamiento de categorías especiales de datos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eb8750fd08a33581",
+      "language_code": "es",
+      "label": "Nivel retributivo de los jueces",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2c7e42f5db9b6d05",
+      "language_code": "es",
+      "label": "Ordenación del tiempo de trabajo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1803a848a0e20b5c",
+      "language_code": "es",
+      "label": "Actividades de los fiscales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d43dae2d02248501",
+      "language_code": "es",
+      "label": "Tiempo de guardia domiciliaria y en el lugar de trabajo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0db07d1f66ae8b7b",
+      "language_code": "es",
+      "label": "Igualdad y no discriminación - Acceso al empleo y condiciones de trabajo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0797bf0562527771",
+      "language_code": "es",
+      "label": "Igualdad de trato entre hombres y mujeres",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5af0737519f46269",
+      "language_code": "es",
+      "label": "Actividad por cuenta propia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91efc281f713e671",
+      "language_code": "es",
+      "label": "Prestación por maternidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2f07800e90729dd6",
+      "language_code": "es",
+      "label": "Concesión de una única prestación con arreglo al régimen de los trabajadores",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8a3e56a4ab3505dc",
+      "language_code": "es",
+      "label": "Partida 4902 de la nomenclatura combinada",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5addfb15e676355d",
+      "language_code": "es",
+      "label": "Publicaciones periódicas impresas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-25a83b6d08ec0449",
+      "language_code": "es",
+      "label": "Servicios financieros",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2fc600a5e043b9f9",
+      "language_code": "es",
+      "label": "Directiva 2003/6/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5ca92370c448c4ec",
+      "language_code": "es",
+      "label": "Divulgación por un político de información privilegiada en los medios de comunicación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-12b1b278256653e4",
+      "language_code": "es",
+      "label": "Concepto de comunicación ilícita",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ffaef1bdb2d38669",
+      "language_code": "es",
+      "label": "Libertad de expresión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cd74ba74cfa839f8",
+      "language_code": "es",
+      "label": "Exenciones en favor de determinadas actividades de interés general",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d8292760f3d02f44",
+      "language_code": "es",
+      "label": "Prestaciones de servicios efectuadas por agrupaciones autónomas de personas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d72b1db0aac935b",
+      "language_code": "es",
+      "label": "Servicios que contribuyen al ejercicio de la actividad exenta",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8d7bbf634f4032df",
+      "language_code": "es",
+      "label": "Servicios de limpieza en el ámbito sanitario",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d3d8384dfcd1e38",
+      "language_code": "es",
+      "label": "Servicios de limpieza en el ámbito educativo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-480b91d5093c79dd",
+      "language_code": "es",
+      "label": "Reglamento (UE) n.º 269/2014",
       "translation_status": "PROPOSED"
     }
   ]
