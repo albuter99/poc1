@@ -111,3 +111,11 @@ La page [relations.html](../relations.html) représente les tables et les relati
 **Important :** le classeur n'établit pas à lui seul le lien entre une chaîne d'indexation et une chaîne de référence officiellement validée dans MDM. Ces tables peuvent être vides jusqu'à une validation de ce rapprochement. Le schéma reste volontairement complet.
 
 Pour voir l'application expérimentale, il faut exécuter les fichiers de cette branche via un serveur statique local (par exemple `python -m http.server 8000`) : le site GitHub Pages de production ne publie que `main`.
+
+## Charger le corpus complet dans la branche expérimentale
+
+Le visualiseur `relations.html` charge automatiquement `data/indexation-relational-preview.json` lorsque ce fichier existe sur la branche. Il peut également ouvrir directement le fichier Excel dans le navigateur.
+
+Si la publication du corpus est autorisée, le fichier JSON complet peut être ajouté depuis GitHub en sélectionnant **la branche expérimentale**, puis le dossier `data/`, puis **Add file > Upload files**. Nom attendu : `indexation-relational-preview.json`. Il doit rester absent de `main`. Il contient 5 839 indexations et 2 780 documents, mais aucune traduction ES/EN officielle.
+
+Cette opération publie réellement les enregistrements, car le dépôt est public. L'application charge ensuite ces données automatiquement. Le script local `scripts/import_indexation_xlsx.py` permet de régénérer le même format.
