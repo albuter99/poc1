@@ -16,7 +16,8 @@
     "structured_maillons_with_recognized_dash_delimiters": 0,
     "structured_maillons_with_internal_line_breaks": 0,
     "duplicate_source_chain_ids": 0,
-    "validation_errors": 0
+    "validation_errors": 0,
+    "structured_maillons_with_one_sided_dash_delimiters": 0
   },
   "fields": {
     "original_text": "Unmodified French source text",
