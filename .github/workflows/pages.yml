@@ -17,16 +17,32 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout original main website
         uses: actions/checkout@v4
-      - name: Generate analytics with Python
+      - name: Generate original main analytics with Python
         run: python3 scripts/build_stats.py
+      - name: Checkout experimental website into isolated subfolder
+        uses: actions/checkout@v4
+        with:
+          ref: prototype-excel-multilingue-es-en
+          path: preview-source
+      - name: Assemble two isolated websites
+        run: |
+          mkdir -p _site/experimental
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' --exclude='preview-source' ./ _site/
+          rsync -a --exclude='.git' --exclude='.github' preview-source/ _site/experimental/
+          test -f _site/index.html
+          test -f _site/data/stats.json
+          test -f _site/experimental/index.html
+          test -f _site/experimental/branch-data.js
+          test -f _site/experimental/data/excel-manifest.json
+          touch _site/.nojekyll
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload static website
+      - name: Upload two static websites
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
