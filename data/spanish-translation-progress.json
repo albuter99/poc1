@@ -12077,6 +12077,10 @@
     {
       "added_new": 2750,
       "translated_active_terms": 3067
+    },
+    {
+      "added_new": 3000,
+      "translated_active_terms": 3317
     }
   ],
   "rejected_labels": [
@@ -12091,11 +12095,12 @@
     "Excipient",
     "Forum necessitatis",
     "Handlungsort",
+    "KLM Holding",
     "Nemo iudex in causa sua",
     "TFUE"
   ],
-  "completed_new": 2750,
-  "translated_active_terms": 3067,
+  "completed_new": 3000,
+  "translated_active_terms": 3317,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:36:34.039478+00:00"
+  "updated_at_utc": "2026-11-12T15:37:41.650048+00:00"
 }
