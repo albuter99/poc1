@@ -12053,6 +12053,10 @@
     {
       "added_new": 1250,
       "translated_active_terms": 1567
+    },
+    {
+      "added_new": 1500,
+      "translated_active_terms": 1817
     }
   ],
   "rejected_labels": [
@@ -12064,8 +12068,8 @@
     "Nemo iudex in causa sua",
     "TFUE"
   ],
-  "completed_new": 1250,
-  "translated_active_terms": 1567,
+  "completed_new": 1500,
+  "translated_active_terms": 1817,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:32:13.160092+00:00"
+  "updated_at_utc": "2026-11-12T15:32:46.035905+00:00"
 }
