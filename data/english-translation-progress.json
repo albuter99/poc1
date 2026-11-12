@@ -12278,6 +12278,10 @@
     {
       "added_new": 500,
       "translated_active_terms": 580
+    },
+    {
+      "added_new": 750,
+      "translated_active_terms": 830
     }
   ],
   "rejected_labels": [
@@ -12286,33 +12290,48 @@
     "Agriculture",
     "Article 10",
     "Article 11",
+    "Article 12",
+    "Article 13",
+    "Article 14",
+    "Article 15",
     "Article 16",
     "Article 17",
     "Article 2",
+    "Article 20",
+    "Article 23",
+    "Article 273",
+    "Article 29",
     "Article 3",
     "Article 4",
     "Article 43",
     "Article 46",
     "Article 47",
     "Article 5",
+    "Article 50",
     "Article 6",
     "Article 7",
     "Article 8",
+    "Article 9",
     "Clause 4",
     "Concentrations",
+    "Condition",
     "Conditions",
     "Dumping",
     "Exceptions",
+    "Exclusion",
+    "Inclusion",
     "Intervention",
+    "Justification",
     "Nemo iudex in causa sua",
     "Obligations",
     "Pensions",
+    "Promotion",
     "Radiation",
     "Restrictions",
     "Transport"
   ],
-  "completed_new": 500,
-  "translated_active_terms": 580,
+  "completed_new": 750,
+  "translated_active_terms": 830,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:56:16.697833+00:00"
+  "updated_at_utc": "2026-11-12T15:56:40.868462+00:00"
 }
