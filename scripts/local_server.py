@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 import secrets
 import threading
+import webbrowser
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +58,7 @@ def run():
         with ThreadingHTTPServer((HOST, PORT), handler) as server:
             MARKER.write_text(json.dumps({"host": HOST, "port": PORT, "token": token}), encoding="utf-8")
             print("POC1 disponible en http://127.0.0.1:8765/relations.html", flush=True)
+            webbrowser.open(f"http://{HOST}:{PORT}/relations.html")
             print("Para detenerlo, abre DETENER_POC.bat o cierra esta ventana.", flush=True)
             try:
                 server.serve_forever(poll_interval=0.1)
