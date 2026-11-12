@@ -12081,6 +12081,10 @@
     {
       "added_new": 3000,
       "translated_active_terms": 3317
+    },
+    {
+      "added_new": 3250,
+      "translated_active_terms": 3567
     }
   ],
   "rejected_labels": [
@@ -12097,10 +12101,12 @@
     "Handlungsort",
     "KLM Holding",
     "Nemo iudex in causa sua",
+    "Periculum in mora",
+    "Programme-cadre pour la recherche et l’innovation “Horizon 2020” (2014-2020)",
     "TFUE"
   ],
-  "completed_new": 3000,
-  "translated_active_terms": 3317,
+  "completed_new": 3250,
+  "translated_active_terms": 3567,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:37:41.650048+00:00"
+  "updated_at_utc": "2026-11-12T15:38:23.857593+00:00"
 }
