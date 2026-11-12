@@ -108,7 +108,7 @@ def main():
         for fr, en in zip(terms, drafts):
             if added >= args.target:
                 break
-            en = re.sub(r"\s+", " ", es).strip()
+            en = re.sub(r"\s+", " ", en).strip()
             if not en or en == fr or len(en) < 2 or len(en) > max(450, 2.5 * len(fr)):
                 rejected.add(fr)
                 continue
