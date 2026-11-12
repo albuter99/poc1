@@ -12113,6 +12113,10 @@
     {
       "added_new": 5000,
       "translated_active_terms": 5317
+    },
+    {
+      "added_new": 5250,
+      "translated_active_terms": 5567
     }
   ],
   "rejected_labels": [
@@ -12121,6 +12125,7 @@
     "Agencia Europea para la Seguridad y la Salud en el Trabajo (EU-OSHA)",
     "Brexit",
     "COVID-19",
+    "Call for proposals CEF 2 Transport",
     "Cotisations",
     "Covid-19",
     "Dumping",
@@ -12137,8 +12142,8 @@
     "SA.39078-2019/C (ex 2014/N)",
     "TFUE"
   ],
-  "completed_new": 5000,
-  "translated_active_terms": 5317,
+  "completed_new": 5250,
+  "translated_active_terms": 5567,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:42:53.033912+00:00"
+  "updated_at_utc": "2026-11-12T15:43:42.493048+00:00"
 }
