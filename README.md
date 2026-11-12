@@ -24,15 +24,16 @@ Attention : les deux modes ne publient **pas simultanément** deux URL différen
 
 ## Contrôle des données et des maillons (12/11/2026)
 
-Le corpus Excel expérimental est conservé dans `data/excel-indexations-00.json` à `data/excel-indexations-14.json`. Son contrôle complet couvre **5 839 indexations**, dont **4 203 chaînes structurées** et **1 636 textes libres Objet**. Les **992 textes Objet** autrefois découpés à tort ont été réunis en un maillon chacun. Les **162 libellés structurés** comportant des séparateurs non canoniques ont été harmonisés et **3 maillons structurés** ont été nettoyés de sauts de ligne parasites.
+Le corpus expérimental conserve désormais **4 203 indexations structurées** après la suppression de **1 636 entrées de texte libre Objet**. Cela représente **3 485 chaînes textuelles distinctes**, **12 341 termes structurés distincts** et **33 121 occurrences ordonnées de maillons**.
 
-- `original_text` est la source conservée sans changement, y compris les notes de type « Activité ou produit visés » lorsqu'elles y figurent.
-- `indexation_text_fr` est le libellé français canonique de l'indexation, avec ` - ` entre les maillons structurés.
-- `maillons_fr` conserve chaque terme structuré dans un élément distinct. Pour `Objet`, tout le texte libre reste un élément unique, même lorsqu'il contient des tirets et des noms d'affaires.
-- Les **986 textes libres Objet** contenant un tiret espacé et les **61 sauts de ligne internes** de texte libre sont conservés intentionnellement. **Aucun terme structuré** ne contient un séparateur de maillons reconnu ni de saut de ligne interne.
-- La segmentation reste exploratoire : elle ne certifie pas la validation métier des termes/chaînes MDM.
+- `original_text` conserve le texte source des indexations structurées sans modification.
+- `indexation_text_fr` utilise ` - ` comme séparateur canonique.
+- `maillons_fr` contient les termes structurés distincts par position.
+- Les séparateurs typographiques avec espaces (tirets `-`, `−`, `–`, `—` et variantes) et les sauts de ligne ont été vérifiés. **0 erreur technique** constatée dans les contrôles appliqués.
+- Les tirets internes sans espaces peuvent faire partie de mots composés et ne sont pas automatiquement utilisés comme séparateurs.
+- Les termes restent des candidats exploratoires, non validés métier en MDM.
 
-Audit reproductible : `python scripts/check_corpus_segments.py`. Un workflow GitHub Actions vérifie la segmentation à chaque modification des JSON concernés. Rapport : `data/segmentation-audit.json`.
+Audit : `data/segmentation-audit.json`. Vérification : `python scripts/check_corpus_segments.py`. Le script `scripts/remove_free_text.py` assure la suppression reproductible des textes libres et les contrôles complémentaires. Les traductions ES/EN constituent une étape distincte.
 
 ---
 
