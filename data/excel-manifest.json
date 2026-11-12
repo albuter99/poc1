@@ -1,0 +1,35 @@
+{
+  "schema_version": "excel-branch-manifest-v1",
+  "profile": {
+    "indexation_entries": 5839,
+    "distinct_source_chain_ids": 5839,
+    "documents": 2780,
+    "distinct_texts": 5003,
+    "types": {
+      "Descripteur du préexamen": 835,
+      "Indicateur du préexamen": 592,
+      "Objet": 1636,
+      "Mots-clés (Greffe)": 1634,
+      "Indicateurs Décision": 1142
+    }
+  },
+  "documents_file": "data/excel-documents.json",
+  "indexation_files": [
+    "data/excel-indexations-00.json",
+    "data/excel-indexations-01.json",
+    "data/excel-indexations-02.json",
+    "data/excel-indexations-03.json",
+    "data/excel-indexations-04.json",
+    "data/excel-indexations-05.json",
+    "data/excel-indexations-06.json",
+    "data/excel-indexations-07.json",
+    "data/excel-indexations-08.json",
+    "data/excel-indexations-09.json",
+    "data/excel-indexations-10.json",
+    "data/excel-indexations-11.json",
+    "data/excel-indexations-12.json",
+    "data/excel-indexations-13.json",
+    "data/excel-indexations-14.json"
+  ],
+  "notice": "Derived from user-supplied public EU legal indexing sample. Provisional relationships; no validated MDM chains or translations are inferred."
+}
