@@ -1,0 +1,46 @@
+{
+  "schema_version": "mot-cles-segmentation-audit-v1",
+  "source": "data/excel-manifest.json",
+  "scope": "Experimental corpus only; source original_text preserved unmodified",
+  "method": "Ordered maillons_fr uses Unicode dash/minus when whitespace occurs on at least one side; embedded identifiers such as T‑688/21 are preserved.",
+  "metrics": {
+    "source_indexation_entries": 5839,
+    "distinct_original_indexation_texts": 5003,
+    "distinct_normalized_candidate_chains": 4983,
+    "ordered_maillon_occurrences": 42408,
+    "distinct_candidate_term_labels": 15280,
+    "metadata_sections_extracted": 589,
+    "maillons_with_recognized_dash_delimiters": 0,
+    "remaining_maillons_with_internal_line_breaks": 61
+  },
+  "fields": {
+    "original_text": "Unmodified French source text",
+    "indexation_text_fr": "Clean source indexation text, excluding detected activity/product metadata sections",
+    "maillons_fr": "Ordered candidate term labels after segmentation, not validated MDM terms",
+    "activite_produit_vises_fr": "Optional descriptive activity/product field extracted from distinct source section"
+  },
+  "examples": [
+    {
+      "source_chain_id": "MCL-GRF-922",
+      "original_separator": "− (U+2212)",
+      "first_two_maillons": [
+        "Gaz à effet de serre",
+        "Quotas de mise sur le marché des hydrofluorocarbones"
+      ]
+    },
+    {
+      "source_chain_id": "MCL-GRF-923",
+      "original_separator": "− (U+2212)",
+      "first_two_maillons": [
+        "Gaz à effet de serre",
+        "Quotas de mise sur le marché des hydrofluorocarbones"
+      ]
+    }
+  ],
+  "review_items": [
+    "61 candidate terms retain internal newline characters. These may be legitimate prose, line wrapping or additional source notes; do not split solely on line breaks.",
+    "Some free-text Objet entries consist of long passages. They remain a single candidate term when no explicit separator is present.",
+    "Canonical candidate chains are deduplicated across indexation entries while preserving source indexation IDs and document links.",
+    "Segmentation is mechanical and provisional. Terminology and business approval are separate processes."
+  ]
+}
