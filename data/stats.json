@@ -1,474 +1,700 @@
 {
   "schema_version": 1,
-  "origin": "python",
-  "source": "data/chains.json",
-  "record_count": 101,
+  "origin": "excel-derived",
+  "record_count": 5003,
+  "source": "data/excel-manifest.json",
   "metrics": [
     {
       "key": "keywords_total",
       "title": "Nombre de termes différents",
-      "value": 54,
-      "subtitle": "Nombre total de termes distincts utilisés dans les chaînes.",
+      "value": 13286,
+      "subtitle": "Nombre de segments distincts observés dans le corpus.",
       "rows": [
         {
-          "label": "Dispositions de procédure",
-          "value": 21
+          "label": "Demande de décision préjudicielle",
+          "value": 478
         },
         {
-          "label": "Conditions de recevabilité",
-          "value": 20
+          "label": "Marque de l’Union européenne",
+          "value": 456
         },
         {
-          "label": "Décisions administratives",
-          "value": 20
+          "label": "Renvoi préjudiciel",
+          "value": 408
         },
         {
-          "label": "Principes fondamentaux",
-          "value": 20
+          "label": "Recours en annulation",
+          "value": 328
         },
         {
-          "label": "Voies de recours",
-          "value": 20
-        },
-        {
-          "label": "Appréciation des preuves",
-          "value": 16
+          "label": "Pourvoi",
+          "value": 269
         },
         {
           "label": "Procédure d’opposition",
-          "value": 15
+          "value": 190
         },
         {
-          "label": "Erreur manifeste",
-          "value": 14
+          "label": "Rapprochement des législations",
+          "value": 173
         },
         {
-          "label": "Objectif",
-          "value": 13
+          "label": "Fonction publique",
+          "value": 170
         },
         {
-          "label": "Protection des données",
-          "value": 13
+          "label": "Procédure d’annulation",
+          "value": 121
+        },
+        {
+          "label": "Protection des consommateurs",
+          "value": 121
         }
       ],
       "kind": "bars",
-      "note": "Nombre total de termes distincts utilisés dans les chaînes de référence.",
+      "note": "Segments candidats, non validés dans MDM.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "keywords_frequency",
       "title": "Nombre total de maillons",
-      "value": 506,
-      "subtitle": "Nombre total d’occurrences de termes dans l’ensemble des chaînes.",
+      "value": 30784,
+      "subtitle": "Total de positions de segments candidats.",
       "rows": [
         {
-          "label": "Dispositions de procédure",
-          "value": 21
-        },
-        {
-          "label": "Conditions de recevabilité",
-          "value": 20
-        },
-        {
-          "label": "Décisions administratives",
-          "value": 20
-        },
-        {
-          "label": "Principes fondamentaux",
-          "value": 20
-        },
-        {
-          "label": "Voies de recours",
-          "value": 20
-        },
-        {
-          "label": "Appréciation des preuves",
-          "value": 16
-        },
-        {
-          "label": "Procédure d’opposition",
-          "value": 15
-        },
-        {
-          "label": "Erreur manifeste",
-          "value": 14
-        },
-        {
-          "label": "Objectif",
-          "value": 13
-        },
-        {
-          "label": "Protection des données",
-          "value": 13
-        },
-        {
-          "label": "Compétence de l'Office",
-          "value": 12
-        },
-        {
-          "label": "Aides d’État",
-          "value": 11
-        },
-        {
-          "label": "Charge de la preuve",
-          "value": 11
-        },
-        {
-          "label": "Concurrence",
-          "value": 10
-        },
-        {
-          "label": "Contrôle de légalité",
-          "value": 10
-        },
-        {
-          "label": "Droit institutionnel",
-          "value": 10
-        },
-        {
-          "label": "Fonction publique",
-          "value": 10
-        },
-        {
-          "label": "Marché intérieur",
-          "value": 10
+          "label": "Demande de décision préjudicielle",
+          "value": 478
         },
         {
           "label": "Marque de l’Union européenne",
-          "value": 10
+          "value": 456
         },
         {
-          "label": "Opposabilité",
-          "value": 10
-        },
-        {
-          "label": "Politique commerciale",
-          "value": 10
-        },
-        {
-          "label": "Procédure juridictionnelle",
-          "value": 10
-        },
-        {
-          "label": "Propriété intellectuelle",
-          "value": 10
+          "label": "Renvoi préjudiciel",
+          "value": 408
         },
         {
           "label": "Recours en annulation",
-          "value": 10
+          "value": 328
         },
         {
-          "label": "Réexamen",
-          "value": 10
+          "label": "Pourvoi",
+          "value": 269
         },
         {
-          "label": "Usage sérieux",
-          "value": 10
+          "label": "Procédure d’opposition",
+          "value": 190
         },
         {
-          "label": "Conditions",
-          "value": 9
+          "label": "Rapprochement des législations",
+          "value": 173
         },
         {
-          "label": "Déchéance",
-          "value": 9
+          "label": "Fonction publique",
+          "value": 170
         },
         {
-          "label": "Publication",
-          "value": 9
+          "label": "Procédure d’annulation",
+          "value": 121
         },
         {
-          "label": "Droits de la défense",
-          "value": 8
+          "label": "Protection des consommateurs",
+          "value": 121
+        },
+        {
+          "label": "Obligation de motivation",
+          "value": 119
+        },
+        {
+          "label": "Coopération judiciaire en matière pénale",
+          "value": 108
+        },
+        {
+          "label": "Politique étrangère et de sécurité commune",
+          "value": 101
+        },
+        {
+          "label": "Clauses abusives dans les contrats conclus avec les consommateurs",
+          "value": 99
+        },
+        {
+          "label": "Champ d’application",
+          "value": 96
+        },
+        {
+          "label": "Environnement",
+          "value": 94
+        },
+        {
+          "label": "Union bancaire",
+          "value": 93
+        },
+        {
+          "label": "Coopération judiciaire en matière civile",
+          "value": 92
+        },
+        {
+          "label": "Politique sociale",
+          "value": 86
+        },
+        {
+          "label": "Politique d’asile",
+          "value": 85
+        },
+        {
+          "label": "Directive 93/13/CEE",
+          "value": 81
+        },
+        {
+          "label": "Concurrence",
+          "value": 79
+        },
+        {
+          "label": "Union économique et monétaire",
+          "value": 79
+        },
+        {
+          "label": "Mécanisme de résolution unique des établissements de crédit et de certaines entreprises d’investissement (MRU)",
+          "value": 76
+        },
+        {
+          "label": "Manquement d’État",
+          "value": 75
+        },
+        {
+          "label": "Motif relatif de refus",
+          "value": 74
+        },
+        {
+          "label": "Directive 2006/112/CE",
+          "value": 73
+        },
+        {
+          "label": "Fonds de résolution unique",
+          "value": 72
+        },
+        {
+          "label": "Proportionnalité",
+          "value": 72
+        },
+        {
+          "label": "Procédure de nullité",
+          "value": 70
         }
       ],
       "kind": "bars",
-      "note": "Nombre total d’occurrences de termes dans l’ensemble des chaînes de référence.",
+      "note": "Segmentation provisoire issue du texte Excel.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "chains_distinct",
       "title": "Nombre de chaînes différentes",
-      "value": 101,
-      "subtitle": "Nombre total de chaînes distinctes présentes dans le répertoire.",
+      "value": 5003,
+      "subtitle": "Textes distincts de chaînes d’indexation.",
       "rows": [
         {
-          "label": "Aides d’État - Conditions de recevabilité - Déchéance - Notification",
+          "label": " Droit institutionnel - Traitement des données à caractère personnel - Protection des personnes physiques à l’égard du traitement des données à caractère personnel par les institutions, organes et organismes de l’Union - Demandes adressées à l’EUIPO par le requérant faisant valoir certains de ses droits selon le règlement  (UE) 2018/1725 - Rejets implicites de ses demandes - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Conditions de recevabilité - Erreur manifeste - Recours en annulation - Procédure de nullité",
+          "label": "À titre principal, une demande fondée sur l’article 270 TFUE et tendant à l’annulation de l’avis de fixation des droits à pension du 14 mars 2024 et, à titre subsidiaire, une demande fondée sur l’article 268 TFUE et tendant à obtenir réparation du préjudice que la requérante aurait subi.",
           "value": 1
         },
         {
-          "label": "Aides d’État - Décisions administratives - Droits antérieurs - Sécurité juridique - Charge de la preuve",
+          "label": "Accès aux documents - Article 4, paragraphe 2, du règlement (CE) n° 1049/2001 - Document émanant d'une procédure d’avis scientifique concernant le médicament carboxymaltose ferrique, développé par la partie requérante - Demande d’accès à ce document par un tiers - Décision de l’EMA de divulguer à un tiers une version expurgée du document - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Décisions administratives - Réexamen - Procédure d’opposition - Principes généraux - Déchéance",
+          "label": "Accès aux documents - Article 41, paragraphe 2, sous b), de la charte des droits fondamentaux de l’Union européenne - Demande d’accès aux documents en possession de l’Autorité européenne des assurances et des pensions professionnelles (AEAPP) dans le cadre d’une enquête concernant la partie requérante, menée en vertu de l’article 17 du règlement n° 1094/2010 - Refus d’accès aux documents - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Dispositions de procédure - Erreur manifeste - Marge de l’appréciation de l’Office - Notion - Compétence de l'Office - Procédure d’opposition",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2 - Exceptions - Normes harmonisées adoptées par le Comité européen de normalisation (CEN) - Refus de fournir l’accès aux normes harmonisées dans le format demandé ou dans un format existant - L’exécution de l’arrêt de la Cour de Justice du 5 mars 2024 (C-588/21 P, EU:C:2024:201) - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Dispositions de procédure - Erreur manifeste - Recours en annulation - Recevabilité - Mesures provisoires",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2, deuxième et troisième tirets - Exceptions au droit d’accès aux documents - L’évaluation par la Commission du plan pour la reprise et la résilience pour la Croatie - Cabotage maritime - Demande d’accès aux documents en possession de la Commission dans le cadre de ses évaluations de la législation de l’État membre - Refus partiel de l’accès aux documents - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Dispositions de procédure - Motivation juridique - Opposabilité - Motivation des décisions",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2, deuxième tiret, du règlement (CE) n° 1049/2001 - Demande d’accès aux documents en possession de la Commission dans le cadre d’une enquête menée par l’AEAPP sur la partie requérante, en vertu de l’article 17 du règlement n° 1094/2010 - Demande initiale puis confirmative d’accès aux documents - Refus total d’accès aux documents - Recours en annulation devant le Tribunal",
           "value": 1
         },
         {
-          "label": "Aides d’État - Principes fondamentaux - Conditions - Charge de la preuve",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 8, paragraphe 2 - Refus implicite d’accès aux documents demandés - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Principes fondamentaux - Recevabilité - Compétence de l'Office - Délai de prescription - Procédure d’opposition",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Articles 2 et 4, paragraphe 2, deuxième tiret, du règlement (CE) n° 1049/2001 - Article 41, paragraphe 2, sous b), de la charte des droits fondamentaux de l’Union européenne - Demande d’accès aux documents en possession de l’Autorité européenne des assurances et des pensions professionnelles (AEAPP) dans le cadre d’une enquête concernant la partie requérante, menée en vertu de l’article 17 du règlement n° 1094/2010 - Demande initiale puis confirmative d’accès aux documents - Refus total puis partiel d’accès aux documents - Recours en annulation devant le Tribunal",
           "value": 1
         },
         {
-          "label": "Aides d’État - Voies de recours - Délai de recours - Erreur manifeste - Recours en annulation",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Décision portant la référence SGS 24/00015 du Conseil de l’Union européenne, du 13 mai 2024, refusant partiellement l’accès aux documents ST 6513/23 et ST 6515/23 - Demande confirmative - Refus partiel d’accès - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Aides d’État - Voies de recours - Mesures d'instruction - Décision définitive",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Demande d’accès à certains documents relatifs aux résumés de dossier déposés dans les procédures d’autorisation uniforme pour les additifs et enzymes alimentaires, dans le cadre du règlement (UE) n° 234/2011 de la Commission du 10 mars 2011 portant application du règlement (CE) n° 1331/2008 du Parlement européen et du Conseil établissant une procédure d’autorisation uniforme pour les additifs, enzymes et arômes alimentaires (JO 2011, L 64, p. 15) - Refus partiel d’accès en raison du très grand nombre de documents demandés - Demande confirmative déposée au titre de l’article 7, paragraphe 2, du règlement n° 1049/2001 - Décision implicite - Recours en annulation",
           "value": 1
         },
         {
-          "label": "Concurrence - Conditions de recevabilité - Droits antérieurs - Sécurité juridique",
+          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Demande d’accès aux documents de l’EUIPO - Épreuves écrites dans des procédures de sélection réalisées pendant la pandémie COVID-19 - L’absence de réponse de l’EUIPO aux demandes confirmatives du requérant dans le délai requis - Recours en annulation",
           "value": 1
         }
       ],
       "kind": "bars",
-      "note": "Nombre total de chaînes de référence distinctes présentes dans le répertoire.",
+      "note": "Textes distincts, non validés en tant que chaînes de référence.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "length_range",
       "title": "Distribution de chaînes par nombre de maillons",
-      "value": 101,
-      "subtitle": "Répartition du nombre de chaînes par nombre de maillons.",
+      "value": 5003,
+      "subtitle": "Nombre de chaînes par nombre de segments.",
       "rows": [
         {
+          "label": "1 maillons",
+          "value": 1223
+        },
+        {
+          "label": "2 maillons",
+          "value": 117
+        },
+        {
+          "label": "3 maillons",
+          "value": 159
+        },
+        {
           "label": "4 maillons",
-          "value": 34
+          "value": 395
         },
         {
           "label": "5 maillons",
-          "value": 33
+          "value": 342
         },
         {
           "label": "6 maillons",
-          "value": 33
+          "value": 437
         },
         {
           "label": "7 maillons",
+          "value": 500
+        },
+        {
+          "label": "8 maillons",
+          "value": 465
+        },
+        {
+          "label": "9 maillons",
+          "value": 354
+        },
+        {
+          "label": "10 maillons",
+          "value": 272
+        },
+        {
+          "label": "11 maillons",
+          "value": 236
+        },
+        {
+          "label": "12 maillons",
+          "value": 163
+        },
+        {
+          "label": "13 maillons",
+          "value": 101
+        },
+        {
+          "label": "14 maillons",
+          "value": 59
+        },
+        {
+          "label": "15 maillons",
+          "value": 62
+        },
+        {
+          "label": "16 maillons",
+          "value": 34
+        },
+        {
+          "label": "17 maillons",
+          "value": 34
+        },
+        {
+          "label": "18 maillons",
+          "value": 14
+        },
+        {
+          "label": "19 maillons",
+          "value": 5
+        },
+        {
+          "label": "20 maillons",
+          "value": 8
+        },
+        {
+          "label": "21 maillons",
+          "value": 5
+        },
+        {
+          "label": "22 maillons",
+          "value": 7
+        },
+        {
+          "label": "23 maillons",
+          "value": 1
+        },
+        {
+          "label": "24 maillons",
+          "value": 1
+        },
+        {
+          "label": "25 maillons",
+          "value": 4
+        },
+        {
+          "label": "26 maillons",
+          "value": 1
+        },
+        {
+          "label": "28 maillons",
+          "value": 1
+        },
+        {
+          "label": "32 maillons",
+          "value": 1
+        },
+        {
+          "label": "34 maillons",
+          "value": 1
+        },
+        {
+          "label": "36 maillons",
           "value": 1
         }
       ],
       "kind": "bars",
-      "note": "Répartition du nombre de chaînes de référence par nombre de maillons.",
+      "note": "Segmentation provisoire issue du texte Excel.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "length_min",
       "title": "Longueur minimale des chaînes",
-      "value": 4,
-      "subtitle": "Chaîne avec le nombre le plus petit de maillons.",
+      "value": 1,
+      "subtitle": "Nombre minimum de segments.",
       "rows": [
         {
+          "label": "1 maillons",
+          "value": 1223
+        },
+        {
+          "label": "2 maillons",
+          "value": 117
+        },
+        {
+          "label": "3 maillons",
+          "value": 159
+        },
+        {
           "label": "4 maillons",
-          "value": 34
+          "value": 395
         },
         {
           "label": "5 maillons",
-          "value": 33
+          "value": 342
         },
         {
           "label": "6 maillons",
-          "value": 33
+          "value": 437
         },
         {
           "label": "7 maillons",
+          "value": 500
+        },
+        {
+          "label": "8 maillons",
+          "value": 465
+        },
+        {
+          "label": "9 maillons",
+          "value": 354
+        },
+        {
+          "label": "10 maillons",
+          "value": 272
+        },
+        {
+          "label": "11 maillons",
+          "value": 236
+        },
+        {
+          "label": "12 maillons",
+          "value": 163
+        },
+        {
+          "label": "13 maillons",
+          "value": 101
+        },
+        {
+          "label": "14 maillons",
+          "value": 59
+        },
+        {
+          "label": "15 maillons",
+          "value": 62
+        },
+        {
+          "label": "16 maillons",
+          "value": 34
+        },
+        {
+          "label": "17 maillons",
+          "value": 34
+        },
+        {
+          "label": "18 maillons",
+          "value": 14
+        },
+        {
+          "label": "19 maillons",
+          "value": 5
+        },
+        {
+          "label": "20 maillons",
+          "value": 8
+        },
+        {
+          "label": "21 maillons",
+          "value": 5
+        },
+        {
+          "label": "22 maillons",
+          "value": 7
+        },
+        {
+          "label": "23 maillons",
+          "value": 1
+        },
+        {
+          "label": "24 maillons",
+          "value": 1
+        },
+        {
+          "label": "25 maillons",
+          "value": 4
+        },
+        {
+          "label": "26 maillons",
+          "value": 1
+        },
+        {
+          "label": "28 maillons",
+          "value": 1
+        },
+        {
+          "label": "32 maillons",
+          "value": 1
+        },
+        {
+          "label": "34 maillons",
+          "value": 1
+        },
+        {
+          "label": "36 maillons",
           "value": 1
         }
       ],
       "kind": "bars",
-      "note": "Nombre de maillons de la chaîne de référence comportant le moins de maillons dans le répertoire.",
+      "note": "Le texte libre forme une unité candidate.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "length_max",
       "title": "Longueur maximale des chaînes",
-      "value": 7,
-      "subtitle": "Chaîne avec le nombre le plus grand de maillons.",
+      "value": 36,
+      "subtitle": "Nombre maximum de segments.",
       "rows": [
         {
-          "label": "7 maillons",
+          "label": "36 maillons",
           "value": 1
         },
         {
+          "label": "34 maillons",
+          "value": 1
+        },
+        {
+          "label": "32 maillons",
+          "value": 1
+        },
+        {
+          "label": "28 maillons",
+          "value": 1
+        },
+        {
+          "label": "26 maillons",
+          "value": 1
+        },
+        {
+          "label": "25 maillons",
+          "value": 4
+        },
+        {
+          "label": "24 maillons",
+          "value": 1
+        },
+        {
+          "label": "23 maillons",
+          "value": 1
+        },
+        {
+          "label": "22 maillons",
+          "value": 7
+        },
+        {
+          "label": "21 maillons",
+          "value": 5
+        },
+        {
+          "label": "20 maillons",
+          "value": 8
+        },
+        {
+          "label": "19 maillons",
+          "value": 5
+        },
+        {
+          "label": "18 maillons",
+          "value": 14
+        },
+        {
+          "label": "17 maillons",
+          "value": 34
+        },
+        {
+          "label": "16 maillons",
+          "value": 34
+        },
+        {
+          "label": "15 maillons",
+          "value": 62
+        },
+        {
+          "label": "14 maillons",
+          "value": 59
+        },
+        {
+          "label": "13 maillons",
+          "value": 101
+        },
+        {
+          "label": "12 maillons",
+          "value": 163
+        },
+        {
+          "label": "11 maillons",
+          "value": 236
+        },
+        {
+          "label": "10 maillons",
+          "value": 272
+        },
+        {
+          "label": "9 maillons",
+          "value": 354
+        },
+        {
+          "label": "8 maillons",
+          "value": 465
+        },
+        {
+          "label": "7 maillons",
+          "value": 500
+        },
+        {
           "label": "6 maillons",
-          "value": 33
+          "value": 437
         },
         {
           "label": "5 maillons",
-          "value": 33
+          "value": 342
         },
         {
           "label": "4 maillons",
-          "value": 34
+          "value": 395
+        },
+        {
+          "label": "3 maillons",
+          "value": 159
+        },
+        {
+          "label": "2 maillons",
+          "value": 117
+        },
+        {
+          "label": "1 maillons",
+          "value": 1223
         }
       ],
       "kind": "bars",
-      "note": "Nombre de maillons de la chaîne de référence comportant le plus de maillons dans le répertoire.",
+      "note": "Les séparateurs sont interprétés provisoirement.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "indexation_types",
       "title": "Distribution par type d’indexation",
-      "value": 105,
-      "subtitle": "Répartition du nombre de chaînes par type d’indexation.",
+      "value": 5058,
+      "subtitle": "Nombre de chaînes par type d’indexation.",
       "rows": [
         {
-          "label": "Descripteurs de la fiche de préexamen",
-          "value": 8
+          "label": "Objet",
+          "value": 1505
         },
         {
-          "label": "Indicateurs de l'analyse de premier contrôle",
-          "value": 8
+          "label": "Mots-clés (Greffe)",
+          "value": 1337
         },
         {
-          "label": "Indicateurs de la demande d'admission du pourvoi",
-          "value": 8
+          "label": "Indicateurs Décision",
+          "value": 932
         },
         {
-          "label": "Mots-clés de la DDP",
-          "value": 8
+          "label": "Descripteur du préexamen",
+          "value": 760
         },
         {
-          "label": "Mots-clés de la requête en pourvoi",
-          "value": 8
-        },
-        {
-          "label": "Descripteurs de l'analyse de premier contrôle",
-          "value": 7
-        },
-        {
-          "label": "Indicateurs de l'arrêt/ordonnance",
-          "value": 7
-        },
-        {
-          "label": "Indicateurs de la fiche de préexamen",
-          "value": 7
-        },
-        {
-          "label": "Mots-clés de l'acte introductif de l'instance (AII)",
-          "value": 7
-        },
-        {
-          "label": "Objet de l'acte introductif de l'instance (AII)",
-          "value": 7
-        },
-        {
-          "label": "Objet de la DDP",
-          "value": 7
-        },
-        {
-          "label": "Chaine de mots-clés du sommaire/résumé",
-          "value": 6
-        },
-        {
-          "label": "Indicateurs des Conclusions de l’AG",
-          "value": 6
-        },
-        {
-          "label": "Indicateurs de l'avis",
-          "value": 5
-        },
-        {
-          "label": "Objet de la requête en pourvoi",
-          "value": 5
-        },
-        {
-          "label": "Sans type d’indexation",
-          "value": 1
+          "label": "Indicateur du préexamen",
+          "value": 524
         }
       ],
       "kind": "bars",
-      "note": "Répartition du nombre de chaînes de référence par type d’indexation.",
+      "note": "Une chaîne peut être associée à plusieurs types.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json et data/graph-relations.json"
+      "source": "Corpus Excel, segmentation provisoire"
     },
     {
       "key": "monthly_new",
       "title": "Nombre de chaînes créées par mois",
       "value": 0,
-      "subtitle": "Évolution mensuelle du nombre de chaînes créées.",
-      "rows": [
-        {
-          "label": "2026-01",
-          "value": 10
-        },
-        {
-          "label": "2026-02",
-          "value": 10
-        },
-        {
-          "label": "2026-03",
-          "value": 10
-        },
-        {
-          "label": "2026-04",
-          "value": 10
-        },
-        {
-          "label": "2026-05",
-          "value": 10
-        },
-        {
-          "label": "2026-06",
-          "value": 10
-        },
-        {
-          "label": "2026-07",
-          "value": 10
-        },
-        {
-          "label": "2026-08",
-          "value": 10
-        },
-        {
-          "label": "2026-09",
-          "value": 10
-        },
-        {
-          "label": "2026-10",
-          "value": 11
-        }
-      ],
+      "subtitle": "Dates de création non fournies dans le fichier.",
+      "rows": [],
       "kind": "timeline",
-      "note": "Évolution mensuelle du nombre de chaînes de référence créées.",
+      "note": "Aucune date de création des chaînes dans le corpus.",
       "status": "ready",
       "unit": null,
-      "source": "data/chains.json"
+      "source": "Corpus Excel, segmentation provisoire"
     }
   ],
-  "warning": "Statistiques Python calculées à partir des chaînes fournies.",
-  "generated_from": "scripts/build_stats.py"
+  "warning": "Statistiques du corpus de chaînes d’indexation, segmentation candidate non validée par MDM."
 }
