@@ -5084,10 +5084,10 @@
       "Réglementation nationale prévoyant le principe de « bonnes mœurs » et autorisant la prise de mesures supplémentaires par un État membre à l’encontre « d’un service de la société de l’information »",
       "Engagement, en cas de violation de la loi, de la responsabilité du prestataire d’un tel service, sur la base des mesures concernées",
       "Admissibilité ? (Question 1a)",
-      "Dans l’affirmative : Violation de la liberté d’expression et d’information consacrée à l’article 11 de la Charte ? (Question 1b)\n\nActivités ou produit visés : Diffusion de services de contenu linéaire via Internet",
-      "Mineur à besoins spécifiques"
+      "Dans l’affirmative : Violation de la liberté d’expression et d’information consacrée à l’article 11 de la Charte ? (Question 1b)"
     ],
-    "indexation_text_fr": "Libre prestation des services - Activités de radiodiffusion télévisuelle - Directive 2010/13/UE - Réglementation nationale prévoyant le principe de « bonnes mœurs » et autorisant la prise de mesures supplémentaires par un État membre à l’encontre « d’un service de la société de l’information » - Engagement, en cas de violation de la loi, de la responsabilité du prestataire d’un tel service, sur la base des mesures concernées - Admissibilité ? (Question 1a) - Dans l’affirmative : Violation de la liberté d’expression et d’information consacrée à l’article 11 de la Charte ? (Question 1b)\n\nActivités ou produit visés : Diffusion de services de contenu linéaire via Internet - Mineur à besoins spécifiques"
+    "indexation_text_fr": "Libre prestation des services - Activités de radiodiffusion télévisuelle - Directive 2010/13/UE - Réglementation nationale prévoyant le principe de « bonnes mœurs » et autorisant la prise de mesures supplémentaires par un État membre à l’encontre « d’un service de la société de l’information » - Engagement, en cas de violation de la loi, de la responsabilité du prestataire d’un tel service, sur la base des mesures concernées - Admissibilité ? (Question 1a) - Dans l’affirmative : Violation de la liberté d’expression et d’information consacrée à l’article 11 de la Charte ? (Question 1b)",
+    "activite_produit_vises_fr": "Diffusion de services de contenu linéaire via Internet - Mineur à besoins spécifiques"
   },
   {
     "source_chain_id": "DESC-175007",
@@ -8641,10 +8641,10 @@
       "Transports ferroviaires de voyageurs à courte distance",
       "Obligation des États membres de respecter l’indépendance de gestion des gestionnaires de l’infrastructure",
       "Réglementation nationale prévoyant une tarification selon une formule fixe, sans laisser de marge de manœuvre au gestionnaire de l’infrastructure",
-      "Violation de ladite obligation ? (Question unique)\n\nProduit ou activité visés : Deutsche Bahn",
-      "Loi sur la régulation des chemins de fer"
+      "Violation de ladite obligation ? (Question unique)"
     ],
-    "indexation_text_fr": "Transports ferroviaires - Tarification de l’infrastructure ferroviaire - Directive 2012/34/UE - Système de tarification des redevances d’infrastructure - Transports ferroviaires de voyageurs à courte distance - Obligation des États membres de respecter l’indépendance de gestion des gestionnaires de l’infrastructure - Réglementation nationale prévoyant une tarification selon une formule fixe, sans laisser de marge de manœuvre au gestionnaire de l’infrastructure - Violation de ladite obligation ? (Question unique)\n\nProduit ou activité visés : Deutsche Bahn - Loi sur la régulation des chemins de fer"
+    "indexation_text_fr": "Transports ferroviaires - Tarification de l’infrastructure ferroviaire - Directive 2012/34/UE - Système de tarification des redevances d’infrastructure - Transports ferroviaires de voyageurs à courte distance - Obligation des États membres de respecter l’indépendance de gestion des gestionnaires de l’infrastructure - Réglementation nationale prévoyant une tarification selon une formule fixe, sans laisser de marge de manœuvre au gestionnaire de l’infrastructure - Violation de ladite obligation ? (Question unique)",
+    "activite_produit_vises_fr": "Deutsche Bahn - Loi sur la régulation des chemins de fer"
   },
   {
     "source_chain_id": "DESC-176146",
