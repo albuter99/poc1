@@ -12121,6 +12121,10 @@
     {
       "added_new": 5500,
       "translated_active_terms": 5817
+    },
+    {
+      "added_new": 5750,
+      "translated_active_terms": 6067
     }
   ],
   "rejected_labels": [
@@ -12132,6 +12136,7 @@
     "Call for proposals CEF 2 Transport",
     "Comirnaty",
     "Commission",
+    "Corona",
     "Cotisations",
     "Covid-19",
     "Dumping",
@@ -12148,8 +12153,8 @@
     "SA.39078-2019/C (ex 2014/N)",
     "TFUE"
   ],
-  "completed_new": 5500,
-  "translated_active_terms": 5817,
+  "completed_new": 5750,
+  "translated_active_terms": 6067,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:44:29.702902+00:00"
+  "updated_at_utc": "2026-11-12T15:52:52.513841+00:00"
 }
