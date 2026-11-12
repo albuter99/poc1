@@ -12089,9 +12089,14 @@
     {
       "added_new": 3500,
       "translated_active_terms": 3817
+    },
+    {
+      "added_new": 3750,
+      "translated_active_terms": 4067
     }
   ],
   "rejected_labels": [
+    ")]",
     "ACRYL",
     "Brexit",
     "COVID-19",
@@ -12111,8 +12116,8 @@
     "SA.39078-2019/C (ex 2014/N)",
     "TFUE"
   ],
-  "completed_new": 3500,
-  "translated_active_terms": 3817,
+  "completed_new": 3750,
+  "translated_active_terms": 4067,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:38:56.176491+00:00"
+  "updated_at_utc": "2026-11-12T15:39:34.417719+00:00"
 }
