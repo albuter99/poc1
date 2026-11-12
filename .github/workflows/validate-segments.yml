@@ -7,6 +7,11 @@ on:
       - 'data/excel-indexations-*.json'
       - 'data/excel-manifest.json'
       - 'scripts/check_corpus_segments.py'
+      - 'tests/test_final.py'
+      - 'data/segmentation-audit.json'
+      - 'data/normalized-term-translations.json'
+      - 'i18n.js'
+      - 'branch-data.js'
       - '.github/workflows/validate-segments.yml'
   workflow_dispatch:
 
@@ -20,5 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Validate 5,839 indexing entries and maillons
+      - name: Validate current structured indexing corpus and maillons
         run: python scripts/check_corpus_segments.py
+      - name: Run final application and data consistency tests
+        run: python tests/test_final.py
