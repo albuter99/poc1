@@ -1,54 +1,54 @@
 {
   "schema_version": 1,
   "origin": "excel-derived",
-  "record_count": 5003,
+  "record_count": 3485,
   "source": "data/excel-manifest.json",
   "metrics": [
     {
       "key": "keywords_total",
       "title": "Nombre de termes différents",
-      "value": 13286,
+      "value": 12341,
       "subtitle": "Nombre de segments distincts observés dans le corpus.",
       "rows": [
         {
-          "label": "Demande de décision préjudicielle",
-          "value": 478
-        },
-        {
           "label": "Marque de l’Union européenne",
-          "value": 456
-        },
-        {
-          "label": "Renvoi préjudiciel",
-          "value": 408
-        },
-        {
-          "label": "Recours en annulation",
-          "value": 328
+          "value": 495
         },
         {
           "label": "Pourvoi",
-          "value": 269
+          "value": 413
         },
         {
-          "label": "Procédure d’opposition",
-          "value": 190
+          "label": "Renvoi préjudiciel",
+          "value": 407
+        },
+        {
+          "label": "Recours en annulation",
+          "value": 373
         },
         {
           "label": "Rapprochement des législations",
-          "value": 173
+          "value": 276
         },
         {
-          "label": "Fonction publique",
-          "value": 170
-        },
-        {
-          "label": "Procédure d’annulation",
-          "value": 121
+          "label": "Procédure d’opposition",
+          "value": 197
         },
         {
           "label": "Protection des consommateurs",
-          "value": 121
+          "value": 161
+        },
+        {
+          "label": "Fonction publique",
+          "value": 158
+        },
+        {
+          "label": "Politique d’asile",
+          "value": 151
+        },
+        {
+          "label": "Notion",
+          "value": 139
         }
       ],
       "kind": "bars",
@@ -60,128 +60,128 @@
     {
       "key": "keywords_frequency",
       "title": "Nombre total de maillons",
-      "value": 30784,
+      "value": 33121,
       "subtitle": "Total de positions de segments candidats.",
       "rows": [
         {
-          "label": "Demande de décision préjudicielle",
-          "value": 478
-        },
-        {
           "label": "Marque de l’Union européenne",
-          "value": 456
-        },
-        {
-          "label": "Renvoi préjudiciel",
-          "value": 408
-        },
-        {
-          "label": "Recours en annulation",
-          "value": 328
+          "value": 495
         },
         {
           "label": "Pourvoi",
-          "value": 269
+          "value": 413
         },
         {
-          "label": "Procédure d’opposition",
-          "value": 190
+          "label": "Renvoi préjudiciel",
+          "value": 407
+        },
+        {
+          "label": "Recours en annulation",
+          "value": 373
         },
         {
           "label": "Rapprochement des législations",
-          "value": 173
+          "value": 276
         },
         {
-          "label": "Fonction publique",
-          "value": 170
-        },
-        {
-          "label": "Procédure d’annulation",
-          "value": 121
+          "label": "Procédure d’opposition",
+          "value": 197
         },
         {
           "label": "Protection des consommateurs",
-          "value": 121
+          "value": 161
         },
         {
-          "label": "Obligation de motivation",
-          "value": 119
+          "label": "Fonction publique",
+          "value": 158
         },
         {
-          "label": "Coopération judiciaire en matière pénale",
-          "value": 108
+          "label": "Politique d’asile",
+          "value": 151
         },
         {
-          "label": "Politique étrangère et de sécurité commune",
-          "value": 101
-        },
-        {
-          "label": "Clauses abusives dans les contrats conclus avec les consommateurs",
-          "value": 99
+          "label": "Notion",
+          "value": 139
         },
         {
           "label": "Champ d’application",
-          "value": 96
+          "value": 134
+        },
+        {
+          "label": "Procédure d’annulation",
+          "value": 134
+        },
+        {
+          "label": "Clauses abusives dans les contrats conclus avec les consommateurs",
+          "value": 132
         },
         {
           "label": "Environnement",
-          "value": 94
+          "value": 123
+        },
+        {
+          "label": "Directive 93/13/CEE",
+          "value": 120
+        },
+        {
+          "label": "Directive 2013/32/UE",
+          "value": 118
+        },
+        {
+          "label": "Coopération judiciaire en matière pénale",
+          "value": 116
+        },
+        {
+          "label": "Directive 2006/112/CE",
+          "value": 115
+        },
+        {
+          "label": "Harmonisation des législations fiscales",
+          "value": 114
+        },
+        {
+          "label": "Coopération judiciaire en matière civile",
+          "value": 106
+        },
+        {
+          "label": "Politique sociale",
+          "value": 106
+        },
+        {
+          "label": "Inclusion ? (Question 1)",
+          "value": 103
+        },
+        {
+          "label": "Radiation",
+          "value": 102
+        },
+        {
+          "label": "Système commun de taxe sur la valeur ajoutée",
+          "value": 101
+        },
+        {
+          "label": "Obligation de motivation",
+          "value": 99
         },
         {
           "label": "Union bancaire",
           "value": 93
         },
         {
-          "label": "Coopération judiciaire en matière civile",
-          "value": 92
-        },
-        {
-          "label": "Politique sociale",
-          "value": 86
-        },
-        {
-          "label": "Politique d’asile",
-          "value": 85
-        },
-        {
-          "label": "Directive 93/13/CEE",
-          "value": 81
+          "label": "Union économique et monétaire",
+          "value": 89
         },
         {
           "label": "Concurrence",
-          "value": 79
+          "value": 87
         },
         {
-          "label": "Union économique et monétaire",
-          "value": 79
+          "label": "Admissibilité ? (Question 1)",
+          "value": 86
         },
         {
-          "label": "Mécanisme de résolution unique des établissements de crédit et de certaines entreprises d’investissement (MRU)",
-          "value": 76
-        },
-        {
-          "label": "Manquement d’État",
-          "value": 75
-        },
-        {
-          "label": "Motif relatif de refus",
-          "value": 74
-        },
-        {
-          "label": "Directive 2006/112/CE",
-          "value": 73
-        },
-        {
-          "label": "Fonds de résolution unique",
-          "value": 72
-        },
-        {
-          "label": "Proportionnalité",
-          "value": 72
-        },
-        {
-          "label": "Procédure de nullité",
-          "value": 70
+          "label": "Égalité de traitement",
+          "value": 86
         }
       ],
       "kind": "bars",
@@ -193,56 +193,56 @@
     {
       "key": "chains_distinct",
       "title": "Nombre de chaînes différentes",
-      "value": 5003,
+      "value": 3485,
       "subtitle": "Textes distincts de chaînes d’indexation.",
       "rows": [
         {
-          "label": " Droit institutionnel - Traitement des données à caractère personnel - Protection des personnes physiques à l’égard du traitement des données à caractère personnel par les institutions, organes et organismes de l’Union - Demandes adressées à l’EUIPO par le requérant faisant valoir certains de ses droits selon le règlement  (UE) 2018/1725 - Rejets implicites de ses demandes - Recours en annulation",
-          "value": 1
+          "label": "Radiation",
+          "value": 102
         },
         {
-          "label": "À titre principal, une demande fondée sur l’article 270 TFUE et tendant à l’annulation de l’avis de fixation des droits à pension du 14 mars 2024 et, à titre subsidiaire, une demande fondée sur l’article 268 TFUE et tendant à obtenir réparation du préjudice que la requérante aurait subi.",
-          "value": 1
+          "label": "Pourvoi - Union économique et monétaire - Union bancaire - Mécanisme de résolution unique des établissements de crédit et de certaines entreprises d’investissement - Fonds de résolution unique - Décision sur le calcul des contributions ex ante pour la période de contribution 2023 - Détermination du niveau cible annuel du fonds de résolution unique - Plafond - Compétences d’exécution attribuées au Conseil - Limitation des effets de l’arrêt attaqué dans le temps",
+          "value": 27
         },
         {
-          "label": "Accès aux documents - Article 4, paragraphe 2, du règlement (CE) n° 1049/2001 - Document émanant d'une procédure d’avis scientifique concernant le médicament carboxymaltose ferrique, développé par la partie requérante - Demande d’accès à ce document par un tiers - Décision de l’EMA de divulguer à un tiers une version expurgée du document - Recours en annulation",
-          "value": 1
+          "label": "Procédure accélérée",
+          "value": 24
         },
         {
-          "label": "Accès aux documents - Article 41, paragraphe 2, sous b), de la charte des droits fondamentaux de l’Union européenne - Demande d’accès aux documents en possession de l’Autorité européenne des assurances et des pensions professionnelles (AEAPP) dans le cadre d’une enquête concernant la partie requérante, menée en vertu de l’article 17 du règlement n° 1094/2010 - Refus d’accès aux documents - Recours en annulation",
-          "value": 1
+          "label": "Procédure - Taxation des dépens",
+          "value": 23
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2 - Exceptions - Normes harmonisées adoptées par le Comité européen de normalisation (CEN) - Refus de fournir l’accès aux normes harmonisées dans le format demandé ou dans un format existant - L’exécution de l’arrêt de la Cour de Justice du 5 mars 2024 (C-588/21 P, EU:C:2024:201) - Recours en annulation",
-          "value": 1
+          "label": "Politique d’asile - Directive 2013/32/UE - Procédure d’examen d’une demande de protection internationale - Demande considérée comme manifestement infondée par les États membres - Demande d’un ressortissant d’un pays d’origine sûr - Concept de pays d’origine sûr",
+          "value": 15
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2, deuxième et troisième tirets - Exceptions au droit d’accès aux documents - L’évaluation par la Commission du plan pour la reprise et la résilience pour la Croatie - Cabotage maritime - Demande d’accès aux documents en possession de la Commission dans le cadre de ses évaluations de la législation de l’État membre - Refus partiel de l’accès aux documents - Recours en annulation",
-          "value": 1
+          "label": "Pourvoi - Marque de l’Union européenne - Admission des pourvois - Article 170 ter du règlement de procédure de la Cour - Demande ne démontrant pas l’importance d’une question pour l’unité, la cohérence ou le développement du droit de l’Union - Non-admission du pourvoi",
+          "value": 14
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 4, paragraphe 2, deuxième tiret, du règlement (CE) n° 1049/2001 - Demande d’accès aux documents en possession de la Commission dans le cadre d’une enquête menée par l’AEAPP sur la partie requérante, en vertu de l’article 17 du règlement n° 1094/2010 - Demande initiale puis confirmative d’accès aux documents - Refus total d’accès aux documents - Recours en annulation devant le Tribunal",
-          "value": 1
+          "label": "Contrôles aux frontières, asile et immigration - Politique d’asile - Procédures pour l’octroi et le retrait de la protection internationale - Directive 2013/32/UE - Procédure d’examen d’une demande de protection internationale - Demande considérée comme manifestement infondée par les États membres - Demande d’un ressortissant d’un pays d’origine sûr - Concept de pays d’origine sûr",
+          "value": 13
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Article 8, paragraphe 2 - Refus implicite d’accès aux documents demandés - Recours en annulation",
-          "value": 1
+          "label": "Libre circulation des personnes - Travailleurs - Égalité de traitement - Avantages sociaux - Allocations familiales - Différence de traitement entre l’enfant du conjoint de travailleurs résidents sur le territoire national et l’enfant du conjoint de travailleurs non-résidents - Notion de « pourvoir à l’entretien » d’un enfant - Hypothèses ouvrant le droit à percevoir une allocation familiale ? (Question 1) - Hypothèses excluant le droit à percevoir une allocation familiale ? (Question 2)",
+          "value": 12
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Articles 2 et 4, paragraphe 2, deuxième tiret, du règlement (CE) n° 1049/2001 - Article 41, paragraphe 2, sous b), de la charte des droits fondamentaux de l’Union européenne - Demande d’accès aux documents en possession de l’Autorité européenne des assurances et des pensions professionnelles (AEAPP) dans le cadre d’une enquête concernant la partie requérante, menée en vertu de l’article 17 du règlement n° 1094/2010 - Demande initiale puis confirmative d’accès aux documents - Refus total puis partiel d’accès aux documents - Recours en annulation devant le Tribunal",
-          "value": 1
+          "label": "Libre circulation des personnes - Travailleurs - Égalité de traitement - Avantages sociaux - Allocations familiales - Notion de « pourvoir à l’entretien » d’un enfant - Enfant du conjoint d’un travailleur frontalier - Différence de traitement entre enfants résidents et non-résidents",
+          "value": 12
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Décision portant la référence SGS 24/00015 du Conseil de l’Union européenne, du 13 mai 2024, refusant partiellement l’accès aux documents ST 6513/23 et ST 6515/23 - Demande confirmative - Refus partiel d’accès - Recours en annulation",
-          "value": 1
+          "label": "Libre circulation des personnes - Travailleurs - Égalité de traitement - Avantages sociaux - Allocations familiales - Notion de « pourvoir à l’entretien » d’un enfant - Enfant du conjoint d’un travailleur frontalier - Différence de traitement entre l’enfant résident sur le territoire de l’État membre et l’enfant non-résident",
+          "value": 12
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Demande d’accès à certains documents relatifs aux résumés de dossier déposés dans les procédures d’autorisation uniforme pour les additifs et enzymes alimentaires, dans le cadre du règlement (UE) n° 234/2011 de la Commission du 10 mars 2011 portant application du règlement (CE) n° 1331/2008 du Parlement européen et du Conseil établissant une procédure d’autorisation uniforme pour les additifs, enzymes et arômes alimentaires (JO 2011, L 64, p. 15) - Refus partiel d’accès en raison du très grand nombre de documents demandés - Demande confirmative déposée au titre de l’article 7, paragraphe 2, du règlement n° 1049/2001 - Décision implicite - Recours en annulation",
-          "value": 1
+          "label": "Pourvoi - Intervention - Article 40, deuxième alinéa, du statut de la Cour de justice de l’Union européenne - Association professionnelle - Intérêt à la solution du litige - Admission",
+          "value": 12
         },
         {
-          "label": "Accès aux documents - Règlement (CE) n° 1049/2001 - Demande d’accès aux documents de l’EUIPO - Épreuves écrites dans des procédures de sélection réalisées pendant la pandémie COVID-19 - L’absence de réponse de l’EUIPO aux demandes confirmatives du requérant dans le délai requis - Recours en annulation",
-          "value": 1
+          "label": "Rectification d’arrêt",
+          "value": 10
         }
       ],
       "kind": "bars",
@@ -254,127 +254,143 @@
     {
       "key": "length_range",
       "title": "Distribution de chaînes par nombre de maillons",
-      "value": 5003,
+      "value": 4203,
       "subtitle": "Nombre de chaînes par nombre de segments.",
       "rows": [
         {
           "label": "1 maillons",
-          "value": 1223
+          "value": 162
         },
         {
           "label": "2 maillons",
-          "value": 117
+          "value": 72
         },
         {
           "label": "3 maillons",
-          "value": 159
+          "value": 110
         },
         {
           "label": "4 maillons",
-          "value": 395
+          "value": 420
         },
         {
           "label": "5 maillons",
-          "value": 342
+          "value": 395
         },
         {
           "label": "6 maillons",
-          "value": 437
+          "value": 507
         },
         {
           "label": "7 maillons",
-          "value": 500
+          "value": 556
         },
         {
           "label": "8 maillons",
-          "value": 465
+          "value": 536
         },
         {
           "label": "9 maillons",
-          "value": 354
+          "value": 359
         },
         {
           "label": "10 maillons",
-          "value": 272
+          "value": 270
         },
         {
           "label": "11 maillons",
-          "value": 236
+          "value": 183
         },
         {
           "label": "12 maillons",
-          "value": 163
+          "value": 176
         },
         {
           "label": "13 maillons",
-          "value": 101
+          "value": 114
         },
         {
           "label": "14 maillons",
-          "value": 59
+          "value": 73
         },
         {
           "label": "15 maillons",
-          "value": 62
+          "value": 78
         },
         {
           "label": "16 maillons",
-          "value": 34
+          "value": 43
         },
         {
           "label": "17 maillons",
-          "value": 34
+          "value": 39
         },
         {
           "label": "18 maillons",
-          "value": 14
+          "value": 20
         },
         {
           "label": "19 maillons",
-          "value": 5
+          "value": 12
         },
         {
           "label": "20 maillons",
-          "value": 8
+          "value": 13
         },
         {
           "label": "21 maillons",
-          "value": 5
+          "value": 8
         },
         {
           "label": "22 maillons",
-          "value": 7
+          "value": 16
         },
         {
           "label": "23 maillons",
-          "value": 1
+          "value": 7
         },
         {
           "label": "24 maillons",
-          "value": 1
+          "value": 2
         },
         {
           "label": "25 maillons",
-          "value": 4
+          "value": 5
         },
         {
           "label": "26 maillons",
-          "value": 1
+          "value": 5
         },
         {
           "label": "28 maillons",
-          "value": 1
+          "value": 5
+        },
+        {
+          "label": "29 maillons",
+          "value": 2
+        },
+        {
+          "label": "30 maillons",
+          "value": 2
         },
         {
           "label": "32 maillons",
+          "value": 8
+        },
+        {
+          "label": "33 maillons",
           "value": 1
         },
         {
           "label": "34 maillons",
-          "value": 1
+          "value": 2
         },
         {
           "label": "36 maillons",
+          "value": 1
+        },
+        {
+          "label": "44 maillons",
           "value": 1
         }
       ],
@@ -392,122 +408,138 @@
       "rows": [
         {
           "label": "1 maillons",
-          "value": 1223
+          "value": 162
         },
         {
           "label": "2 maillons",
-          "value": 117
+          "value": 72
         },
         {
           "label": "3 maillons",
-          "value": 159
+          "value": 110
         },
         {
           "label": "4 maillons",
-          "value": 395
+          "value": 420
         },
         {
           "label": "5 maillons",
-          "value": 342
+          "value": 395
         },
         {
           "label": "6 maillons",
-          "value": 437
+          "value": 507
         },
         {
           "label": "7 maillons",
-          "value": 500
+          "value": 556
         },
         {
           "label": "8 maillons",
-          "value": 465
+          "value": 536
         },
         {
           "label": "9 maillons",
-          "value": 354
+          "value": 359
         },
         {
           "label": "10 maillons",
-          "value": 272
+          "value": 270
         },
         {
           "label": "11 maillons",
-          "value": 236
+          "value": 183
         },
         {
           "label": "12 maillons",
-          "value": 163
+          "value": 176
         },
         {
           "label": "13 maillons",
-          "value": 101
+          "value": 114
         },
         {
           "label": "14 maillons",
-          "value": 59
+          "value": 73
         },
         {
           "label": "15 maillons",
-          "value": 62
+          "value": 78
         },
         {
           "label": "16 maillons",
-          "value": 34
+          "value": 43
         },
         {
           "label": "17 maillons",
-          "value": 34
+          "value": 39
         },
         {
           "label": "18 maillons",
-          "value": 14
+          "value": 20
         },
         {
           "label": "19 maillons",
-          "value": 5
+          "value": 12
         },
         {
           "label": "20 maillons",
-          "value": 8
+          "value": 13
         },
         {
           "label": "21 maillons",
-          "value": 5
+          "value": 8
         },
         {
           "label": "22 maillons",
-          "value": 7
+          "value": 16
         },
         {
           "label": "23 maillons",
-          "value": 1
+          "value": 7
         },
         {
           "label": "24 maillons",
-          "value": 1
+          "value": 2
         },
         {
           "label": "25 maillons",
-          "value": 4
+          "value": 5
         },
         {
           "label": "26 maillons",
-          "value": 1
+          "value": 5
         },
         {
           "label": "28 maillons",
-          "value": 1
+          "value": 5
+        },
+        {
+          "label": "29 maillons",
+          "value": 2
+        },
+        {
+          "label": "30 maillons",
+          "value": 2
         },
         {
           "label": "32 maillons",
+          "value": 8
+        },
+        {
+          "label": "33 maillons",
           "value": 1
         },
         {
           "label": "34 maillons",
-          "value": 1
+          "value": 2
         },
         {
           "label": "36 maillons",
+          "value": 1
+        },
+        {
+          "label": "44 maillons",
           "value": 1
         }
       ],
@@ -520,128 +552,144 @@
     {
       "key": "length_max",
       "title": "Longueur maximale des chaînes",
-      "value": 36,
+      "value": 44,
       "subtitle": "Nombre maximum de segments.",
       "rows": [
+        {
+          "label": "44 maillons",
+          "value": 1
+        },
         {
           "label": "36 maillons",
           "value": 1
         },
         {
           "label": "34 maillons",
+          "value": 2
+        },
+        {
+          "label": "33 maillons",
           "value": 1
         },
         {
           "label": "32 maillons",
-          "value": 1
-        },
-        {
-          "label": "28 maillons",
-          "value": 1
-        },
-        {
-          "label": "26 maillons",
-          "value": 1
-        },
-        {
-          "label": "25 maillons",
-          "value": 4
-        },
-        {
-          "label": "24 maillons",
-          "value": 1
-        },
-        {
-          "label": "23 maillons",
-          "value": 1
-        },
-        {
-          "label": "22 maillons",
-          "value": 7
-        },
-        {
-          "label": "21 maillons",
-          "value": 5
-        },
-        {
-          "label": "20 maillons",
           "value": 8
         },
         {
-          "label": "19 maillons",
+          "label": "30 maillons",
+          "value": 2
+        },
+        {
+          "label": "29 maillons",
+          "value": 2
+        },
+        {
+          "label": "28 maillons",
           "value": 5
         },
         {
+          "label": "26 maillons",
+          "value": 5
+        },
+        {
+          "label": "25 maillons",
+          "value": 5
+        },
+        {
+          "label": "24 maillons",
+          "value": 2
+        },
+        {
+          "label": "23 maillons",
+          "value": 7
+        },
+        {
+          "label": "22 maillons",
+          "value": 16
+        },
+        {
+          "label": "21 maillons",
+          "value": 8
+        },
+        {
+          "label": "20 maillons",
+          "value": 13
+        },
+        {
+          "label": "19 maillons",
+          "value": 12
+        },
+        {
           "label": "18 maillons",
-          "value": 14
+          "value": 20
         },
         {
           "label": "17 maillons",
-          "value": 34
+          "value": 39
         },
         {
           "label": "16 maillons",
-          "value": 34
+          "value": 43
         },
         {
           "label": "15 maillons",
-          "value": 62
+          "value": 78
         },
         {
           "label": "14 maillons",
-          "value": 59
+          "value": 73
         },
         {
           "label": "13 maillons",
-          "value": 101
+          "value": 114
         },
         {
           "label": "12 maillons",
-          "value": 163
+          "value": 176
         },
         {
           "label": "11 maillons",
-          "value": 236
+          "value": 183
         },
         {
           "label": "10 maillons",
-          "value": 272
+          "value": 270
         },
         {
           "label": "9 maillons",
-          "value": 354
+          "value": 359
         },
         {
           "label": "8 maillons",
-          "value": 465
+          "value": 536
         },
         {
           "label": "7 maillons",
-          "value": 500
+          "value": 556
         },
         {
           "label": "6 maillons",
-          "value": 437
+          "value": 507
         },
         {
           "label": "5 maillons",
-          "value": 342
-        },
-        {
-          "label": "4 maillons",
           "value": 395
         },
         {
+          "label": "4 maillons",
+          "value": 420
+        },
+        {
           "label": "3 maillons",
-          "value": 159
+          "value": 110
         },
         {
           "label": "2 maillons",
-          "value": 117
+          "value": 72
         },
         {
           "label": "1 maillons",
-          "value": 1223
+          "value": 162
         }
       ],
       "kind": "bars",
@@ -653,28 +701,24 @@
     {
       "key": "indexation_types",
       "title": "Distribution par type d’indexation",
-      "value": 5058,
+      "value": 4203,
       "subtitle": "Nombre de chaînes par type d’indexation.",
       "rows": [
         {
-          "label": "Objet",
-          "value": 1505
-        },
-        {
           "label": "Mots-clés (Greffe)",
-          "value": 1337
+          "value": 1634
         },
         {
           "label": "Indicateurs Décision",
-          "value": 932
+          "value": 1142
         },
         {
           "label": "Descripteur du préexamen",
-          "value": 760
+          "value": 835
         },
         {
           "label": "Indicateur du préexamen",
-          "value": 524
+          "value": 592
         }
       ],
       "kind": "bars",
@@ -696,5 +740,5 @@
       "source": "Corpus Excel, segmentation provisoire"
     }
   ],
-  "warning": "Statistiques du corpus de chaînes d’indexation, segmentation candidate non validée par MDM."
+  "warning": "Statistiques du corpus structuré uniquement. Les 1 636 indexations Objet ont été retirées; segments non validés MDM."
 }
