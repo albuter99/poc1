@@ -73,5 +73,13 @@ $("data-lang").onchange=e=>{lang=e.target.value;renderTable()};
 $("translation-type").onchange=editor;$("translation-search").oninput=editor;
 document.querySelectorAll(".entity").forEach(b=>b.onclick=()=>selectTab(b.dataset.table));
 for(const k of Object.keys(names))model[k]=[];tabs();selectTab("documents");draw();
-fetch("./data/indexation-relational-preview.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{if(d){build(d);$("file-name").textContent+=" · données de la branche"}}).catch(err=>console.info("Aucun fichier de données publié sur cette branche",err));
+async function loadBranchDataset(){const response=await fetch("./data/excel-manifest.json",{cache:"no-store"});if(!response.ok)return;const manifest=await response.json();if(manifest.schema_version!=="excel-branch-manifest-v1")throw Error("Manifest incompatible");
+$("file-name").textContent="Chargement des données de la branche…";
+const paths=[manifest.documents_file,...manifest.indexation_files];
+const parts=await Promise.all(paths.map(async path=>{const r=await fetch("./"+path,{cache:"no-store"});if(!r.ok)throw Error("Fichier indisponible : "+path);return r.json()}));
+const records=parts.slice(1).flat(),documents=parts[0];
+if(records.length!==manifest.profile.indexation_entries||documents.length!==manifest.profile.documents)throw Error("Le corpus ne correspond pas au manifeste.");
+build({schema_version:"import-preview-v1",notice:manifest.notice,profile:manifest.profile,documents,indexation_entries:records,reference_chains:[],term_translations:[]});
+$("file-name").textContent+=" · données publiques de la branche";}
+loadBranchDataset().catch(err=>{$("file-name").textContent="Erreur de chargement automatique : "+err.message;console.error("Excel branch dataset:",err)});
 })();
