@@ -11,9 +11,9 @@ function data(c){if(c.source==="excel_corpus"){const all=window.PocBranchData?.d
 function build(c){
 const m=data(c),pieces=window.PocBranchData?.parts(c.full_chain_label)||c.full_chain_label.split(" - "),nodes=[],edges=[];
 const add=(id,name,type,fields,x,y)=>{nodes.push({id,name,type,fields,x,y});return id};
-add("chain",c.id+" · "+label(c.full_chain_label,42),"chain",{"Identifiant":c.id,"Chaîne complète":c.full_chain_label,"Date de début":formatDate(c.validity_start_date||"1900-01-01"),"Date de fin":formatDate(c.validity_end_date==="1900-01-01"?"3000-12-31":c.validity_end_date||"3000-12-31"),"État":c.status||"EC"},0,0);
+add("chain",c.id+" · "+label(c.full_chain_label,42),"chain",{"Identifiant":c.id,"Origine":c.source==="excel_corpus"?"Chaîne candidate (non validée MDM)":"Chaîne du POC","Chaîne complète":c.full_chain_label,"Date de début":formatDate(c.validity_start_date||"1900-01-01"),"Date de fin":formatDate(c.validity_end_date==="1900-01-01"?"3000-12-31":c.validity_end_date||"3000-12-31"),"État":c.status||"EC"},0,0);
 let last="chain";
-pieces.forEach((term,i)=>{const id="term-"+i;add(id,term,"term",{"Terme":term,"Ordre dans la branche":i+1,"Identifiant du terme":"Simulation · "+(i+1)},160+i*145,50+(i%2)*80);edges.push({source:last,target:id,label:i===0?"Maillons":"ordre "+(i+1),type:"chain"});last=id});
+pieces.forEach((term,i)=>{const id="term-"+i;add(id,term,"term",{"Terme":term,"Ordre dans la branche":i+1,"Identifiant du terme":c.term_ids?.[i]||"Non renseigné"},160+i*145,50+(i%2)*80);edges.push({source:last,target:id,label:i===0?"Maillons":"ordre "+(i+1),type:"chain"});last=id});
 const extras=c.source==="excel_corpus"?[["type",m.type_indexation,"Type d’indexation",0,-230]]:[["type",m.type_indexation,"Type d’indexation",0,-230],["matiere",m.matiere,"Matière",-240,-150],["archetype",m.archetype,"Archétype procédural",-240,135],["cote",m.cote,"Cote du plan de classement",0,240]];
 extras.forEach(([id,name,key,x,y])=>{add(id,name,"classification",{"Relation":key,"Valeur":name},x,y);edges.push({source:"chain",target:id,label:key})});
 for(let i=0;i<(m.documents||[]).length;i++){const d=m.documents[i],id="doc-"+i;add(id,d.title,"document",{"Identifiant":d.id,"Document":d.title,"Type":d.kind,"Statut":d.status,"Lien":"Non connecté : document fictif"},-410,-70+i*90);edges.push({source:"chain",target:id,label:"Document associé"})}
