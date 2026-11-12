@@ -50,8 +50,18 @@ class FinalChecks(unittest.TestCase):
                                  f"Separator retained in {entry.get('source_chain_id')}")
                 total += len(parts)
                 unique.update(parts)
-        self.assertEqual(total, 43900)
-        self.assertEqual(len(unique), 16470)
+        self.assertEqual(total, 42408)
+        self.assertEqual(len(unique), 15280)
+
+    def test_extracted_activity_metadata_and_unique_chains(self):
+        metadata = [r for r in self.entries if "activite_produit_vises_fr" in r]
+        self.assertEqual(len(metadata), 589)
+        self.assertTrue(all(r["activite_produit_vises_fr"] for r in metadata))
+        self.assertTrue(all("Activité ou produit visés :" not in p
+                            for r in metadata for p in r["maillons_fr"]))
+        normalized = {" - ".join(r["maillons_fr"]) for r in self.entries}
+        self.assertEqual(len(normalized), 4983)
+        self.assertEqual(len({r["original_text"] for r in self.entries}), 5003)
 
     def test_unicode_dash_example_and_legal_identifier(self):
         by_id = {r["source_chain_id"]: r for r in self.entries}
