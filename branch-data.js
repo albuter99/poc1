@@ -171,9 +171,9 @@ const chunks=await Promise.all([m.documents_file,...m.indexation_files].map(asyn
 const docs=chunks.shift();documents=new Map(docs.map(d=>[String(d.source_document_id),d]));indexations=chunks.flat();
 if(indexations.length!==m.profile.indexation_entries)throw Error("Unexpected number of source rows");
 const map=new Map(),termMap=new Map(),counter=new Map(),typeSet=new Set();
-for(const e of indexations){const text=String(e.original_text??"");if(!text.trim())continue;let rec=map.get(text);
-if(!rec){const terms=Array.isArray(e.maillons_fr)&&e.maillons_fr.length?e.maillons_fr:parts(text);const structured=terms.length>1;rec={id:"CH-"+hash(text),reference:"REF-"+hash(text),root:terms[0],base_chain:terms[0],selected_terms:terms.slice(1),full_chain_label:text,chain_type:structured?"STRUCTURED_CANDIDATE":"FREE_TEXT",term_ids:terms.map(t=>"TERM-"+hash(t)),status:"EC",validity_start_date:"1900-01-01",validity_end_date:"3000-12-31",created_at:"",types_indexation:[],document_ids:[],source_indexation_ids:[],classification:"PROVISIONAL",source:"excel_corpus"};
-map.set(text,rec);
+for(const e of indexations){const text=String(e.indexation_text_fr??e.original_text??"");const terms=Array.isArray(e.maillons_fr)&&e.maillons_fr.length?e.maillons_fr:parts(text);if(!terms.length)continue;const canonical=terms.join(" - ");let rec=map.get(canonical);
+if(!rec){const structured=terms.length>1;rec={id:"CH-"+hash(canonical),reference:"REF-"+hash(canonical),root:terms[0],base_chain:terms[0],selected_terms:terms.slice(1),full_chain_label:canonical,chain_type:structured?"STRUCTURED_CANDIDATE":"FREE_TEXT",term_ids:terms.map(t=>"TERM-"+hash(t)),status:"EC",validity_start_date:"1900-01-01",validity_end_date:"3000-12-31",created_at:"",types_indexation:[],document_ids:[],source_indexation_ids:[],classification:"PROVISIONAL",source:"excel_corpus"};
+map.set(canonical,rec);
 for(const term of terms){if(!termMap.has(term))termMap.set(term,{term_id:"TERM-"+hash(term),label_fr:term,kind:structured?"STRUCTURED_SEGMENT":"FREE_TEXT",translations:{es:dictionary[term]?.es||null,en:dictionary[term]?.en||null}});counter.set(term,(counter.get(term)||0)+1)}
 }
 if(!rec.document_ids.includes(String(e.source_document_id)))rec.document_ids.push(String(e.source_document_id));rec.source_indexation_ids.push(String(e.source_chain_id));if(e.type_indexation){typeSet.add(e.type_indexation);if(!rec.types_indexation.includes(e.type_indexation))rec.types_indexation.push(e.type_indexation)}}
