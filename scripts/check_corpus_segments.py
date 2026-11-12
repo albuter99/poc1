@@ -37,7 +37,8 @@ def check():
         if not isinstance(terms, list) or not terms or any(not isinstance(t, str) or not t or t != t.strip() for t in terms):
             errors.append((ident, "Maillons vides, mal formés ou non nettoyés"))
             continue
-        expected = [raw.strip()] if kind == "Objet" else [x.strip() for x in SEP.split(raw.strip()) if x.strip()]
+        canonical_source = str(row.get("indexation_text_fr") or "")
+        expected = [raw.strip()] if kind == "Objet" else [x.strip() for x in SEP.split(canonical_source) if x.strip()]
         if terms != expected:
             errors.append((ident, "Segmentation différente du texte source"))
         canonical = raw.strip() if kind == "Objet" else " - ".join(terms)
