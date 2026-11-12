@@ -1,0 +1,2101 @@
+{
+  "schema_version": "poc1-term-translations-v1",
+  "status": "ALL_PROPOSED_NOT_VALIDATED",
+  "stats": {
+    "total_terms": 13302,
+    "proposed_es": 174,
+    "proposed_en": 174,
+    "missing_es": 13128,
+    "missing_en": 13128
+  },
+  "translations": [
+    {
+      "term_id": "TERM-3436d0f2f2af07aa",
+      "language_code": "es",
+      "label": "Protección de los consumidores",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3436d0f2f2af07aa",
+      "language_code": "en",
+      "label": "Consumer protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-510be2df0afd1d83",
+      "language_code": "es",
+      "label": "Cláusulas abusivas en los contratos celebrados con consumidores",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-510be2df0afd1d83",
+      "language_code": "en",
+      "label": "Unfair terms in consumer contracts",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91db755f222aa213",
+      "language_code": "es",
+      "label": "Directiva 93/13/CEE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91db755f222aa213",
+      "language_code": "en",
+      "label": "Directive 93/13/EEC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ca4ea70f1d81b0bf",
+      "language_code": "es",
+      "label": "Medio ambiente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ca4ea70f1d81b0bf",
+      "language_code": "en",
+      "label": "Environment",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-74ba30d726c7023b",
+      "language_code": "es",
+      "label": "Libertad de establecimiento",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-74ba30d726c7023b",
+      "language_code": "en",
+      "label": "Freedom of establishment",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dae0e607e4289ec3",
+      "language_code": "es",
+      "label": "Ámbito de aplicación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dae0e607e4289ec3",
+      "language_code": "en",
+      "label": "Scope",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2ed08e7a903701aa",
+      "language_code": "es",
+      "label": "¿Inclusión? (Pregunta 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2ed08e7a903701aa",
+      "language_code": "en",
+      "label": "Inclusion? (Question 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5f6957d4c088c204",
+      "language_code": "es",
+      "label": "Libre prestación de servicios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5f6957d4c088c204",
+      "language_code": "en",
+      "label": "Freedom to provide services",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ff0f6f1adcc70c6a",
+      "language_code": "es",
+      "label": "Restricciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ff0f6f1adcc70c6a",
+      "language_code": "en",
+      "label": "Restrictions",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0f08092b99fb76af",
+      "language_code": "es",
+      "label": "Unión aduanera",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0f08092b99fb76af",
+      "language_code": "en",
+      "label": "Customs union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0ef176489dafbc90",
+      "language_code": "es",
+      "label": "Alcance",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0ef176489dafbc90",
+      "language_code": "en",
+      "label": "Scope",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3233793ddee6b461",
+      "language_code": "es",
+      "label": "Efectos de la declaración del carácter abusivo de una cláusula",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3233793ddee6b461",
+      "language_code": "en",
+      "label": "Effects of a finding that a contractual term is unfair",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2c84cbdf2c10a8ab",
+      "language_code": "es",
+      "label": "Criterios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2c84cbdf2c10a8ab",
+      "language_code": "en",
+      "label": "Criteria",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3607322cec90eab8",
+      "language_code": "es",
+      "label": "Cooperación judicial en materia civil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3607322cec90eab8",
+      "language_code": "en",
+      "label": "Judicial cooperation in civil matters",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9b41ec42c88e5ce6",
+      "language_code": "es",
+      "label": "Agricultura",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9b41ec42c88e5ce6",
+      "language_code": "en",
+      "label": "Agriculture",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75a66b2ae8c015e2",
+      "language_code": "es",
+      "label": "Efectos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75a66b2ae8c015e2",
+      "language_code": "en",
+      "label": "Effects",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-295cdd9cb0bc1274",
+      "language_code": "es",
+      "label": "Competencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-295cdd9cb0bc1274",
+      "language_code": "en",
+      "label": "Competition",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ffaa25245c941674",
+      "language_code": "es",
+      "label": "Concepto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ffaa25245c941674",
+      "language_code": "en",
+      "label": "Concept",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9fa1eadf4bf33137",
+      "language_code": "es",
+      "label": "Prácticas colusorias",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9fa1eadf4bf33137",
+      "language_code": "en",
+      "label": "Collusive practices",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-51cba6d731d7845b",
+      "language_code": "es",
+      "label": "Condiciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-51cba6d731d7845b",
+      "language_code": "en",
+      "label": "Conditions",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a0b5de9f1f1d344f",
+      "language_code": "es",
+      "label": "Aproximación de las legislaciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a0b5de9f1f1d344f",
+      "language_code": "en",
+      "label": "Approximation of laws",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9274d954698ba0b8",
+      "language_code": "es",
+      "label": "Energía",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9274d954698ba0b8",
+      "language_code": "en",
+      "label": "Energy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8a16803b38eea827",
+      "language_code": "es",
+      "label": "Mercado interior de la electricidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8a16803b38eea827",
+      "language_code": "en",
+      "label": "Internal electricity market",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6ebeffe2555a068a",
+      "language_code": "es",
+      "label": "Libre circulación de mercancías",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6ebeffe2555a068a",
+      "language_code": "en",
+      "label": "Free movement of goods",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2361de7595a7e4c5",
+      "language_code": "es",
+      "label": "Seguridad Social",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2361de7595a7e4c5",
+      "language_code": "en",
+      "label": "Social security",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6c95e4788093d48c",
+      "language_code": "es",
+      "label": "Artículo 3",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6c95e4788093d48c",
+      "language_code": "en",
+      "label": "Article 3",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d7f7126b2e9b6f87",
+      "language_code": "es",
+      "label": "Trabajadores",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d7f7126b2e9b6f87",
+      "language_code": "en",
+      "label": "Workers",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e548bd0610871dae",
+      "language_code": "es",
+      "label": "Igualdad de trato",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e548bd0610871dae",
+      "language_code": "en",
+      "label": "Equal treatment",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5d509ddfd9081acf",
+      "language_code": "es",
+      "label": "Ventajas sociales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5d509ddfd9081acf",
+      "language_code": "en",
+      "label": "Social advantages",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-942eac5b4d26bf43",
+      "language_code": "es",
+      "label": "Libre circulación de capitales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-942eac5b4d26bf43",
+      "language_code": "en",
+      "label": "Free movement of capital",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fa7c800bb3b4b7d7",
+      "language_code": "es",
+      "label": "Armonización de las legislaciones fiscales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fa7c800bb3b4b7d7",
+      "language_code": "en",
+      "label": "Harmonisation of tax legislation",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a1a45d30d8e23f48",
+      "language_code": "es",
+      "label": "Impuesto sobre el valor añadido",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a1a45d30d8e23f48",
+      "language_code": "en",
+      "label": "Value added tax",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f61560ae34ea5e46",
+      "language_code": "es",
+      "label": "Directiva 2006/112/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f61560ae34ea5e46",
+      "language_code": "en",
+      "label": "Directive 2006/112/EC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75e9b4161a34329e",
+      "language_code": "es",
+      "label": "Derecho de la Unión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75e9b4161a34329e",
+      "language_code": "en",
+      "label": "EU law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cfb2cc7a18cf097",
+      "language_code": "es",
+      "label": "Sistema común del impuesto sobre el valor añadido",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cfb2cc7a18cf097",
+      "language_code": "en",
+      "label": "Common system of value added tax",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dd675997f5b47173",
+      "language_code": "es",
+      "label": "Política social",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dd675997f5b47173",
+      "language_code": "en",
+      "label": "Social policy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bdfa806492f02a0c",
+      "language_code": "es",
+      "label": "Reglamento (UE) 2016/679",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bdfa806492f02a0c",
+      "language_code": "en",
+      "label": "Regulation (EU) 2016/679",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f719fdbfef654143",
+      "language_code": "es",
+      "label": "Cooperación judicial en materia penal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f719fdbfef654143",
+      "language_code": "en",
+      "label": "Judicial cooperation in criminal matters",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dd32e598b8bd3890",
+      "language_code": "es",
+      "label": "Prueba",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dd32e598b8bd3890",
+      "language_code": "en",
+      "label": "Evidence",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4a4461f3c3b6fba7",
+      "language_code": "es",
+      "label": "Estados miembros",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4a4461f3c3b6fba7",
+      "language_code": "en",
+      "label": "Member States",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bd90d24eaf6bb1ba",
+      "language_code": "es",
+      "label": "Obligaciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bd90d24eaf6bb1ba",
+      "language_code": "en",
+      "label": "Obligations",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7117aac1b7900d1d",
+      "language_code": "es",
+      "label": "Establecimiento de las vías de recurso necesarias para garantizar una tutela judicial efectiva",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7117aac1b7900d1d",
+      "language_code": "en",
+      "label": "Establishment of the remedies necessary to ensure effective judicial protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2502f7304ddf19a4",
+      "language_code": "es",
+      "label": "Derechos fundamentales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2502f7304ddf19a4",
+      "language_code": "en",
+      "label": "Fundamental rights",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c330835e1afc529a",
+      "language_code": "es",
+      "label": "Controles fronterizos, asilo e inmigración",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c330835e1afc529a",
+      "language_code": "en",
+      "label": "Border checks, asylum and immigration",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1de6a2a8d99e76f0",
+      "language_code": "es",
+      "label": "Política de asilo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1de6a2a8d99e76f0",
+      "language_code": "en",
+      "label": "Asylum policy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8c7780c90fa7d235",
+      "language_code": "es",
+      "label": "Procedimientos comunes para la concesión o retirada de la protección internacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8c7780c90fa7d235",
+      "language_code": "en",
+      "label": "Procedures for granting and withdrawing international protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71c7641b73a15ecb",
+      "language_code": "es",
+      "label": "Directiva 2013/32/UE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71c7641b73a15ecb",
+      "language_code": "en",
+      "label": "Directive 2013/32/EU",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a566ff4d651245f5",
+      "language_code": "es",
+      "label": "Derecho a la tutela judicial efectiva",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a566ff4d651245f5",
+      "language_code": "en",
+      "label": "Right to an effective remedy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f0e1dcfa1fb5ec3a",
+      "language_code": "es",
+      "label": "Política interior de la Unión Europea",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f0e1dcfa1fb5ec3a",
+      "language_code": "en",
+      "label": "Internal policy of the European Union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9f4ddf8d32b52e0d",
+      "language_code": "es",
+      "label": "Marcas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9f4ddf8d32b52e0d",
+      "language_code": "en",
+      "label": "Trade marks",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-90e1632ba253be1b",
+      "language_code": "es",
+      "label": "Ciudadanía de la Unión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-90e1632ba253be1b",
+      "language_code": "en",
+      "label": "Citizenship of the Union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-66cc53671c2e9193",
+      "language_code": "es",
+      "label": "Medidas restrictivas adoptadas habida cuenta de la situación en Ucrania",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-66cc53671c2e9193",
+      "language_code": "en",
+      "label": "Restrictive measures adopted in view of the situation in Ukraine",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71af76b41df47d54",
+      "language_code": "es",
+      "label": "Respeto del principio de independencia judicial",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71af76b41df47d54",
+      "language_code": "en",
+      "label": "Respect for the principle of judicial independence",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9e611dadcf82098d",
+      "language_code": "es",
+      "label": "Plazo de prescripción",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9e611dadcf82098d",
+      "language_code": "en",
+      "label": "Limitation period",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-414de1d3208ecbff",
+      "language_code": "es",
+      "label": "Transportes",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-414de1d3208ecbff",
+      "language_code": "en",
+      "label": "Transport",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bbf5275e5f543ed2",
+      "language_code": "es",
+      "label": "Contratación pública",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bbf5275e5f543ed2",
+      "language_code": "en",
+      "label": "Public procurement",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-535a808f9413f71b",
+      "language_code": "es",
+      "label": "Libre circulación de personas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-535a808f9413f71b",
+      "language_code": "en",
+      "label": "Free movement of persons",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-474a56f38ba2bbcb",
+      "language_code": "es",
+      "label": "Derechos de autor y derechos afines",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-474a56f38ba2bbcb",
+      "language_code": "en",
+      "label": "Copyright and related rights",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-368505a06bb2dbc0",
+      "language_code": "es",
+      "label": "Principios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-368505a06bb2dbc0",
+      "language_code": "en",
+      "label": "Principles",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d703d3e5fe2da321",
+      "language_code": "es",
+      "label": "Procedimiento de examen de una solicitud de protección internacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d703d3e5fe2da321",
+      "language_code": "en",
+      "label": "Procedure for examining an application for international protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8e1255202eb65e14",
+      "language_code": "es",
+      "label": "Solicitud de un nacional de un país de origen seguro",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8e1255202eb65e14",
+      "language_code": "en",
+      "label": "Application by a national of a safe country of origin",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bf70b425c9031145",
+      "language_code": "es",
+      "label": "Concepto de país de origen seguro",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bf70b425c9031145",
+      "language_code": "en",
+      "label": "Concept of a safe country of origin",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4ca7e549f920d489",
+      "language_code": "es",
+      "label": "Controles fronterizos, asilo e inmigración",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4ca7e549f920d489",
+      "language_code": "en",
+      "label": "Border checks, asylum and immigration",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-74ff41cdb18f9c49",
+      "language_code": "es",
+      "label": "Igualdad de trato entre mujeres y hombres",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-74ff41cdb18f9c49",
+      "language_code": "en",
+      "label": "Equal treatment between women and men",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ea14bbd6d79fcec2",
+      "language_code": "es",
+      "label": "Estado de Derecho",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ea14bbd6d79fcec2",
+      "language_code": "en",
+      "label": "Rule of law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-63b606871c67fcaf",
+      "language_code": "es",
+      "label": "Interpretación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-63b606871c67fcaf",
+      "language_code": "en",
+      "label": "Interpretation",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a1437713ad20cfff",
+      "language_code": "es",
+      "label": "Marca de la Unión Europea",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a1437713ad20cfff",
+      "language_code": "en",
+      "label": "European Union trade mark",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f278f08a975bb542",
+      "language_code": "es",
+      "label": "Transportes aéreos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f278f08a975bb542",
+      "language_code": "en",
+      "label": "Air transport",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2154c330b819bc28",
+      "language_code": "es",
+      "label": "Excepciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2154c330b819bc28",
+      "language_code": "en",
+      "label": "Derogations",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9a88ec0087e76724",
+      "language_code": "es",
+      "label": "Carga de la prueba",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9a88ec0087e76724",
+      "language_code": "en",
+      "label": "Burden of proof",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dfd1b4327d54a9b2",
+      "language_code": "es",
+      "label": "Plazo para recurrir",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dfd1b4327d54a9b2",
+      "language_code": "en",
+      "label": "Time limit for bringing proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0fe13a7b97a40db7",
+      "language_code": "es",
+      "label": "Tribunal independiente e imparcial establecido previamente por la ley",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0fe13a7b97a40db7",
+      "language_code": "en",
+      "label": "Independent and impartial tribunal established by law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-aa5a952fc327ee1f",
+      "language_code": "es",
+      "label": "Política exterior y de seguridad común",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-aa5a952fc327ee1f",
+      "language_code": "en",
+      "label": "Common foreign and security policy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-336bf105f6e51045",
+      "language_code": "es",
+      "label": "Principio de proporcionalidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-336bf105f6e51045",
+      "language_code": "en",
+      "label": "Principle of proportionality",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dcbecc07749157af",
+      "language_code": "es",
+      "label": "Seguridad jurídica",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dcbecc07749157af",
+      "language_code": "en",
+      "label": "Legal certainty",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-14590526ae21fca6",
+      "language_code": "es",
+      "label": "Proporcionalidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-14590526ae21fca6",
+      "language_code": "en",
+      "label": "Proportionality",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fd0d25340c9ab3e0",
+      "language_code": "es",
+      "label": "Derecho de propiedad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fd0d25340c9ab3e0",
+      "language_code": "en",
+      "label": "Right to property",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1814450ea068dde2",
+      "language_code": "es",
+      "label": "Derecho a ser oído",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1814450ea068dde2",
+      "language_code": "en",
+      "label": "Right to be heard",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-07f04dd0a8cce854",
+      "language_code": "es",
+      "label": "Principio de efectividad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-07f04dd0a8cce854",
+      "language_code": "en",
+      "label": "Principle of effectiveness",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-55b145c3e910ff2b",
+      "language_code": "es",
+      "label": "Abuso de posición dominante",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-55b145c3e910ff2b",
+      "language_code": "en",
+      "label": "Abuse of a dominant position",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d46336d523b3733d",
+      "language_code": "es",
+      "label": "Motivación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d46336d523b3733d",
+      "language_code": "en",
+      "label": "Statement of reasons",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-22fc7e8deac17519",
+      "language_code": "es",
+      "label": "Prestaciones familiares",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-22fc7e8deac17519",
+      "language_code": "en",
+      "label": "Family benefits",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0a6a9518f2792ab8",
+      "language_code": "es",
+      "label": "Concepto de «hacerse cargo de la manutención» de un menor",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0a6a9518f2792ab8",
+      "language_code": "en",
+      "label": "Concept of providing for the maintenance of a child",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-560f7e41d90ef911",
+      "language_code": "es",
+      "label": "Hijo del cónyuge de un trabajador fronterizo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-560f7e41d90ef911",
+      "language_code": "en",
+      "label": "Child of the spouse of a frontier worker",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-edb298382a67a8d8",
+      "language_code": "es",
+      "label": "Derechos de defensa",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-edb298382a67a8d8",
+      "language_code": "en",
+      "label": "Rights of the defence",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d7e3fc7406c12cf",
+      "language_code": "es",
+      "label": "Validez",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d7e3fc7406c12cf",
+      "language_code": "en",
+      "label": "Validity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-47d85c144c34fcd8",
+      "language_code": "es",
+      "label": "Mercado interior",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-47d85c144c34fcd8",
+      "language_code": "en",
+      "label": "Internal market",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cba60bf6fb6ca8ee",
+      "language_code": "es",
+      "label": "Cuestión prejudicial",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cba60bf6fb6ca8ee",
+      "language_code": "en",
+      "label": "Preliminary reference",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0b7ce7b2b90b49f2",
+      "language_code": "es",
+      "label": "Inmovilización de fondos y recursos económicos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0b7ce7b2b90b49f2",
+      "language_code": "en",
+      "label": "Freezing of funds and economic resources",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc39487144eaa0c1",
+      "language_code": "es",
+      "label": "Control jurisdiccional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc39487144eaa0c1",
+      "language_code": "en",
+      "label": "Judicial review",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-50493d184cea22e8",
+      "language_code": "es",
+      "label": "Solicitud considerada manifiestamente infundada por los Estados miembros",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-50493d184cea22e8",
+      "language_code": "en",
+      "label": "Application regarded as manifestly unfounded by Member States",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-da124e71c8651945",
+      "language_code": "es",
+      "label": "Tutela judicial efectiva",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-da124e71c8651945",
+      "language_code": "en",
+      "label": "Effective judicial protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b0d28980f09517d4",
+      "language_code": "es",
+      "label": "Ayudas de Estado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b0d28980f09517d4",
+      "language_code": "en",
+      "label": "State aid",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-230556fce9889d4c",
+      "language_code": "es",
+      "label": "Competencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-230556fce9889d4c",
+      "language_code": "en",
+      "label": "Jurisdiction",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0e2a1f8790231b4b",
+      "language_code": "es",
+      "label": "Sistema común del impuesto sobre el valor añadido (IVA)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0e2a1f8790231b4b",
+      "language_code": "en",
+      "label": "Common system of value added tax (VAT)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-47c914a484eb1de8",
+      "language_code": "es",
+      "label": "Propiedad intelectual",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-47c914a484eb1de8",
+      "language_code": "en",
+      "label": "Intellectual property",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8f00af599f881add",
+      "language_code": "es",
+      "label": "Funcionarios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8f00af599f881add",
+      "language_code": "en",
+      "label": "Officials",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a9da90b71f6d2993",
+      "language_code": "es",
+      "label": "Petición de decisión prejudicial",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a9da90b71f6d2993",
+      "language_code": "en",
+      "label": "Request for a preliminary ruling",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c12ae87388b3bc47",
+      "language_code": "es",
+      "label": "Política económica y monetaria",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c12ae87388b3bc47",
+      "language_code": "en",
+      "label": "Economic and monetary policy",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d1adf36dc346c72",
+      "language_code": "es",
+      "label": "Unión Económica y Monetaria",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d1adf36dc346c72",
+      "language_code": "en",
+      "label": "Economic and Monetary Union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8d31bfa1ab209185",
+      "language_code": "es",
+      "label": "Unión bancaria",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8d31bfa1ab209185",
+      "language_code": "en",
+      "label": "Banking union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9b8c7d2ba9c4be8b",
+      "language_code": "es",
+      "label": "Mecanismo Único de Resolución de entidades de crédito y determinadas empresas de inversión (MUR)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9b8c7d2ba9c4be8b",
+      "language_code": "en",
+      "label": "Single Resolution Mechanism for credit institutions and certain investment firms (SRM)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-38b75be4ca635ccc",
+      "language_code": "es",
+      "label": "Recurso de indemnización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-38b75be4ca635ccc",
+      "language_code": "en",
+      "label": "Action for damages",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ee46e0801b1eef08",
+      "language_code": "es",
+      "label": "Espacio de libertad, seguridad y justicia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ee46e0801b1eef08",
+      "language_code": "en",
+      "label": "Area of freedom, security and justice",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a436d3049a61bef8",
+      "language_code": "es",
+      "label": "Función pública",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a436d3049a61bef8",
+      "language_code": "en",
+      "label": "Civil service",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d6038763de537ebf",
+      "language_code": "es",
+      "label": "Responsabilidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d6038763de537ebf",
+      "language_code": "en",
+      "label": "Liability",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d8dbcf8cb988d06c",
+      "language_code": "es",
+      "label": "Medidas restrictivas adoptadas en relación con acciones que menoscaban o amenazan la integridad territorial, la soberanía y la independencia de Ucrania",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d8dbcf8cb988d06c",
+      "language_code": "en",
+      "label": "Restrictive measures in view of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ad99588d203484a5",
+      "language_code": "es",
+      "label": "Congelación de fondos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ad99588d203484a5",
+      "language_code": "en",
+      "label": "Freezing of funds",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-101fcc104478f43c",
+      "language_code": "es",
+      "label": "Obligación de motivación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-101fcc104478f43c",
+      "language_code": "en",
+      "label": "Obligation to state reasons",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-13fe7dc824a85d04",
+      "language_code": "es",
+      "label": "Error de apreciación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-13fe7dc824a85d04",
+      "language_code": "en",
+      "label": "Error of assessment",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-470fed7f2a7bdcab",
+      "language_code": "es",
+      "label": "Inadmisibilidad manifiesta",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-470fed7f2a7bdcab",
+      "language_code": "en",
+      "label": "Manifest inadmissibility",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-164d426454a492a0",
+      "language_code": "es",
+      "label": "Derecho de asilo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-164d426454a492a0",
+      "language_code": "en",
+      "label": "Right of asylum",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-63162693bc5d9bcb",
+      "language_code": "es",
+      "label": "Inadmisibilidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-63162693bc5d9bcb",
+      "language_code": "en",
+      "label": "Inadmissibility",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7b9ea773b07ba0f7",
+      "language_code": "es",
+      "label": "Incumplimiento de Estado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7b9ea773b07ba0f7",
+      "language_code": "en",
+      "label": "Failure of a Member State to fulfil obligations",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1732d3b46c9bf03c",
+      "language_code": "es",
+      "label": "Recurso de anulación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1732d3b46c9bf03c",
+      "language_code": "en",
+      "label": "Action for annulment",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1f9be27565f6d3d9",
+      "language_code": "es",
+      "label": "Fiscalidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1f9be27565f6d3d9",
+      "language_code": "en",
+      "label": "Taxation",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6fa862c303eb3b8b",
+      "language_code": "es",
+      "label": "Desestimación de la solicitud",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6fa862c303eb3b8b",
+      "language_code": "en",
+      "label": "Rejection of the application",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6a448086780e4f02",
+      "language_code": "es",
+      "label": "Principio de buena administración",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6a448086780e4f02",
+      "language_code": "en",
+      "label": "Principle of good administration",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3c15b4eeef94aa96",
+      "language_code": "es",
+      "label": "Procedimiento de nulidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3c15b4eeef94aa96",
+      "language_code": "en",
+      "label": "Invalidity proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91eaebe7af84205b",
+      "language_code": "es",
+      "label": "Responsabilidad extracontractual",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91eaebe7af84205b",
+      "language_code": "en",
+      "label": "Non-contractual liability",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6442d55c835fc00c",
+      "language_code": "es",
+      "label": "Recurso manifiestamente carente de fundamento jurídico",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6442d55c835fc00c",
+      "language_code": "en",
+      "label": "Appeal manifestly unfounded in law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-45c5616f2b897a6b",
+      "language_code": "es",
+      "label": "Legitimación activa",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-45c5616f2b897a6b",
+      "language_code": "en",
+      "label": "Standing to bring proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dedfd10483e090d4",
+      "language_code": "es",
+      "label": "Admisibilidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dedfd10483e090d4",
+      "language_code": "en",
+      "label": "Admissibility",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-69c386bdf829ba41",
+      "language_code": "es",
+      "label": "Procedimiento de oposición",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-69c386bdf829ba41",
+      "language_code": "en",
+      "label": "Opposition proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3b17484ae13451d2",
+      "language_code": "es",
+      "label": "Interés para ejercitar la acción",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3b17484ae13451d2",
+      "language_code": "en",
+      "label": "Interest in bringing proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e1c690a205c828be",
+      "language_code": "es",
+      "label": "Mecanismo Único de Resolución de entidades de crédito y determinadas empresas de inversión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e1c690a205c828be",
+      "language_code": "en",
+      "label": "Single Resolution Mechanism for credit institutions and certain investment firms",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2ee10bbeda806e1a",
+      "language_code": "es",
+      "label": "Fondo Único de Resolución Bancaria",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2ee10bbeda806e1a",
+      "language_code": "en",
+      "label": "Single Bank Resolution Fund",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-60f455b5bc0da035",
+      "language_code": "es",
+      "label": "Fondo Único de Resolución",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-60f455b5bc0da035",
+      "language_code": "en",
+      "label": "Single Resolution Fund",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dc610dd3b65aff57",
+      "language_code": "es",
+      "label": "Determinación del nivel objetivo anual del FUR",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dc610dd3b65aff57",
+      "language_code": "en",
+      "label": "Determination of the annual target level of the SRF",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-79adf2dfc5dc070b",
+      "language_code": "es",
+      "label": "Reglamento de Ejecución (UE) 2015/81",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-79adf2dfc5dc070b",
+      "language_code": "en",
+      "label": "Implementing Regulation (EU) 2015/81",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-380e06d765b87c8f",
+      "language_code": "es",
+      "label": "Competencias de ejecución atribuidas al Consejo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-380e06d765b87c8f",
+      "language_code": "en",
+      "label": "Implementing powers conferred on the Council",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8c8420b82b7ae3c8",
+      "language_code": "es",
+      "label": "Limitación en el tiempo de los efectos de la sentencia recurrida",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8c8420b82b7ae3c8",
+      "language_code": "en",
+      "label": "Limitation of the temporal effects of the judgment under appeal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4ec91241ee5c6f0d",
+      "language_code": "es",
+      "label": "Recurso de anulación e indemnización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4ec91241ee5c6f0d",
+      "language_code": "en",
+      "label": "Action for annulment and damages",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-149009776fec81e3",
+      "language_code": "es",
+      "label": "Recurso de casación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-149009776fec81e3",
+      "language_code": "en",
+      "label": "Appeal on a point of law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c8984b8fd2ed5eaf",
+      "language_code": "es",
+      "label": "Acceso a los documentos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c8984b8fd2ed5eaf",
+      "language_code": "en",
+      "label": "Access to documents",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bb77bc8061cc5878",
+      "language_code": "es",
+      "label": "Decisión de la JUR sobre el cálculo de las contribuciones ex ante correspondientes al período de contribución de 2023",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bb77bc8061cc5878",
+      "language_code": "en",
+      "label": "SRB decision calculating ex ante contributions for the 2023 contribution period",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6160a56dfc8d0dc1",
+      "language_code": "es",
+      "label": "Límite máximo previsto en el artículo 70, apartado 2, párrafos primero y cuarto, del Reglamento (UE) n.º 806/2014",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6160a56dfc8d0dc1",
+      "language_code": "en",
+      "label": "Ceiling laid down in Article 70(2), first and fourth subparagraphs, of Regulation (EU) No 806/2014",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-db31c58d6a3ee2e9",
+      "language_code": "es",
+      "label": "Artículo 69, apartados 1 y 2, del Reglamento n.º 806/2014",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-db31c58d6a3ee2e9",
+      "language_code": "en",
+      "label": "Article 69(1) and (2) of Regulation No 806/2014",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-053b5901de7aff09",
+      "language_code": "es",
+      "label": "Mantenimiento del nombre del demandante en la lista",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-053b5901de7aff09",
+      "language_code": "en",
+      "label": "Maintaining the applicant's name on the list",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ebde5ef814161ea8",
+      "language_code": "es",
+      "label": "Infracción",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ebde5ef814161ea8",
+      "language_code": "en",
+      "label": "Infringement",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-368eb35281f25eaa",
+      "language_code": "es",
+      "label": "Derecho institucional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-368eb35281f25eaa",
+      "language_code": "en",
+      "label": "Institutional law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e299bd32ed83803e",
+      "language_code": "es",
+      "label": "Procedimiento de anulación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e299bd32ed83803e",
+      "language_code": "en",
+      "label": "Annulment procedure",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cd8cc699b9d56035",
+      "language_code": "es",
+      "label": "Declaración de nulidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cd8cc699b9d56035",
+      "language_code": "en",
+      "label": "Declaration of invalidity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4d929acdf28fc6e9",
+      "language_code": "es",
+      "label": "Desestimación de la oposición",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4d929acdf28fc6e9",
+      "language_code": "en",
+      "label": "Rejection of the opposition",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2fb0377d3f93d609",
+      "language_code": "es",
+      "label": "Desestimación de la solicitud de nulidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2fb0377d3f93d609",
+      "language_code": "en",
+      "label": "Rejection of the application for a declaration of invalidity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fed6798c83b1f7c0",
+      "language_code": "es",
+      "label": "Dibujo o modelo comunitario",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fed6798c83b1f7c0",
+      "language_code": "en",
+      "label": "Community design",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-04e83902b4c246de",
+      "language_code": "es",
+      "label": "Protección de datos",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-04e83902b4c246de",
+      "language_code": "en",
+      "label": "Data protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6a2eb69866124460",
+      "language_code": "es",
+      "label": "Determinación del nivel objetivo anual del Fondo Único de Resolución",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6a2eb69866124460",
+      "language_code": "en",
+      "label": "Determination of the annual target level of the Single Resolution Fund",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0634d62532aec829",
+      "language_code": "es",
+      "label": "Límite máximo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0634d62532aec829",
+      "language_code": "en",
+      "label": "Ceiling",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-def28cbc8784ec1c",
+      "language_code": "es",
+      "label": "Intervención",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-def28cbc8784ec1c",
+      "language_code": "en",
+      "label": "Intervention",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-597e486bf7a3e6ef",
+      "language_code": "es",
+      "label": "Decisión sobre el cálculo de las contribuciones ex ante para el período de contribución de 2023",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-597e486bf7a3e6ef",
+      "language_code": "en",
+      "label": "Decision calculating ex ante contributions for the 2023 contribution period",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9ea1dd42c30dd60e",
+      "language_code": "es",
+      "label": "Procedimiento",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9ea1dd42c30dd60e",
+      "language_code": "en",
+      "label": "Procedure",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-43b0c152a38e61fa",
+      "language_code": "es",
+      "label": "Recurso",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-43b0c152a38e61fa",
+      "language_code": "en",
+      "label": "Action",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4377b128140fcf74",
+      "language_code": "es",
+      "label": "Archivo del asunto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4377b128140fcf74",
+      "language_code": "en",
+      "label": "Removal from the register",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d74c4e7713a8a903",
+      "language_code": "es",
+      "label": "Admisión a trámite de los recursos de casación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d74c4e7713a8a903",
+      "language_code": "en",
+      "label": "Admission of appeals",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2923db3c474f05e4",
+      "language_code": "es",
+      "label": "Artículo 170 ter del Reglamento de Procedimiento del Tribunal de Justicia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2923db3c474f05e4",
+      "language_code": "en",
+      "label": "Article 170b of the Rules of Procedure of the Court",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0da3c1788ac84338",
+      "language_code": "es",
+      "label": "Motivo de denegación absoluto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0da3c1788ac84338",
+      "language_code": "en",
+      "label": "Absolute ground for refusal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4fd5155b13c469df",
+      "language_code": "es",
+      "label": "Falta de carácter distintivo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4fd5155b13c469df",
+      "language_code": "en",
+      "label": "Lack of distinctive character",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eb92004883a18090",
+      "language_code": "es",
+      "label": "Registro internacional que designa a la Unión Europea",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eb92004883a18090",
+      "language_code": "en",
+      "label": "International registration designating the European Union",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d9d2d655e350bb81",
+      "language_code": "es",
+      "label": "Motivo de denegación relativo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d9d2d655e350bb81",
+      "language_code": "en",
+      "label": "Relative ground for refusal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f286dc1d5e8698a9",
+      "language_code": "es",
+      "label": "Inexistencia de riesgo de confusión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f286dc1d5e8698a9",
+      "language_code": "en",
+      "label": "Absence of likelihood of confusion",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ac4a7711819f90dd",
+      "language_code": "es",
+      "label": "Riesgo de confusión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ac4a7711819f90dd",
+      "language_code": "en",
+      "label": "Likelihood of confusion",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cbe5ff301b8c273",
+      "language_code": "es",
+      "label": "Artículo 8, apartado 1, letra b), del Reglamento (UE) 2017/1001",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cbe5ff301b8c273",
+      "language_code": "en",
+      "label": "Article 8(1)(b) of Regulation (EU) 2017/1001",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e6a630f40d89dda4",
+      "language_code": "es",
+      "label": "Interés en la solución del litigio",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e6a630f40d89dda4",
+      "language_code": "en",
+      "label": "Interest in the outcome of the dispute",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-35d2ad555f36a1a1",
+      "language_code": "es",
+      "label": "Procedimiento de caducidad",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-35d2ad555f36a1a1",
+      "language_code": "en",
+      "label": "Revocation proceedings",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-77df1b13a7b5e24f",
+      "language_code": "es",
+      "label": "Carácter descriptivo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-77df1b13a7b5e24f",
+      "language_code": "en",
+      "label": "Descriptive character",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2e8c510e1c705e1a",
+      "language_code": "es",
+      "label": "Efecto directo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2e8c510e1c705e1a",
+      "language_code": "en",
+      "label": "Direct effect",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7e0023a5ab99616d",
+      "language_code": "es",
+      "label": "Protección internacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7e0023a5ab99616d",
+      "language_code": "en",
+      "label": "International protection",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c01114a82ff6c2e8",
+      "language_code": "es",
+      "label": "Reexamen",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c01114a82ff6c2e8",
+      "language_code": "en",
+      "label": "Review",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5bb50b63ea6ee41b",
+      "language_code": "es",
+      "label": "Competencia del Tribunal de Justicia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5bb50b63ea6ee41b",
+      "language_code": "en",
+      "label": "Jurisdiction of the Court",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-146a28667c57a1a2",
+      "language_code": "es",
+      "label": "Notificación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-146a28667c57a1a2",
+      "language_code": "en",
+      "label": "Notification",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bffa3e8fadc55053",
+      "language_code": "es",
+      "label": "Carácter distintivo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bffa3e8fadc55053",
+      "language_code": "en",
+      "label": "Distinctive character",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fbfb216fc35b0ae7",
+      "language_code": "es",
+      "label": "Competencia desleal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fbfb216fc35b0ae7",
+      "language_code": "en",
+      "label": "Unfair competition",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71d908dbaa6895a3",
+      "language_code": "es",
+      "label": "Objeto",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-71d908dbaa6895a3",
+      "language_code": "en",
+      "label": "Subject matter",
+      "translation_status": "PROPOSED"
+    }
+  ]
+}
