@@ -100,6 +100,17 @@ class FinalChecks(unittest.TestCase):
                 missing = [label for label in labels if not dictionary.get(language, {}).get(label, "").strip()]
                 self.assertFalse(missing, f"Missing {language} UI labels: {missing}")
 
+    def test_spanish_structured_term_translation_batch(self):
+        """Spanish proposals must be mapped to existing structured terms, never to free text."""
+        bundle = read_json(DATA / "structured-term-translations-es.json")
+        self.assertEqual(bundle["schema_version"], "poc1-es-structured-v1")
+        self.assertEqual(bundle["language_code"], "es")
+        self.assertGreaterEqual(len(bundle["translations"]), 100)
+        terms = {term for row in self.entries for term in row["maillons_fr"]}
+        self.assertTrue(all(key in terms for key in bundle["translations"]))
+        self.assertTrue(all(isinstance(label, str) and label.strip()
+                            for label in bundle["translations"].values()))
+
     def test_statistics_alignment(self):
         stats = read_json(DATA / "stats.json")
         self.assertEqual(stats["record_count"], self.manifest["profile"]["distinct_texts"])
