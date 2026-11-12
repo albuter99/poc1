@@ -4,3 +4,6 @@ data/private-import/
 data/real-*
 *.xlsx
 *.xls
+
+# Estado efimero del servidor local
+.poc1-local-server.json
