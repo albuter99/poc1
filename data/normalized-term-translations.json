@@ -2,11 +2,11 @@
   "schema_version": "poc1-term-translations-v1",
   "status": "ALL_PROPOSED_NOT_VALIDATED",
   "stats": {
-    "total_terms": 13302,
+    "total_terms": 13286,
     "proposed_es": 174,
     "proposed_en": 174,
-    "missing_es": 13128,
-    "missing_en": 13128
+    "missing_es": 13112,
+    "missing_en": 13112
   },
   "translations": [
     {
