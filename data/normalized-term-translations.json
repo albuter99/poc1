@@ -4,9 +4,9 @@
   "stats": {
     "total_terms": 13286,
     "proposed_es": 434,
-    "proposed_en": 174,
+    "proposed_en": 229,
     "missing_es": 12852,
-    "missing_en": 13112
+    "missing_en": 13057
   },
   "translations": [
     {
@@ -3655,6 +3655,336 @@
       "term_id": "TERM-480b91d5093c79dd",
       "language_code": "es",
       "label": "Reglamento (UE) n.º 269/2014",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-112ee350fe8bf4d8",
+      "language_code": "en",
+      "label": "National measure capable of being regarded as an equivalent national measure",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9fcd55a0dd360888",
+      "language_code": "en",
+      "label": "Nature of the national measure in the light of Articles 30 and 110 TFEU",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-22b49714255d317c",
+      "language_code": "en",
+      "label": "State aid",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-70c81a7b7ef744eb",
+      "language_code": "en",
+      "label": "International jurisdiction - Lis pendens",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-39baeb0681470b06",
+      "language_code": "en",
+      "label": "Provisional and protective measures",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-14ee78b836d8f2a4",
+      "language_code": "en",
+      "label": "Provisional decision concerning maintenance for minor children",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5782f22cea8571d8",
+      "language_code": "en",
+      "label": "Insider dealing and market abuse",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-175ddc1b73aac2df",
+      "language_code": "en",
+      "label": "Inside information of a precise nature",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-baf2adbea9cc479e",
+      "language_code": "en",
+      "label": "Measures intended to avoid the unintended presence of GMOs",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2645b99a596d31a2",
+      "language_code": "en",
+      "label": "Directive 2001/18/EC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-adc8a0a660d3a8f6",
+      "language_code": "en",
+      "label": "Regulation (EC) No 1829/2003",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-332add75cafe7c1d",
+      "language_code": "en",
+      "label": "Implementing Decision (EU) 2016/321",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ece783ee759bba36",
+      "language_code": "en",
+      "label": "Prohibition on the cultivation of genetically modified maize in national territory",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1e45cb4e791e4eba",
+      "language_code": "en",
+      "label": "Company name",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-390638d30a983ff3",
+      "language_code": "en",
+      "label": "National legislation providing for minimum pricing",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-25bebe8672b84eb2",
+      "language_code": "en",
+      "label": "Home delivery service for books",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d5500e5508275831",
+      "language_code": "en",
+      "label": "Cultural diversity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0ad5b19f04b60113",
+      "language_code": "en",
+      "label": "Objectives of that directive",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91ff002e8e03556a",
+      "language_code": "en",
+      "label": "Scope of the compatibility review",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-31d8892d812f1b91",
+      "language_code": "en",
+      "label": "Primary EU law",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ba1131b1014019d1",
+      "language_code": "en",
+      "label": "Common rules for the internal market in natural gas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4a38c202067093a2",
+      "language_code": "en",
+      "label": "Regulation 2017/460",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-dc898921074c0a85",
+      "language_code": "en",
+      "label": "Methods for calculating the prices payable",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d2afa76107eb75f9",
+      "language_code": "en",
+      "label": "Article 35(1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-84818efd99e075e9",
+      "language_code": "en",
+      "label": "Contracts providing for indexation of the official tariff taking account of other factors",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-664d886952d13789",
+      "language_code": "en",
+      "label": "Principles of legal certainty and legitimate expectations",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-da5f04a7e7b502f3",
+      "language_code": "en",
+      "label": "Motor vehicle civil liability insurance",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-12e0be77a8bf2257",
+      "language_code": "en",
+      "label": "Compensation scheme",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-776f63c73b02048b",
+      "language_code": "en",
+      "label": "Directive 2009/103/EC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6f76016b392f511b",
+      "language_code": "en",
+      "label": "Road traffic accident involving a stolen vehicle",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-737f7f47fd32255b",
+      "language_code": "en",
+      "label": "Burden of proof concerning knowledge that the vehicle was stolen",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-9a53b02690fe62a6",
+      "language_code": "en",
+      "label": "Body responsible for compensation",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7cd263286d92eda4",
+      "language_code": "en",
+      "label": "Processing of special categories of data",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eb8750fd08a33581",
+      "language_code": "en",
+      "label": "Level of remuneration of judges",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2c7e42f5db9b6d05",
+      "language_code": "en",
+      "label": "Organisation of working time",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1803a848a0e20b5c",
+      "language_code": "en",
+      "label": "Activities of public prosecutors",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d43dae2d02248501",
+      "language_code": "en",
+      "label": "On-call time at home and at the workplace",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0db07d1f66ae8b7b",
+      "language_code": "en",
+      "label": "Equality and non-discrimination - Access to employment and working conditions",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0797bf0562527771",
+      "language_code": "en",
+      "label": "Equal treatment between men and women",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5af0737519f46269",
+      "language_code": "en",
+      "label": "Self-employed activity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-91efc281f713e671",
+      "language_code": "en",
+      "label": "Maternity allowance",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2f07800e90729dd6",
+      "language_code": "en",
+      "label": "Grant of a single allowance under the scheme for workers",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8a3e56a4ab3505dc",
+      "language_code": "en",
+      "label": "Heading 4902 of the Combined Nomenclature",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5addfb15e676355d",
+      "language_code": "en",
+      "label": "Printed periodicals",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-25a83b6d08ec0449",
+      "language_code": "en",
+      "label": "Financial services",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2fc600a5e043b9f9",
+      "language_code": "en",
+      "label": "Directive 2003/6/EC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5ca92370c448c4ec",
+      "language_code": "en",
+      "label": "Disclosure of inside information by a politician in the media",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-12b1b278256653e4",
+      "language_code": "en",
+      "label": "Concept of unlawful disclosure",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ffaef1bdb2d38669",
+      "language_code": "en",
+      "label": "Freedom of expression",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cd74ba74cfa839f8",
+      "language_code": "en",
+      "label": "Exemptions for certain activities in the public interest",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d8292760f3d02f44",
+      "language_code": "en",
+      "label": "Services supplied by independent groups of persons",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d72b1db0aac935b",
+      "language_code": "en",
+      "label": "Services contributing to the pursuit of an exempt activity",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8d7bbf634f4032df",
+      "language_code": "en",
+      "label": "Cleaning services in the healthcare sector",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7d3d8384dfcd1e38",
+      "language_code": "en",
+      "label": "Cleaning services in the education sector",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-480b91d5093c79dd",
+      "language_code": "en",
+      "label": "Regulation (EU) No 269/2014",
       "translation_status": "PROPOSED"
     }
   ]
