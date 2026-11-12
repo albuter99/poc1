@@ -3,9 +3,9 @@
   "status": "ALL_PROPOSED_NOT_VALIDATED",
   "stats": {
     "total_terms": 13286,
-    "proposed_es": 174,
+    "proposed_es": 274,
     "proposed_en": 174,
-    "missing_es": 13112,
+    "missing_es": 13012,
     "missing_en": 13112
   },
   "translations": [
@@ -2095,6 +2095,606 @@
       "term_id": "TERM-71d908dbaa6895a3",
       "language_code": "en",
       "label": "Subject matter",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-777d2f12d1f43c72",
+      "language_code": "es",
+      "label": "Cláusula que impone al consumidor el pago de una comisión de apertura",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-eab6496c14a11b20",
+      "language_code": "es",
+      "label": "Exigencia de transparencia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4b865a5733e02b53",
+      "language_code": "es",
+      "label": "Cláusula que no precisa ni su contenido ni su duración",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-5561830b6be3247b",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestión 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3eef306871c312f0",
+      "language_code": "es",
+      "label": "Evaluación de las repercusiones de determinados proyectos sobre el medio ambiente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-95088faf540f3dcf",
+      "language_code": "es",
+      "label": "Directiva 2011/92/UE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0e7d11b2c551c2f6",
+      "language_code": "es",
+      "label": "Sometimiento a evaluación de los proyectos pertenecientes a las clases enumeradas en el anexo II",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-17dc1dc4c11db1d0",
+      "language_code": "es",
+      "label": "En caso de respuesta afirmativa: falta de presentación de los estudios",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0158f7f0b7e44e8c",
+      "language_code": "es",
+      "label": "¿Incidencia? (Cuestión 3)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-15b9c57c942a33c4",
+      "language_code": "es",
+      "label": "Autoridad competente que propone no someter un proyecto a evaluación",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f09b2bf472d03858",
+      "language_code": "es",
+      "label": "¿Obligación de someter el proyecto a evaluación? (Cuestión 2, segunda subcuestión)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-05f0f54b23575fa3",
+      "language_code": "es",
+      "label": "Disposiciones del Tratado",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1e3384ca1ad3b656",
+      "language_code": "es",
+      "label": "Centro escolar privado que imparte programas de enseñanza internacional",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3c085d5c545b2134",
+      "language_code": "es",
+      "label": "Ausencia de excepciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fd4cf552c6399e7a",
+      "language_code": "es",
+      "label": "¿Compatibilidad con el artículo 49 TFUE? (Cuestión 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e6de418e252130ae",
+      "language_code": "es",
+      "label": "Obligación de las autoridades competentes de realizar la evaluación antes de la autorización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ccce74d3b14ec073",
+      "language_code": "es",
+      "label": "Concepto de autorización",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-31a5668a82567572",
+      "language_code": "es",
+      "label": "Proceso decisorio complejo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-39548092c987b7ee",
+      "language_code": "es",
+      "label": "Examen caso por caso",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4feb19aec68a358a",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2, primera subcuestión)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4be980d5754d7785",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2, segunda subcuestión)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f3e1483f5589c583",
+      "language_code": "es",
+      "label": "Excepciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-7908a821c60b73b5",
+      "language_code": "es",
+      "label": "Juegos de azar",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a9e41725a5805fe9",
+      "language_code": "es",
+      "label": "Autorización para la instalación de establecimientos de juegos de azar",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-400511407fef7de0",
+      "language_code": "es",
+      "label": "Normativa nacional que impone distancias mínimas entre los distintos establecimientos de juego",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f3e889451ddeb121",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestiones 1 y 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6166131d65172b1d",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestión 3)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8b651bbf6bf0c983",
+      "language_code": "es",
+      "label": "Código aduanero comunitario",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75bba84509664c45",
+      "language_code": "es",
+      "label": "Reglamento (UE) n.º 952/2013",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-838872ab223c5077",
+      "language_code": "es",
+      "label": "Importaciones de mercancías",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-96b8472bae3f801b",
+      "language_code": "es",
+      "label": "Fraudes resultantes de importaciones de productos infravalorados",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4ef4698ba5858e43",
+      "language_code": "es",
+      "label": "Valor en aduana",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75abaef3a16a6b7f",
+      "language_code": "es",
+      "label": "Métodos secundarios para la determinación de dicho valor",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f78585b1a54e5411",
+      "language_code": "es",
+      "label": "¿Cumplimiento del requisito de accesibilidad? (Cuestión 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f8d437c928ae77ed",
+      "language_code": "es",
+      "label": "¿Incidencia de la utilización del procedimiento simplificado? (Cuestión 5)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a0b84a7323a1a84f",
+      "language_code": "es",
+      "label": "Contratos de crédito al consumo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-aa3c666681bdfa7e",
+      "language_code": "es",
+      "label": "Directiva 2008/48/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ad7d71d48cfa5f1c",
+      "language_code": "es",
+      "label": "Artículo 22, apartado 2",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f8fd4833482278cb",
+      "language_code": "es",
+      "label": "Política exterior",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-179a514dc0cf27e9",
+      "language_code": "es",
+      "label": "Política exterior y de seguridad común (PESC)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-824f15023fe50a32",
+      "language_code": "es",
+      "label": "Medidas restrictivas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc70ee50423ce618",
+      "language_code": "es",
+      "label": "Inmovilización de fondos y diversas prohibiciones",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e6355ab159fc0c79",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 765/2006",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-76f4bfa8095310f8",
+      "language_code": "es",
+      "label": "Medidas restrictivas establecidas contra Bielorrusia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-34f41c1049b48540",
+      "language_code": "es",
+      "label": "Inmovilización de fondos de determinadas personas y entidades",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d8f88c8c7837b0ac",
+      "language_code": "es",
+      "label": "Fondos de una sociedad participada al 50 % por la persona sancionada",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a7b41af567071ff1",
+      "language_code": "es",
+      "label": "Inclusión",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a284ecb702d0a71b",
+      "language_code": "es",
+      "label": "¿Criterio de propiedad y control? (Cuestión 1)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-94c6ed44d66583f8",
+      "language_code": "es",
+      "label": "Nulidad del contrato",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-54ee8d0f493afd47",
+      "language_code": "es",
+      "label": "Consecuencias",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-75687130720f8fd0",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestión 2)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ffc84e3524fe9ff1",
+      "language_code": "es",
+      "label": "Directivas 87/102/CEE y 2008/48/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-34f8d16b9d6f5287",
+      "language_code": "es",
+      "label": "Efectos de la declaración del carácter abusivo de una cláusula o del incumplimiento de las obligaciones del prestamista",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e44eb34c3060727c",
+      "language_code": "es",
+      "label": "Sanciones efectivas, proporcionadas y disuasorias",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-0c4239905be9eb64",
+      "language_code": "es",
+      "label": "Incumplimiento de la obligación del prestamista de comprobar la solvencia del consumidor",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc10ae802093cda0",
+      "language_code": "es",
+      "label": "Normativa nacional que establece únicamente una sanción administrativa",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-28a564afd4645bdf",
+      "language_code": "es",
+      "label": "Exclusión de las sanciones de carácter civil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-016dcac286737bea",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Cuestión 4)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-3f960a101a4e0624",
+      "language_code": "es",
+      "label": "Apreciación del carácter abusivo de las cláusulas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-86c68ba607ac712e",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 5)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-8d47baeaa917fe2e",
+      "language_code": "es",
+      "label": "Competencia judicial y ejecución de resoluciones judiciales en materia civil y mercantil",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-c21a4ac92a3c7c81",
+      "language_code": "es",
+      "label": "Reglamento (UE) n.º 1215/2012",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-30031cb3cae0d4e7",
+      "language_code": "es",
+      "label": "Artículo 66",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-de1532ec6e8244b4",
+      "language_code": "es",
+      "label": "Ámbito de aplicación temporal",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-51c586a2a89fd7de",
+      "language_code": "es",
+      "label": "Momento de interposición de una acción judicial",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-847ba313e56f55e3",
+      "language_code": "es",
+      "label": "Salud pública",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-70cfcec200e7cd1a",
+      "language_code": "es",
+      "label": "Asistencia sanitaria transfronteriza",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-96eb1768017bed14",
+      "language_code": "es",
+      "label": "Directiva 2011/24/UE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b56149b1a3a28151",
+      "language_code": "es",
+      "label": "Artículo 3, letra d)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e79c1dcf8a779eab",
+      "language_code": "es",
+      "label": "Concepto de «Estado miembro de tratamiento»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ebbb6f5eb6280662",
+      "language_code": "es",
+      "label": "Directiva 2000/31/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-bbfc12fe6b2210a6",
+      "language_code": "es",
+      "label": "¿Principio del país de origen para las prestaciones de telemedicina? (Cuestión 1c)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a475d46bc208e4a7",
+      "language_code": "es",
+      "label": "Concepto de «asistencia sanitaria en el caso de la telemedicina»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-710b4551ee8154f5",
+      "language_code": "es",
+      "label": "Contrato de asistencia sanitaria integral que incluye exámenes físicos en el Estado de residencia del paciente",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6f652c084cfe8e78",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2a)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-004a056bea2f4a67",
+      "language_code": "es",
+      "label": "Prestaciones realizadas predominantemente con ayuda de las TIC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-ef5da6c3044b7203",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f03afdfe7040b77e",
+      "language_code": "es",
+      "label": "Concepto de «asistencia sanitaria transfronteriza»",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-536082c653ca87d6",
+      "language_code": "es",
+      "label": "¿Inclusión? (Cuestión 2c)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2c2d4eb66e482006",
+      "language_code": "es",
+      "label": "Asistencia sanitaria mediante telemedicina",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-6f6a5c561ec08cf2",
+      "language_code": "es",
+      "label": "Clínica dental establecida en un Estado miembro",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-1e7277d22262b522",
+      "language_code": "es",
+      "label": "Directiva 2005/36/CE",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-818b1e8e778eeb72",
+      "language_code": "es",
+      "label": "Artículo 5, apartado 3",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-e05c71fdfead3ee5",
+      "language_code": "es",
+      "label": "Prestador de asistencia sanitaria que proporciona servicios exclusivamente relacionados con las TIC",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-07c7c40cf3038674",
+      "language_code": "es",
+      "label": "¿Desplazamiento a otro Estado miembro? (Cuestión 3b)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-2d93fd21f5db6d19",
+      "language_code": "es",
+      "label": "Política agrícola común",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-82d0a09d232a6675",
+      "language_code": "es",
+      "label": "Fondo Europeo Agrícola de Desarrollo Rural (Feader)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-94415cbeeae5666a",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 1698/2005",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-fd4f6d1a547f8512",
+      "language_code": "es",
+      "label": "Reglamento (CE) n.º 1974/2006",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-18a5e02e72ee689a",
+      "language_code": "es",
+      "label": "Programa nacional de desarrollo rural 2007-2013",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-f5052297b6b3c5a7",
+      "language_code": "es",
+      "label": "Medida de desarrollo rural",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-88a48b1119550999",
+      "language_code": "es",
+      "label": "Pagos en favor del bienestar de los animales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-788c266d3f4a5469",
+      "language_code": "es",
+      "label": "Ayuda financiera no reembolsable",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-d260fe6ddb773859",
+      "language_code": "es",
+      "label": "Error de cálculo constatado por el Tribunal de Cuentas Europeo",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-b1d06d17ccdc9177",
+      "language_code": "es",
+      "label": "Correcciones financieras efectuadas por las autoridades rumanas",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-cc1042c8894779e4",
+      "language_code": "es",
+      "label": "¿Admisibilidad? (Primera cuestión)",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-a17b14e4b9eb7484",
+      "language_code": "es",
+      "label": "Cuestiones prejudiciales",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-52abf1dd19e613dd",
+      "language_code": "es",
+      "label": "Sentencia del Tribunal de Justicia",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-4bbcb571ca1fc449",
+      "language_code": "es",
+      "label": "Consideraciones relativas a los principios de protección de la confianza legítima y de seguridad jurídica",
+      "translation_status": "PROPOSED"
+    },
+    {
+      "term_id": "TERM-05bd0a8e706fd1de",
+      "language_code": "es",
+      "label": "Libertad de acceso a la información",
       "translation_status": "PROPOSED"
     }
   ]
