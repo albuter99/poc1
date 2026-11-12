@@ -69,3 +69,29 @@ Pour les chaînes structurées : traduire les `term_id` dans leur ordre; la réf
 ## Retour à la version actuelle
 
 Choisir la branche `main` sur GitHub pour retrouver intégralement le POC existant. Aucune fusion ni modification de `main` n'est effectuée ici.
+
+## Prototype disponible sur cette branche
+
+- Un sélecteur FR / ES / EN permet de choisir la langue **des données** séparément de la langue de l'interface.
+- Le bouton **Traductions** ouvre un éditeur local pour les termes des chaînes fictives. Les traductions ES/EN se conservent uniquement dans le navigateur.
+- L'arborescence et la colonne « Chaîne de référence » du répertoire utilisent les traductions disponibles, avec repli vers le français lorsqu'une traduction manque.
+- Le graphe, les statistiques et les contenus importés ne sont pas encore multilingues de bout en bout. Aucune traduction du classeur n'a été présumée.
+
+## Tester l'import sans publication
+
+Lancer localement depuis une copie de cette branche :
+
+```bash
+python scripts/import_indexation_xlsx.py "chemin/vers/classeur.xlsx"
+```
+
+Le résultat privé est créé sous `private-import/indexation-preview.json`, qui est exclu de Git par `.gitignore`. Il conserve chaque entrée d'indexation et les documents séparément, sans confondre les entrées d'indexation avec les chaînes de référence.
+
+Pour démarrer le POC avec les données fictives (sans importer le fichier Excel) :
+
+```bash
+python scripts/build_stats.py
+python -m http.server 8000
+```
+
+Ouvrir `http://localhost:8000`. GitHub Pages reste configuré pour `main`. Changer de branche dans GitHub ne change pas automatiquement le site public publié.
