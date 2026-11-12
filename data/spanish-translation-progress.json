@@ -12049,17 +12049,23 @@
     {
       "added_new": 1000,
       "translated_active_terms": 1317
+    },
+    {
+      "added_new": 1250,
+      "translated_active_terms": 1567
     }
   ],
   "rejected_labels": [
+    "Brexit",
     "COVID-19",
     "Cotisations",
     "Covid-19",
     "Dumping",
-    "Nemo iudex in causa sua"
+    "Nemo iudex in causa sua",
+    "TFUE"
   ],
-  "completed_new": 1000,
-  "translated_active_terms": 1317,
+  "completed_new": 1250,
+  "translated_active_terms": 1567,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:31:42.977469+00:00"
+  "updated_at_utc": "2026-11-12T15:32:13.160092+00:00"
 }
