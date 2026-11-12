@@ -29,3 +29,11 @@ jobs:
         run: python scripts/check_corpus_segments.py
       - name: Run final application and data consistency tests
         run: python tests/test_final.py
+      - name: Validate JavaScript source syntax
+        run: |
+          node --check i18n.js
+          node --check branch-data.js
+          node --check graph.js
+          node --check analytics.js
+          node --check relational.js
+          node --check multilingual.js
