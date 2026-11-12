@@ -3,19 +3,19 @@ const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g
 const PAGE=50, STORAGE="poc1-relational-es-en-v1";
 let source=null, model={},tab="documents",search="",filterType="",page=0,lang="fr",selected=null,translations={};
 try{translations=JSON.parse(localStorage.getItem(STORAGE))||{}}catch(_){}
-const names={documents:"DOCUMENTS",indexations:"INDEXATION_CHAINS",references:"REFERENCE_CHAINS",chain_terms:"CHAIN_TERMS",terms:"TERMS",term_translations:"TERM_TRANSLATIONS",chain_types:"CHAIN_INDEX_TYPES",types:"INDEX_TYPES",type_translations:"INDEX_TYPE_TRANSLATIONS",document_translations:"DOCUMENT_TRANSLATIONS",candidates:"TEXT_CANDIDATES"};
+const names={documents:"DOCUMENTS",indexations:"INDEXATION_CHAINS",references:"REFERENCE_CHAINS",chain_terms:"CHAIN_TERMS",terms:"TERMS",term_translations:"TERM_TRANSLATIONS",chain_types:"CHAIN_INDEX_TYPES",types:"INDEX_TYPES",type_translations:"INDEX_TYPE_TRANSLATIONS",document_translations:"DOCUMENT_TRANSLATIONS",candidates:"TEXT_CANDIDATES",candidate_terms:"CANDIDATE_CHAIN_TERMS",candidate_vocabulary:"CANDIDATE_TERMS"};
 const explanations={
- documents:"Un document peut avoir plusieurs entrées d’indexation.",indexations:"Indexation propre au document : texte d’origine, ordre et type. Le lien vers une chaîne de référence est facultatif.",references:"Uniquement les chaînes de référence identifiées et validées, pas automatiquement tous les textes Excel.",chain_terms:"Relations entre chaînes de référence et termes, avec un ordre stable.",terms:"Référentiel des termes identifiés et validés.",term_translations:"Libellés des termes par langue.",chain_types:"Associations entre chaînes de référence et types d’indexation.",types:"Les types d’indexation observés dans le corpus.",type_translations:"Traductions par langue des types d’indexation.",document_translations:"Titres et descriptions multilingues des documents.",candidates:"Textes identiques regroupés à titre d’observation, sans statut de chaîne MDM."};
+ documents:"Un document peut avoir plusieurs entrées d’indexation.",indexations:"Indexation propre au document : texte d’origine, ordre et type. Le lien vers une chaîne de référence est facultatif.",references:"Uniquement les chaînes de référence identifiées et validées, pas automatiquement tous les textes Excel.",chain_terms:"Relations entre chaînes de référence et termes, avec un ordre stable.",terms:"Référentiel des termes identifiés et validés.",term_translations:"Libellés des termes par langue.",chain_types:"Associations entre chaînes de référence et types d’indexation.",types:"Les types d’indexation observés dans le corpus.",type_translations:"Traductions par langue des types d’indexation.",document_translations:"Titres et descriptions multilingues des documents.",candidates:"Textes identiques regroupés à titre d’observation, sans statut de chaîne MDM.",candidate_terms:"Segmentation exploratoire du texte en maillons, à valider avant toute intégration MDM.",candidate_vocabulary:"Vocabulaire provisoire extrait des segments : les identifiants et traductions sont expérimentaux."};
 const schema={
  documents:["source_document_id","type_document","jur_code","year","ordre","pro_code"],
- indexations:["source_chain_id","source_document_id","type_indexation","indexation_order","original_text","reference_chain_id","classification"],
+ indexations:["source_chain_id","source_document_id","type_indexation","indexation_order","candidate_id","original_text","reference_chain_id","classification"],
  references:["reference_chain_id","reference","status","structure_type"],
  chain_terms:["chain_id","position","term_id"],terms:["term_id","term_kind","parent_term_id","label_fr"],
  term_translations:["term_id","language_code","label","translation_status"],
  chain_types:["chain_id","index_type_id"],types:["index_type_id","code","active","label"],
  type_translations:["index_type_id","language_code","label","translation_status"],
  document_translations:["document_id","language_code","title","description"],
- candidates:["candidate_id","count","text"]
+ candidates:["candidate_id","count","candidate_kind","maillons_count","text"],candidate_terms:["candidate_id","position","candidate_term_id"],candidate_vocabulary:["candidate_term_id","label_fr","occurrences","term_kind"]
 };
 function save(){try{localStorage.setItem(STORAGE,JSON.stringify(translations))}catch(e){console.warn(e)}}
 function typeId(value){return "IDX-"+String(value??"").replace(/[^A-Za-z0-9]/g,"").slice(0,18).toUpperCase()}
@@ -26,8 +26,14 @@ const indexations=data.indexation_entries.map(x=>({...x,source_chain_id:String(x
 const count=new Map();for(const x of indexations){const k=x.original_text||"";count.set(k,(count.get(k)||0)+1)}
 const types=[...new Set(indexations.map(x=>x.type_indexation).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"fr")).map((x,i)=>({index_type_id:"IDX-"+String(i+1).padStart(2,"0"),code:x,active:true,label:x}));
 const typeTranslations=[];for(const t of types){for(const l of ["fr","es","en"]){const key="types:"+t.code, label=l==="fr"?t.label:translations[key]?.[l];if(label)typeTranslations.push({index_type_id:t.index_type_id,language_code:l,label,translation_status:l==="fr"?"source":"draft"})}}
-const candidates=[...count.entries()].filter(([text])=>text).map(([text,n],i)=>({candidate_id:"TEXT-"+String(i+1).padStart(5,"0"),count:n,text})).sort((a,b)=>b.count-a.count||a.text.localeCompare(b.text,"fr"));
-model={documents,indexations,references:data.reference_chains||[],chain_terms:data.chain_terms||[],terms:data.terms||[],term_translations:data.term_translations||[],chain_types:data.chain_index_types||[],types,type_translations:typeTranslations,document_translations:data.document_translations||[],candidates};
+const candidates=[...count.entries()].filter(([text])=>text).map(([text,n,i],idx)=>({candidate_id:"TEXT-"+String(idx+1).padStart(5,"0"),count:n,text})).sort((a,b)=>b.count-a.count||a.text.localeCompare(b.text,"fr"));
+const candidateByText=new Map(candidates.map(c=>[c.text,c.candidate_id]));
+indexations.forEach(x=>{x.candidate_id=candidateByText.get(x.original_text)||null});
+const vocabulary=new Map(),candidateTerms=[];
+for(const c of candidates){const structured=c.text.includes(" - ")&&!/[\\r\\n]/.test(c.text);c.candidate_kind=structured?"STRUCTURED_CANDIDATE":"FREE_TEXT_CANDIDATE";const parts=structured?c.text.split(" - ").map(t=>t.trim()).filter(Boolean):[c.text];c.maillons_count=parts.length;
+parts.forEach((label,index)=>{if(!vocabulary.has(label))vocabulary.set(label,{candidate_term_id:"CTERM-"+String(vocabulary.size+1).padStart(6,"0"),label_fr:label,occurrences:0,term_kind:"PROVISIONAL"});const term=vocabulary.get(label);term.occurrences++;candidateTerms.push({candidate_id:c.candidate_id,position:index+1,candidate_term_id:term.candidate_term_id})})}
+const candidateVocabulary=[...vocabulary.values()];
+model={documents,indexations,references:data.reference_chains||[],chain_terms:data.chain_terms||[],terms:data.terms||[],term_translations:data.term_translations||[],chain_types:data.chain_index_types||[],types,type_translations:typeTranslations,document_translations:data.document_translations||[],candidates,candidate_terms:candidateTerms,candidate_vocabulary:candidateVocabulary};
 for(const type of Object.keys(names))if(!Array.isArray(model[type]))model[type]=[];
 $("file-name").textContent=indexations.length.toLocaleString("fr-FR")+" indexations · "+documents.length.toLocaleString("fr-FR")+" documents";
 stats();tabs();selectTab(tab);editor();draw();
