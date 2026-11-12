@@ -1,0 +1,24 @@
+name: Validate corpus segmentation
+on:
+  push:
+    branches:
+      - prototype-excel-multilingue-es-en
+    paths:
+      - 'data/excel-indexations-*.json'
+      - 'data/excel-manifest.json'
+      - 'scripts/check_corpus_segments.py'
+      - '.github/workflows/validate-segments.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate 5,839 indexing entries and maillons
+        run: python scripts/check_corpus_segments.py
