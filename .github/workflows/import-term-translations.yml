@@ -1,0 +1,39 @@
+name: Import FR ES EN translation table
+on:
+  push:
+    branches: [prototype-excel-multilingue-es-en]
+    paths:
+      - 'data/termes_fr_es_en.csv'
+      - 'scripts/import_term_translation_table.py'
+      - '.github/workflows/import-term-translations.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: poc1-shared-translations
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout experimental branch
+        uses: actions/checkout@v4
+        with:
+          ref: prototype-excel-multilingue-es-en
+          persist-credentials: true
+      - name: Import the 3-column translation table
+        run: python3 scripts/import_term_translation_table.py
+      - name: Commit French-keyed Spanish and English dictionaries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/structured-term-translations-es.json data/structured-term-translations-en.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync ES and EN dictionaries from three-column translation table"
+            git push origin HEAD:prototype-excel-multilingue-es-en
+          fi
+      - name: Refresh Pages after updating translation dictionaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
