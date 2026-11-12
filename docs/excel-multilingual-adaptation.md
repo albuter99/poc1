@@ -95,3 +95,5 @@ python -m http.server 8000
 ```
 
 Ouvrir `http://localhost:8000`. GitHub Pages reste configuré pour `main`. Changer de branche dans GitHub ne change pas automatiquement le site public publié.
+
+La page `import-preview.html` peut ouvrir explicitement le JSON local via un sélecteur de fichier et afficher ses entrées par pages de 50 avec recherche et filtre de type. Aucun fichier source n’est incorporé à la branche.
