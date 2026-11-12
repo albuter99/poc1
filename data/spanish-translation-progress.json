@@ -12061,9 +12061,14 @@
     {
       "added_new": 1750,
       "translated_active_terms": 2067
+    },
+    {
+      "added_new": 2000,
+      "translated_active_terms": 2317
     }
   ],
   "rejected_labels": [
+    "ACRYL",
     "Brexit",
     "COVID-19",
     "Cotisations",
@@ -12072,8 +12077,8 @@
     "Nemo iudex in causa sua",
     "TFUE"
   ],
-  "completed_new": 1750,
-  "translated_active_terms": 2067,
+  "completed_new": 2000,
+  "translated_active_terms": 2317,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:33:46.544984+00:00"
+  "updated_at_utc": "2026-11-12T15:34:15.052378+00:00"
 }
