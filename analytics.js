@@ -25,7 +25,7 @@ const code=["import json","module_globals={'__name__':'poc1_stats','__file__':'/
 const result=await py.runPythonAsync(code);
 return JSON.parse(result)}
 function show(host,data,records,mode){if(!host.isConnected)return;host.innerHTML='<div class="analytics-section-head"><div><h2>Statistiques et analyses</h2><p>Vue compacte · cliquez sur une statistique pour l’agrandir</p></div></div><div class="analytics-grid">'+data.metrics.map(tile).join("");host.querySelectorAll("[data-metric]").forEach(btn=>btn.onclick=()=>{const metric=data.metrics.find(x=>x.key===btn.dataset.metric);if(metric)openMetric(metric,btn)})}
-async function render(records){const host=document.getElementById("analytics-host");if(!host)return;try{
+async function render(records){const host=document.getElementById("analytics-host");if(!host)return;try{if(window.PocBranchData?.stats){show(host,window.PocBranchData.stats(records),records,"local");return}
 const initial=await get();if(!host.isConnected)return;
 const isLocal=records.length!==initial.record_count||records.some(x=>x.local_only||x.local_modified||String(x.id).startsWith("LOCAL-"));
 if(!isLocal){show(host,initial,records,"local");return}
