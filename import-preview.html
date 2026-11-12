@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Import local · Indexations</title>
+<style>
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#223550;background:#f5f7fb}*{box-sizing:border-box}
+body{margin:0}header{padding:20px max(24px,calc((100vw - 1200px)/2));background:#14253f;color:#fff}main{max-width:1200px;margin:28px auto;padding:0 24px 40px}
+h1{font-size:25px;margin:0 0 8px}h2{font-size:17px}p{line-height:1.6}
+.panel{background:white;border:1px solid #dde5ef;padding:20px;border-radius:12px;margin-bottom:18px}
+.warn{color:#815522;background:#fff5e3;padding:10px;border-radius:6px}
+.metrics{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}.metric{border:1px solid #dde6f0;border-radius:7px;padding:12px;min-width:140px}
+.metric strong{display:block;font-size:22px;color:#27568d}.metric span{font-size:11px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+input,select,button{font:inherit;padding:9px;border:1px solid #cfd9e6;border-radius:6px}
+input[type=search]{flex:1;min-width:190px}
+button{background:#eff5fc;cursor:pointer}
+table{border-collapse:collapse;width:100%;font-size:12px}th,td{padding:10px;border-bottom:1px solid #e7ecf4;text-align:left;vertical-align:top}
+th{background:#f0f4fa}td.text{min-width:320px;max-width:570px;white-space:normal;overflow-wrap:anywhere}
+.table-wrap{overflow-x:auto}.pagination{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:12px}
+small{color:#5d718d}a{color:#a8caf2}
+</style></head><body>
+<header><h1>Import local · Chaînes d’indexation</h1><div>Essai privé de la structure Excel, sans synchronisation ni publication</div><p><a href="./index.html">Retour au POC fictif</a></p></header>
+<main><section class="panel"><h2>Ouvrir les données converties</h2>
+<p>Transformez d’abord le classeur localement avec <code>scripts/import_indexation_xlsx.py</code>, puis choisissez le fichier <code>private-import/indexation-preview.json</code>.</p>
+<input id="file" type="file" accept=".json,application/json" aria-label="Choisir le JSON privé">
+<p class="warn"><strong>Confidentialité :</strong> les données choisies sont lues par ce navigateur uniquement. Cette page n’envoie rien à GitHub, à un serveur ou au stockage local. Ne publiez pas le fichier JSON.</p>
+<div id="report" hidden><div class="metrics" id="metrics"></div><div class="controls"><input id="search" type="search" placeholder="Recherche dans le texte ou les identifiants…"><select id="type"><option value="">Tous les types d’indexation</option></select></div>
+<p><small id="count"></small></p><div class="table-wrap"><table><thead><tr><th>Chaîne d’indexation</th><th>Document</th><th>Type d’indexation</th><th>Ordre</th><th>Texte original</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="pagination"><button id="prev">Précédent</button><span id="page"></span><button id="next">Suivant</button></div>
+</div><p id="error" role="alert"></p></section></main>
+<script>
+"use strict";
+let data=[],filtered=[],page=0;const PAGE=50,byId=id=>document.getElementById(id);
+function e(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function render(){const start=page*PAGE;byId("rows").innerHTML=filtered.slice(start,start+PAGE).map(x=>"<tr><td>"+e(x.source_chain_id)+"</td><td>"+e(x.source_document_id)+"</td><td>"+e(x.type_indexation)+"</td><td>"+e(x.indexation_order)+"</td><td class='text'>"+e(x.original_text)+"</td></tr>").join("");
+byId("count").textContent=filtered.length+" résultat(s)";byId("page").textContent=(filtered.length?page+1:0)+" / "+Math.max(1,Math.ceil(filtered.length/PAGE));byId("prev").disabled=page===0;byId("next").disabled=start+PAGE>=filtered.length}
+function filter(){const q=byId("search").value.toLocaleLowerCase("fr"),type=byId("type").value;filtered=data.filter(x=>(!type||x.type_indexation===type)&&(!q||[x.original_text,x.source_chain_id,x.source_document_id].some(v=>String(v??"").toLocaleLowerCase("fr").includes(q))));page=0;render()}
+byId("search").oninput=filter;byId("type").onchange=filter;
+byId("prev").onclick=()=>{if(page>0){page--;render()}};byId("next").onclick=()=>{if((page+1)*PAGE<filtered.length){page++;render()}};
+byId("file").onchange=async event=>{byId("error").textContent="";byId("report").hidden=true;const file=event.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.schema_version!=="import-preview-v1"||!Array.isArray(obj.indexation_entries))throw Error("Format JSON non reconnu");
+data=obj.indexation_entries;const profile=obj.profile||{};byId("metrics").innerHTML=[["Entrées d’indexation",profile.indexation_entries],["Documents",profile.documents],["Textes distincts",profile.distinct_texts],["Identifiants source",profile.distinct_source_chain_ids]].map(([name,value])=>'<div class="metric"><strong>'+e(value)+'</strong><span>'+e(name)+'</span></div>').join("");
+byId("type").innerHTML='<option value="">Tous les types d’indexation</option>'+Object.keys(profile.types||{}).sort().map(type=>'<option value="'+e(type)+'">'+e(type)+'</option>').join("");
+byId("report").hidden=false;filter()}catch(err){byId("error").textContent="Lecture impossible : "+err.message}};
+</script></body></html>
