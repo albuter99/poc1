@@ -51,7 +51,7 @@ def check():
             structured_terms.update(terms)
             if any(SEP.search(t) for t in terms):
                 errors.append((ident, "Séparateur entre termes resté dans un maillon"))
-            if any("\\n" in t or "\\r" in t for t in terms):
+            if any("\n" in t or "\r" in t for t in terms):
                 errors.append((ident, "Saut de ligne parasite dans un maillon structuré"))
     if len(rows) != manifest["profile"]["indexation_entries"]:
         errors.append(("manifest", f"Total inattendu: {len(rows)}"))
