@@ -1,3 +1,27 @@
+# GitHub Pages : choisir la branche à publier
+
+Le dépôt propose **deux modes alternatifs** pour un seul site `https://albuter99.github.io/poc1/`. La configuration Pages est globale au dépôt.
+
+### Publier le POC expérimental (sans Actions)
+
+1. Ouvrir **Settings > Pages** du dépôt GitHub.
+2. Dans **Build and deployment > Source**, choisir **Deploy from a branch**.
+3. Dans **Branch**, choisir `prototype-excel-multilingue-es-en`, puis **/ (root)**, et cliquer **Save**.
+4. Une fois GitHub Pages mis à jour, accéder à `https://albuter99.github.io/poc1/relations.html` pour le modèle de données ou à l'accueil pour le POC.
+
+Les fichiers nécessaires sont déjà dans cette branche, y compris `data/stats.json`, `.nojekyll` et les fragments du corpus Excel. Aucun workflow de déploiement n'est requis dans cette branche.
+
+### Revenir au POC principal (avec Actions)
+
+1. Ouvrir **Settings > Pages**.
+2. Remplacer **Deploy from a branch** par **GitHub Actions**.
+3. Ouvrir **Actions > Deploy GitHub Pages** et lancer **Run workflow**, branche **main**, si un déploiement n'est pas déclenché automatiquement.
+4. Le fichier `.github/workflows/pages.yml` de `main` génère les statistiques puis publie le POC original.
+
+Attention : les deux modes ne publient **pas simultanément** deux URL différentes. Changer de source remplace le site accessible à l'adresse Pages du dépôt, mais ne modifie ni ne fusionne les branches. Le contenu principal reste dans `main`.
+
+---
+
 # Poc1 · Rama experimental multilingüe y Excel
 
 ## Inicio con doble clic (Windows)
