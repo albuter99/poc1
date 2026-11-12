@@ -165,6 +165,18 @@ const hash=v=>{let a=2166136261,b=2671060477;for(let i=0;i<v.length;i++){const n
 let vocabulary=[],documents=new Map(),indexations=[],allTypes=[];
 async function load(){
 await loadOverlays();
+// Proposed ES labels are keyed by the stable French term label. Do not change EN.
+try{
+  const response=await fetch("./data/structured-term-translations-es.json",{cache:"no-store"});
+  if(response.ok){
+    const bundle=await response.json();
+    if(bundle.schema_version!=="poc1-es-structured-v1"||bundle.language_code!=="es")throw Error("Spanish translations schema");
+    for(const [label,translation] of Object.entries(bundle.translations||{})){
+      if(typeof translation==="string"&&translation.trim())dictionary[label]={...(dictionary[label]||{}),es:translation.trim()};
+    }
+  }
+}catch(error){console.warn("Spanish term proposals unavailable:",error)}
+
 const m=await (await fetch("./data/excel-manifest.json",{cache:"no-store"})).json();
 if(m.schema_version!=="excel-branch-manifest-v1")throw Error("Manifest incompatible");
 const chunks=await Promise.all([m.documents_file,...m.indexation_files].map(async f=>{const r=await fetch("./"+f,{cache:"no-store"});if(!r.ok)throw Error(f);return r.json()}));
