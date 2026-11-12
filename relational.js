@@ -73,4 +73,5 @@ $("data-lang").onchange=e=>{lang=e.target.value;renderTable()};
 $("translation-type").onchange=editor;$("translation-search").oninput=editor;
 document.querySelectorAll(".entity").forEach(b=>b.onclick=()=>selectTab(b.dataset.table));
 for(const k of Object.keys(names))model[k]=[];tabs();selectTab("documents");draw();
+fetch("./data/indexation-relational-preview.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{if(d){build(d);$("file-name").textContent+=" · données de la branche"}}).catch(err=>console.info("Aucun fichier de données publié sur cette branche",err));
 })();
