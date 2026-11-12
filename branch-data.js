@@ -187,5 +187,6 @@ block("length_min","Longueur minimale des chaînes",Math.min(...lengths.keys()),
 block("length_max","Longueur maximale des chaînes",Math.max(...lengths.keys()),"Nombre maximal de segments.",lengthRows.slice().reverse(),"Nombre maximal de segments."),
 block("indexation_types","Distribution par type d’indexation",[...typeCount.values()].reduce((a,b)=>a+b,0),"Nombre de chaînes par type d’indexation.",ordered(typeCount,30),"Une chaîne peut appartenir à plusieurs types."),
 block("monthly_new","Nombre de chaînes créées par mois",dates.get(new Date().toISOString().slice(0,7))||0,"Historique des créations locales quand la date est disponible.",[...dates].sort((a,b)=>a[0].localeCompare(b[0])).map(([label,value])=>({label,value})),"Le fichier Excel ne fournit pas de dates de création des chaînes.","timeline")],warning:"Les unités sont des chaînes d’indexation uniques et des segments provisoires."}}
-window.PocBranchData={load,records:[],vocabulary,documents,indexations,types:allTypes,translate,translateChain,lang,setLang,parts,edit,stats,dictionary,translationCoverage:{}};
+function graphRecords(records){return records.map(c=>({...c,full_chain_label:translateChain(c.full_chain_label),root:translate(c.root),base_chain:translateChain(c.base_chain),types_indexation:(c.types_indexation||[]).map(t=>translate(t))}))}
+window.PocBranchData={load,records:[],vocabulary,documents,indexations,types:allTypes,translate,translateChain,lang,setLang,parts,edit,stats,graphRecords,dictionary,translationCoverage:{}};
 })();
