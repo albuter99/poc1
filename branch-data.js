@@ -165,17 +165,21 @@ const hash=v=>{let a=2166136261,b=2671060477;for(let i=0;i<v.length;i++){const n
 let vocabulary=[],documents=new Map(),indexations=[],allTypes=[];
 async function load(){
 await loadOverlays();
-// Proposed ES labels are keyed by the stable French term label. Do not change EN.
-try{
-  const response=await fetch("./data/structured-term-translations-es.json",{cache:"no-store"});
-  if(response.ok){
+// Load each language from a separate, French-keyed draft dictionary.
+for(const [language,filename,version] of [
+  ["es","structured-term-translations-es.json","poc1-es-structured-v1"],
+  ["en","structured-term-translations-en.json","poc1-en-structured-v1"]
+]){
+  try{
+    const response=await fetch("./data/"+filename,{cache:"no-store"});
+    if(!response.ok)continue;
     const bundle=await response.json();
-    if(bundle.schema_version!=="poc1-es-structured-v1"||bundle.language_code!=="es")throw Error("Spanish translations schema");
-    for(const [label,translation] of Object.entries(bundle.translations||{})){
-      if(typeof translation==="string"&&translation.trim())dictionary[label]={...(dictionary[label]||{}),es:translation.trim()};
+    if(bundle.schema_version!==version||bundle.language_code!==language)throw Error("Translation schema: "+language);
+    for(const [term,translation] of Object.entries(bundle.translations||{})){
+      if(typeof translation==="string"&&translation.trim())dictionary[term]={...(dictionary[term]||{}),[language]:translation.trim()};
     }
-  }
-}catch(error){console.warn("Spanish term proposals unavailable:",error)}
+  }catch(error){console.warn("Translation proposals unavailable: "+language,error)}
+}
 
 const m=await (await fetch("./data/excel-manifest.json",{cache:"no-store"})).json();
 if(m.schema_version!=="excel-branch-manifest-v1")throw Error("Manifest incompatible");
