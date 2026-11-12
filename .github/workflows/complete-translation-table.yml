@@ -1,0 +1,55 @@
+name: Complete FR ES EN term table (batch checkpoints)
+on:
+  push:
+    branches: [prototype-excel-multilingue-es-en]
+    paths:
+      - '.github/workflows/complete-translation-table.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: poc1-shared-translations
+  cancel-in-progress: false
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout current experimental branch
+        uses: actions/checkout@v4
+        with:
+          ref: prototype-excel-multilingue-es-en
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Configure Git and runtime
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python -m pip install --upgrade pip
+          python -m pip install 'transformers==4.44.2' sentencepiece sacremoses torch
+      - name: Fill ALL missing Spanish cells, saving every 250
+        env:
+          HF_HUB_DISABLE_TELEMETRY: '1'
+          TOKENIZERS_PARALLELISM: 'false'
+        run: python scripts/complete_translation_table.py --language Español --push
+      - name: Fill ALL missing English cells, saving every 250
+        env:
+          HF_HUB_DISABLE_TELEMETRY: '1'
+          TOKENIZERS_PARALLELISM: 'false'
+        run: python scripts/complete_translation_table.py --language Inglés --push
+      - name: Check final source and language coverage
+        run: |
+          python - <<'PY'
+          import csv
+          with open("data/termes_fr_es_en.csv",encoding="utf-8-sig",newline="") as f:
+            rows=list(csv.DictReader(f,delimiter=";"))
+          assert len(rows)==12341
+          for c in ("Español","Inglés"):
+            done=sum(bool(r[c].strip()) for r in rows)
+            print(f"{c}: {done}/{len(rows)} nonempty translations")
+          PY
+      - name: Publish changed dictionaries on the experimental website
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
