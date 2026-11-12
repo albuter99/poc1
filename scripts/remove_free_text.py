@@ -18,8 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data/excel-manifest.json"
 REPORT = ROOT / "data/structured-segmentation-review.json"
 DASHES = "-‐‑‒–—―−﹘﹣－"
-SPACED = re.compile(r"\\s+[" + re.escape(DASHES) + r"]\\s+")
-ONE_SIDED = re.compile(r"(?:\\s+[" + re.escape(DASHES) + r"](?=\\S)|(?<=\\S)[" + re.escape(DASHES) + r"]\\s+)")
+SPACED = re.compile(r"\s+[" + re.escape(DASHES) + r"]\s+")
+ONE_SIDED = re.compile(r"(?:\s+[" + re.escape(DASHES) + r"](?=\S)|(?<=\S)[" + re.escape(DASHES) + r"]\s+)")
 INVISIBLE = re.compile("[\\u200b\\u200c\\u200d\\ufeff]")
 FREE_TYPES = {"objet", "free_text", "free text", "texte libre"}
 
