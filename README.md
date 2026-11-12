@@ -1,3 +1,19 @@
+# Poc1 · Rama experimental multilingüe y Excel
+
+## Inicio con doble clic (Windows)
+
+1. Descargar el **ZIP de la rama experimental**: [Download ZIP](https://github.com/albuter99/poc1/archive/refs/heads/prototype-excel-multilingue-es-en.zip).
+2. **Extraer todo** el ZIP en una carpeta normal. No iniciar los archivos desde dentro del ZIP.
+3. Abrir **`INICIAR_POC.bat`** con doble clic.
+4. El navegador abrirá automáticamente `http://127.0.0.1:8765/relations.html`.
+5. Para detener el servidor, abrir **`DETENER_POC.bat`** o cerrar la ventana del servidor.
+
+**Requisito:** Python 3 instalado en Windows. No requiere Node.js ni instalar dependencias Python. La visualización utiliza ficheros incluidos en el ZIP. El procesamiento de un archivo .xlsx seleccionado manualmente puede requerir acceso a la biblioteca XLSX alojada externamente.
+
+La rama original `main` y la web pública continúan sin modificaciones. Los datos del Excel se distribuyen en varios archivos JSON de esta rama experimental.
+
+---
+
 # Poc1 · MDM - Gestion de chaînes de référence
 
 Prototype de démonstration avec données fictives, publié par GitHub Pages.
