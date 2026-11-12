@@ -1,0 +1,16 @@
+name: Refresh experimental Pages preview
+on:
+  push:
+    branches: [prototype-excel-multilingue-es-en]
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request combined Pages deploy from main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
