@@ -29,9 +29,10 @@ const types=[...new Set(indexations.map(x=>x.type_indexation).filter(Boolean))].
 const typeTranslations=[];for(const t of types){for(const l of ["fr","es","en"]){const key="types:"+t.code, label=l==="fr"?t.label:(translations[key]?.[l]||window.PocBranchData?.translate(t.label,l));if(label)typeTranslations.push({index_type_id:t.index_type_id,language_code:l,label,translation_status:l==="fr"?"source":"draft"})}}
 const candidates=[...count.entries()].filter(([text])=>text).map(([text,n,i],idx)=>({candidate_id:stableCandidateId(text,"TEXT-"),count:n,text})).sort((a,b)=>b.count-a.count||a.text.localeCompare(b.text,"fr"));
 const candidateByText=new Map(candidates.map(c=>[c.text,c.candidate_id]));
+const candidateSegments=new Map(indexations.map(e=>[e.original_text,e.maillons_fr]));
 indexations.forEach(x=>{x.candidate_id=candidateByText.get(x.original_text)||null});
 const vocabulary=new Map(),candidateTerms=[];
-for(const c of candidates){const parts=window.PocBranchData?.parts(c.text)||[c.text];const structured=parts.length>1;c.candidate_kind=structured?"STRUCTURED_CANDIDATE":"FREE_TEXT_CANDIDATE";c.maillons_count=parts.length;
+for(const c of candidates){const parts=candidateSegments.get(c.text)||window.PocBranchData?.parts(c.text)||[c.text];const structured=parts.length>1;c.candidate_kind=structured?"STRUCTURED_CANDIDATE":"FREE_TEXT_CANDIDATE";c.maillons_count=parts.length;
 parts.forEach((label,index)=>{if(!vocabulary.has(label))vocabulary.set(label,{candidate_term_id:stableCandidateId(label,"CTERM-"),label_fr:label,occurrences:0,term_kind:"PROVISIONAL"});const term=vocabulary.get(label);term.occurrences++;candidateTerms.push({candidate_id:c.candidate_id,position:index+1,candidate_term_id:term.candidate_term_id})})}
 const candidateVocabulary=[...vocabulary.values()];
 model={documents,indexations,references:data.reference_chains||[],chain_terms:data.chain_terms||[],terms:data.terms||[],term_translations:data.term_translations||[],chain_types:data.chain_index_types||[],types,type_translations:typeTranslations,document_translations:data.document_translations||[],candidates,candidate_terms:candidateTerms,candidate_vocabulary:candidateVocabulary};
