@@ -97,3 +97,17 @@ python -m http.server 8000
 Ouvrir `http://localhost:8000`. GitHub Pages reste configuré pour `main`. Changer de branche dans GitHub ne change pas automatiquement le site public publié.
 
 La page `import-preview.html` peut ouvrir explicitement le JSON local via un sélecteur de fichier et afficher ses entrées par pages de 50 avec recherche et filtre de type. Aucun fichier source n’est incorporé à la branche.
+
+## Nouveau visualiseur relationnel
+
+La page [relations.html](../relations.html) représente les tables et les relations du modèle de données. Elle permet :
+
+- de choisir directement un classeur **.xlsx** ou le JSON préconverti, en local et sans transfert de données ;
+- de naviguer de DOCUMENTS à INDEXATION_CHAINS et aux types d'indexation ;
+- de parcourir le corpus, rechercher, filtrer, consulter les fiches et les textes répétés ;
+- d'identifier les tables de référence/termes/traductions qui ne peuvent pas être remplies de manière fiable à partir des seuls champs du fichier source ;
+- d'éditer des variantes ES/EN à titre de démonstration, sans fabriquer de traduction absente du classeur.
+
+**Important :** le classeur n'établit pas à lui seul le lien entre une chaîne d'indexation et une chaîne de référence officiellement validée dans MDM. Ces tables peuvent être vides jusqu'à une validation de ce rapprochement. Le schéma reste volontairement complet.
+
+Pour voir l'application expérimentale, il faut exécuter les fichiers de cette branche via un serveur statique local (par exemple `python -m http.server 8000`) : le site GitHub Pages de production ne publie que `main`.
