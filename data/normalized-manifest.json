@@ -1,27 +1,28 @@
 {
   "schema_version": "poc1-normalized-v1",
-  "terms": 13302,
-  "chains": 5000,
-  "maillons": 30877,
+  "terms": 13286,
+  "chains": 5003,
+  "maillons": 30784,
   "source_indexations": 5839,
   "terms_files": [
-    "data/normalized-terms-00.json",
-    "data/normalized-terms-01.json",
-    "data/normalized-terms-02.json",
-    "data/normalized-terms-03.json",
-    "data/normalized-terms-04.json",
-    "data/normalized-terms-05.json",
-    "data/normalized-terms-06.json",
-    "data/normalized-terms-07a.json",
-    "data/normalized-terms-07b.json",
-    "data/normalized-terms-08.json"
+    "data/canonical-terms-00.json",
+    "data/canonical-terms-01.json",
+    "data/canonical-terms-02.json",
+    "data/canonical-terms-03.json",
+    "data/canonical-terms-04.json",
+    "data/canonical-terms-05.json",
+    "data/canonical-terms-06.json",
+    "data/canonical-terms-07.json",
+    "data/canonical-terms-08.json",
+    "data/canonical-terms-09.json"
   ],
   "chain_maillons_files": [
-    "data/normalized-chain-maillons-00.json",
-    "data/normalized-chain-maillons-01.json",
-    "data/normalized-chain-maillons-02.json"
+    "data/canonical-chain-maillons-00.json",
+    "data/canonical-chain-maillons-01.json",
+    "data/canonical-chain-maillons-02.json"
   ],
   "source_files": "data/excel-manifest.json",
   "status": "CANDIDATE_UNVALIDATED",
-  "note": "Segments candidats du texte; ne pas confondre avec les chaînes de référence gouvernées par MDM."
+  "note": "Segments candidats du texte; ne pas confondre avec les chaînes de référence gouvernées par MDM.",
+  "source_text_policy": "Preserve exact CHAINE_INDEX including leading or trailing whitespace; no normalization loss"
 }
