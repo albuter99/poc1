@@ -1,0 +1,6 @@
+# Fichiers de travail institutionnels : ne jamais publier dans ce dépôt public
+private-import/
+data/private-import/
+data/real-*
+*.xlsx
+*.xls
