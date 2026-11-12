@@ -1,0 +1,26 @@
+{
+  "schema_version": "poc1-normalized-v1",
+  "terms": 13302,
+  "chains": 5000,
+  "maillons": 30877,
+  "source_indexations": 5839,
+  "terms_files": [
+    "data/normalized-terms-00.json",
+    "data/normalized-terms-01.json",
+    "data/normalized-terms-02.json",
+    "data/normalized-terms-03.json",
+    "data/normalized-terms-04.json",
+    "data/normalized-terms-05.json",
+    "data/normalized-terms-06.json",
+    "data/normalized-terms-07.json",
+    "data/normalized-terms-08.json"
+  ],
+  "chain_maillons_files": [
+    "data/normalized-chain-maillons-00.json",
+    "data/normalized-chain-maillons-01.json",
+    "data/normalized-chain-maillons-02.json"
+  ],
+  "source_files": "data/excel-manifest.json",
+  "status": "CANDIDATE_UNVALIDATED",
+  "note": "Segments candidats du texte; ne pas confondre avec les chaînes de référence gouvernées par MDM."
+}
