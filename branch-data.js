@@ -157,8 +157,8 @@ async function persistTranslation(term,language,value,status="manual-draft"){if(
 function coverage(){return Object.fromEntries(["es","en"].map(l=>[l,vocabulary.filter(t=>Boolean(overlays[t.label_fr]?.[l]||dictionary[t.label_fr]?.[l])).length]))}
 const lang=()=>{try{const v=localStorage.getItem(LANG);return ["fr","es","en"].includes(v)?v:"fr"}catch(_){return"fr"}};
 const setLang=v=>{if(["fr","es","en"].includes(v)){try{localStorage.setItem(LANG,v)}catch(_){}}};
-const translate=(term,l=lang())=>l==="fr"?term:(overlays[term]?.[l]||dictionary[term]?.[l]||term);
-function parts(s){const str=String(s||"");return str.includes(" - ")&&!/[\r\n]/.test(str)?str.split(" - ").map(x=>x.trim()).filter(Boolean):[str]}
+const translate=(term,l=lang())=>{if(l==="fr")return term;const exact=overlays[term]?.[l]||dictionary[term]?.[l];if(exact)return exact;/* Translate compositional labels only when every explicit component is known; never invent legal translations. */const chunks=String(term).split(/(\s*[:;()]\s*)/);if(chunks.length>1){let matched=false,valid=true;const translated=chunks.map(part=>{if(/^\s*[:;()]\s*$/.test(part))return part;const t=part.trim();if(!t)return part;const value=overlays[t]?.[l]||dictionary[t]?.[l];if(!value){valid=false;return part}matched=true;return part.replace(t,value)});if(valid&&matched)return translated.join("")}return term};
+function parts(s){const str=String(s||"").trim();if(!str)return [];/* Only explicit spaced separators denote maillons. Newlines do not invalidate an otherwise structured chain. Keep all original content, including attached observations. */return /[ \t]+-[ \t]+/.test(str)?str.split(/[ \t]+-[ \t]+/).map(x=>x.trim()).filter(Boolean):[str]}
 const translateChain=(s,l=lang())=>parts(s).map(x=>translate(x,l)).join(" - ");
 const hash=v=>{let a=2166136261,b=2671060477;for(let i=0;i<v.length;i++){const n=v.charCodeAt(i);a=Math.imul(a^n,16777619);b=Math.imul(b^n,2246822519)}return (a>>>0).toString(16).padStart(8,"0")+(b>>>0).toString(16).padStart(8,"0")};
 let vocabulary=[],documents=new Map(),indexations=[],allTypes=[];
