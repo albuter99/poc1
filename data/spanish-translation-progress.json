@@ -12101,6 +12101,10 @@
     {
       "added_new": 4250,
       "translated_active_terms": 4567
+    },
+    {
+      "added_new": 4500,
+      "translated_active_terms": 4817
     }
   ],
   "rejected_labels": [
@@ -12125,8 +12129,8 @@
     "SA.39078-2019/C (ex 2014/N)",
     "TFUE"
   ],
-  "completed_new": 4250,
-  "translated_active_terms": 4567,
+  "completed_new": 4500,
+  "translated_active_terms": 4817,
   "total_active_terms": 12341,
-  "updated_at_utc": "2026-11-12T15:41:12.519087+00:00"
+  "updated_at_utc": "2026-11-12T15:41:55.083080+00:00"
 }
