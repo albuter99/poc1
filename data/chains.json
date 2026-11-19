@@ -957,13 +957,13 @@
   },
   {
     "id": "REF-0043",
-    "root": "\"Dessins ou modèles de l'Union européenne",
-    "base_chain": "\"Dessins ou modèles de l'Union européenne - Décisions de l'Office",
+    "root": "Dessins ou modèles de l'Union européenne",
+    "base_chain": "Dessins ou modèles de l'Union européenne - Décisions de l'Office",
     "selected_terms": [
       "Principe d'égalité de traitement",
-      "Principe de bonne administration\""
+      "Principe de bonne administration"
     ],
-    "full_chain_label": "\"Dessins ou modèles de l'Union européenne - Décisions de l'Office - Principe d'égalité de traitement - Principe de bonne administration\"",
+    "full_chain_label": "Dessins ou modèles de l'Union européenne - Décisions de l'Office - Principe d'égalité de traitement - Principe de bonne administration",
     "validity_start_date": "2025-07-16",
     "created_at": "2026-03-16T09:00:00.000Z",
     "status": "VA",
@@ -1755,14 +1755,14 @@
   },
   {
     "id": "REF-0078",
-    "root": "Marque de l’Union européenne",
-    "base_chain": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne",
+    "root": "Marque de l'Union européenne",
+    "base_chain": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne",
     "selected_terms": [
       "Motifs absolus de refus",
       "Signes constitués exclusivement par la forme du produit nécessaire à l'obtention d'un résultat technique",
       "Identification des caractéristiques essentielles d'un signe"
     ],
-    "full_chain_label": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme du produit nécessaire à l'obtention d'un résultat technique - Identification des caractéristiques essentielles d'un signe",
+    "full_chain_label": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme du produit nécessaire à l'obtention d'un résultat technique - Identification des caractéristiques essentielles d'un signe",
     "validity_start_date": "2024-06-24",
     "created_at": "2026-08-24T09:00:00.000Z",
     "status": "VA",
@@ -1915,8 +1915,8 @@
   },
   {
     "id": "REF-0085",
-    "root": "Marque de l’Union européenne",
-    "base_chain": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne",
+    "root": "Marque de l'Union européenne",
+    "base_chain": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne",
     "selected_terms": [
       "Motifs absolus de refus",
       "Signes constitués exclusivement par la forme imposée par la nature même du produit",
@@ -1924,7 +1924,7 @@
       "Signes présentant une ou plusieurs caractéristiques d'utilisation essentielles et inhérentes à la fonction ou aux fonctions génériques du produit",
       "Inclusion"
     ],
-    "full_chain_label": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme imposée par la nature même du produit - Notion - Signes présentant une ou plusieurs caractéristiques d'utilisation essentielles et inhérentes à la fonction ou aux fonctions génériques du produit - Inclusion",
+    "full_chain_label": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme imposée par la nature même du produit - Notion - Signes présentant une ou plusieurs caractéristiques d'utilisation essentielles et inhérentes à la fonction ou aux fonctions génériques du produit - Inclusion",
     "validity_start_date": "2023-01-04",
     "created_at": "2026-05-04T09:00:00.000Z",
     "status": "VA",
@@ -1962,8 +1962,8 @@
   },
   {
     "id": "REF-0087",
-    "root": "Marque de l’Union européenne",
-    "base_chain": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne",
+    "root": "Marque de l'Union européenne",
+    "base_chain": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne",
     "selected_terms": [
       "Motifs absolus de refus",
       "Signes constitués exclusivement par la forme imposée par la nature même du produit",
@@ -1971,7 +1971,7 @@
       "Présence de caractéristiques non essentielles sans fonction technique",
       "Absence d'incidence sur le motif de refus"
     ],
-    "full_chain_label": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme imposée par la nature même du produit - Notion - Présence de caractéristiques non essentielles sans fonction technique - Absence d'incidence sur le motif de refus",
+    "full_chain_label": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne - Motifs absolus de refus - Signes constitués exclusivement par la forme imposée par la nature même du produit - Notion - Présence de caractéristiques non essentielles sans fonction technique - Absence d'incidence sur le motif de refus",
     "validity_start_date": "2025-03-06",
     "created_at": "2026-07-06T09:00:00.000Z",
     "status": "VA",
@@ -2368,15 +2368,15 @@
     "created_at": "",
     "types_indexation": [],
     "id": "REF-0105",
-    "root": "Marque de l’Union européenne",
-    "base_chain": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne",
+    "root": "Marque de l'Union européenne",
+    "base_chain": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne",
     "selected_terms": [
       "Motifs relatifs absolus de refus",
       "Opposition par le titulaire d'une marque antérieure identique ou similaire enregistrée pour des produits ou services identiques ou similaires",
       "Similitude entre les marques concernées",
       "Critères d'appréciation"
     ],
-    "full_chain_label": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne - Motifs relatifs absolus de refus - Opposition par le titulaire d'une marque antérieure identique ou similaire enregistrée pour des produits ou services identiques ou similaires - Similitude entre les marques concernées - Critères d'appréciation",
+    "full_chain_label": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne - Motifs relatifs absolus de refus - Opposition par le titulaire d'une marque antérieure identique ou similaire enregistrée pour des produits ou services identiques ou similaires - Similitude entre les marques concernées - Critères d'appréciation",
     "cotes_plan_classement": [
       "4.11.03.02.02.03 Similitude entre les marques"
     ],
@@ -3524,14 +3524,14 @@
     "created_at": "",
     "types_indexation": [],
     "id": "REF-0154",
-    "root": "Marque de l’Union européenne",
-    "base_chain": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne",
+    "root": "Marque de l'Union européenne",
+    "base_chain": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne",
     "selected_terms": [
       "Motifs absolus de refus",
       "Marques dépourvues de caractère distinctif",
       "Signe constitué d'une figure géométrique de base"
     ],
-    "full_chain_label": "Marque de l’Union européenne - Définition et acquisition de la marque de l’Union européenne - Motifs absolus de refus - Marques dépourvues de caractère distinctif - Signe constitué d'une figure géométrique de base",
+    "full_chain_label": "Marque de l'Union européenne - Définition et acquisition de la marque de l'Union européenne - Motifs absolus de refus - Marques dépourvues de caractère distinctif - Signe constitué d'une figure géométrique de base",
     "cotes_plan_classement": [
       "4.11.03.01.02.03.09"
     ],
@@ -5008,8 +5008,8 @@
     "created_at": "",
     "types_indexation": [],
     "id": "REF-0217",
-    "root": "Dessins ou modèles de l'Union europénne",
-    "base_chain": "Dessins ou modèles de l'Union europénne - Motifs de nullité",
+    "root": "Dessins ou modèles de l'Union européenne",
+    "base_chain": "Dessins ou modèles de l'Union européenne - Motifs de nullité",
     "selected_terms": [
       "Absence de nouveauté",
       "Absence de caractère individuel",
@@ -5018,7 +5018,7 @@
       "Divulgation par le créateur ou son ayant droit",
       "Preuve de la divulgation"
     ],
-    "full_chain_label": "Dessins ou modèles de l'Union europénne - Motifs de nullité - Absence de nouveauté - Absence de caractère individuel - Divulgation au public - Exception - Divulgation par le créateur ou son ayant droit - Preuve de la divulgation",
+    "full_chain_label": "Dessins ou modèles de l'Union européenne - Motifs de nullité - Absence de nouveauté - Absence de caractère individuel - Divulgation au public - Exception - Divulgation par le créateur ou son ayant droit - Preuve de la divulgation",
     "cotes_plan_classement": [
       "4.11.04.01.04"
     ],
@@ -5033,15 +5033,15 @@
     "created_at": "",
     "types_indexation": [],
     "id": "REF-0218",
-    "root": "Dessins ou modèles l'Union européenne",
-    "base_chain": "Dessins ou modèles l'Union européenne - Motifs de nullité",
+    "root": "Dessins ou modèles de l'Union européenne",
+    "base_chain": "Dessins ou modèles de l'Union européenne - Motifs de nullité",
     "selected_terms": [
       "Absence de nouveauté",
       "Absence de caractère individuel",
       "Exception",
       "Divulgation par le créateur ou son ayant droit dans les douze mois avant la demande d'enregistrement"
     ],
-    "full_chain_label": "Dessins ou modèles l'Union européenne - Motifs de nullité - Absence de nouveauté - Absence de caractère individuel - Exception - Divulgation par le créateur ou son ayant droit dans les douze mois avant la demande d'enregistrement",
+    "full_chain_label": "Dessins ou modèles de l'Union européenne - Motifs de nullité - Absence de nouveauté - Absence de caractère individuel - Exception - Divulgation par le créateur ou son ayant droit dans les douze mois avant la demande d'enregistrement",
     "cotes_plan_classement": [
       "4.11.04.01.04"
     ],
@@ -5262,15 +5262,15 @@
     "created_at": "",
     "types_indexation": [],
     "id": "REF-0228",
-    "root": "Dessins ou modèles de l’Union européenne",
-    "base_chain": "Dessins ou modèles de l’Union européenne - Conditions de protection",
+    "root": "Dessins ou modèles de l'Union européenne",
+    "base_chain": "Dessins ou modèles de l'Union européenne - Conditions de protection",
     "selected_terms": [
       "Dessin ou modèle constituant une pièce d'un produit complexe",
       "Pièce nouvelle et présentant un caractère individuel",
       "Exigence de visibilité de la pièce lors d'une utilisation normale du produit",
-      "Critères d’appréciation"
+      "Critères d'appréciation"
     ],
-    "full_chain_label": "Dessins ou modèles de l’Union européenne - Conditions de protection - Dessin ou modèle constituant une pièce d'un produit complexe - Pièce nouvelle et présentant un caractère individuel - Exigence de visibilité de la pièce lors d'une utilisation normale du produit - Critères d’appréciation",
+    "full_chain_label": "Dessins ou modèles de l'Union européenne - Conditions de protection - Dessin ou modèle constituant une pièce d'un produit complexe - Pièce nouvelle et présentant un caractère individuel - Exigence de visibilité de la pièce lors d'une utilisation normale du produit - Critères d'appréciation",
     "cotes_plan_classement": [
       "4.11.04.01.05"
     ],
