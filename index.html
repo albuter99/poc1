@@ -230,6 +230,60 @@
 @media(min-width:901px) and (max-height:670px){.chain-overview-head{padding:7px 15px}.chain-overview-full{padding:8px 15px}.chain-overview-columns{padding:8px;gap:8px}.chain-overview-pane{padding:9px 11px}.chain-overview-terms li{padding:4px 0}.chain-overview-rule{margin:7px 0}.chain-overview-facts{gap:5px}.chain-overview-footer{padding:6px 12px}}
 @media(max-width:900px){.chain-overview-dialog{height:calc(100dvh - 20px)}.chain-overview-columns{grid-template-columns:repeat(2,minmax(0,1fr));overflow:auto;align-items:start}.chain-overview-pane{overflow:visible}.chain-overview-maillons{grid-row:span 2}.chain-overview-head-tags{gap:5px}}
 @media(max-width:620px){.chain-overview-overlay{padding:5px}.chain-overview-dialog{height:calc(100dvh - 10px);border-radius:8px}.chain-overview-head{padding:10px;flex-wrap:wrap;gap:8px}.chain-overview-heading{gap:7px}.chain-overview-head h2{font-size:17px}.chain-overview-eyebrow{display:none}.chain-overview-head-stat{display:none}.chain-overview-full{padding:10px 13px}.chain-overview-full p{font-size:12px}.chain-overview-columns{grid-template-columns:1fr;padding:9px}.chain-overview-maillons{grid-row:auto}.chain-overview-footer{align-items:flex-start;flex-direction:column}.chain-overview-actions{width:100%;justify-content:space-between}.chain-overview-footer>span{display:none}}
+
+/* Read-only multi-value references in the chain sheet, separate from old cote metadata. */
+.chain-overview-references{flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:10px 12px;background:#f5f8fc;border-bottom:1px solid #dfe7f2}
+.chain-overview-reference{min-width:0;border:1px solid #dae5f2;border-radius:8px;background:#fff;padding:9px 12px}
+.chain-overview-reference h3{display:flex;align-items:baseline;gap:6px;margin:0 0 6px;color:#264566;font-size:11.5px;font-weight:750}
+.chain-overview-reference h3 span{font-weight:550;font-size:10px;color:#7890a8}
+.chain-overview-reference-tags{display:flex;flex-wrap:wrap;align-items:flex-start;gap:5px;max-height:75px;overflow-y:auto;scrollbar-width:thin}
+.chain-overview-reference-tags .chain-overview-tag{font-size:10px;line-height:1.3}
+@media(max-width:620px){.chain-overview-references{grid-template-columns:1fr;gap:7px;padding:8px}.chain-overview-reference{padding:8px 10px}}
+
+/* Large, readable chain editor with dedicated fields for multi-selection. */
+.chain-edit-overlay{padding:16px;z-index:1700;align-items:center}
+.chain-edit-dialog.chain-edit-wide{padding:0;width:min(1100px,100%);height:min(790px,calc(100dvh - 32px));max-height:calc(100dvh - 32px);display:flex;flex-direction:column;overflow:hidden;border-radius:13px}
+.chain-edit-wide .chain-edit-head{flex:none;display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:20px 26px;background:#1a2d49;color:#fff}
+.chain-edit-wide .chain-edit-eyebrow{display:block;color:#b6cde5;font-weight:750;letter-spacing:.75px;font-size:10px;margin-bottom:7px}
+.chain-edit-wide .chain-edit-head h2{font-size:23px;color:#fff;margin:0 0 7px}
+.chain-edit-wide .chain-edit-head p{color:#d1deec;font-size:12px;line-height:1.5;max-width:900px;overflow-wrap:anywhere}
+.chain-edit-wide .chain-edit-close{width:34px;height:34px;flex:none;border:1px solid #6f839d;color:#f0f5ff;background:transparent;border-radius:8px}
+.chain-edit-wide .chain-edit-close:hover{background:#334b69}
+.chain-edit-wide .chain-edit-form{display:flex;flex-direction:column;min-height:0;flex:1}
+.chain-edit-wide .chain-edit-body{display:grid;grid-template-columns:1fr 1.08fr;gap:18px;flex:1;min-height:0;overflow:auto;align-items:start;padding:20px 24px;background:#f6f8fc}
+.chain-edit-wide .chain-edit-column{display:grid;gap:15px;min-width:0}
+.chain-edit-wide .chain-edit-group{padding:19px;background:#fff;border:1px solid #dfe7f1;border-radius:10px;min-width:0}
+.chain-edit-wide .chain-edit-group h3{font-size:15px;color:#263f60;margin:0 0 9px}
+.chain-edit-wide .chain-edit-hint{font-size:12px;line-height:1.5;color:#6c7f96;margin:0 0 14px}
+.chain-edit-wide .chain-edit-type-list .index-checklist{max-height:280px;grid-template-columns:1fr 1fr;padding:8px}
+.chain-edit-wide .chain-edit-type-list .index-checklist label{font-size:11.5px}
+.chain-edit-wide .chain-edit-dates,.chain-edit-wide .chain-edit-status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.chain-edit-wide .field{min-width:0;margin-top:10px}
+.chain-edit-wide .field label{font-size:11.5px;color:#3f5572;margin:0 0 7px}
+.chain-edit-wide .field input,.chain-edit-wide .field select{width:100%;min-width:0;font-size:12px}
+.chain-edit-wide .chain-edit-readonly{padding:12px;background:#f3f6fb;border:1px solid #e2e8f1;border-radius:8px;font-size:12px;color:#5d7089}
+.chain-edit-wide .chain-edit-reference-block{padding:14px 0;border-top:1px solid #e5ecf5}
+.chain-edit-wide .chain-edit-reference-block:first-of-type{border-top:none}
+.chain-edit-wide .chain-edit-reference-title{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.chain-edit-wide .chain-edit-reference-title label{color:#263f60;font-weight:750;font-size:12.5px}
+.chain-edit-wide .chain-edit-count{font-size:10px;color:#5c7a9f;white-space:nowrap}
+.chain-edit-wide .chain-edit-reference-help{font-size:11px;color:#7d8fa5;line-height:1.5;margin:6px 0 8px}
+.chain-edit-wide .chain-edit-add-row{display:flex;align-items:stretch;gap:7px}
+.chain-edit-wide .chain-edit-add-row input{flex:1;min-width:0;width:100%;font-size:12px;padding:10px 11px}
+.chain-edit-wide .chain-edit-add{flex:none;white-space:nowrap;padding:8px 11px}
+.chain-edit-wide .chain-edit-selected{display:flex;flex-wrap:wrap;gap:7px;min-height:37px;align-items:center;padding:8px 0;max-height:120px;overflow:auto}
+.chain-edit-wide .chain-edit-choice{display:inline-flex;align-items:center;min-width:0;max-width:100%;gap:6px;background:#eaf2ff;border:1px solid #cbdcf4;border-radius:8px;padding:6px 6px 6px 9px;color:#2d5181;font-size:11px;line-height:1.4}
+.chain-edit-wide .chain-edit-choice span{min-width:0;overflow-wrap:anywhere}
+.chain-edit-wide .chain-edit-choice button{border:0;border-radius:5px;color:#39689e;background:transparent;font-size:17px;line-height:1;padding:1px 4px;flex:none}
+.chain-edit-wide .chain-edit-choice button:hover{background:#d5e6fa}
+.chain-edit-wide .chain-edit-none{color:#9aa8ba;font-size:11px}
+.chain-edit-wide .chain-edit-footer{padding:12px 22px;background:#fff;border-top:1px solid #dfe7f2;display:flex;align-items:center;justify-content:space-between;gap:14px;flex:none}
+.chain-edit-wide .chain-edit-footer .error{margin:0;min-width:0;font-size:12px}
+.chain-edit-wide .chain-edit-footer .error[hidden]{display:none}
+.chain-edit-wide .chain-edit-buttons{display:flex;justify-content:flex-end;gap:9px;margin-left:auto}
+.chain-edit-wide .chain-edit-buttons .btn{font-size:12px;padding:10px 15px}
+@media(max-width:820px){.chain-edit-wide .chain-edit-body{grid-template-columns:1fr}.chain-edit-wide .chain-edit-type-list .index-checklist{max-height:260px}}
+@media(max-width:520px){.chain-edit-overlay{padding:6px}.chain-edit-dialog.chain-edit-wide{height:calc(100dvh - 12px);max-height:calc(100dvh - 12px)}.chain-edit-wide .chain-edit-head{padding:14px}.chain-edit-wide .chain-edit-head h2{font-size:18px}.chain-edit-wide .chain-edit-body{padding:10px;gap:10px}.chain-edit-wide .chain-edit-group{padding:13px}.chain-edit-wide .chain-edit-dates,.chain-edit-wide .chain-edit-status-grid{grid-template-columns:1fr}.chain-edit-wide .chain-edit-type-list .index-checklist{grid-template-columns:1fr}.chain-edit-wide .chain-edit-footer{padding:10px;flex-wrap:wrap}.chain-edit-wide .chain-edit-buttons{width:100%}.chain-edit-wide .chain-edit-buttons .btn{flex:1}.chain-edit-wide .chain-edit-add-row{flex-wrap:wrap}}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css?v=20261105-1511"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
@@ -238,6 +292,9 @@
 "use strict";
 const STORAGE="poc1-reference-chains-v1";
 const LOCALE_KEY="poc1-ui-language";
+ // Référentiels à renseigner ultérieurement. Aucune valeur fictive n'est préchargée.
+ const CHAIN_REFERENCE_CATALOGUES={cotes_plan_classement:[],dispositions_legales:[]};
+ function referenceValues(rec,key){return Array.isArray(rec?.[key])?[...new Set(rec[key].filter(x=>typeof x==="string"&&x.trim()).map(x=>x.trim()))]:[]}
 let uiLang="fr";try{const v=localStorage.getItem(LOCALE_KEY);if(v&&I18N_NAMES[v])uiLang=v}catch(_){}
 const extraTerms=["Conditions","Marge de l’appréciation de l’Office","Mesures d'instruction","Motivation des décisions","Objectif","Portée","Notification","Notion","Procédure d’opposition","Procédure de nullité","Recevabilité","Délai de recours","Charge de la preuve","Droits de la défense","Examen d'office","Décision définitive","Appréciation des preuves","Motivation juridique","Protection juridictionnelle","Intérêt à agir","Principes généraux","Contrôle de légalité","Compétence de l'Office","Mesures provisoires","Erreur manifeste","Irrecevabilité","Droits antérieurs","Caractère distinctif","Risque de confusion","Usage sérieux","Opposabilité","Protection des données","Publication","Déchéance","Réexamen","Délai de prescription","Règles de procédure","Recours en annulation","Proportionnalité","Sécurité juridique"];
 const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},chainMetadata:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",directoryPage:0,directoryPageSize:10,wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
@@ -373,6 +430,9 @@ function openChainDetails(id){
  const typeTags=types.length?types.map(t=>tag(t)).join(""):'<span class="chain-overview-muted">Aucun type renseigné</span>';
  const documents=Array.isArray(meta.documents)?meta.documents:[];
  const linkedDocs=documents.length?documents.map(d=>'<div class="chain-overview-doc"><strong>'+esc(val(d.title||d.id))+'</strong><span>'+esc([d.id,d.kind,d.status].filter(Boolean).join(" · "))+'</span></div>').join(""):'<p class="chain-overview-muted">Aucun document associé.</p>';
+ const cotes=referenceValues(rec,"cotes_plan_classement");
+ const dispositions=referenceValues(rec,"dispositions_legales");
+ const referenceTags=(values,empty)=>values.length?values.map(x=>tag(x)).join(""):'<span class="chain-overview-muted">'+esc(empty)+'</span>';
  document.getElementById("chain-detail-overlay")?.remove();
  const previousFocus=document.activeElement,oldOverflow=document.body.style.overflow;
  const overlay=document.createElement("div");
@@ -381,6 +441,10 @@ function openChainDetails(id){
  overlay.innerHTML='<section class="chain-overview-dialog" role="dialog" aria-modal="true" aria-labelledby="chain-overview-title">'+
  '<header class="chain-overview-head"><div class="chain-overview-heading"><span class="chain-overview-eyebrow">FICHE DE RÉFÉRENCE · POC 1</span><h2 id="chain-overview-title">'+esc(rec.id)+'</h2></div><div class="chain-overview-head-tags">'+statusTag+'<span class="chain-overview-head-stat">'+terms.length+' maillons</span><span class="chain-overview-head-stat">'+types.length+' types</span></div><button class="chain-overview-close" type="button" id="chain-detail-close" aria-label="Fermer">✕</button></header>'+
  '<section class="chain-overview-full"><div class="chain-overview-full-title">Chaîne de référence complète</div><p>'+esc(val(rec.full_chain_label))+'</p></section>'+
+ '<section class="chain-overview-references" aria-label="Références complémentaires">'+
+ '<div class="chain-overview-reference"><h3>Cotes du plan de classement <span>('+cotes.length+')</span></h3><div class="chain-overview-reference-tags">'+referenceTags(cotes,"Aucune cote sélectionnée")+'</div></div>'+
+ '<div class="chain-overview-reference"><h3>Disposition(s) légale(s) <span>('+dispositions.length+')</span></h3><div class="chain-overview-reference-tags">'+referenceTags(dispositions,"Aucune disposition sélectionnée")+'</div></div>'+
+ '</section>'+
  '<div class="chain-overview-columns">'+
  '<section class="chain-overview-pane chain-overview-maillons"><h3>Maillons <span>'+terms.length+' termes ordonnés</span></h3><ol class="chain-overview-terms">'+listTerms+'</ol><div class="chain-overview-pane-foot"><strong>Terme racine</strong><span>'+esc(val(rec.root||terms[0]))+'</span></div></section>'+
  '<section class="chain-overview-pane"><h3>Indexation et validité</h3><div class="chain-overview-small-title">Types d’indexation</div><div class="chain-overview-types">'+typeTags+'</div><div class="chain-overview-rule"></div><dl class="chain-overview-facts">'+row("Début de validité",day(rec.validity_start_date))+row("Fin de validité",day(validEnd))+row("Créée le",stamp(rec.created_at))+row("Modifiée le",rec.last_modified_at?stamp(rec.last_modified_at):"Aucune modification")+'</dl><div class="chain-overview-rule"></div><dl class="chain-overview-facts">'+row("Origine",sourceLabel)+row("Base (maillons)",baseCount||fallback)+'</dl></section>'+
@@ -403,27 +467,103 @@ function openChainDetails(id){
  overlay.querySelector("#chain-detail-close").onclick=close;
  overlay.querySelector("#chain-detail-done").onclick=close;
  overlay.querySelector("#chain-detail-graph").onclick=()=>{close();window.PocGraph?.open(state.records,id)};
- overlay.querySelector("#chain-detail-edit").onclick=()=>{close();openEditor(id)};
+ overlay.querySelector("#chain-detail-edit").onclick=()=>{close();openEditor(id,true)};
  overlay.querySelector("#chain-detail-close").focus();
 }
-function openEditor(id){
-const rec=state.records.find(x=>x.id===id);if(!rec)return;
-document.getElementById("chain-edit-overlay")?.remove();
-const overlay=document.createElement("div");overlay.id="chain-edit-overlay";overlay.className="chain-edit-overlay";
-overlay.innerHTML='<section class="chain-edit-dialog" role="dialog" aria-modal="true" aria-labelledby="edit-title"><header><div><h2 id="edit-title">Modifier la chaîne '+esc(rec.id)+'</h2><p>'+esc(rec.full_chain_label)+'</p></div><button class="btn sm" id="edit-close" aria-label="Fermer">✕</button></header><form id="edit-form"><div class="field"><label>Types d’indexation (sélection multiple, facultatif)</label>'+typeChecklist(typesOf(rec),"edit-types")+'</div><div class="edit-form-grid"><div class="field"><label for="edit-start">Date de début</label>'+dateInput("edit-start",rec.validity_start_date||"1900-01-01")+'</div><div class="field"><label for="edit-end">Date de fin</label>'+dateInput("edit-end",!rec.validity_end_date||rec.validity_end_date==="1900-01-01"?"3000-12-31":rec.validity_end_date)+'</div></div><div class="field"><label for="edit-status">Statut</label><select id="edit-status">'+Object.entries(STATUSES).map(([key,label])=>'<option value="'+key+'" '+(normalizeStatus(rec.status)===key?"selected":"")+'>'+key+' - '+label+'</option>').join("")+'</select></div><div class="field"><label>Date dernière modification (automatique)</label><input type="text" value="'+esc(rec.last_modified_at?fmtDate(rec.last_modified_at.slice(0,10)):"Aucune modification")+'" disabled></div><p class="error" id="edit-error" role="alert" hidden></p><div class="controls"><button type="button" class="btn" id="edit-cancel">Annuler</button><button type="submit" class="btn primary">Enregistrer les modifications</button></div></form></section>';
-document.body.appendChild(overlay);
-const close=()=>overlay.remove();overlay.onclick=e=>{if(e.target===overlay)close()};document.getElementById("edit-close").onclick=close;document.getElementById("edit-cancel").onclick=close;bindDateInput("edit-start",()=>{});bindDateInput("edit-end",()=>{});
-document.getElementById("edit-form").onsubmit=e=>{
- e.preventDefault();const start=readDateInput("edit-start"),end=readDateInput("edit-end");
- if(!start||!end||start>end){const node=document.getElementById("edit-error");node.textContent="La date de fin doit être postérieure ou égale à la date de début.";node.hidden=false;return}
- const selected=[...document.querySelectorAll("#edit-types input:checked")].map(x=>x.value);
- const original={...rec};
- Object.assign(rec,{types_indexation:selected,validity_start_date:start,validity_end_date:end,status:document.getElementById("edit-status").value,last_modified_at:new Date().toISOString(),local_modified:true});
- if(!save()){Object.assign(rec,original);for(const key of ["types_indexation","last_modified_at","local_modified"])if(!Object.prototype.hasOwnProperty.call(original,key))delete rec[key];const node=document.getElementById("edit-error");node.textContent="La sauvegarde locale a échoué.";node.hidden=false;return}
- close();dashboard()
-};
-document.getElementById("edit-start").focus()
+function openEditor(id,returnToDetails=false){
+ const rec=state.records.find(x=>x.id===id);
+ if(!rec)return;
+ document.getElementById("chain-edit-overlay")?.remove();
+ const oldFocus=document.activeElement,oldOverflow=document.body.style.overflow;
+ const refKeys=["cotes_plan_classement","dispositions_legales"];
+ const draft={cotes_plan_classement:referenceValues(rec,"cotes_plan_classement"),dispositions_legales:referenceValues(rec,"dispositions_legales")};
+ const optionsFor=key=>[...new Set([...(CHAIN_REFERENCE_CATALOGUES[key]||[]),...state.records.flatMap(r=>referenceValues(r,key))])].filter(Boolean).sort((a,b)=>a.localeCompare(b,"fr"));
+ const multiEditor=(key,title,description)=>{
+  const options=optionsFor(key);
+  return '<section class="chain-edit-reference-block"><div class="chain-edit-reference-title"><label for="edit-'+key+'">'+title+'</label><span class="chain-edit-count" id="count-'+key+'">0 sélection</span></div>'+
+  '<p class="chain-edit-reference-help">'+description+'</p>'+
+  '<div class="chain-edit-add-row"><input type="text" id="edit-'+key+'" list="suggest-'+key+'" autocomplete="off" placeholder="Rechercher ou saisir une valeur…" aria-label="Ajouter '+title+'"><datalist id="suggest-'+key+'">'+options.map(x=>'<option value="'+esc(x)+'"></option>').join("")+'</datalist>'+
+  '<button type="button" class="btn sm chain-edit-add" data-add-reference="'+key+'">+ Ajouter</button></div>'+
+  '<div class="chain-edit-selected" id="selected-'+key+'" aria-live="polite"></div>'+
+  (options.length?'<p class="chain-edit-reference-help">'+options.length+' valeur(s) disponibles en suggestion.</p>':'<p class="chain-edit-reference-help">Catalogue non fourni. La saisie manuelle reste possible dans ce POC.</p>')+
+  '</section>';
+ };
+ const overlay=document.createElement("div");
+ overlay.id="chain-edit-overlay";overlay.className="chain-edit-overlay";
+ overlay.innerHTML='<section class="chain-edit-dialog chain-edit-wide" role="dialog" aria-modal="true" aria-labelledby="edit-title">'+
+ '<header class="chain-edit-head"><div><span class="chain-edit-eyebrow">GESTION DE CHAÎNE · POC 1</span><h2 id="edit-title">Modifier '+esc(rec.id)+'</h2><p>'+esc(rec.full_chain_label)+'</p></div><button type="button" class="chain-edit-close" id="edit-close" aria-label="Fermer">✕</button></header>'+
+ '<form id="edit-form" class="chain-edit-form"><div class="chain-edit-body">'+
+ '<section class="chain-edit-column"><div class="chain-edit-group"><h3>Indexation</h3><p class="chain-edit-hint">Sélectionnez zéro, un ou plusieurs types d’indexation.</p><div class="chain-edit-type-list">'+typeChecklist(typesOf(rec),"edit-types")+'</div></div>'+
+ '<div class="chain-edit-group"><h3>État et validité</h3><div class="chain-edit-dates"><div class="field"><label for="edit-start">Date de début</label>'+dateInput("edit-start",rec.validity_start_date||"1900-01-01")+'</div><div class="field"><label for="edit-end">Date de fin</label>'+dateInput("edit-end",!rec.validity_end_date||rec.validity_end_date==="1900-01-01"?"3000-12-31":rec.validity_end_date)+'</div></div>'+
+ '<div class="chain-edit-status-grid"><div class="field"><label for="edit-status">Statut</label><select id="edit-status">'+Object.entries(STATUSES).map(([key,label])=>'<option value="'+key+'" '+(normalizeStatus(rec.status)===key?"selected":"")+'>'+key+' - '+label+'</option>').join("")+'</select></div><div class="field"><label>Date dernière modification</label><div class="chain-edit-readonly">'+esc(rec.last_modified_at?fmtDate(rec.last_modified_at.slice(0,10)):"Aucune modification")+'</div></div></div></div></section>'+
+ '<section class="chain-edit-column"><div class="chain-edit-group chain-edit-references"><h3>Références complémentaires</h3><p class="chain-edit-hint">Sélection multiple. Vous pouvez ajouter plusieurs valeurs, puis retirer celles qui ne conviennent plus. Aucune donnée de référence n’est encore fournie.</p>'+
+ multiEditor("cotes_plan_classement","Cotes du plan de classement","Ajoutez les cotes liées à cette chaîne.")+
+ multiEditor("dispositions_legales","Disposition(s) légale(s)","Ajoutez les dispositions légales liées à cette chaîne.")+
+ '</div></section>'+
+ '</div><footer class="chain-edit-footer"><p class="error" id="edit-error" role="alert" tabindex="-1" hidden></p><div class="chain-edit-buttons"><button type="button" class="btn" id="edit-cancel">Annuler</button><button type="submit" class="btn primary" id="edit-save">Enregistrer les modifications</button></div></footer></form></section>';
+ document.body.appendChild(overlay);
+ document.body.style.overflow="hidden";
+ const close=()=>{overlay.remove();document.body.style.overflow=oldOverflow;oldFocus?.focus?.({preventScroll:true})};
+ const showError=message=>{const box=overlay.querySelector("#edit-error");box.textContent=message;box.hidden=false;box.focus();};
+ const renderSelected=key=>{
+  const container=overlay.querySelector("#selected-"+key);
+  const count=overlay.querySelector("#count-"+key);
+  count.textContent=draft[key].length+" sélectionnée(s)";
+  container.innerHTML=draft[key].length?draft[key].map((value,index)=>'<span class="chain-edit-choice"><span>'+esc(value)+'</span><button type="button" data-ref-key="'+key+'" data-ref-index="'+index+'" aria-label="Retirer '+esc(value)+'" title="Retirer cette valeur">×</button></span>').join(""):'<span class="chain-edit-none">Aucune valeur sélectionnée</span>';
+  container.querySelectorAll("[data-ref-index]").forEach(btn=>btn.onclick=()=>{
+   draft[key].splice(Number(btn.dataset.refIndex),1);
+   renderSelected(key);
+   overlay.querySelector("#edit-"+key).focus();
+  });
+ };
+ const addValue=key=>{
+  const input=overlay.querySelector("#edit-"+key);
+  const value=input.value.trim().replace(/\s+/g," ");
+  if(!value)return;
+  if(!draft[key].some(x=>x.toLocaleLowerCase("fr")===value.toLocaleLowerCase("fr")))draft[key].push(value);
+  input.value="";
+  renderSelected(key);
+ };
+ for(const key of refKeys){
+  renderSelected(key);
+  overlay.querySelector('[data-add-reference="'+key+'"]').onclick=()=>{addValue(key);overlay.querySelector("#edit-"+key).focus()};
+  overlay.querySelector("#edit-"+key).onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addValue(key)}};
+ }
+ overlay.onclick=e=>{if(e.target===overlay)close()};
+ overlay.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){e.preventDefault();close();return}
+  if(e.key!=="Tab")return;
+  const active=[...overlay.querySelectorAll('button:not(:disabled),input:not(:disabled),select:not(:disabled)')].filter(el=>el.getClientRects().length>0);
+  if(!active.length)return;
+  if(e.shiftKey&&document.activeElement===active[0]){e.preventDefault();active[active.length-1].focus()}
+  else if(!e.shiftKey&&document.activeElement===active[active.length-1]){e.preventDefault();active[0].focus()}
+ });
+ overlay.querySelector("#edit-close").onclick=close;
+ overlay.querySelector("#edit-cancel").onclick=close;
+ bindDateInput("edit-start",()=>{});
+ bindDateInput("edit-end",()=>{});
+ overlay.querySelector("#edit-form").onsubmit=e=>{
+  e.preventDefault();
+  const start=readDateInput("edit-start"),end=readDateInput("edit-end");
+  if(!start||!end||start>end){showError("Veuillez saisir des dates valides : la fin ne peut pas précéder le début.");return}
+  // Conserver aussi la dernière valeur saisie si l'utilisateur n'a pas cliqué sur Ajouter.
+  for(const key of refKeys)addValue(key);
+  const selected=[...overlay.querySelectorAll("#edit-types input:checked")].map(x=>x.value);
+  const previous={...rec};
+  Object.assign(rec,{types_indexation:selected,cotes_plan_classement:[...draft.cotes_plan_classement],dispositions_legales:[...draft.dispositions_legales],validity_start_date:start,validity_end_date:end,status:overlay.querySelector("#edit-status").value,last_modified_at:new Date().toISOString(),local_modified:true});
+  if(!save()){
+   for(const key of Object.keys(rec))if(!Object.prototype.hasOwnProperty.call(previous,key))delete rec[key];
+   Object.assign(rec,previous);
+   showError("La sauvegarde locale a échoué. Aucune modification n'a été conservée.");
+   return;
+  }
+  close();
+  dashboard();
+  if(returnToDetails)openChainDetails(id);
+ };
+ overlay.querySelector("#edit-start").focus();
 }
+
 function exportCSV(){const cols=["id","root","base_chain","selected_terms","full_chain_label","type_indexation","validity_start_date","validity_end_date","created_at","last_modified_at","status"];const csv=[cols.join(";"),...state.records.map(x=>cols.map(k=>'"'+String(k==="selected_terms"?(x[k]||[]).join(" | "):x[k]??"").replaceAll('"','""')+'"').join(";"))].join("\r\n");const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="chaines-reference-poc1.csv";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
 function wizard(){const titles=["Sélection de la chaîne de base","Sélection des termes","Vérifiez et validez","Sauvegarde"];const body='<button class="btn sm" id="quit">← Tableau de bord</button><div class="wizard"><h1>Créer une chaîne de référence</h1><p>Étape '+(state.step-1)+' sur 4 · '+titles[state.step-2]+'</p><div class="stepper">'+titles.map((x,i)=>'<span class="'+(i<state.step-1?"on":"")+'" title="'+esc(x)+'"></span>').join("")+'</div><section class="panel"><h2>'+titles[state.step-2]+'</h2>'+stepBody()+'</section><div class="footnote">Toutes les données sont fictives. Cette démonstration ne modifie aucun système institutionnel.</div></div>';shell(body);document.getElementById("quit").onclick=()=>{state.view="dashboard";render()};bindStep()}
 function buttons(last){return '<div class="controls"><button class="btn" id="back">'+(state.step===2?"Annuler":"Précédent")+'</button><div class="right"><button class="btn primary" id="next">'+last+'</button></div></div>'}
