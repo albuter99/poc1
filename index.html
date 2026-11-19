@@ -178,6 +178,53 @@
  .directory-page-controls{width:100%}
  .directory-page-word{padding:6px 7px;font-size:11px}
 }
+
+/* Detailed chain reference sheet, read-only and accessible from the directory. */
+.chain-detail-overlay{position:fixed;inset:0;z-index:1650;background:rgba(12,27,46,.65);display:flex;align-items:center;justify-content:center;padding:22px;overflow:auto}
+.chain-detail-dialog{width:min(1120px,100%);max-height:calc(100vh - 44px);display:flex;flex-direction:column;background:#fff;border-radius:14px;box-shadow:0 24px 80px rgba(11,32,58,.28);overflow:hidden}
+.chain-detail-header{background:#1a2d49;color:#fff;padding:22px 27px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex:none}
+.chain-detail-kicker{display:block;font-size:10px;letter-spacing:1.25px;color:#b3c8e0;font-weight:750;margin-bottom:7px}
+.chain-detail-header h2{margin:0 0 9px;font-size:25px;color:#fff}
+.chain-detail-head-sub{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:11px;color:#bccde2}
+.chain-detail-head-sub .tag{font-size:11px;background:#deecff;color:#23538b}
+.chain-detail-head-sub .tag.gray{background:#e4e9f0;color:#5e6d7f}
+.chain-detail-close{border:1px solid #62768f;border-radius:8px;background:transparent;color:#f0f6ff;width:35px;height:35px;flex:none}
+.chain-detail-close:hover{background:#314866}
+.chain-detail-body{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(270px,1fr);gap:18px;padding:22px 25px;overflow-y:auto;min-height:0;flex:1;align-items:start;background:#f7f9fc}
+.chain-detail-primary,.chain-detail-side{display:flex;flex-direction:column;gap:16px;min-width:0}
+.chain-detail-section{padding:20px;background:#fff;border:1px solid #dfe7f1;border-radius:11px;min-width:0}
+.chain-detail-section h3{font-size:14px;font-weight:750;color:#223e62;margin:0 0 15px}
+.chain-detail-section h3 small{font-size:10px;font-weight:500;color:#8190a4}
+.chain-detail-hero{border-color:#ccddf2}
+.chain-detail-chain{color:#1f3755;font-size:15px;line-height:1.75;font-weight:650;white-space:normal;overflow-wrap:anywhere}
+.chain-detail-inline{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px;font-size:11px;color:#43638e}
+.chain-detail-inline span{border:1px solid #d5e2f1;border-radius:7px;background:#f4f8fd;padding:6px 10px}
+.chain-detail-terms{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.chain-detail-terms li{display:flex;gap:11px;align-items:flex-start;border-bottom:1px solid #edf1f6;padding:10px 2px}
+.chain-detail-terms li:last-child{border-bottom:0}
+.chain-detail-term-n{display:grid;place-items:center;flex:none;width:29px;height:29px;background:#eaf2ff;border-radius:50%;color:#37649b;font-size:11px;font-weight:750}
+.chain-detail-terms li strong{display:block;font-size:12.5px;line-height:1.55;overflow-wrap:anywhere;color:#233c5b}
+.chain-detail-terms li small{display:block;color:#8293a7;margin-top:3px;font-size:10px}
+.chain-detail-fields{display:grid;grid-template-columns:minmax(0,1fr);gap:13px;margin:0}
+.chain-detail-field{min-width:0}
+.chain-detail-fields dt,.chain-detail-label{font-size:10.5px;font-weight:750;color:#72849a;margin-bottom:4px}
+.chain-detail-fields dd{font-size:12px;line-height:1.5;color:#2b405d;overflow-wrap:anywhere;margin:0}
+.chain-detail-label{margin:16px 0 7px}
+.chain-detail-badge{display:inline-block;max-width:100%;white-space:normal;line-height:1.45;overflow-wrap:anywhere}
+.chain-detail-types{display:flex;gap:6px;flex-wrap:wrap}
+.chain-detail-muted,.chain-detail-hint{color:#7d8ea3;font-size:11px;line-height:1.6}
+.chain-detail-hint{margin-top:14px}
+.chain-detail-documents{display:grid;gap:8px}
+.chain-detail-document{padding:10px 12px;border-radius:8px;border:1px solid #e2e9f2;background:#fafcff}
+.chain-detail-document strong{display:block;color:#314b70;font-size:12px;overflow-wrap:anywhere}
+.chain-detail-document span{display:block;color:#7b8da3;font-size:11px;margin-top:3px;overflow-wrap:anywhere}
+.chain-detail-raw summary{font-size:12px;font-weight:750;color:#2b558c;cursor:pointer}
+.chain-detail-raw pre{padding:13px;margin:14px 0 0;border-radius:8px;max-height:320px;overflow:auto;background:#f3f6fa;color:#32465e;white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px}
+.chain-detail-footer{display:flex;justify-content:space-between;align-items:center;gap:14px;flex:none;padding:13px 24px;border-top:1px solid #e1e8f0;background:#fff}
+.chain-detail-footer>span{font-size:11px;color:#8190a3}
+.chain-detail-footer-actions{display:flex;flex-wrap:wrap;gap:8px}
+@media(max-width:850px){.chain-detail-body{grid-template-columns:1fr}.chain-detail-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}.chain-detail-side .chain-detail-raw{grid-column:1/-1}}
+@media(max-width:590px){.chain-detail-overlay{padding:8px}.chain-detail-dialog{max-height:calc(100vh - 16px);border-radius:10px}.chain-detail-header{padding:18px}.chain-detail-body{padding:12px;gap:12px}.chain-detail-section{padding:15px}.chain-detail-side{display:flex}.chain-detail-footer{padding:12px 15px;align-items:flex-start;flex-direction:column}.chain-detail-footer-actions{width:100%;justify-content:flex-end}}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css?v=20261105-1511"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
@@ -188,7 +235,7 @@ const STORAGE="poc1-reference-chains-v1";
 const LOCALE_KEY="poc1-ui-language";
 let uiLang="fr";try{const v=localStorage.getItem(LOCALE_KEY);if(v&&I18N_NAMES[v])uiLang=v}catch(_){}
 const extraTerms=["Conditions","Marge de l’appréciation de l’Office","Mesures d'instruction","Motivation des décisions","Objectif","Portée","Notification","Notion","Procédure d’opposition","Procédure de nullité","Recevabilité","Délai de recours","Charge de la preuve","Droits de la défense","Examen d'office","Décision définitive","Appréciation des preuves","Motivation juridique","Protection juridictionnelle","Intérêt à agir","Principes généraux","Contrôle de légalité","Compétence de l'Office","Mesures provisoires","Erreur manifeste","Irrecevabilité","Droits antérieurs","Caractère distinctif","Risque de confusion","Usage sérieux","Opposabilité","Protection des données","Publication","Déchéance","Réexamen","Délai de prescription","Règles de procédure","Recours en annulation","Proportionnalité","Sécurité juridique"];
-const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",directoryPage:0,directoryPageSize:10,wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
+const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},chainMetadata:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",directoryPage:0,directoryPageSize:10,wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
 const el=document.getElementById("app");
 let treePaths=[];
 function typesOf(rec){const raw=Object.prototype.hasOwnProperty.call(rec,"types_indexation")?rec.types_indexation:(Object.prototype.hasOwnProperty.call(rec,"type_indexation")?rec.type_indexation:state.indexationLookup[rec.id]);return [...new Set((Array.isArray(raw)?raw:(raw?[raw]:[])).filter(x=>typeof x==="string"&&x.trim()))]}
@@ -223,7 +270,7 @@ function bindDateInput(id,onChange){const text=document.getElementById(id),picke
 function readDateInput(id){const value=document.getElementById(id)?.value;return parseFrenchDate(value)}
 function save(){try{localStorage.setItem(STORAGE,JSON.stringify(state.records));return true}catch(e){console.warn("Stockage indisponible",e);return false}}
 async function init(){try{
- try{const response=await fetch("./data/graph-relations.json",{cache:"no-store"});if(response.ok){const md=await response.json();state.indexationLookup=Object.fromEntries(Object.entries(md.relations||{}).map(([id,m])=>[id,m.type_indexation]));state.indexationTypes=[...new Set(md.types||Object.values(state.indexationLookup))].filter(Boolean)}}catch(error){console.warn("Metadata indisponibles",error)}
+ try{const response=await fetch("./data/graph-relations.json",{cache:"no-store"});if(response.ok){const md=await response.json();state.chainMetadata=md.relations||{};state.indexationLookup=Object.fromEntries(Object.entries(md.relations||{}).map(([id,m])=>[id,m.type_indexation]));state.indexationTypes=[...new Set(md.types||Object.values(state.indexationLookup))].filter(Boolean)}}catch(error){console.warn("Metadata indisponibles",error)}
  const result=await fetch("./data/chains.json",{cache:"no-store"});if(!result.ok)throw Error("Dataset indisponible");const seed=await result.json();
  let stored=[];try{stored=JSON.parse(localStorage.getItem(STORAGE))||[]}catch(error){}
  if(!Array.isArray(stored))stored=[];
@@ -264,9 +311,9 @@ shell('<div class="heading"><div><h1>Tableau de bord</h1><p>Vue d’ensemble des
 '<section class="panel" style="margin-bottom:18px"><header><h2>Explorer les chaînes par arborescence</h2><span class="subtle">Recherche et type d’indexation</span></header>'+treeFilters("dashboard")+treeMarkup(treeData,"dashboard")+'<p id="tree-empty" class="empty" '+(treeData.length?"hidden":"")+'>Aucune chaîne ne correspond à cette recherche.</p></section>'+
 '<section class="panel directory-panel"><header><h2>Répertoire des chaînes de référence</h2><span class="subtle">'+directoryRows.length+' résultat(s)</span></header>'+
 ''+filterControls("dashboard","directory")+'<div class="branch-filter-bar" '+(state.selectedBranch?"":"hidden")+'><span>Branche : <strong title="'+esc(state.selectedBranch)+'">'+esc(state.selectedBranch)+'</strong></span><button type="button" id="clear-branch" class="btn sm">Effacer la sélection ×</button></div><div class="directory-actions"><span>Filtres synchronisés avec l’arborescence</span><button class="btn sm" id="export">Exporter CSV</button></div>'+
-'<div class="table-wrap directory-scroll" id="directory-scroll"><table id="directory-table"><colgroup><col style="width:7%"><col style="width:26%"><col style="width:21%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:8%"><col style="width:8%"></colgroup><thead><tr>'+
+'<div class="table-wrap directory-scroll" id="directory-scroll"><table id="directory-table"><colgroup><col style="width:7%"><col style="width:25%"><col style="width:20%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7%"><col style="width:11%"></colgroup><thead><tr>'+
 sortHeader("id","Identifiant")+sortHeader("full_chain_label","Chaîne de référence")+sortHeader("type_indexation","Type d’indexation")+sortHeader("created_at","Date de création")+sortHeader("validity_start_date","Date de début")+sortHeader("validity_end_date","Date de fin")+sortHeader("last_modified_at","Date dernière modification")+sortHeader("status","Statut")+'<th>Actions</th></tr></thead><tbody>'+
-visibleDirectoryRows.map(x=>'<tr class="selectable-chain" data-chain-id="'+esc(x.id)+'" tabindex="0"><td data-label="Identifiant"><strong>'+esc(x.id)+'</strong></td><td data-label="Chaîne de référence" class="directory-chain-cell" title="'+esc(x.full_chain_label)+'"><span class="directory-chain-text">'+esc(x.full_chain_label)+'</span></td><td data-label="Type d’indexation" class="directory-types-cell" title="'+esc(typeOf(x))+'"><div class="directory-type-list">'+(typesOf(x).length?typesOf(x).map(t=>'<span class="tag directory-type-tag">'+esc(t)+'</span>').join(""):'<span class="tag gray directory-type-tag">Non renseigné</span>')+'</div></td><td data-label="Date de création">'+fmtDate((x.created_at||"").slice(0,10))+'</td><td data-label="Date de début">'+fmtDate(x.validity_start_date||"1900-01-01")+'</td><td data-label="Date de fin">'+fmtDate(!x.validity_end_date||x.validity_end_date==="1900-01-01"?"3000-12-31":x.validity_end_date)+'</td><td data-label="Dernière modification">'+(x.last_modified_at?fmtDate(x.last_modified_at.slice(0,10)):"")+'</td><td data-label="Statut"><span class="tag '+(normalizeStatus(x.status)==="HI"?"gray":"")+'">'+esc(normalizeStatus(x.status))+' - '+esc(STATUSES[normalizeStatus(x.status)]||"")+'</span></td><td data-label="Actions" class="directory-action-cell"><div class="directory-row-actions"><button class="directory-icon-button graph-open" data-graph-id="'+esc(x.id)+'" aria-label="Graphe de '+esc(x.id)+'" title="Explorer les relations">◎</button><button class="directory-icon-button" data-edit-id="'+esc(x.id)+'" aria-label="Modifier '+esc(x.id)+'" title="Modifier la chaîne">✎</button><button class="directory-icon-button" data-copy-id="'+esc(x.id)+'" aria-label="Copier la chaîne de référence '+esc(x.id)+'" title="Copier la chaîne de référence">⧉</button></div></td></tr>').join("")+
+visibleDirectoryRows.map(x=>'<tr class="selectable-chain" data-chain-id="'+esc(x.id)+'" tabindex="0"><td data-label="Identifiant"><strong>'+esc(x.id)+'</strong></td><td data-label="Chaîne de référence" class="directory-chain-cell" title="'+esc(x.full_chain_label)+'"><span class="directory-chain-text">'+esc(x.full_chain_label)+'</span></td><td data-label="Type d’indexation" class="directory-types-cell" title="'+esc(typeOf(x))+'"><div class="directory-type-list">'+(typesOf(x).length?typesOf(x).map(t=>'<span class="tag directory-type-tag">'+esc(t)+'</span>').join(""):'<span class="tag gray directory-type-tag">Non renseigné</span>')+'</div></td><td data-label="Date de création">'+fmtDate((x.created_at||"").slice(0,10))+'</td><td data-label="Date de début">'+fmtDate(x.validity_start_date||"1900-01-01")+'</td><td data-label="Date de fin">'+fmtDate(!x.validity_end_date||x.validity_end_date==="1900-01-01"?"3000-12-31":x.validity_end_date)+'</td><td data-label="Dernière modification">'+(x.last_modified_at?fmtDate(x.last_modified_at.slice(0,10)):"")+'</td><td data-label="Statut"><span class="tag '+(normalizeStatus(x.status)==="HI"?"gray":"")+'">'+esc(normalizeStatus(x.status))+' - '+esc(STATUSES[normalizeStatus(x.status)]||"")+'</span></td><td data-label="Actions" class="directory-action-cell"><div class="directory-row-actions"><button class="directory-icon-button" data-detail-id="'+esc(x.id)+'" aria-label="Consulter la fiche de '+esc(x.id)+'" title="Voir la fiche complète">▤</button><button class="directory-icon-button graph-open" data-graph-id="'+esc(x.id)+'" aria-label="Graphe de '+esc(x.id)+'" title="Explorer les relations">◎</button><button class="directory-icon-button" data-edit-id="'+esc(x.id)+'" aria-label="Modifier '+esc(x.id)+'" title="Modifier la chaîne">✎</button><button class="directory-icon-button" data-copy-id="'+esc(x.id)+'" aria-label="Copier la chaîne de référence '+esc(x.id)+'" title="Copier la chaîne de référence">⧉</button></div></td></tr>').join("")+
 '</tbody></table>'+(directoryRows.length?"":'<div class="empty">Aucun résultat</div>')+'</div>'+pager+'</section><div class="footnote">Données fictives. Sauvegarde locale automatique sur cet appareil.</div>');
 window.PocAnalytics?.render(state.records);bindTree("dashboard");document.querySelectorAll(".tree-branch").forEach(el=>{if(priorOpen.includes(treePaths[Number(el.dataset.pathIndex)]?.path))el.open=true});const wrap=document.querySelector(".tree-wrapper");if(wrap)wrap.scrollTop=prevTreeScroll;document.getElementById("clear-branch")?.addEventListener("click",()=>{state.selectedBranch="";state.selectedChainId=null;state.directoryPage=0;dashboard()});
 document.querySelectorAll("[data-dir-page]").forEach(button=>button.onclick=()=>{
@@ -289,11 +336,91 @@ document.getElementById("explore-graph").onclick=()=>window.PocGraph?.open(state
 document.getElementById("add").onclick=()=>{state.view="wizard";state.step=2;state.base="";state.terms=[];state.date="1900-01-01";state.endDate="3000-12-31";state.typesIndexation=[];state.wizardIndexFilter=[];state.wizardTreeSearch="";state.wizardStatus="VA";state.error="";render()};
 bindSharedFilters("dashboard","directory");document.querySelectorAll(".selectable-chain").forEach(row=>{const select=()=>{state.selectedChainId=row.dataset.chainId;markSelection();const rec=state.records.find(x=>x.id===state.selectedChainId);const node=[...document.querySelectorAll(".tree-leaf,.tree-branch")].find(el=>treePaths[Number(el.dataset.pathIndex)]?.terminalIds.includes(rec?.id));node?.scrollIntoView({behavior:"smooth",block:"nearest"})};row.onclick=e=>{if(!e.target.closest("button"))select()};row.onkeydown=e=>{if(e.key==="Enter")select()}});markSelection();
 document.getElementById("export").onclick=exportCSV;
+document.querySelectorAll("[data-detail-id]").forEach(b=>b.onclick=()=>openChainDetails(b.dataset.detailId));
 document.querySelectorAll("[data-graph-id]").forEach(b=>b.onclick=()=>window.PocGraph?.open(state.records,b.dataset.graphId));
 document.querySelectorAll("[data-edit-id]").forEach(b=>b.onclick=()=>openEditor(b.dataset.editId));
 document.querySelectorAll("[data-copy-id]").forEach(b=>b.onclick=async()=>{const rec=state.records.find(x=>x.id===b.dataset.copyId);if(!rec)return;try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(rec.full_chain_label)}else{const field=document.createElement("textarea");field.value=rec.full_chain_label;field.style.position="fixed";field.style.opacity="0";document.body.appendChild(field);field.select();const copied=document.execCommand("copy");field.remove();if(!copied)throw Error("Copie indisponible")}b.textContent="✓";b.title="Chaîne copiée";b.setAttribute("aria-label","Chaîne copiée")}catch(error){b.title="Copie impossible";b.setAttribute("aria-label","Copie impossible");console.error("Poc1 clipboard:",error)}});
 document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{const key=b.dataset.sort;if(state.sortKey===key){state.sortDirection=state.sortDirection==="asc"?"desc":"asc"}else{state.sortKey=key;state.sortDirection="asc"}state.directoryPage=0;dashboard()})
 }
+
+function openChainDetails(id){
+ const rec=state.records.find(item=>item.id===id);
+ if(!rec)return;
+ const metadata=state.chainMetadata[rec.id]||{};
+ const indexTypes=typesOf(rec);
+ const terms=String(rec.full_chain_label||"").split(" - ").map(term=>term.trim()).filter(Boolean);
+ const baseCount=String(rec.base_chain||"").split(" - ").map(term=>term.trim()).filter(Boolean).length;
+ const status=normalizeStatus(rec.status);
+ const fallback="Non renseigné";
+ const value=v=>v===undefined||v===null||v===""?fallback:String(v);
+ const dateValue=v=>v?fmtDate(String(v).slice(0,10)):"Non renseignée";
+ const dateTime=v=>{
+  if(!v)return fallback;
+  const d=new Date(v);
+  if(Number.isNaN(d.getTime()))return String(v);
+  return new Intl.DateTimeFormat("fr-FR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"UTC",hour12:false}).format(d)+" UTC";
+ };
+ const field=(name,v)=>'<div class="chain-detail-field"><dt>'+esc(name)+'</dt><dd>'+esc(value(v))+'</dd></div>';
+ const plain=(v)=>v===undefined||v===null||v===""?fallback:(typeof v==="object"?JSON.stringify(v):String(v));
+ const contentBadge=(v,gray=false)=>'<span class="tag chain-detail-badge'+(gray?' gray':'')+'">'+esc(v)+'</span>';
+ const statusBadge=contentBadge(status+" - "+(STATUSES[status]||fallback),status==="HI");
+ const termsMarkup=terms.length?terms.map((term,i)=>'<li><span class="chain-detail-term-n">'+(i+1)+'</span><div><strong>'+esc(term)+'</strong><small>'+(i<baseCount?'Chaîne de base':'Terme ajouté')+'</small></div></li>').join(""):'<li class="chain-detail-empty">Aucun maillon disponible</li>';
+ const typesMarkup=indexTypes.length?indexTypes.map(t=>contentBadge(t)).join(""):'<span class="chain-detail-muted">Aucun type renseigné</span>';
+ const documents=Array.isArray(metadata.documents)?metadata.documents:[];
+ const documentsMarkup=documents.length?documents.map(doc=>'<article class="chain-detail-document"><strong>'+esc(value(doc.title||doc.id))+'</strong><span>'+esc([doc.id,doc.kind,doc.status].filter(Boolean).join(" · "))+'</span></article>').join(""):'<p class="chain-detail-muted">Aucun document associé dans les métadonnées disponibles.</p>';
+ const knownRec=new Set(["id","root","base_chain","selected_terms","full_chain_label","validity_start_date","created_at","status","validity_end_date","types_indexation","type_indexation","last_modified_at","local_only","local_modified"]);
+ const extraRec=Object.entries(rec).filter(([key])=>!knownRec.has(key));
+ const knownMeta=new Set(["type_indexation","archetype","matiere","cote","etat","commentaire","documents"]);
+ const extraMeta=Object.entries(metadata).filter(([key])=>!knownMeta.has(key));
+ const extrasMarkup=extraRec.concat(extraMeta.map(([key,v])=>["Relation : "+key,v])).length?'<section class="chain-detail-section"><h3>Autres attributs disponibles</h3><dl class="chain-detail-fields">'+extraRec.concat(extraMeta.map(([key,v])=>["Relation : "+key,v])).map(([k,v])=>field(k,plain(v))).join("")+'</dl></section>':"";
+ const created=rec.created_at?dateTime(rec.created_at):fallback;
+ const modified=rec.last_modified_at?dateTime(rec.last_modified_at):"Aucune modification enregistrée";
+ const endDate=!rec.validity_end_date||rec.validity_end_date==="1900-01-01"?"3000-12-31":rec.validity_end_date;
+ const dateMarkup='<dl class="chain-detail-fields">'+field("Début de validité",dateValue(rec.validity_start_date))+field("Fin de validité (affichage)",dateValue(endDate))+field("Date de création",created)+field("Dernière modification",modified)+'</dl>';
+ const sourceLabel=rec.local_only?"Créée dans ce navigateur":"Jeu de démonstration";
+ const metaFields='<dl class="chain-detail-fields">'+field("Matière",metadata.matiere)+field("Archétype",metadata.archetype)+field("Cote / classement",metadata.cote)+field("État des métadonnées",metadata.etat)+field("Commentaire",metadata.commentaire)+'</dl>';
+ const pretty=JSON.stringify({chaine:rec,metadonnees_associees:metadata},null,2);
+ document.getElementById("chain-detail-overlay")?.remove();
+ const previousFocus=document.activeElement;
+ const previousOverflow=document.body.style.overflow;
+ const overlay=document.createElement("div");
+ overlay.id="chain-detail-overlay";
+ overlay.className="chain-detail-overlay";
+ overlay.innerHTML='<section class="chain-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="chain-detail-title" tabindex="-1">'+
+ '<header class="chain-detail-header"><div><span class="chain-detail-kicker">FICHE DE CHAÎNE DE RÉFÉRENCE · POC</span><h2 id="chain-detail-title">'+esc(rec.id)+'</h2><div class="chain-detail-head-sub">'+statusBadge+'<span>'+esc(sourceLabel)+'</span></div></div><button type="button" class="chain-detail-close" id="chain-detail-close" aria-label="Fermer la fiche">✕</button></header>'+
+ '<div class="chain-detail-body"><div class="chain-detail-primary">'+
+ '<section class="chain-detail-section chain-detail-hero"><h3>Chaîne de référence complète</h3><p class="chain-detail-chain">'+esc(value(rec.full_chain_label))+'</p><div class="chain-detail-inline"><span>'+terms.length+' maillon(s)</span><span>'+indexTypes.length+' type(s) d’indexation</span></div></section>'+
+ '<section class="chain-detail-section"><h3>Maillons dans l’ordre</h3><ol class="chain-detail-terms">'+termsMarkup+'</ol><p class="chain-detail-hint">Découpage à partir du libellé de démonstration, sans identifiants de maillon MDM.</p></section>'+
+ '<section class="chain-detail-section"><h3>Chaîne de base et termes sélectionnés</h3><dl class="chain-detail-fields">'+field("Terme racine",rec.root)+field("Chaîne de base",rec.base_chain)+field("Termes ajoutés",Array.isArray(rec.selected_terms)?(rec.selected_terms.join(" · ")||fallback):rec.selected_terms)+'</dl></section>'+
+ '<section class="chain-detail-section"><h3>Documents associés <small>simulation</small></h3><div class="chain-detail-documents">'+documentsMarkup+'</div></section>'+
+ extrasMarkup+
+ '</div><aside class="chain-detail-side">'+
+ '<section class="chain-detail-section"><h3>Informations générales</h3><dl class="chain-detail-fields">'+field("Identifiant",rec.id)+field("Origine",sourceLabel)+'</dl><div class="chain-detail-label">Statut</div>'+statusBadge+'<div class="chain-detail-label">Types d’indexation</div><div class="chain-detail-types">'+typesMarkup+'</div></section>'+
+ '<section class="chain-detail-section"><h3>Dates et validité</h3>'+dateMarkup+'</section>'+
+ '<section class="chain-detail-section"><h3>Métadonnées complémentaires <small>simulation</small></h3>'+metaFields+'</section>'+
+ '<details class="chain-detail-section chain-detail-raw"><summary>Données sources complètes (JSON)</summary><pre>'+esc(pretty)+'</pre></details>'+
+ '</aside></div>'+
+ '<footer class="chain-detail-footer"><span>Lecture seule · Données fictives du POC</span><div class="chain-detail-footer-actions"><button type="button" class="btn sm" id="chain-detail-graph">Graphe</button><button type="button" class="btn sm" id="chain-detail-edit">Modifier</button><button type="button" class="btn sm primary" id="chain-detail-done">Fermer</button></div></footer>'+
+ '</section>';
+ document.body.appendChild(overlay);
+ document.body.style.overflow="hidden";
+ const close=()=>{overlay.remove();document.body.style.overflow=previousOverflow;previousFocus?.focus?.({preventScroll:true})};
+ overlay.addEventListener("click",e=>{if(e.target===overlay)close()});
+ overlay.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){e.preventDefault();close();return}
+  if(e.key!=="Tab")return;
+  const focusable=[...overlay.querySelectorAll('button:not(:disabled),a[href],select:not(:disabled),input:not(:disabled),summary,[tabindex]:not([tabindex="-1"])')];
+  if(!focusable.length)return;
+  if(e.shiftKey&&document.activeElement===focusable[0]){e.preventDefault();focusable[focusable.length-1].focus()}
+  else if(!e.shiftKey&&document.activeElement===focusable[focusable.length-1]){e.preventDefault();focusable[0].focus()}
+ });
+ overlay.querySelector("#chain-detail-close").onclick=close;
+ overlay.querySelector("#chain-detail-done").onclick=close;
+ overlay.querySelector("#chain-detail-graph").onclick=()=>{close();window.PocGraph?.open(state.records,id)};
+ overlay.querySelector("#chain-detail-edit").onclick=()=>{close();openEditor(id)};
+ overlay.querySelector("#chain-detail-close").focus();
+}
+
 function openEditor(id){
 const rec=state.records.find(x=>x.id===id);if(!rec)return;
 document.getElementById("chain-edit-overlay")?.remove();
