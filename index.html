@@ -124,6 +124,60 @@
 .directory-scroll .directory-type-tag.gray{border-color:#e0e5ee;background:#f1f2f6;color:#68768c}
 .directory-scroll .directory-row-actions{padding-top:2px}
 @media(min-width:1300px){.directory-scroll table{min-width:1400px}}
+
+/* Paginated directory: full-width table on wide screens, responsive cards on narrower screens. */
+.directory-panel{min-width:0}
+.directory-scroll{max-height:none;overflow:visible;width:100%;min-width:0}
+.directory-scroll table{width:100%;min-width:0;table-layout:fixed}
+.directory-scroll thead th{padding:11px 5px;font-size:10px;overflow-wrap:anywhere}
+.directory-scroll .sort-heading{white-space:normal;overflow-wrap:anywhere}
+.directory-scroll tbody tr td{padding:13px 7px;font-size:11.5px;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.directory-scroll tbody tr td:not(.directory-chain-cell):not(.directory-types-cell){word-break:normal}
+.directory-scroll .tag:not(.directory-type-tag){max-width:100%;font-size:10px;line-height:1.35;padding:5px 6px;white-space:normal;overflow-wrap:anywhere}
+.directory-scroll .directory-row-actions{flex-wrap:wrap;gap:4px;justify-content:flex-start}
+.directory-scroll .directory-type-tag{font-size:10.5px;padding:5px 7px}
+.directory-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px;padding:13px 0 2px;border-top:1px solid #e4ebf3}
+.directory-page-summary{font-size:12px;color:#5c708a}
+.directory-page-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.directory-page-controls label{font-size:12px;color:#5c708a;margin-right:3px}
+.directory-page-controls select{font-size:12px;padding:7px 9px;margin-right:8px;min-width:62px}
+.directory-page-button{min-width:34px;min-height:34px;padding:6px 9px;background:#fff;border:1px solid #cad6e5;border-radius:7px;font-size:12px;font-weight:650;color:#375880;cursor:pointer}
+.directory-page-button.is-current{background:#2b5ba9;border-color:#2b5ba9;color:#fff}
+.directory-page-button:disabled{opacity:.35;cursor:default}
+.directory-page-button:not(:disabled):hover{background:#eaf2ff}
+.directory-page-button.is-current:not(:disabled):hover{background:#2b5ba9}
+@media(min-width:1300px){.directory-scroll table{min-width:0}}
+@media(max-width:1140px){
+ .directory-scroll{border:0;background:transparent}
+ .directory-scroll table,.directory-scroll tbody{display:block;width:100%;min-width:0}
+ .directory-scroll colgroup,.directory-scroll thead{display:none}
+ .directory-scroll tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ .directory-scroll tbody tr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"id id status actions" "chain chain types types" "created start end modified";border:1px solid #dbe5f1;border-radius:11px;background:#fff;overflow:hidden;box-shadow:0 2px 8px #2539580a}
+ .directory-scroll tbody tr.chain-highlight{border-color:#78a5e4}
+ .directory-scroll tbody tr td{display:block;min-width:0;padding:10px 13px;border:0!important;overflow-wrap:anywhere;white-space:normal;background:transparent}
+ .directory-scroll tbody tr td::before{content:attr(data-label);display:block;font-size:10px;line-height:1.35;color:#72859d;font-weight:700;margin-bottom:5px}
+ .directory-scroll tbody tr td:nth-child(1){grid-area:id}
+ .directory-scroll tbody tr td:nth-child(2){grid-area:chain;border-top:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(3){grid-area:types;border-top:1px solid #edf1f6!important;border-left:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(4){grid-area:created;border-top:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(5){grid-area:start;border-top:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(6){grid-area:end;border-top:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(7){grid-area:modified;border-top:1px solid #edf1f6!important}
+ .directory-scroll tbody tr td:nth-child(8){grid-area:status}
+ .directory-scroll tbody tr td:nth-child(9){grid-area:actions}
+ .directory-scroll .directory-row-actions{justify-content:flex-start}
+ .directory-scroll .directory-type-list{gap:5px}
+ .directory-scroll .directory-type-tag{font-size:11px}
+}
+@media(max-width:650px){
+ .directory-panel{padding:14px}
+ .directory-scroll tbody tr{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"id status" "chain chain" "types types" "created start" "end modified" "actions actions"}
+ .directory-scroll tbody tr td:nth-child(3){border-left:0!important}
+ .directory-scroll tbody tr td:nth-child(9){border-top:1px solid #edf1f6!important}
+ .directory-pagination{align-items:flex-start}
+ .directory-page-controls{width:100%}
+ .directory-page-word{padding:6px 7px;font-size:11px}
+}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css?v=20261105-1511"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
@@ -134,7 +188,7 @@ const STORAGE="poc1-reference-chains-v1";
 const LOCALE_KEY="poc1-ui-language";
 let uiLang="fr";try{const v=localStorage.getItem(LOCALE_KEY);if(v&&I18N_NAMES[v])uiLang=v}catch(_){}
 const extraTerms=["Conditions","Marge de l’appréciation de l’Office","Mesures d'instruction","Motivation des décisions","Objectif","Portée","Notification","Notion","Procédure d’opposition","Procédure de nullité","Recevabilité","Délai de recours","Charge de la preuve","Droits de la défense","Examen d'office","Décision définitive","Appréciation des preuves","Motivation juridique","Protection juridictionnelle","Intérêt à agir","Principes généraux","Contrôle de légalité","Compétence de l'Office","Mesures provisoires","Erreur manifeste","Irrecevabilité","Droits antérieurs","Caractère distinctif","Risque de confusion","Usage sérieux","Opposabilité","Protection des données","Publication","Déchéance","Réexamen","Délai de prescription","Règles de procédure","Recours en annulation","Proportionnalité","Sécurité juridique"];
-const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
+const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",directoryPage:0,directoryPageSize:10,wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
 const el=document.getElementById("app");
 let treePaths=[];
 function typesOf(rec){const raw=Object.prototype.hasOwnProperty.call(rec,"types_indexation")?rec.types_indexation:(Object.prototype.hasOwnProperty.call(rec,"type_indexation")?rec.type_indexation:state.indexationLookup[rec.id]);return [...new Set((Array.isArray(raw)?raw:(raw?[raw]:[])).filter(x=>typeof x==="string"&&x.trim()))]}
@@ -156,9 +210,9 @@ function statusOptions(current){return '<option value="all">Tous les statuts</op
 function filterControls(mode,location){const wizardMode=mode==="wizard";const search=wizardMode?state.wizardTreeSearch:state.search;const type=wizardMode?state.wizardIndexFilter:state.indexFilter;const status=wizardMode?state.wizardStatus:state.status;return '<div class="toolbar unified-filters" id="filters-'+location+'"><input type="search" class="shared-search" aria-label="Rechercher des chaînes" placeholder="Rechercher une chaîne, un terme, un identifiant…" value="'+esc(search)+'"><div class="shared-index">'+typeOptions(type)+'</div><select class="shared-status" aria-label="Filtrer par statut">'+statusOptions(status)+'</select></div>'}
 function treeFilters(mode){return filterControls(mode,"tree")}
 function matchingRecords(mode){const isWizard=mode==="wizard",query=(isWizard?state.wizardTreeSearch:state.search).trim().toLocaleLowerCase("fr"),types=isWizard?state.wizardIndexFilter:state.indexFilter,status=isWizard?state.wizardStatus:state.status;return state.records.filter(c=>(!query||[c.full_chain_label,c.id,c.base_chain].join(" ").toLocaleLowerCase("fr").includes(query))&&(status==="all"||normalizeStatus(c.status)===status)&&(!types.length||types.some(t=>typesOf(c).includes(t))))}
-function bindSharedFilters(mode,location){const root=document.getElementById("filters-"+location);if(!root)return;const field=root.querySelector(".shared-search");field.oninput=()=>{const value=field.value,pos=field.selectionStart;if(mode==="wizard"){state.wizardTreeSearch=value;wizard()}else{state.search=value;dashboard()}const next=document.querySelector("#filters-"+location+" .shared-search");next?.focus();next?.setSelectionRange(pos,pos)};root.querySelector(".shared-status").onchange=e=>{if(mode==="wizard"){state.wizardStatus=e.target.value;wizard()}else{state.status=e.target.value;dashboard()}};bindIndexFilters(root.querySelector(".shared-index"),selected=>{if(mode==="wizard"){state.wizardIndexFilter=selected;wizard()}else{state.indexFilter=selected;dashboard()}})}
-function filterDirectoryByBranch(path){state.selectedBranch=state.selectedBranch===path?"":path;const exact=state.records.find(c=>c.full_chain_label===state.selectedBranch);state.selectedChainId=exact?.id||null;dashboard();if(state.selectedBranch)document.querySelector(".directory-panel")?.scrollIntoView({behavior:"smooth",block:"start"})}
-function chooseTreeChain(node,mode,button){if(!node)return;if(mode!=="wizard"&&!node.terminalIds.length)return;const id=node.terminalIds[0];if(mode==="wizard"){state.base=node.path;state.terms=[];state.error="";document.querySelectorAll(".tree-pick,.tree-choose").forEach(b=>b.classList.toggle("picked",b===button));const label=document.getElementById("tree-selection");if(label)label.textContent=node.path;document.querySelector(".error")?.remove()}else{state.selectedChainId=id;markSelection();const row=[...document.querySelectorAll("[data-chain-id]")].find(el=>el.dataset.chainId===id);if(row){row.scrollIntoView({behavior:"smooth",block:"center",inline:"nearest"});row.focus({preventScroll:true})}}}
+function bindSharedFilters(mode,location){const root=document.getElementById("filters-"+location);if(!root)return;const field=root.querySelector(".shared-search");field.oninput=()=>{const value=field.value,pos=field.selectionStart;if(mode==="wizard"){state.wizardTreeSearch=value;wizard()}else{state.search=value;state.directoryPage=0;dashboard()}const next=document.querySelector("#filters-"+location+" .shared-search");next?.focus();next?.setSelectionRange(pos,pos)};root.querySelector(".shared-status").onchange=e=>{if(mode==="wizard"){state.wizardStatus=e.target.value;wizard()}else{state.status=e.target.value;state.directoryPage=0;dashboard()}};bindIndexFilters(root.querySelector(".shared-index"),selected=>{if(mode==="wizard"){state.wizardIndexFilter=selected;wizard()}else{state.indexFilter=selected;state.directoryPage=0;dashboard()}})}
+function filterDirectoryByBranch(path){state.selectedBranch=state.selectedBranch===path?"":path;const exact=state.records.find(c=>c.full_chain_label===state.selectedBranch);state.selectedChainId=exact?.id||null;state.directoryPage=0;dashboard();if(state.selectedBranch)document.querySelector(".directory-panel")?.scrollIntoView({behavior:"smooth",block:"start"})}
+function chooseTreeChain(node,mode,button){if(!node)return;if(mode!=="wizard"&&!node.terminalIds.length)return;const id=node.terminalIds[0];if(mode==="wizard"){state.base=node.path;state.terms=[];state.error="";document.querySelectorAll(".tree-pick,.tree-choose").forEach(b=>b.classList.toggle("picked",b===button));const label=document.getElementById("tree-selection");if(label)label.textContent=node.path;document.querySelector(".error")?.remove()}else{state.selectedChainId=id;const sorted=matchingRecords("dashboard").sort((a,b)=>{const av=String(sortingValue(a,state.sortKey)),bv=String(sortingValue(b,state.sortKey));const cmp=av.localeCompare(bv,"fr",{numeric:true,sensitivity:"base"});return (state.sortDirection==="asc"?cmp:-cmp)||a.id.localeCompare(b.id,"fr",{numeric:true})});const list=state.selectedBranch?sorted.filter(c=>c.full_chain_label===state.selectedBranch||c.full_chain_label.startsWith(state.selectedBranch+" - ")):sorted;const index=list.findIndex(c=>c.id===id);if(index>=0)state.directoryPage=Math.floor(index/state.directoryPageSize);dashboard();const row=[...document.querySelectorAll("[data-chain-id]")].find(el=>el.dataset.chainId===id);if(row){row.scrollIntoView({behavior:"smooth",block:"center",inline:"nearest"});row.focus({preventScroll:true})}}}
 function markSelection(){document.querySelectorAll("[data-chain-id]").forEach(row=>row.classList.toggle("chain-highlight",row.dataset.chainId===state.selectedChainId));const rec=state.records.find(c=>c.id===state.selectedChainId);document.querySelectorAll(".tree-leaf,.tree-branch").forEach(el=>{const node=treePaths[Number(el.dataset.pathIndex)],selected=!!rec&&!!node?.terminalIds.includes(rec.id);el.classList.toggle("tree-selected",selected);if(selected){let parent=el.parentElement?.closest(".tree-branch");while(parent){parent.open=true;parent=parent.parentElement?.closest(".tree-branch")}}})}
 function bindTree(mode){document.querySelectorAll(".tree-pick").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();const node=treePaths[Number(button.dataset.treeIndex)];if(!node)return;if(mode==="dashboard"){filterDirectoryByBranch(node.path)}else chooseTreeChain(node,mode,button)});document.querySelectorAll(".tree-choose").forEach(button=>button.onclick=e=>{e.preventDefault();e.stopPropagation();chooseTreeChain(treePaths[Number(button.dataset.treeIndex)],mode,button)});document.querySelectorAll(".tree-expand-all").forEach(button=>{const branch=button.closest("details.tree-branch");if(!branch)return;const all=[branch,...branch.querySelectorAll("details.tree-branch")];const refresh=()=>{const fullyExpanded=all.every(el=>el.open);button.textContent=fullyExpanded?"−":"+";button.title=fullyExpanded?"Replier toute cette branche":"Déployer toute cette branche";button.setAttribute("aria-label",button.title);button.setAttribute("aria-expanded",String(fullyExpanded))};button.onclick=e=>{e.preventDefault();e.stopPropagation();const shouldExpand=!all.every(el=>el.open);all.forEach(el=>{el.open=shouldExpand});refresh()};all.forEach(el=>el.addEventListener("toggle",refresh));refresh()});bindSharedFilters(mode,"tree");if(mode==="dashboard")markSelection()}
 function esc(x){return String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -188,6 +242,21 @@ function dashboard(){
 const records=state.records;const filtered=matchingRecords("dashboard").sort((a,b)=>{const av=String(sortingValue(a,state.sortKey)),bv=String(sortingValue(b,state.sortKey));const cmp=av.localeCompare(bv,"fr",{numeric:true,sensitivity:"base"});return (state.sortDirection==="asc"?cmp:-cmp)||a.id.localeCompare(b.id,"fr",{numeric:true})});
 const treeData=filtered;
 const directoryRows=state.selectedBranch?filtered.filter(c=>c.full_chain_label===state.selectedBranch||c.full_chain_label.startsWith(state.selectedBranch+" - ")):filtered;
+const pageCount=Math.max(1,Math.ceil(directoryRows.length/state.directoryPageSize));
+state.directoryPage=Math.max(0,Math.min(state.directoryPage,pageCount-1));
+const visibleDirectoryRows=directoryRows.slice(state.directoryPage*state.directoryPageSize,(state.directoryPage+1)*state.directoryPageSize);
+const firstDisplayed=directoryRows.length?state.directoryPage*state.directoryPageSize+1:0;
+const lastDisplayed=Math.min(directoryRows.length,(state.directoryPage+1)*state.directoryPageSize);
+const pagingStart=Math.max(0,Math.min(state.directoryPage-2,pageCount-5));
+const pagingEnd=Math.min(pageCount,pagingStart+5);
+const pageButtons=Array.from({length:pagingEnd-pagingStart},(_,i)=>i+pagingStart).map(n=>'<button type="button" class="directory-page-button'+(n===state.directoryPage?' is-current':'')+'" data-dir-page="'+n+'" '+(n===state.directoryPage?'aria-current="page"':'')+' aria-label="Page '+(n+1)+'">'+(n+1)+'</button>').join("");
+const pager='<nav class="directory-pagination" aria-label="Pagination du répertoire"><span class="directory-page-summary">Chaînes '+firstDisplayed+' à '+lastDisplayed+' sur '+directoryRows.length+' · Page '+(state.directoryPage+1)+' / '+pageCount+'</span>'+
+'<div class="directory-page-controls"><label for="directory-page-size">Par page</label><select id="directory-page-size" aria-label="Nombre de chaînes par page">'+[10,20,50].map(n=>'<option value="'+n+'" '+(n===state.directoryPageSize?'selected':'')+'>'+n+'</option>').join("")+'</select>'+
+'<button type="button" class="directory-page-button" data-dir-page="first" aria-label="Première page" '+(state.directoryPage===0?'disabled':'')+'>«</button>'+
+'<button type="button" class="directory-page-button directory-page-word" data-dir-page="previous" '+(state.directoryPage===0?'disabled':'')+'>Précédent</button>'+
+pageButtons+
+'<button type="button" class="directory-page-button directory-page-word" data-dir-page="next" '+(state.directoryPage===pageCount-1?'disabled':'')+'>Suivant</button>'+
+'<button type="button" class="directory-page-button" data-dir-page="last" aria-label="Dernière page" '+(state.directoryPage===pageCount-1?'disabled':'')+'>»</button></div></nav>';
 const priorOpen=[...document.querySelectorAll(".tree-branch[open]")].map(el=>treePaths[Number(el.dataset.pathIndex)]?.path);
 const prevTreeScroll=document.querySelector(".tree-wrapper")?.scrollTop||0;
 shell('<div class="heading"><div><h1>Tableau de bord</h1><p>Vue d’ensemble des chaînes de référence</p></div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn" id="explore-graph">◉ Graphe interactif</button><button class="btn primary" id="add"><span class="plus">+</span> Nouvelle chaîne</button></div></div>'+
@@ -195,19 +264,27 @@ shell('<div class="heading"><div><h1>Tableau de bord</h1><p>Vue d’ensemble des
 '<section class="panel" style="margin-bottom:18px"><header><h2>Explorer les chaînes par arborescence</h2><span class="subtle">Recherche et type d’indexation</span></header>'+treeFilters("dashboard")+treeMarkup(treeData,"dashboard")+'<p id="tree-empty" class="empty" '+(treeData.length?"hidden":"")+'>Aucune chaîne ne correspond à cette recherche.</p></section>'+
 '<section class="panel directory-panel"><header><h2>Répertoire des chaînes de référence</h2><span class="subtle">'+directoryRows.length+' résultat(s)</span></header>'+
 ''+filterControls("dashboard","directory")+'<div class="branch-filter-bar" '+(state.selectedBranch?"":"hidden")+'><span>Branche : <strong title="'+esc(state.selectedBranch)+'">'+esc(state.selectedBranch)+'</strong></span><button type="button" id="clear-branch" class="btn sm">Effacer la sélection ×</button></div><div class="directory-actions"><span>Filtres synchronisés avec l’arborescence</span><button class="btn sm" id="export">Exporter CSV</button></div>'+
-'<div class="directory-top-scroll" id="directory-top-scroll" aria-label="Défilement horizontal du répertoire"><div class="directory-top-spacer" id="directory-top-spacer"></div></div><div class="table-wrap directory-scroll" id="directory-scroll"><table id="directory-table"><colgroup><col style="width:7%"><col style="width:29%"><col style="width:21%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:8.5%"><col style="width:6%"><col style="width:6%"></colgroup><thead><tr>'+
+'<div class="table-wrap directory-scroll" id="directory-scroll"><table id="directory-table"><colgroup><col style="width:7%"><col style="width:26%"><col style="width:21%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:7.5%"><col style="width:8%"><col style="width:8%"></colgroup><thead><tr>'+
 sortHeader("id","Identifiant")+sortHeader("full_chain_label","Chaîne de référence")+sortHeader("type_indexation","Type d’indexation")+sortHeader("created_at","Date de création")+sortHeader("validity_start_date","Date de début")+sortHeader("validity_end_date","Date de fin")+sortHeader("last_modified_at","Date dernière modification")+sortHeader("status","Statut")+'<th>Actions</th></tr></thead><tbody>'+
-directoryRows.map(x=>'<tr class="selectable-chain" data-chain-id="'+esc(x.id)+'" tabindex="0"><td><strong>'+esc(x.id)+'</strong></td><td class="directory-chain-cell" title="'+esc(x.full_chain_label)+'"><span class="directory-chain-text">'+esc(x.full_chain_label)+'</span></td><td class="directory-types-cell" title="'+esc(typeOf(x))+'"><div class="directory-type-list">'+(typesOf(x).length?typesOf(x).map(t=>'<span class="tag directory-type-tag">'+esc(t)+'</span>').join(""):'<span class="tag gray directory-type-tag">Non renseigné</span>')+'</div></td><td>'+fmtDate((x.created_at||"").slice(0,10))+'</td><td>'+fmtDate(x.validity_start_date||"1900-01-01")+'</td><td>'+fmtDate(!x.validity_end_date||x.validity_end_date==="1900-01-01"?"3000-12-31":x.validity_end_date)+'</td><td>'+(x.last_modified_at?fmtDate(x.last_modified_at.slice(0,10)):"")+'</td><td><span class="tag '+(normalizeStatus(x.status)==="HI"?"gray":"")+'">'+esc(normalizeStatus(x.status))+' - '+esc(STATUSES[normalizeStatus(x.status)]||"")+'</span></td><td class="directory-action-cell"><div class="directory-row-actions"><button class="directory-icon-button graph-open" data-graph-id="'+esc(x.id)+'" aria-label="Graphe de '+esc(x.id)+'" title="Explorer les relations">◎</button><button class="directory-icon-button" data-edit-id="'+esc(x.id)+'" aria-label="Modifier '+esc(x.id)+'" title="Modifier la chaîne">✎</button><button class="directory-icon-button" data-copy-id="'+esc(x.id)+'" aria-label="Copier la chaîne de référence '+esc(x.id)+'" title="Copier la chaîne de référence">⧉</button></div></td></tr>').join("")+
-'</tbody></table>'+(directoryRows.length?"":'<div class="empty">Aucun résultat</div>')+'</div></section><div class="footnote">Données fictives. Sauvegarde locale automatique sur cet appareil.</div>');
-window.PocAnalytics?.render(state.records);bindTree("dashboard");document.querySelectorAll(".tree-branch").forEach(el=>{if(priorOpen.includes(treePaths[Number(el.dataset.pathIndex)]?.path))el.open=true});const wrap=document.querySelector(".tree-wrapper");if(wrap)wrap.scrollTop=prevTreeScroll;document.getElementById("clear-branch")?.addEventListener("click",()=>{state.selectedBranch="";state.selectedChainId=null;dashboard()});
-const directory=document.getElementById("directory-scroll"),topScroll=document.getElementById("directory-top-scroll"),spacer=document.getElementById("directory-top-spacer"),directoryTable=document.getElementById("directory-table");
-if(directory&&topScroll&&spacer&&directoryTable){
-const sync=()=>{spacer.style.width=directoryTable.scrollWidth+"px";topScroll.style.display=directoryTable.scrollWidth>directory.clientWidth+2?"block":"none"};
-sync();
-directory.onscroll=()=>{if(Math.abs(topScroll.scrollLeft-directory.scrollLeft)>1)topScroll.scrollLeft=directory.scrollLeft};
-topScroll.onscroll=()=>{if(Math.abs(directory.scrollLeft-topScroll.scrollLeft)>1)directory.scrollLeft=topScroll.scrollLeft};
-if(window.ResizeObserver){new ResizeObserver(sync).observe(directory)}
-}
+visibleDirectoryRows.map(x=>'<tr class="selectable-chain" data-chain-id="'+esc(x.id)+'" tabindex="0"><td data-label="Identifiant"><strong>'+esc(x.id)+'</strong></td><td data-label="Chaîne de référence" class="directory-chain-cell" title="'+esc(x.full_chain_label)+'"><span class="directory-chain-text">'+esc(x.full_chain_label)+'</span></td><td data-label="Type d’indexation" class="directory-types-cell" title="'+esc(typeOf(x))+'"><div class="directory-type-list">'+(typesOf(x).length?typesOf(x).map(t=>'<span class="tag directory-type-tag">'+esc(t)+'</span>').join(""):'<span class="tag gray directory-type-tag">Non renseigné</span>')+'</div></td><td data-label="Date de création">'+fmtDate((x.created_at||"").slice(0,10))+'</td><td data-label="Date de début">'+fmtDate(x.validity_start_date||"1900-01-01")+'</td><td data-label="Date de fin">'+fmtDate(!x.validity_end_date||x.validity_end_date==="1900-01-01"?"3000-12-31":x.validity_end_date)+'</td><td data-label="Dernière modification">'+(x.last_modified_at?fmtDate(x.last_modified_at.slice(0,10)):"")+'</td><td data-label="Statut"><span class="tag '+(normalizeStatus(x.status)==="HI"?"gray":"")+'">'+esc(normalizeStatus(x.status))+' - '+esc(STATUSES[normalizeStatus(x.status)]||"")+'</span></td><td data-label="Actions" class="directory-action-cell"><div class="directory-row-actions"><button class="directory-icon-button graph-open" data-graph-id="'+esc(x.id)+'" aria-label="Graphe de '+esc(x.id)+'" title="Explorer les relations">◎</button><button class="directory-icon-button" data-edit-id="'+esc(x.id)+'" aria-label="Modifier '+esc(x.id)+'" title="Modifier la chaîne">✎</button><button class="directory-icon-button" data-copy-id="'+esc(x.id)+'" aria-label="Copier la chaîne de référence '+esc(x.id)+'" title="Copier la chaîne de référence">⧉</button></div></td></tr>').join("")+
+'</tbody></table>'+(directoryRows.length?"":'<div class="empty">Aucun résultat</div>')+'</div>'+pager+'</section><div class="footnote">Données fictives. Sauvegarde locale automatique sur cet appareil.</div>');
+window.PocAnalytics?.render(state.records);bindTree("dashboard");document.querySelectorAll(".tree-branch").forEach(el=>{if(priorOpen.includes(treePaths[Number(el.dataset.pathIndex)]?.path))el.open=true});const wrap=document.querySelector(".tree-wrapper");if(wrap)wrap.scrollTop=prevTreeScroll;document.getElementById("clear-branch")?.addEventListener("click",()=>{state.selectedBranch="";state.selectedChainId=null;state.directoryPage=0;dashboard()});
+document.querySelectorAll("[data-dir-page]").forEach(button=>button.onclick=()=>{
+const action=button.dataset.dirPage;
+if(action==="first")state.directoryPage=0;
+else if(action==="previous")state.directoryPage=Math.max(0,state.directoryPage-1);
+else if(action==="next")state.directoryPage=Math.min(pageCount-1,state.directoryPage+1);
+else if(action==="last")state.directoryPage=pageCount-1;
+else state.directoryPage=Number(action);
+dashboard();
+document.querySelector(".directory-panel")?.scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("directory-page-size").onchange=e=>{
+state.directoryPageSize=Number(e.target.value);
+state.directoryPage=0;
+dashboard();
+document.querySelector(".directory-panel")?.scrollIntoView({behavior:"smooth",block:"start"});
+};
 document.getElementById("explore-graph").onclick=()=>window.PocGraph?.open(state.records);
 document.getElementById("add").onclick=()=>{state.view="wizard";state.step=2;state.base="";state.terms=[];state.date="1900-01-01";state.endDate="3000-12-31";state.typesIndexation=[];state.wizardIndexFilter=[];state.wizardTreeSearch="";state.wizardStatus="VA";state.error="";render()};
 bindSharedFilters("dashboard","directory");document.querySelectorAll(".selectable-chain").forEach(row=>{const select=()=>{state.selectedChainId=row.dataset.chainId;markSelection();const rec=state.records.find(x=>x.id===state.selectedChainId);const node=[...document.querySelectorAll(".tree-leaf,.tree-branch")].find(el=>treePaths[Number(el.dataset.pathIndex)]?.terminalIds.includes(rec?.id));node?.scrollIntoView({behavior:"smooth",block:"nearest"})};row.onclick=e=>{if(!e.target.closest("button"))select()};row.onkeydown=e=>{if(e.key==="Enter")select()}});markSelection();
@@ -215,7 +292,7 @@ document.getElementById("export").onclick=exportCSV;
 document.querySelectorAll("[data-graph-id]").forEach(b=>b.onclick=()=>window.PocGraph?.open(state.records,b.dataset.graphId));
 document.querySelectorAll("[data-edit-id]").forEach(b=>b.onclick=()=>openEditor(b.dataset.editId));
 document.querySelectorAll("[data-copy-id]").forEach(b=>b.onclick=async()=>{const rec=state.records.find(x=>x.id===b.dataset.copyId);if(!rec)return;try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(rec.full_chain_label)}else{const field=document.createElement("textarea");field.value=rec.full_chain_label;field.style.position="fixed";field.style.opacity="0";document.body.appendChild(field);field.select();const copied=document.execCommand("copy");field.remove();if(!copied)throw Error("Copie indisponible")}b.textContent="✓";b.title="Chaîne copiée";b.setAttribute("aria-label","Chaîne copiée")}catch(error){b.title="Copie impossible";b.setAttribute("aria-label","Copie impossible");console.error("Poc1 clipboard:",error)}});
-document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{const key=b.dataset.sort;if(state.sortKey===key){state.sortDirection=state.sortDirection==="asc"?"desc":"asc"}else{state.sortKey=key;state.sortDirection="asc"}dashboard()})
+document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{const key=b.dataset.sort;if(state.sortKey===key){state.sortDirection=state.sortDirection==="asc"?"desc":"asc"}else{state.sortKey=key;state.sortDirection="asc"}state.directoryPage=0;dashboard()})
 }
 function openEditor(id){
 const rec=state.records.find(x=>x.id===id);if(!rec)return;
