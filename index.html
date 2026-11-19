@@ -225,13 +225,9 @@
 .chain-overview-footer>span{font-size:10px;color:#8091a7;min-width:0}
 .chain-overview-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .chain-overview-actions .btn.sm{font-size:11px;padding:7px 11px;border-radius:7px}
-.chain-overview-json{position:absolute;inset:49px 12px 55px;z-index:2;background:#fff;border:1px solid #cad8ea;border-radius:9px;box-shadow:0 7px 35px #182f5130;padding:16px;display:flex;flex-direction:column;min-height:0}
-.chain-overview-json[hidden]{display:none}
-.chain-overview-json-head{display:flex;gap:10px;align-items:center;justify-content:space-between;font-size:12px;color:#31517b}
-.chain-overview-json pre{background:#f3f6fb;padding:14px;border-radius:7px;overflow:auto;flex:1;min-height:0;font-size:11px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
 @media(min-width:901px) and (max-height:670px){.chain-overview-head{padding:7px 15px}.chain-overview-full{padding:8px 15px}.chain-overview-columns{padding:8px;gap:8px}.chain-overview-pane{padding:9px 11px}.chain-overview-terms li{padding:4px 0}.chain-overview-rule{margin:7px 0}.chain-overview-facts{gap:5px}.chain-overview-footer{padding:6px 12px}}
 @media(max-width:900px){.chain-overview-dialog{height:calc(100dvh - 20px)}.chain-overview-columns{grid-template-columns:repeat(2,minmax(0,1fr));overflow:auto;align-items:start}.chain-overview-pane{overflow:visible}.chain-overview-maillons{grid-row:span 2}.chain-overview-head-tags{gap:5px}}
-@media(max-width:620px){.chain-overview-overlay{padding:5px}.chain-overview-dialog{height:calc(100dvh - 10px);border-radius:8px}.chain-overview-head{padding:10px;flex-wrap:wrap;gap:8px}.chain-overview-heading{gap:7px}.chain-overview-head h2{font-size:17px}.chain-overview-eyebrow{display:none}.chain-overview-head-stat{display:none}.chain-overview-full{padding:10px 13px}.chain-overview-full p{font-size:12px}.chain-overview-columns{grid-template-columns:1fr;padding:9px}.chain-overview-maillons{grid-row:auto}.chain-overview-footer{align-items:flex-start;flex-direction:column}.chain-overview-actions{width:100%;justify-content:space-between}.chain-overview-footer>span{display:none}.chain-overview-json{inset:47px 5px 60px}}
+@media(max-width:620px){.chain-overview-overlay{padding:5px}.chain-overview-dialog{height:calc(100dvh - 10px);border-radius:8px}.chain-overview-head{padding:10px;flex-wrap:wrap;gap:8px}.chain-overview-heading{gap:7px}.chain-overview-head h2{font-size:17px}.chain-overview-eyebrow{display:none}.chain-overview-head-stat{display:none}.chain-overview-full{padding:10px 13px}.chain-overview-full p{font-size:12px}.chain-overview-columns{grid-template-columns:1fr;padding:9px}.chain-overview-maillons{grid-row:auto}.chain-overview-footer{align-items:flex-start;flex-direction:column}.chain-overview-actions{width:100%;justify-content:space-between}.chain-overview-footer>span{display:none}}
 </style><link rel="stylesheet" href="./graph.css"><link rel="stylesheet" href="./analytics.css?v=20261105-1511"></head><body><div id="app"></div>
 <script src="./i18n.js"></script>
 <script src="./graph.js"></script>
@@ -375,12 +371,6 @@ function openChainDetails(id){
  const typeTags=types.length?types.map(t=>tag(t)).join(""):'<span class="chain-overview-muted">Aucun type renseigné</span>';
  const documents=Array.isArray(meta.documents)?meta.documents:[];
  const linkedDocs=documents.length?documents.map(d=>'<div class="chain-overview-doc"><strong>'+esc(val(d.title||d.id))+'</strong><span>'+esc([d.id,d.kind,d.status].filter(Boolean).join(" · "))+'</span></div>').join(""):'<p class="chain-overview-muted">Aucun document associé.</p>';
- const knownRec=new Set(["id","root","base_chain","selected_terms","full_chain_label","validity_start_date","created_at","status","validity_end_date","types_indexation","type_indexation","last_modified_at","local_only","local_modified"]);
- const knownMeta=new Set(["type_indexation","archetype","matiere","cote","etat","commentaire","documents"]);
- const extraRec=Object.entries(rec).filter(([key])=>!knownRec.has(key));
- const extraMeta=Object.entries(meta).filter(([key])=>!knownMeta.has(key));
- const extraLabel=extraRec.length+extraMeta.length;
- const raw=JSON.stringify({chaine:rec,metadonnees_associees:meta},null,2);
  document.getElementById("chain-detail-overlay")?.remove();
  const previousFocus=document.activeElement,oldOverflow=document.body.style.overflow;
  const overlay=document.createElement("div");
@@ -394,17 +384,14 @@ function openChainDetails(id){
  '<section class="chain-overview-pane"><h3>Indexation et validité</h3><div class="chain-overview-small-title">Types d’indexation</div><div class="chain-overview-types">'+typeTags+'</div><div class="chain-overview-rule"></div><dl class="chain-overview-facts">'+row("Début de validité",day(rec.validity_start_date))+row("Fin de validité",day(validEnd))+row("Créée le",stamp(rec.created_at))+row("Modifiée le",rec.last_modified_at?stamp(rec.last_modified_at):"Aucune modification")+'</dl><div class="chain-overview-rule"></div><dl class="chain-overview-facts">'+row("Origine",sourceLabel)+row("Base (maillons)",baseCount||fallback)+'</dl></section>'+
  '<section class="chain-overview-pane"><h3>Contexte et documents <span>simulation</span></h3><dl class="chain-overview-facts">'+row("Matière",meta.matiere)+row("Archétype",meta.archetype)+row("Cote / classement",meta.cote)+row("État (métadonnées)",meta.etat)+row("Commentaire",meta.commentaire)+'</dl><div class="chain-overview-rule"></div><div class="chain-overview-small-title">Documents associés <span>'+documents.length+'</span></div><div class="chain-overview-documents">'+linkedDocs+'</div></section>'+
  '</div>'+
- '<footer class="chain-overview-footer"><span>Lecture seule · '+esc(sourceLabel)+(extraLabel?' · '+extraLabel+' attribut(s) supplémentaire(s) dans le JSON':'')+'</span><div class="chain-overview-actions"><button type="button" class="btn sm" id="chain-detail-json">Données sources</button><button type="button" class="btn sm" id="chain-detail-graph">Graphe</button><button type="button" class="btn sm" id="chain-detail-edit">Modifier</button><button type="button" class="btn sm primary" id="chain-detail-done">Fermer</button></div></footer>'+
- '<div class="chain-overview-json" id="chain-overview-json" hidden><div class="chain-overview-json-head"><strong>Données sources complètes (JSON)</strong><button type="button" class="btn sm" id="chain-detail-json-close">Retour à la synthèse</button></div><pre>'+esc(raw)+'</pre></div>'+
+ '<footer class="chain-overview-footer"><span>Lecture seule · '+esc(sourceLabel)+'</span><div class="chain-overview-actions"><button type="button" class="btn sm" id="chain-detail-graph">Graphe</button><button type="button" class="btn sm" id="chain-detail-edit">Modifier</button><button type="button" class="btn sm primary" id="chain-detail-done">Fermer</button></div></footer>'+
  '</section>';
  document.body.appendChild(overlay);
  document.body.style.overflow="hidden";
  const close=()=>{overlay.remove();document.body.style.overflow=oldOverflow;previousFocus?.focus?.({preventScroll:true})};
- const rawPanel=overlay.querySelector("#chain-overview-json");
- const showRaw=visible=>{rawPanel.hidden=!visible;if(visible)overlay.querySelector("#chain-detail-json-close").focus();else overlay.querySelector("#chain-detail-json").focus()};
  overlay.onclick=e=>{if(e.target===overlay)close()};
  overlay.addEventListener("keydown",e=>{
-  if(e.key==="Escape"){e.preventDefault();if(!rawPanel.hidden)showRaw(false);else close();return}
+  if(e.key==="Escape"){e.preventDefault();close();return}
   if(e.key!=="Tab")return;
   const focusable=[...overlay.querySelectorAll('button:not(:disabled):not([hidden]),a[href],select:not(:disabled),input:not(:disabled)')].filter(el=>el.getClientRects().length>0);
   if(!focusable.length)return;
@@ -415,8 +402,6 @@ function openChainDetails(id){
  overlay.querySelector("#chain-detail-done").onclick=close;
  overlay.querySelector("#chain-detail-graph").onclick=()=>{close();window.PocGraph?.open(state.records,id)};
  overlay.querySelector("#chain-detail-edit").onclick=()=>{close();openEditor(id)};
- overlay.querySelector("#chain-detail-json").onclick=()=>showRaw(true);
- overlay.querySelector("#chain-detail-json-close").onclick=()=>showRaw(false);
  overlay.querySelector("#chain-detail-close").focus();
 }
 function openEditor(id){
