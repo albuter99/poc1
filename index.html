@@ -295,6 +295,28 @@ const LOCALE_KEY="poc1-ui-language";
  // Référentiels à renseigner ultérieurement. Aucune valeur fictive n'est préchargée.
  const CHAIN_REFERENCE_CATALOGUES={cotes_plan_classement:[],dispositions_legales:[]};
  function referenceValues(rec,key){return Array.isArray(rec?.[key])?[...new Set(rec[key].filter(x=>typeof x==="string"&&x.trim()).map(x=>x.trim()))]:[]}
+
+function normalizeLegalProvisions(input){
+ const result=[];
+ const values=Array.isArray(input)?input:input?[input]:[];
+ for(const item of values){
+  for(const part of String(item).split(/\s*(?:\/\/|;)\s*/u)){
+   let value=part.normalize("NFC").replace(/\s+/gu," ").trim();
+   value=value.replace(/^[\s{"“«]+/gu,"").replace(/[\s}"”»]+$/gu,"").trim();
+   if(/^\(\s*(?:(?:règlement|charte|traité)\b|art\.)/iu.test(value)){
+    value=value.replace(/^\(\s*/u,"");
+    if(value.endsWith(")"))value=value.slice(0,-1).trim();
+   }
+   value=value.replace(/\s+\($/u,"").replace(/\]$/u,"").trim();
+   value=value.replace(/(\bart\.\s*\d+|§\s*\d+)\)$/u,"$1");
+   value=value.replace(/^règlement\b/iu,"Règlement").replace(/^charte\b/iu,"Charte").replace(/^art\./iu,"Art.");
+   value=value.replace(/\bn[º°]\s*(?=\d)/gu,"nº ").replace(/§\s*(?=\d)/gu,"§ ");
+   if(value&&!result.some(x=>x.toLocaleLowerCase("fr")===value.toLocaleLowerCase("fr")))result.push(value);
+  }
+ }
+ return result;
+}
+
 let uiLang="fr";try{const v=localStorage.getItem(LOCALE_KEY);if(v&&I18N_NAMES[v])uiLang=v}catch(_){}
 const extraTerms=["Conditions","Marge de l’appréciation de l’Office","Mesures d'instruction","Motivation des décisions","Objectif","Portée","Notification","Notion","Procédure d’opposition","Procédure de nullité","Recevabilité","Délai de recours","Charge de la preuve","Droits de la défense","Examen d'office","Décision définitive","Appréciation des preuves","Motivation juridique","Protection juridictionnelle","Intérêt à agir","Principes généraux","Contrôle de légalité","Compétence de l'Office","Mesures provisoires","Erreur manifeste","Irrecevabilité","Droits antérieurs","Caractère distinctif","Risque de confusion","Usage sérieux","Opposabilité","Protection des données","Publication","Déchéance","Réexamen","Délai de prescription","Règles de procédure","Recours en annulation","Proportionnalité","Sécurité juridique"];
 const state={records:[],pendingUrl:"",view:"dashboard",step:2,creationMode:"existing",base:"",terms:[],date:"",endDate:"3000-12-31",search:"",status:"all",indexFilter:[],treeIndexFilter:[],wizardIndexFilter:[],wizardTreeSearch:"",treeSearch:"",indexationTypes:[],indexationLookup:{},chainMetadata:{},typesIndexation:[],sortKey:"created_at",sortDirection:"desc",selectedChainId:null,selectedBranch:"",directoryPage:0,directoryPageSize:10,wizardStatus:"VA",termSearch:"",selectedSearch:"",error:"",lastSaved:null,editingId:null};
@@ -339,8 +361,8 @@ async function init(){try{
  const byId=new Map(stored.filter(c=>c?.id).map(c=>[c.id,c]));
  const byLabel=new Map(seed.map(c=>[c.full_chain_label,c.id]));
  const knownIds=new Set(seed.map(c=>c.id));
- const official=seed.map(c=>{const override=byId.get(c.id);const source=override&&override.full_chain_label===c.full_chain_label?{...c,...override}:c;return {...source,status:normalizeStatus(source.status)}})
- const extras=stored.filter(c=>c&&c.full_chain_label&&!knownIds.has(c.id)&&!byLabel.has(c.full_chain_label)).map((c,i)=>({...c,id:c.id||"LOCAL-"+String(i+1).padStart(4,"0"),status:normalizeStatus(c.status),local_only:true}));
+ const official=seed.map(c=>{const override=byId.get(c.id);const source=override&&override.full_chain_label===c.full_chain_label?{...c,...override}:c;return {...source,dispositions_legales:normalizeLegalProvisions(source.dispositions_legales),status:normalizeStatus(source.status)}})
+ const extras=stored.filter(c=>c&&c.full_chain_label&&!knownIds.has(c.id)&&!byLabel.has(c.full_chain_label)).map((c,i)=>({...c,id:c.id||"LOCAL-"+String(i+1).padStart(4,"0"),status:normalizeStatus(c.status),dispositions_legales:normalizeLegalProvisions(c.dispositions_legales),local_only:true}));
  state.records=[...official,...extras];state.indexationTypes=[...new Set([...state.indexationTypes,...state.records.flatMap(typesOf)])].sort((a,b)=>a.localeCompare(b,"fr"));save()
 }catch(error){try{state.records=JSON.parse(localStorage.getItem(STORAGE))||[]}catch(_){}state.error="Les données initiales n’ont pas pu être chargées."}render()}
 
@@ -550,7 +572,7 @@ function openEditor(id,returnToDetails=false){
   for(const key of refKeys)addValue(key);
   const selected=[...overlay.querySelectorAll("#edit-types input:checked")].map(x=>x.value);
   const previous={...rec};
-  Object.assign(rec,{types_indexation:selected,cotes_plan_classement:[...draft.cotes_plan_classement],dispositions_legales:[...draft.dispositions_legales],validity_start_date:start,validity_end_date:end,status:overlay.querySelector("#edit-status").value,last_modified_at:new Date().toISOString(),local_modified:true});
+  Object.assign(rec,{types_indexation:selected,cotes_plan_classement:[...draft.cotes_plan_classement],dispositions_legales:normalizeLegalProvisions(draft.dispositions_legales),validity_start_date:start,validity_end_date:end,status:overlay.querySelector("#edit-status").value,last_modified_at:new Date().toISOString(),local_modified:true});
   if(!save()){
    for(const key of Object.keys(rec))if(!Object.prototype.hasOwnProperty.call(previous,key))delete rec[key];
    Object.assign(rec,previous);
